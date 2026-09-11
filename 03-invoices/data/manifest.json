@@ -1,0 +1,2150 @@
+{
+ "chrome_version": "149.0.7827.201",
+ "pypdf_version": "5.8.0",
+ "random_seed": 42,
+ "document_count": 198,
+ "class_counts": {
+  "R": 165,
+  "O": 20,
+  "T": 8,
+  "F": 4,
+  "S": 1
+ },
+ "supplier_counts": {
+  "s1": 32,
+  "s2": 26,
+  "s3": 24,
+  "s4": 20,
+  "s5": 20,
+  "s6": 24,
+  "s7": 12,
+  "s8": 20,
+  "kalibrointi_aho": 1,
+  "painotalo_vesala": 1,
+  "kuriiripalvelu_nopsa": 2,
+  "kaannostoimisto_lind": 1,
+  "konehuolto_alisalo": 2,
+  "kustannus_hoyla": 1,
+  "sahkoasennus_rautio": 1,
+  "messurakenne_nyman": 1,
+  "ersatzteile_brandt": 1,
+  "hotelli_ilvesranta": 1,
+  "asianajotoimisto_ketomaki": 1,
+  "ashquill_software": 1,
+  "teroituspalvelu_karhinen": 1,
+  "frakt_nordkap": 1,
+  "jatehuolto_routasuo": 1,
+  "tolkeburoo_laine": 1,
+  "henkilostopalvelu_kiertola": 1,
+  "pitopalvelu_sinikello": 1
+ },
+ "month_counts": {
+  "2025-01": 19,
+  "2025-02": 18,
+  "2025-03": 18,
+  "2025-04": 17,
+  "2025-05": 15,
+  "2025-06": 17,
+  "2025-07": 14,
+  "2025-08": 16,
+  "2025-09": 16,
+  "2025-10": 17,
+  "2025-11": 14,
+  "2025-12": 17
+ },
+ "po_register": [
+  {
+   "po_number": "PO-2025-001",
+   "date": "2024-12-13",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-002",
+   "date": "2024-12-31",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-003",
+   "date": "2025-01-03",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-004",
+   "date": "2024-12-26",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-005",
+   "date": "2025-01-16",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-006",
+   "date": "2024-12-29",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-007",
+   "date": "2024-12-25",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-008",
+   "date": "2024-12-27",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-009",
+   "date": "2024-12-16",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-010",
+   "date": "2024-12-18",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-011",
+   "date": "2024-11-25",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-012",
+   "date": "2025-01-04",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-013",
+   "date": "2024-12-21",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-014",
+   "date": "2025-01-11",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-015",
+   "date": "2025-01-26",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-016",
+   "date": "2025-02-06",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-017",
+   "date": "2025-02-07",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-018",
+   "date": "2025-01-16",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-019",
+   "date": "2025-02-06",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-020",
+   "date": "2025-01-22",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-021",
+   "date": "2025-02-01",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-022",
+   "date": "2025-01-17",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-023",
+   "date": "2025-01-25",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-024",
+   "date": "2025-01-14",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-025",
+   "date": "2025-02-08",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-026",
+   "date": "2024-12-21",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-027",
+   "date": "2025-02-05",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-028",
+   "date": "2025-01-26",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-029",
+   "date": "2025-02-22",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-030",
+   "date": "2025-02-22",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-031",
+   "date": "2025-03-05",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-032",
+   "date": "2025-03-09",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-033",
+   "date": "2025-02-24",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-034",
+   "date": "2025-02-10",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-035",
+   "date": "2025-02-25",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-036",
+   "date": "2025-02-21",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-037",
+   "date": "2025-01-22",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-038",
+   "date": "2025-02-26",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-039",
+   "date": "2025-01-26",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-040",
+   "date": "2025-03-05",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-041",
+   "date": "2025-04-16",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-042",
+   "date": "2025-03-25",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-043",
+   "date": "2025-03-11",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-044",
+   "date": "2025-03-03",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-045",
+   "date": "2025-03-03",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-046",
+   "date": "2025-03-12",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-047",
+   "date": "2025-03-23",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-048",
+   "date": "2025-02-18",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-049",
+   "date": "2025-03-11",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-050",
+   "date": "2025-02-24",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-051",
+   "date": "2025-03-15",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-052",
+   "date": "2025-03-24",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-053",
+   "date": "2025-03-27",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-054",
+   "date": "2025-05-01",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-055",
+   "date": "2025-04-03",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-056",
+   "date": "2025-04-25",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-057",
+   "date": "2025-04-04",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-058",
+   "date": "2025-04-15",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-059",
+   "date": "2025-04-01",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-060",
+   "date": "2025-04-01",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-061",
+   "date": "2025-04-03",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-062",
+   "date": "2025-05-15",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-063",
+   "date": "2025-04-24",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-064",
+   "date": "2025-05-04",
+   "supplier_id": "ersatzteile_brandt"
+  },
+  {
+   "po_number": "PO-2025-065",
+   "date": "2025-04-25",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-066",
+   "date": "2025-06-13",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-067",
+   "date": "2025-06-04",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-068",
+   "date": "2025-05-28",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-069",
+   "date": "2025-05-30",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-070",
+   "date": "2025-04-25",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-071",
+   "date": "2025-05-07",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-072",
+   "date": "2025-06-06",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-073",
+   "date": "2025-05-15",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-074",
+   "date": "2025-05-20",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-075",
+   "date": "2025-06-06",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-076",
+   "date": "2025-05-03",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-077",
+   "date": "2025-06-14",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-078",
+   "date": "2025-07-07",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-079",
+   "date": "2025-06-09",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-080",
+   "date": "2025-06-01",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-081",
+   "date": "2025-07-09",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-082",
+   "date": "2025-05-27",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-083",
+   "date": "2025-07-05",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-084",
+   "date": "2025-06-08",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-085",
+   "date": "2025-05-29",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-086",
+   "date": "2025-06-19",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-087",
+   "date": "2025-08-15",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-088",
+   "date": "2025-08-07",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-089",
+   "date": "2025-06-25",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-090",
+   "date": "2025-06-25",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-091",
+   "date": "2025-07-25",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-092",
+   "date": "2025-08-09",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-093",
+   "date": "2025-07-01",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-094",
+   "date": "2025-08-07",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-095",
+   "date": "2025-07-13",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-096",
+   "date": "2025-07-31",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-097",
+   "date": "2025-07-27",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-098",
+   "date": "2025-07-12",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-099",
+   "date": "2025-08-28",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-100",
+   "date": "2025-08-08",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-101",
+   "date": "2025-07-30",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-102",
+   "date": "2025-08-16",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-103",
+   "date": "2025-08-01",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-104",
+   "date": "2025-08-20",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-105",
+   "date": "2025-08-05",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-106",
+   "date": "2025-08-31",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-107",
+   "date": "2025-08-14",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-108",
+   "date": "2025-08-19",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-109",
+   "date": "2025-08-05",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-110",
+   "date": "2025-08-28",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-111",
+   "date": "2025-09-29",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-112",
+   "date": "2025-10-15",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-113",
+   "date": "2025-09-07",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-114",
+   "date": "2025-10-20",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-115",
+   "date": "2025-09-18",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-116",
+   "date": "2025-08-24",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-117",
+   "date": "2025-10-14",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-118",
+   "date": "2025-10-01",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-119",
+   "date": "2025-09-23",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-120",
+   "date": "2025-09-14",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-121",
+   "date": "2025-10-11",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-122",
+   "date": "2025-11-01",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-123",
+   "date": "2025-10-25",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-124",
+   "date": "2025-10-26",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-125",
+   "date": "2025-11-20",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-126",
+   "date": "2025-09-28",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-127",
+   "date": "2025-10-25",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-128",
+   "date": "2025-10-22",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-129",
+   "date": "2025-10-15",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-130",
+   "date": "2025-10-05",
+   "supplier_id": "s8"
+  },
+  {
+   "po_number": "PO-2025-131",
+   "date": "2025-12-05",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-132",
+   "date": "2025-12-02",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-133",
+   "date": "2025-12-08",
+   "supplier_id": "s1"
+  },
+  {
+   "po_number": "PO-2025-134",
+   "date": "2025-11-16",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-135",
+   "date": "2025-11-25",
+   "supplier_id": "s2"
+  },
+  {
+   "po_number": "PO-2025-136",
+   "date": "2025-11-13",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-137",
+   "date": "2025-11-22",
+   "supplier_id": "s3"
+  },
+  {
+   "po_number": "PO-2025-138",
+   "date": "2025-11-12",
+   "supplier_id": "s4"
+  },
+  {
+   "po_number": "PO-2025-139",
+   "date": "2025-11-03",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-140",
+   "date": "2025-11-15",
+   "supplier_id": "s5"
+  },
+  {
+   "po_number": "PO-2025-141",
+   "date": "2025-11-21",
+   "supplier_id": "s8"
+  }
+ ],
+ "files": {
+  "2025-01_s1_01": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-01",
+   "html_sha256": "da190a23f0276ea8ef506a7cbba5ea4399032bb228d99a4b832a3b88c30500cb",
+   "pdf_sha256": "a097ce12124af315c8d212aa88b6ccb9ff84839ae9fc9490ddfa19e55e87ba2f"
+  },
+  "2025-01_s1_02": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-01",
+   "html_sha256": "df1c0e142a152a8bf8c73909cf9d75742a1e577e58c1c7ea049e35f6389f2403",
+   "pdf_sha256": "88a0dacb6e15460f6720bd2dacfff5b07d7e61f16355570547be6ef6b3930506"
+  },
+  "2025-01_s1_03": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-01",
+   "html_sha256": "d8d290adc08069ea77f2fe2fe8b0065744d5cbe2f322cd846cde4f331bb273fc",
+   "pdf_sha256": "4aca501630e3b5ec409cb6c04efc8c80c83079eb852927b73992fe27ea429cbf"
+  },
+  "2025-01_s2_01": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-01",
+   "html_sha256": "3f2dc045f9f8ff97149318685f91fa21cf3d357b1da518a91755ec02effa938d",
+   "pdf_sha256": "5b68588491b71dac43b6df0811db82e60be8b0a9014f5b1b865246049391c611"
+  },
+  "2025-01_s2_02": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-01",
+   "html_sha256": "9e51c31a58eb6fba3551a5f9b1b41f35442a008e4d4e679543c30b5081028129",
+   "pdf_sha256": "b4bda237468514b9bc6b78f63eed0ac7a6a8ca36e394cc71599e616f136c3b0d"
+  },
+  "2025-01_s2_03": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-01",
+   "html_sha256": "c1bbb0bc0aff1f22a2f0b0f2e73430e995b392ad63e35e65d085bd92e2c70553",
+   "pdf_sha256": "472daec14be4c4ffae35eaa1fb3d64689534cc0849d61d77970872e5c569d7d2"
+  },
+  "2025-01_s3_01": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-01",
+   "html_sha256": "f649552893ac8aff4edee1f1a76777551cc94fcf089b0d1646cdfcef24dedd1f",
+   "pdf_sha256": "6b4c21710f06400148db27f9d784af88f8919e8dc798b4fee68cfa25de6e5e24"
+  },
+  "2025-01_s3_02": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-01",
+   "html_sha256": "ca995e609fc975b54053a276255351faf9c9711b50e63cdc1f1781106134cc79",
+   "pdf_sha256": "5ec7fb149910e0d5b841903374696e7d6388a6ea3b634a624654a00bb8051c07"
+  },
+  "2025-01_s4_01": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-01",
+   "html_sha256": "f49c2e1d973ed7d3b77f9b361fff3e7a1e5782eb4c257ed4e958f5730aa0c184",
+   "pdf_sha256": "34ab3fb77f8f1d4a4a8f9e5e48b3fca3040afb0762024398c519202a50f54d68"
+  },
+  "2025-01_s4_02": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-01",
+   "html_sha256": "6e7e5d3288ca663ca94d7917b465dfcc8b5357cb42a5166de5ee5c0a96ec52a2",
+   "pdf_sha256": "cc8150e812be727c4d8a2ce144d3b3e04a805ac204b8cd69fad298509ae53c61"
+  },
+  "2025-01_s5_01": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-01",
+   "html_sha256": "7af39bfe8d64c5509940c892b6a898429c3fc19431403a4d3f4b978d72bcb4ce",
+   "pdf_sha256": "029077d9008a83fe9c803850f185ab90a76b697f5bfac0a1389a2a59e494c7c7"
+  },
+  "2025-01_s5_02": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-01",
+   "html_sha256": "306f1d8f2451979cc99b22d400aa02d4c825e57a8f6ca1cd555574e57bb4ee03",
+   "pdf_sha256": "01af5f7446489104c05f9424b5962484568f1a212da5356594a6104f6a45493e"
+  },
+  "2025-01_s6_01": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-01",
+   "html_sha256": "bb2d303afcfbc78e12073f152b3522a3966bab2edc23dbdd848c9d1b704611a8",
+   "pdf_sha256": "8755e4ae11e0867ac2d97abebd34a5c39f862e90e894087109f03f00091616a2"
+  },
+  "2025-01_s6_02": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-01",
+   "html_sha256": "478c31afe307ca90bfa92b6c472d01aabe50d74a274e4ab8c1d50aa456ad630d",
+   "pdf_sha256": "4713b469a88c1d833654935f3cbc8f26e2de3002205a28f521b4654d314874d1"
+  },
+  "2025-01_s7_01": {
+   "class": "R",
+   "supplier": "Lounastupa Helmi Oy",
+   "month": "2025-01",
+   "html_sha256": "8611fb07d1802f3ce161fc15136fa37a8f866b5df40dc9193b0c3ad2181e13c1",
+   "pdf_sha256": "fae16261f23388970098aa625aa409c421a421f2ec2a1c39893da7ec81592321"
+  },
+  "2025-01_s8_01": {
+   "class": "R",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-01",
+   "html_sha256": "14c033aa51ac0e6d407a1e2fee6ca6e66349605df10a04ba6ac0e042475ab075",
+   "pdf_sha256": "eb76a66e5773e2c67a1ad7a4d5dfd485d08ab37ab841552cd4afcd6700a4e406"
+  },
+  "2025-01_s8_02": {
+   "class": "R",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-01",
+   "html_sha256": "84583a428860198897638809a206a7d5a6834e7b18ef03b40e283c6cae2ebba4",
+   "pdf_sha256": "87dbe17441e3bd1039e2ab0a97754bc5f2e4a7970a26b4e97370d132387c6506"
+  },
+  "2025-01_kalibrointi-aho_01": {
+   "class": "O",
+   "supplier": "Kalibrointi Aho Oy",
+   "month": "2025-01",
+   "html_sha256": "9a45320e3f6630eb1f0c0a2e56d6d1af0acc6d410e8b3854c7d31ffd6685fc75",
+   "pdf_sha256": "168f6dbf81ce1150db8d17899dca06bce56c9ac24bf3158763b83ea9182690e5"
+  },
+  "2025-01_painotalo-vesala_01": {
+   "class": "O",
+   "supplier": "Painotalo Vesala Oy",
+   "month": "2025-01",
+   "html_sha256": "a347d0566177bf4dcad3885bbce2195414a471b52ce66f74a8c2a41c8df7beae",
+   "pdf_sha256": "89505768b7b6022c89438f42a324a6a168729fb3cf3c1e26735c3ae5213b3337"
+  },
+  "2025-02_s1_01": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-02",
+   "html_sha256": "6def83f28c7e1e5366e40ec70b090837ca901bd44042f6f7468384f596a90301",
+   "pdf_sha256": "59879ae360f18133500a0be178d3712be9f35cc53ed2621d8e8a1905c4bfa4ab"
+  },
+  "2025-02_s1_02": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-02",
+   "html_sha256": "7f7004f0bf0e431b7b4d5e5b1570e94109a7179d61824b7928b42b95e0f14f0a",
+   "pdf_sha256": "5ea83320cdf7d6328c7fd756de57164e8c0e3306584733e250080c7b1ae1b87a"
+  },
+  "2025-02_s1_03": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-02",
+   "html_sha256": "24db0192f43da3742d0592305c955488290781a1c49bf2faa5704eedec357911",
+   "pdf_sha256": "d55089d1b7ecdad308787356d9ad3e4179b6cc18706e13d859c1a35237cd4de3"
+  },
+  "2025-02_s2_01": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-02",
+   "html_sha256": "4beca0b454f479880cf0dc130620eadf2971c03d3a61b40ad514cdc99d79c916",
+   "pdf_sha256": "cad44beae74dc88d1570b581429fe0b92e7a7e63c2869a49da398e5b1769aaaf"
+  },
+  "2025-02_s2_02": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-02",
+   "html_sha256": "4f4070a5da94cfcdff3a5e6ba65a319c5a0c869ced17f8e3787ceb838aba6da1",
+   "pdf_sha256": "eed726e9baea05c636b13e7ce034ad7a27bb4b939f77020b5e63ba64dbf48612"
+  },
+  "2025-02_s3_01": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-02",
+   "html_sha256": "2cbf8baf16157abc4a6f11b6099e4ead39d710c71afa9428f193563ab29c2eaa",
+   "pdf_sha256": "d7e27d348b78a36ba03e9faeafeeb8304ac98e392bd68bec71565a44652b7182"
+  },
+  "2025-02_s3_02": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-02",
+   "html_sha256": "7c4c2afda3a32590a2d69b83c45ce021b745d51184fc05ef12c12966d2f15c49",
+   "pdf_sha256": "9292d1b1a27de51e7bfae646bc7b1ee45fdce60910237706fa2bc3d850dac722"
+  },
+  "2025-02_s4_01": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-02",
+   "html_sha256": "b65f9bef7eb4f7cede85ebd011dbbbdc541035d66f4ab26b30eaec2e64eb79f6",
+   "pdf_sha256": "bda0703dc344807dfeb187cf3057eb8d1cd6eb6e5f47e3c067052242fe86366d"
+  },
+  "2025-02_s4_02": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-02",
+   "html_sha256": "7f218b385eb727d288d105dcc6de4ae04f9f54923916122601c8af3bfa48f736",
+   "pdf_sha256": "44e804a7254cc23af4d4b3f7119c9784c63013d3e5eb58126bc04a135a6d971e"
+  },
+  "2025-02_s5_01": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-02",
+   "html_sha256": "2fb15f89df9cf87f707cd095043f7d1475325a556c92592ed303f0caf7babcc9",
+   "pdf_sha256": "a946a27657e66e77ba829a8b1ef8bc9e2aa2d89abcaa840f18f79ee4254b538c"
+  },
+  "2025-02_s5_02": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-02",
+   "html_sha256": "07b9c528a442504b6ec7ba2e6898bf93e60a96626fbe8304216e3167c4a93b29",
+   "pdf_sha256": "aeaa701fb345c53d5e29718c5f0887b7f87be2c1faae4e361097f31d7eb1862f"
+  },
+  "2025-02_s6_01": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-02",
+   "html_sha256": "7f1705ae25addaa1d8101d2c4dda1b20e954a8ff88f2b706dbab22ba83613a10",
+   "pdf_sha256": "72db6f20aed654192f0ef9e619f633840afca6883088865cdf8ed283cdb6064e"
+  },
+  "2025-02_s6_02": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-02",
+   "html_sha256": "664e91696e5d0a7eeeaf5a16b3a1a54fb0a8d2ec6d940b02fe1c9392dfc4d336",
+   "pdf_sha256": "f42112935356b9eaa1ec991ab56b2de966ebb909fc0e8c642209bae904d24e81"
+  },
+  "2025-02_s7_01": {
+   "class": "R",
+   "supplier": "Lounastupa Helmi Oy",
+   "month": "2025-02",
+   "html_sha256": "fe499d24ec3f04848984ee3a19f82e93c6c0b8bb2cff227ebf55acfc7894e9cc",
+   "pdf_sha256": "4c06e97b621d4fdbf8f2e503b79922cdb56402ba35ada771169f93025fa29b90"
+  },
+  "2025-02_s8_01": {
+   "class": "R",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-02",
+   "html_sha256": "bb45631f90494f08cdcce9a4132bfd8c2a2236719f4fdca2b321f9651ee2b19f",
+   "pdf_sha256": "fbb7db5f57bc09803bc5fafeb1d4dee4083f39edf565cc4fd50d9e4e52e842a2"
+  },
+  "2025-02_s8_02": {
+   "class": "R",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-02",
+   "html_sha256": "0f9277b3d99bb976e85994be25736689dce80a5ceab676398d209ecd10ae765e",
+   "pdf_sha256": "3684b6eedee8cd2d110f0f408112ea9547834244a800563156006e91017aa0ad"
+  },
+  "2025-02_kuriiripalvelu-nopsa_01": {
+   "class": "O",
+   "supplier": "Kuriiripalvelu Nopsa Oy",
+   "month": "2025-02",
+   "html_sha256": "244d9b1d9905b956abb1b895002cd4444441c453815c1b1704e20cb359d742ee",
+   "pdf_sha256": "74c4f336326ab9ab2db7dd802ae32bd9e34110bfc23eb4d5e2050c1a1b5e5fd4"
+  },
+  "2025-02_kaannostoimisto-lind_01": {
+   "class": "O",
+   "supplier": "Käännöstoimisto Lind & Co",
+   "month": "2025-02",
+   "html_sha256": "687a258ae6946fdf7f4d3659bd4b1a5c586f270b94f18c443473ca61eb675f5c",
+   "pdf_sha256": "e2358e5afef2c990e7b451d41869a09e73851c7a763df215f33d6038a1a4d62e"
+  },
+  "2025-03_s1_01": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-03",
+   "html_sha256": "df631aa89293e29b8b976e5310a8cb99ace25de2df304af3b4b70760ba9504c2",
+   "pdf_sha256": "4ffe3a540fc4927164d4bf4cd58d061be62ab9b90045892a595c13fd78918b6e"
+  },
+  "2025-03_s1_02": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-03",
+   "html_sha256": "752dfa63a5012d2fcb389f14e4c2c9e3ab36815a8168628ca5eca10c964a3d7b",
+   "pdf_sha256": "8e50515f5621c24367b3c9e5b31752b75b95500bba3c3be39d9abad78d45d1d9"
+  },
+  "2025-03_s1_03": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-03",
+   "html_sha256": "44e23db59398712080a89669167075898549f325018914fcd688ff1ea413d757",
+   "pdf_sha256": "35d06cd2189f142e139874662a5522de55e6741b8751631e8ff6d8ccad72b3a0"
+  },
+  "2025-03_s2_01": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-03",
+   "html_sha256": "1b36aba46be0ffe01b6a1c76e846dd20e6dfa49d829048f566203772fecfe22c",
+   "pdf_sha256": "ad4ce2894c2eb3b251d43d109bf407922b0b9ae7316fc4de5199561f87843c89"
+  },
+  "2025-03_s2_02": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-03",
+   "html_sha256": "e0aafeb00bf7f4e8ae269b89553fef123f22c4f9de6c272ec1b44df93be46e59",
+   "pdf_sha256": "72535ede287ccc9ef681ea639855e629b27b1f82fbd40f50507f013c5df4eccd"
+  },
+  "2025-03_s3_01": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-03",
+   "html_sha256": "6c60f8e4bb758905d0f6d4d94376cd9bd26e6dbb7e4ec6029fa577814ca06f94",
+   "pdf_sha256": "d25d181654597891d3b98f6904821991560fa851a5f587de172f2543a7e9607a"
+  },
+  "2025-03_s3_02": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-03",
+   "html_sha256": "21db8752370d3cb58397b33dc5becd5db53332b5e638396e988f442e40e416b1",
+   "pdf_sha256": "226661c0a29847574070e53bca9123e276837d8dd6491643c87e4aab724e2b65"
+  },
+  "2025-03_s4_01": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-03",
+   "html_sha256": "9789d94be39ec90639d13743be02673ddbff577ea2007610ca37e677cac2a9d4",
+   "pdf_sha256": "d45bcf8e642271e1247ee6540e26d54b16c5143084c3284045846489bc48952d"
+  },
+  "2025-03_s4_02": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-03",
+   "html_sha256": "46f237d0daaec0e6ff3a00b3b38b72fa1c835359233591719a69c553b7e4a990",
+   "pdf_sha256": "8661095c66fdd4957dc678db52e343d9d25a038e2e297e514cffb857b83c6e49"
+  },
+  "2025-03_s5_01": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-03",
+   "html_sha256": "599fa14732be0349d9d0a2a5ae4d1cf051b9182eedcb8aef0dde9e5f60858d1a",
+   "pdf_sha256": "768c84fd13ed30ba5c7ea93c21a50f59259a703f22e6b8bc14b32b6a72a0a49c"
+  },
+  "2025-03_s5_02": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-03",
+   "html_sha256": "26042595447e943b1a57f7eaf4d2df1a344580155dcdb541db7e0015309729ef",
+   "pdf_sha256": "d6350a661c2f6372ac9f056867c3dec93f983452dc66e9965764bfc5f9e75532"
+  },
+  "2025-03_s6_01": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-03",
+   "html_sha256": "783382fa5c271096c0dd2674b580e0de918c75ae874fe052ad242866a48db8a0",
+   "pdf_sha256": "3185954799b48fc169009a5139c667eb95b4a078c16657f6a535defcb0a6e5d7"
+  },
+  "2025-03_s6_02": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-03",
+   "html_sha256": "85d31714db3ee9b59bdb18bebd3bf2d596b96d7522444e185105ca309712dfe5",
+   "pdf_sha256": "834079e898df2c3624a9cca24d2c868feb0735f1e7e3cdd8894bb46885e43df2"
+  },
+  "2025-03_s7_01": {
+   "class": "R",
+   "supplier": "Lounastupa Helmi Oy",
+   "month": "2025-03",
+   "html_sha256": "4ebafb85e65193fe100440d8d39f1544ae2bd57291f23ebfe4d781f5ae96156f",
+   "pdf_sha256": "8e8ce8eb87ce23201eba1f3e149ab37edb63bf7e937d5f0edaff8fb64b0aa391"
+  },
+  "2025-03_s8_01": {
+   "class": "R",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-03",
+   "html_sha256": "b3a654bc268ea4dd82307035b755a01df5f6b8fed2c47087be55b1c03c6fa3c7",
+   "pdf_sha256": "d195fb3fe7d4c57b079d50b33603d832487b0fd6f108bd0200779103d095f924"
+  },
+  "2025-03_s8_02": {
+   "class": "R",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-03",
+   "html_sha256": "dcf8357d71f9786ef8c8f385ec9a7687f57bf554a9d6b8eb164d049468a01020",
+   "pdf_sha256": "95239be50e07f0e6270ec2836a99d7a22366eddb74f42c81ad0af1cc38ec344e"
+  },
+  "2025-03_konehuolto-alisalo_01": {
+   "class": "O",
+   "supplier": "Konehuolto Alisalo Oy",
+   "month": "2025-03",
+   "html_sha256": "1b35e1f98cf5189083b6e0426223e95a98a5949d6ef3b600f119a64638e1a313",
+   "pdf_sha256": "d57a044a6bb6ed38ceed7a796738dcfecb5096d6dc470c70409a6e654b06bfb4"
+  },
+  "2025-03_kustannus-hoyla_01": {
+   "class": "O",
+   "supplier": "Kustannus Höylä Oy",
+   "month": "2025-03",
+   "html_sha256": "4d0b2b443eb1a0a807db3af5c1fc45e7660992b8633c5a6bdb0a59eaa097b519",
+   "pdf_sha256": "a7075eefffb9cc1863bba36547b65b7dabe1413a52f4ecc617d3c4b3e740e439"
+  },
+  "2025-04_s1_01": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-04",
+   "html_sha256": "ef1a1eecf24f0b23ad2e1d9ebc568bc5fb2d83936f4612284386befbe6117f0e",
+   "pdf_sha256": "49bab388af703b98f5778734cd430097ca54dba419e5dcec50b1f72e0e884ec2"
+  },
+  "2025-04_s1_02": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-04",
+   "html_sha256": "a8211b2ef8718e8da9537ab356a1c04e6680b17d47ea0dd4002f63ab5fb1f82e",
+   "pdf_sha256": "a5ffefe25261fe3c547122e1e40350e277b98793ad7c88e8529e314f595e2161"
+  },
+  "2025-04_s1_03": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-04",
+   "html_sha256": "2119373d6fe018ebb0f25511269b89f9ade0aa11a22f71bd421779439ca504e2",
+   "pdf_sha256": "eb18cad9bd0d979e90ec01d1a3d42e1f45a32f3193d4909e720598aec6418400"
+  },
+  "2025-04_s2_01": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-04",
+   "html_sha256": "25f99cb96a460cd64d5be7ccf96ec266d6644cc373f18f438fc5631a5d512b27",
+   "pdf_sha256": "1cf0b8dbc4a552b781ad621e8827268b00ad76740ed4985dcb6f8547da9206df"
+  },
+  "2025-04_s2_02": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-04",
+   "html_sha256": "8407d9bdb273f486590568ccf9b8fcccaba34426b75b5735dafedd415fb9f02e",
+   "pdf_sha256": "5349a748a6c77a7082033e669f8dfb6cfcaa552a076bf879f4b220a39c6fddff"
+  },
+  "2025-04_s3_01": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-04",
+   "html_sha256": "fc0a0b3b2126748c9440cdd8ae3af4b4024ac0ccf89a0cad963b721a06ec2f20",
+   "pdf_sha256": "c7610f7f39c4f3f8560a326935f2843a231ad2e589042808f02b9b824f23b45c"
+  },
+  "2025-04_s3_02": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-04",
+   "html_sha256": "b0302cb57bd39f08f6c380e5aa31792e359641a87fb32b855abfc6a91d338b7a",
+   "pdf_sha256": "b13aabeabfd4abbe69fce76b681f5b3f8c2670b151fe45002346458dc68063ca"
+  },
+  "2025-04_s4_01": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-04",
+   "html_sha256": "56d12ddcd5bffc09ebc23401efd6f3c02b306110220efbac3690425fe83afd6f",
+   "pdf_sha256": "79f13a0411ac71230b52032d1d6852fd3d09203243362ede6cabf101f5a12eae"
+  },
+  "2025-04_s4_02": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-04",
+   "html_sha256": "fc4dc54dbe5194aba8896b84ce64e351da6acfa407509e68a6b60158b86a0a15",
+   "pdf_sha256": "9ec7d1d3caf071f2c7d5bbb6960419b7c3a79137045bc73479c7e9097013f62b"
+  },
+  "2025-04_s5_01": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-04",
+   "html_sha256": "81504e0cf0aadf2fb17e43db5252f1777db87bc4b6837e5d8a00f793c4556de7",
+   "pdf_sha256": "07450ff41206dd53aa534fb9bc4644c3363167258c1c0c9490f02b191d7aa4b1"
+  },
+  "2025-04_s5_02": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-04",
+   "html_sha256": "11fbccadf2b3fae5cb6809f6e05b7afd00711743172b3a2a2f7e451b03626ddc",
+   "pdf_sha256": "5d49d981a204d260d9045d88d8a86376fdc55a35bcb47de1c30299328ab755c9"
+  },
+  "2025-04_s6_01": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-04",
+   "html_sha256": "71e10e2f93e263481d3c3a2200400b883d4a87bdd69585099f4de3384236957d",
+   "pdf_sha256": "b028133e121f23d4edf2288fe02057001b00c1307972d9699b5e986e28cbd68a"
+  },
+  "2025-04_s6_02": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-04",
+   "html_sha256": "988f3f3d7f04046befad3601142dd333b2d483e5c6b1e91f0b9a2265796a6df0",
+   "pdf_sha256": "0d34cfa9c055eeaafe2ebe58b8f8410cdcde3c5e6a372ecb31f45d8a8f0dd53d"
+  },
+  "2025-04_s7_01": {
+   "class": "R",
+   "supplier": "Lounastupa Helmi Oy",
+   "month": "2025-04",
+   "html_sha256": "4bdac3d8f28976113afdac3c2ca191f39133a112d2640b2e611b493f74b40b39",
+   "pdf_sha256": "668ffffe9cf946cfde27cbd3f6fa8052e00e1c3d4ea4efcc8f5a39b917fdfe55"
+  },
+  "2025-04_s8_01": {
+   "class": "R",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-04",
+   "html_sha256": "347676b3e983db25ebfb928de65b072039e8d8dc6afe4e5f1cbfad5ec3a6e4f0",
+   "pdf_sha256": "d4fab2097581be736cdb0eb3c7073411f37ab31d3af372bab703a518a7afe724"
+  },
+  "2025-04_s8_02": {
+   "class": "R",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-04",
+   "html_sha256": "dad47f9c63690c54adae09caab7cf137332a63c255e1fb04b02fdc553a1b0d9a",
+   "pdf_sha256": "bea298ddd665cd1739d69eac9c7287e9c0e04a7337a3ec5a33e7326bf28aeee4"
+  },
+  "2025-04_sahkoasennus-rautio_01": {
+   "class": "O",
+   "supplier": "Sähköasennus Rautio Oy",
+   "month": "2025-04",
+   "html_sha256": "b2a69e0aacee8b3fb237363247c56e228cb005ee7ae16293ac4fc44d79fb9528",
+   "pdf_sha256": "59321fd3ab1ccb1d9492d5affaec937ee0c5d40091fa61d2e3e401b57f73873d"
+  },
+  "2025-05_s1_01": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-05",
+   "html_sha256": "30b166d884727c784ac75617cd114e35d8f02bc50fa775e3bf8961a6ca0b795e",
+   "pdf_sha256": "07754ffdc0ed5aaf84ce14ef98adb1bdc2f2bdf81e6e0567ebdad22a962fbef1"
+  },
+  "2025-05_s1_02": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-05",
+   "html_sha256": "ee5c47576852e2bf09e232a278c27742b4ccd10f058551739b839fa1ad6414f2",
+   "pdf_sha256": "cc55378d9f9964e85756b757dc3b31a362d5f0f55aaa9bcfaaf08d4e8def5582"
+  },
+  "2025-05_s1_03": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-05",
+   "html_sha256": "0999f49c2d40b1b478a04c25777c2e13ccb239b93a8367e2b56ff11ddf9bdbb2",
+   "pdf_sha256": "f046abcdcf0a080db85fd55b940d15c6c1c64802b58d15a605a98da3a60aed57"
+  },
+  "2025-05_s2_01": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-05",
+   "html_sha256": "fcaa0590d796a39ac5457bcdcdc8cb7c2fa8748f3bdddca6922a24c608e393ff",
+   "pdf_sha256": "100e5db6639d19a80c28082a5a69da3df41d4932041f71aa3313ef8978f2e406"
+  },
+  "2025-05_s2_02": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-05",
+   "html_sha256": "6db1396a9c327bd4d978ad2c0f1396be62fd494cadb801ca4dd092bceab2c942",
+   "pdf_sha256": "184ea4e87da3057aaa2c7ffe6e21c2d88568808835a5c1050af72974683a4558"
+  },
+  "2025-05_s3_01": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-05",
+   "html_sha256": "1acd8b1dfe88b51ccd0ea71e2eed40abd365d7334098670f22127f61bf1f204a",
+   "pdf_sha256": "f409499f58059827af26ed6522c610a5c6c6130aa951d3e42ae74eda25165772"
+  },
+  "2025-05_s3_02": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-05",
+   "html_sha256": "ffcbba47f1e784b0f66d106406e7cccea0de410b04060837e488cb68d7faab03",
+   "pdf_sha256": "429b03c2665498dd6374c6edf82cd7d7027d0aa9e7a863f1706078551eeb9652"
+  },
+  "2025-05_s4_01": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-05",
+   "html_sha256": "a98cf5c1185d3d494726a0ff3473051cc70dd4c6bb444c81a48829de55daf766",
+   "pdf_sha256": "d3b1e58646ed7ebe43b1fc9820dde415f7f0bcdabc30b9dad2b91ce5c02899fd"
+  },
+  "2025-05_s5_01": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-05",
+   "html_sha256": "fc085e98c75ad85c8153bc144fdf94d814a5c2f4532a1669e43df34a4f522080",
+   "pdf_sha256": "a73260a0e2d916bd641626a110ea618d0f8b54ec77cce0e31f8eff234988ae70"
+  },
+  "2025-05_s6_01": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-05",
+   "html_sha256": "46aa023221e532fe31cc8346b8b505dea8b46b8ea5992351d674a1f004829693",
+   "pdf_sha256": "be26e81457602c3a2e92fe6de5126deeedb7a1b232ffd7ce8c96724f0b9bfc21"
+  },
+  "2025-05_s6_02": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-05",
+   "html_sha256": "0345b0545cc95b42353340d16ceec27850296cdaf41bc797c74ae6213502ec18",
+   "pdf_sha256": "b7f5258719dea2f9ddcbddb4ace641b41939ab5237ebcce1ff71491f11d0947d"
+  },
+  "2025-05_s7_01": {
+   "class": "R",
+   "supplier": "Lounastupa Helmi Oy",
+   "month": "2025-05",
+   "html_sha256": "4140e462f0994f21b04f23bf300227fefc39e277573f0a0065fb97a7e3ab32f9",
+   "pdf_sha256": "409928b0e616e8d2995f40fde782c0f18cc45f8f667e8b336b24b2cfdfa155db"
+  },
+  "2025-05_s8_01": {
+   "class": "R",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-05",
+   "html_sha256": "fc8bcc5498aea5159f74d521b2cfbafc83893ee1e37fff14c6bfafe9462b5365",
+   "pdf_sha256": "11e9ca5515a2bd1d4f3ad8d5ed846e12e97fe556607028658e9e351225a484d1"
+  },
+  "2025-05_messurakenne-nyman_01": {
+   "class": "O",
+   "supplier": "Messurakenne Nyman Oy",
+   "month": "2025-05",
+   "html_sha256": "20975bb0224277837dade4583b0eb868fb8fa1518c4d5df186890c6e25ce12aa",
+   "pdf_sha256": "3c231083306a1afbb49e3f62b76b7fcee2001896a8db6fbe558538e3afd8b4ce"
+  },
+  "2025-05_ersatzteile-brandt_01": {
+   "class": "O",
+   "supplier": "Ersatzteile Brandt GmbH",
+   "month": "2025-05",
+   "html_sha256": "ae19a743d92e5f0f80eedc98a159ff59c5cb44c403ee6cac84816636b334ddf5",
+   "pdf_sha256": "acc40d9dcdb4ce63cf409d4bb834e90f6cfe8f4e6c83a59cbcbc3cdd00790aa3"
+  },
+  "2025-06_s1_01": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-06",
+   "html_sha256": "0295fd28695e1469a555ec76f3dac9b080f0b24833bf380ba4b4cf221b4fd5fb",
+   "pdf_sha256": "897e1c4cda09cb64ff82ac5e271ab82ba37c54fb8a7dbd8f63047bbdd8cc50af"
+  },
+  "2025-06_s1_02": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-06",
+   "html_sha256": "8c9e84668f5d3e1352299606163dc74aa297c270d141953341fcd44181f3dfc7",
+   "pdf_sha256": "ca6666766cf37d9a63ca4190dbc9c87e62f4cfba8b028884f5fa6026b6ff76e5"
+  },
+  "2025-06_s1_03": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-06",
+   "html_sha256": "814131e7d30089effc88d06ae97a4f65c51cd5cc0ddf80485531cca996eb4a5d",
+   "pdf_sha256": "96bf5312b1ee02be6e7eeeeb5402d65efed7e09cfb33c21a8f10e12666fc5e26"
+  },
+  "2025-06_s2_01": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-06",
+   "html_sha256": "600c6120413ece44c2e7e6b65b8f971d12ec162bb7372bdbbba22aaa3dfcd517",
+   "pdf_sha256": "bef7a1b2f3d67a1d2f0854754fc0da7482da8dad279468039044f870363e455d"
+  },
+  "2025-06_s2_02": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-06",
+   "html_sha256": "cb8fc7aac8facb3fe56c5118361273445ba046d2d645f07162e0350ed916637b",
+   "pdf_sha256": "7fff64f6b886aea0b3f1d03326e3847020cefe5c34a529c76d519bb9ea7f44ab"
+  },
+  "2025-06_s3_01": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-06",
+   "html_sha256": "c5a04c8116d1d1faf2d011dabb4d837a70af79b7fac65877b62ec0ca9d5d61f4",
+   "pdf_sha256": "fde21a03961bea44c29c9a29e3a999f79956d4c1ce18a3bce60fc63cd1378170"
+  },
+  "2025-06_s3_02": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-06",
+   "html_sha256": "69f5adb4537cf65b9c0419d59f3c3eb30c1a3f377d79a8261283608de4c2923a",
+   "pdf_sha256": "53cdb1c6db109cafd801273ce9e03a64a0c5abee7806ea1d29f9f488136b59eb"
+  },
+  "2025-06_s4_01": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-06",
+   "html_sha256": "506f9c5f17eca5544ce99d147a88c1bf5fb64b6ae5ca73f6abd52ab7c8f707cd",
+   "pdf_sha256": "49951bc47c33d6ec181b356c591f7f77d8d0c054a26d5fabb0b8ed6948ef5f54"
+  },
+  "2025-06_s4_02": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-06",
+   "html_sha256": "092d80fe77c42a49618007103451975b538da2008ea9792808dfcf1b952cce7c",
+   "pdf_sha256": "71996e9abc45c254fdb3f38c60ddd1ae93a408eb02d871ea81a812b7512c307a"
+  },
+  "2025-06_s5_01": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-06",
+   "html_sha256": "eefa779288897082fbb4049ed0c32b6e3b9f33839dcccb15e222ed8585152f4d",
+   "pdf_sha256": "b81d1825ac98b7d1baadeb2290c164920052129fa6eae79cfb9ffb5369ee4cbf"
+  },
+  "2025-06_s5_02": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-06",
+   "html_sha256": "3223d67c8af356389f01e557111c8bfc62dcee47996b9d8fcf7684e052d49521",
+   "pdf_sha256": "58ace0ae0402a22a8f746443d71b3e35cdb25ea3e5db01364b1b1a5fd1e4334b"
+  },
+  "2025-06_s6_01": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-06",
+   "html_sha256": "8a469ba84a8d44eb8160d6ed5409473fa64f1dc610cab6c7137208c3a0853345",
+   "pdf_sha256": "0bd8fdbe6380522b367b793c1bcdfc9398005532c7aed08ac977b6d751d7d260"
+  },
+  "2025-06_s6_02": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-06",
+   "html_sha256": "72c29398ae996aa46b02bf45214a4176d0df876693b3cc7e86c2fc5562f2a672",
+   "pdf_sha256": "688b5af791a37b2ef6c3bf40ec7d316a2b019722253fa8559cabb35b39d9cd06"
+  },
+  "2025-06_s7_01": {
+   "class": "R",
+   "supplier": "Lounastupa Helmi Oy",
+   "month": "2025-06",
+   "html_sha256": "ce33a7ca8dcf1393f49d6b4b1d9b41ce24cc37a086c100d4316fb64c413a3f8a",
+   "pdf_sha256": "bd0df202d9cc201d405f70c1e44e8af9271ea0fbeaf8cba91549a11e72a0e575"
+  },
+  "2025-06_s8_01": {
+   "class": "R",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-06",
+   "html_sha256": "06975f0f87d472a96d679b7b44605794b38572bd19594ac1f0cb8aca6bd11aa1",
+   "pdf_sha256": "0f10cf1fc0349a95ea30d1c7fd58865b5874880cb7c1204e5e5ab4b725cc5910"
+  },
+  "2025-06_s8_02": {
+   "class": "R",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-06",
+   "html_sha256": "ccac4163fad666073f62c27a6cab2de601151111dd5d0bc445686b548c7de76b",
+   "pdf_sha256": "7788673c44a0d52811998add0acf9ee000589276120e8db0a9ba40b00255eb09"
+  },
+  "2025-06_hotelli-ilvesranta_01": {
+   "class": "O",
+   "supplier": "Hotelli Ilvesranta Oy",
+   "month": "2025-06",
+   "html_sha256": "ad3c624e1009037f522bf8417c2061b374bc1a10468ed4ab41d11d641d1c4376",
+   "pdf_sha256": "3424e1eaff7696ac15001329749375c86a926326f90b2e82616ede979621b139"
+  },
+  "2025-07_s1_01": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-07",
+   "html_sha256": "3ab38e9aed3a0553683073956a44539548fd0322972a5e661d816fd76417fc43",
+   "pdf_sha256": "4ff2bfd31e0b6e1167c058c232506b7bfca44104a29e26e965752df6c09b9b7b"
+  },
+  "2025-07_s1_02": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-07",
+   "html_sha256": "82c59f02db900967d2c424a03bbb645820227187ad2e0b8d5ca7a3554925b74f",
+   "pdf_sha256": "6d27b80aa339fe9eee54a54f810fa581c837b775629b4c5067ff1f3dfacb432b"
+  },
+  "2025-07_s2_01": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-07",
+   "html_sha256": "2c34c3334b3ca46099fe92eabc90cf7d85608631ca1a90c2ecc7766161808d5d",
+   "pdf_sha256": "1d3aebbec3def67863b19955954b07938299a1c9ec1a8f084860bc9982ee8da7"
+  },
+  "2025-07_s2_02": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-07",
+   "html_sha256": "4093ae35c608f0d6f0ec2e2f7075963b6f64d0ba8ecf20c88a842eb278438dfe",
+   "pdf_sha256": "9d0e854636cdab0e388f09fea9f8490d9bff743419e0fa87818b04e13c24bb24"
+  },
+  "2025-07_s3_01": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-07",
+   "html_sha256": "f041901f7839225fe63b614fb40f7b5aea0df1053edd97cc5d430979aecd5fd1",
+   "pdf_sha256": "a350d02da1d4bb0d876e4ccf9e1931870cabd4bbd811d6c7ff233b0106870123"
+  },
+  "2025-07_s3_02": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-07",
+   "html_sha256": "782e8a01b72795a80be4f50fdfabfaa8bafa25c599fc7b886e6bdbc075f0aae4",
+   "pdf_sha256": "f17da28052bb6e576ae214c955aaec334c642105c3dd7076e9ea00e8b315fa0d"
+  },
+  "2025-07_s4_01": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-07",
+   "html_sha256": "b759e5bc33a7716aeffb4f29cbdc074c54c0a9af9993144fbd0c16231378a6f2",
+   "pdf_sha256": "3d1fcb74c9812f4d593d3a8bc6cc2b511f6639760559e78319b06fb370013fb0"
+  },
+  "2025-07_s5_01": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-07",
+   "html_sha256": "3b5fd404691eb8827b12df090ee72c618a9690bdee77ede2e2ef4de47351326e",
+   "pdf_sha256": "975e105a5e08802eb9a54aeb9bcbf7d2951ee86bdeaf2f56dd3bf5ba8303d3d2"
+  },
+  "2025-07_s6_01": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-07",
+   "html_sha256": "9e5972ae8f1dec2a93fcc9db1f6ed495511e2e98903e43d9290ba271a64adf0b",
+   "pdf_sha256": "de5934db158ab4e608f7bccf2a69d8e34aaf14ae79b0de20696e0a4762854bd5"
+  },
+  "2025-07_s6_02": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-07",
+   "html_sha256": "40f555a6c6e2b50a00e55ab18abb3ed63215fe7f39d8d21b604a010ec20443ff",
+   "pdf_sha256": "40e13358929a14b56e1637c5d50a75fb7065d042ba8baf3bf7128f7dacb71b0c"
+  },
+  "2025-07_s7_01": {
+   "class": "R",
+   "supplier": "Lounastupa Helmi Oy",
+   "month": "2025-07",
+   "html_sha256": "20179d00d476284d2b1f7c4a1b214450bb33d0ae92f7a3746d70f7d7ecd12591",
+   "pdf_sha256": "84cda81eb09e9e00068c186ab661051be27bcd7523cefd91111f9b4856b76b6e"
+  },
+  "2025-07_s8_01": {
+   "class": "R",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-07",
+   "html_sha256": "e88570a258bff91bf04895a1db75324239264c54ae583435189b18171e8a6b5b",
+   "pdf_sha256": "bc4d1fec11587091eea89aec611be99578d12980f385f7ab85f256ecb5213bfd"
+  },
+  "2025-07_asianajotoimisto-ketomaki_01": {
+   "class": "O",
+   "supplier": "Asianajotoimisto Keto & Mäki Oy",
+   "month": "2025-07",
+   "html_sha256": "0578ed69ba23d8567ae2b8b4e1120e5af948de0ff9ee3b6b938c902d3a69f2a5",
+   "pdf_sha256": "3ac323567800b059189cbb282b0eb88787829b422cf84c47f84bbd5118b53299"
+  },
+  "2025-07_ashquill-software_01": {
+   "class": "O",
+   "supplier": "Ashquill Software Ltd",
+   "month": "2025-07",
+   "html_sha256": "a175aba769b2e1e5ff575b0c8072fba06f92909f05efa1b2771c05e4423a3e84",
+   "pdf_sha256": "d073f2c8019069976cc7a95bccfe46eab9f53486bbdd1cda822a3f4d49902b80"
+  },
+  "2025-08_s1_01": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-08",
+   "html_sha256": "25e9bff1f93fa3402665aeace3d5f7b2c7686e6fab1cf63f6c3c32c36c6f3cfa",
+   "pdf_sha256": "f39a35d6ece230f78780ce10c201cf60cf075381754a2daeac9b6a23303c87fb"
+  },
+  "2025-08_s1_02": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-08",
+   "html_sha256": "aac9f2d6f4c644ff98bef90a236ff67b01a5d432ecedc196280d522e9db48411",
+   "pdf_sha256": "edc480629655bd0e957a8563c495eba13e18a945c9a9e849cffab2580515571a"
+  },
+  "2025-08_s2_01": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-08",
+   "html_sha256": "c9eae9ea80b4ffffbe7c83d41c67b4f5d6ce48deec5b5ce1146c8be45e7b8902",
+   "pdf_sha256": "17bce230624010e7ef9b61314b8520fab19cfa81b27f6508904c64b750b62fdc"
+  },
+  "2025-08_s2_02": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-08",
+   "html_sha256": "463a0ff221a1791b14bc1d01af42521d045ffd9f7953973c9c85e9e5d590555c",
+   "pdf_sha256": "f272c8b15ee175615c35e208175fccbf46f4c15ccede4905cc39c7e50372c42c"
+  },
+  "2025-08_s3_01": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-08",
+   "html_sha256": "751d4ca5fbe5ab7825d04f0ad1d9e969ba69ee73f7f58f2da822a394b2e1fda9",
+   "pdf_sha256": "60605d7bcd9f5766e73a4b4ca18013091cb9c12a597fc3b0281b57fc754c33b3"
+  },
+  "2025-08_s3_02": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-08",
+   "html_sha256": "0e96b5c90cb10978973424edf4873ffea2716db6762da428582f754048b974e6",
+   "pdf_sha256": "f7bb8df8c474ece9daf34be10ec4d9eea9c0509b2b45b37cb7a5de836694816e"
+  },
+  "2025-08_s4_01": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-08",
+   "html_sha256": "ebedda6de721785f7e430fc5d4b3a53ef6ee028648c67cfefc8ff3d534358b8c",
+   "pdf_sha256": "640d37ddced628b9f2328ae46f121aba8fb7aa56c375bd7b691101926b06bf6b"
+  },
+  "2025-08_s4_02": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-08",
+   "html_sha256": "e8b5eb2f35738d512d0b7f9fef0f9b6f9e26cbb8e5836c0c82847c915becfd66",
+   "pdf_sha256": "c25b6961e3d701fc9031614deea6cc93b129297332e2d213bb4a3fd5df574f67"
+  },
+  "2025-08_s5_01": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-08",
+   "html_sha256": "3fc0c8fd0d25238ff1130f32b4864ae25c2453281715bb407af95bb30a382e87",
+   "pdf_sha256": "8ccfb652fc258ce4e3b3a6d15e9ff53ad660cde39255287f31a7e2e115de7674"
+  },
+  "2025-08_s5_02": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-08",
+   "html_sha256": "8c80bb48cdb40662b9bc3e4e7f6e26645fe8ff18f6f1cdb60d625dc857c58ee0",
+   "pdf_sha256": "809fe2773c24ba0b91c98c29d965527c9b0e730ce68b30723b600876e5068409"
+  },
+  "2025-08_s6_01": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-08",
+   "html_sha256": "4398955513521efd7a1fa17d76f1690cd625d1b5335937eec48d9c5aa7716ee3",
+   "pdf_sha256": "3bf9283b23010dab6bb5a552d2c8bd60dc276b7a7e9ad2bc486d46ac11bf31e3"
+  },
+  "2025-08_s6_02": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-08",
+   "html_sha256": "4a1ac13efaeab0098ed02e8e43faf3246221bee8ae364f9e43c0ec36c96b2c7d",
+   "pdf_sha256": "ee540276cb24f695c4387c2b3ba46a53afd44e46bd940c5cb32f5625a7ffe181"
+  },
+  "2025-08_s7_01": {
+   "class": "R",
+   "supplier": "Lounastupa Helmi Oy",
+   "month": "2025-08",
+   "html_sha256": "9005efa318227fd6a6d209bb4cecb8f97d760fa8214ac0dda255820816e5692c",
+   "pdf_sha256": "e477cc3367d231c307dcfa2413c35243b414ebe03848ecbd4c5020789ce987e1"
+  },
+  "2025-08_s8_01": {
+   "class": "T",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-08",
+   "html_sha256": "052f823f32634e50b53745edfe3b3baa8cae954e23a8a64d8df688ae79d5810f",
+   "pdf_sha256": "a74dd5ae8ff60ae24f1d71d15a051d1945343e4c794d5c176d780542593a6f1a"
+  },
+  "2025-08_s8_02": {
+   "class": "T",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-08",
+   "html_sha256": "2d37ab2a17d05329fd75407e1a858270ab97792e5839c656bc84150d11c6511d",
+   "pdf_sha256": "4d00988400b6be42da42658cdbed638c1620523ee389643ab34cc0a8a58c494f"
+  },
+  "2025-08_teroituspalvelu-karhinen_01": {
+   "class": "O",
+   "supplier": "Teroituspalvelu Karhinen",
+   "month": "2025-08",
+   "html_sha256": "de76d03267b526c431d74489e067884f90f488c8c5b1e8790f0b0ea2d3f71e84",
+   "pdf_sha256": "6dd4a8d6c97da38e5d4695f6e2c780cec67845ab6bc126131c7ba44a917e3db5"
+  },
+  "2025-09_s1_01": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-09",
+   "html_sha256": "b4be9a510b2ec430281990fcaba681011e0e2c4a44fa6e94873ded958209995e",
+   "pdf_sha256": "a36c14a928c6c398a2b6bb8450a0d0b82e8000496d908020aea80feb821a7ed4"
+  },
+  "2025-09_s1_02": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-09",
+   "html_sha256": "c8b4853590a271de64db742669e0ca4d8cdd2cf1757abcf023474be95eecad3f",
+   "pdf_sha256": "dc21b495e9427c507d5cdecad4e2524a6d1f5f2521dee30d22b94711437aa3e3"
+  },
+  "2025-09_s2_01": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-09",
+   "html_sha256": "c6066569d4c6533c4685ba6eb179fd081a0d1f0b2dd6d732fd895ae867fbfdf3",
+   "pdf_sha256": "0f873d4d96d6aee390866aab40bab01a185b836241658a562a9ecea321f9d9a9"
+  },
+  "2025-09_s2_02": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-09",
+   "html_sha256": "8eee433a213af825cb31604b89c653d4e9c9aac158adb5d931948e4a3079dd00",
+   "pdf_sha256": "f1112d120abe50dc08c80099b8a41e36db1a5d1bbef875993b2a6a4c5eb88408"
+  },
+  "2025-09_s3_01": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-09",
+   "html_sha256": "f62f6b12eb4f5fc938d5bc1feee5f980290597b2f88eec95a967acf6cf250de9",
+   "pdf_sha256": "cb16dd1399b16a5094e405e11e2d3668782b682084b8ff5422190d3de12f28a6"
+  },
+  "2025-09_s3_02": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-09",
+   "html_sha256": "d92eca2399ff90a8d15029416caeebac770761eb39c4f4c9a40b08ff7336f5e9",
+   "pdf_sha256": "5c94e24cd6c843de5d4b61726f71d103ab2c064aca5f00966db0f7469373874f"
+  },
+  "2025-09_s4_01": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-09",
+   "html_sha256": "6f2ba02bea87701768730f685a68d22ac58472700751df05650864bd9fdbc955",
+   "pdf_sha256": "5fef781e9b90c2d3acff14755d013391a619fc8bc650d1ad61ead5c217c94cb5"
+  },
+  "2025-09_s4_02": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-09",
+   "html_sha256": "3a4fc8feed8478c657003f8b4b312050f946431ffc0dcdabd5114c9134a0ad50",
+   "pdf_sha256": "cc625f4975bc44b491aaad5e13b1d7d0512d6b39f2cd445e3082e8bec6d188b7"
+  },
+  "2025-09_s5_01": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-09",
+   "html_sha256": "97c88cd61f5f311e0751143f5c64b825923e9c1768e94ee0a6e99469e8979ad5",
+   "pdf_sha256": "c1678855b9700c6f5696baa30c321d10c1690c928b6309f739937aa1c2e72051"
+  },
+  "2025-09_s6_01": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-09",
+   "html_sha256": "b487c23c6abbda62a9d1b36fb62b5ee20f3f84e087bf6313ce151704e974d66f",
+   "pdf_sha256": "3f69ea3e61bcbcc4d7c6125a63b627f8cafbe310a8a69301aded96f2f54dce03"
+  },
+  "2025-09_s6_02": {
+   "class": "F",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-09",
+   "html_sha256": "b7321bde60207157c482cd3d15055a23ce1758e114818a1d433ab613fdc87850",
+   "pdf_sha256": "345026055ac0c443fcb8cd835f8b42d746f9e5b176bd1e7ba08e366cda49c17b"
+  },
+  "2025-09_s7_01": {
+   "class": "R",
+   "supplier": "Lounastupa Helmi Oy",
+   "month": "2025-09",
+   "html_sha256": "701244dd0512e5b9bd66f2a64669716fa6205458fc320ea4684047b6d58c68b8",
+   "pdf_sha256": "162a2ff9c2183269c372c1e10f6c0c95a3a6be73fb7e4e7a76c6f88cb080dc98"
+  },
+  "2025-09_s8_01": {
+   "class": "T",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-09",
+   "html_sha256": "7cbcc1079cd25f18bb8b4fd19e93ecd3c73a18d21239a10d81d14dfcd595bf96",
+   "pdf_sha256": "e0994a298a50795702a6cd2689a9853b07dccbb7fd94cbf55a314dd70bea5408"
+  },
+  "2025-09_s8_02": {
+   "class": "T",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-09",
+   "html_sha256": "6d1fd9284b8ad889fc038215fb8b46da0fccb6f2bbc79f1d0286cdb0e55247e7",
+   "pdf_sha256": "ce59e27e1d15f3418d98f6fcfa068ddde42c8460040b4fb4a328fc52d55b5ff6"
+  },
+  "2025-09_kuriiripalvelu-nopsa-2_01": {
+   "class": "O",
+   "supplier": "Kuriiripalvelu Nopsa Oy",
+   "month": "2025-09",
+   "html_sha256": "3475bdec011a66b3f8654346ed152145606896a42cfb55b39206af876bf67a42",
+   "pdf_sha256": "97dd8a0d2f352df10e0160e3b5607bd06b5ea5ba9f1f0dbefcca943c88e38d09"
+  },
+  "2025-09_frakt-nordkap_01": {
+   "class": "O",
+   "supplier": "Frakt Nordkap AB",
+   "month": "2025-09",
+   "html_sha256": "a5aefaf67de2b944c6f63a2b4ac803a2c966e572fd7bb8476108f984c49bbaf4",
+   "pdf_sha256": "ac54dd7dffdfa522099e50c1c6cd837a7fc30262e8ef4b75ed14afeb6f569d64"
+  },
+  "2025-10_s1_01": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-10",
+   "html_sha256": "5c1e54255744966448850724de65ea3eece87c2886fc435ccc14f38e93e85afa",
+   "pdf_sha256": "b9f88317435990adcff7c313795a1c8fca07278b9808a430f1e2180d2b6496c1"
+  },
+  "2025-10_s1_02": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-10",
+   "html_sha256": "c1542d039f3c7b02805488561f92ee9e0ba83f54e19f4364fb3c02c448da35f0",
+   "pdf_sha256": "79bcef991ff3dd49ee52a03a1918f911b37b49f967cfc12ecdec7cb211804a40"
+  },
+  "2025-10_s1_03": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-10",
+   "html_sha256": "ba85f9d4184d47233d96e4a430f96f49ac25ba039ba29774340e3aae3462b50b",
+   "pdf_sha256": "196c64a2de6c3ede74e0c62f712d25b1574f716894a9ab354532272c0fcd1cbf"
+  },
+  "2025-10_s2_01": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-10",
+   "html_sha256": "1fdfb24e15a4e7e7a44160954cf16a5f89cfeb040edcfd11dab803dce3a06aa6",
+   "pdf_sha256": "1e9097fa91631e75ae8c150784f697460c673059379da4b68cfa3cc134ff30c7"
+  },
+  "2025-10_s2_02": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-10",
+   "html_sha256": "be706e124acbab0e0f643b3b2bdb089963ee78c2ff2b9fed915b512f8517dbbc",
+   "pdf_sha256": "44f4524b55f2ce349d364180fdb9e6b8bed078048533d3441b395d562a93cf9c"
+  },
+  "2025-10_s3_01": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-10",
+   "html_sha256": "ff29043c808bfbcab298e9d5cb5a106be0130347df4453e04c29c8eff7e3269a",
+   "pdf_sha256": "77d89d708d0669c3cbdded003d019a9a0352209a57ab41b9d2e53d614a45a1d6"
+  },
+  "2025-10_s3_02": {
+   "class": "F",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-10",
+   "html_sha256": "29d95bba53e59fda534ec52986fe2d3998884c1c0a4171771e2e6190c38765f6",
+   "pdf_sha256": "f7698e80928381dda17f68f16eaf19c679a8d3a693553341de5b527d3a05abfb"
+  },
+  "2025-10_s4_01": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-10",
+   "html_sha256": "9f0ed0e445ce60b2b451d3d5fb9c15b4664e388263ff2465459a125dd020ea85",
+   "pdf_sha256": "a3222667ffd27ee292cfde8bd394ebb7c54dcc22ac5f280d133ac9642e907ad1"
+  },
+  "2025-10_s4_02": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-10",
+   "html_sha256": "0d112a0c2dedad5f5f82dc3e26f0aca56837a9627f37f66680d4a7cbfb0595c1",
+   "pdf_sha256": "fcd20a67a17f74e8cd203e8a6c1e5d7b103e92458ba3a88d52a48f7f0c3f6491"
+  },
+  "2025-10_s5_01": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-10",
+   "html_sha256": "9878fcaf7842eb77492993c3c52222761575ed8683deb63675f1385e23fc0921",
+   "pdf_sha256": "d004256abbd7f3c66496133a2216ec1837cabca4d61a5a237b6006d6cc034271"
+  },
+  "2025-10_s5_02": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-10",
+   "html_sha256": "7ceeecca3549f48d2fb29ed9f19292088c75df76e6644fd05a648391e002eeb3",
+   "pdf_sha256": "c0e1f37e3d6d5f20d7db719d0c8d1993f56aaf0e573dae37ff90c21dc8cde6c6"
+  },
+  "2025-10_s6_01": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-10",
+   "html_sha256": "5695ebe681451e51e9e42a05740c4f1c4c9c8bd08a80d1c4992205848d8d4116",
+   "pdf_sha256": "069a298033c945f3cea781f8dc77af8d8084c5ec07dc9180159737146b838607"
+  },
+  "2025-10_s6_02": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-10",
+   "html_sha256": "8688348467e62b3c00db9e486eafb90b82ab2092cfb37695ab3810e1a5313e28",
+   "pdf_sha256": "298ae01546ccf6ae611ed0c5ce845a3a9bb28e73320ead078f3b031fac06beb7"
+  },
+  "2025-10_s7_01": {
+   "class": "R",
+   "supplier": "Lounastupa Helmi Oy",
+   "month": "2025-10",
+   "html_sha256": "556be116b363586e1396356cd968376b401c060623baa61022c11c612d1111b7",
+   "pdf_sha256": "ef1166c9088b7061847b137bc71e95500ef9d289772e22264b9ce2f6b34ff9e3"
+  },
+  "2025-10_s8_01": {
+   "class": "T",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-10",
+   "html_sha256": "c8f64ed0b7b23b09fa570033ba514eb10ea69a5e4645d409ec3ed59b8caf96e9",
+   "pdf_sha256": "f3f65008678a13d03c98ac3174c5c78fb5b87308c38d354651e655678319e04a"
+  },
+  "2025-10_s8_02": {
+   "class": "T",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-10",
+   "html_sha256": "8c0e6bbf58df67380e6b22a874aedbe067ea4cd1dd04d0309814eb558e641e54",
+   "pdf_sha256": "8b9576f7e408c3da6bc9518588c72276ea5468e33c385f3ed4031e36e7f6719c"
+  },
+  "2025-10_konehuolto-alisalo-2_01": {
+   "class": "O",
+   "supplier": "Konehuolto Alisalo Oy",
+   "month": "2025-10",
+   "html_sha256": "0651d70fd19993f6f061fdc3bf2ca7bd243f2fd72dd3d10e42e4da58da79a3d3",
+   "pdf_sha256": "38fc0bfdd680e55b1e655429fb3707a41b1a2fbdd556109caad1372056ef5fe5"
+  },
+  "2025-11_s1_01": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-11",
+   "html_sha256": "fb3ce855b20d502ad26fd8fb1c08a3520fbb3056efc13b604f7b410bbb83d0ef",
+   "pdf_sha256": "33d8c1adcdfcae7e9938db1ee001e0fadfc031412bc99214a8e44b5c9b0fde3b"
+  },
+  "2025-11_s1_02": {
+   "class": "F",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-11",
+   "html_sha256": "8da96ede3bb62c8590c7112bffab313237514df5c9538b7049f1caaa069fd3c0",
+   "pdf_sha256": "87f05b5ad63d31d9e1a8a30d2c6bf8ee0a905eb68aa7066ac15aebe49ccf642b"
+  },
+  "2025-11_s2_01": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-11",
+   "html_sha256": "ece932ae2c6dd1aa9990dd44451a07f4312c12019b7a7f37482b91244e42eb3e",
+   "pdf_sha256": "9d9bb4be7b7cbe2df6fb21b84a90fbfa0b218e38faf5a16536b6c415b94689b9"
+  },
+  "2025-11_s2_02": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-11",
+   "html_sha256": "74eb919161f94433b44e0af3ca806401992ca4f6baf8b63392e9c937d324cdc1",
+   "pdf_sha256": "2848cf768d1497b2bab8aaa41ed2a7ba656f863ee2adc095c28f3b6394fe7f5f"
+  },
+  "2025-11_s2_03": {
+   "class": "S",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-11",
+   "html_sha256": "87d54e0aa5bd401f1445c39167c55cfafb8a5c512735c74b7c785516dc2f0067",
+   "pdf_sha256": "852b4c5fa8f9b51e0a09681297de2f6cde9dd9ea397f63e48874768d88e67564"
+  },
+  "2025-11_s3_01": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-11",
+   "html_sha256": "442cbea197bf98b41963966c3c8d745d35f749d7618ff87d16a0f4cd969864df",
+   "pdf_sha256": "6d250bdeaf072a7e71639a04effe16b6cf2aefa8fdcf923ec00b614a1739e480"
+  },
+  "2025-11_s3_02": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-11",
+   "html_sha256": "097d1cf64ccdef68909c8659a5ac1ea0ae12ea61409cbc9af187ef2d157d2060",
+   "pdf_sha256": "bc99b7edfd0b9cd574c61df85976a78cbc8e0400f51ad088f8b525fefa6d97e1"
+  },
+  "2025-11_s4_01": {
+   "class": "R",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-11",
+   "html_sha256": "d21b1874fe0699a2b81f35e1ad48afdc91f3a4ecb538090c94c01dd6a64ac020",
+   "pdf_sha256": "eea02832ace1a60b41eea4a51d07be3e3cd90a372f2f222e60a3534ac92c069b"
+  },
+  "2025-11_s5_01": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-11",
+   "html_sha256": "31ff4bb08cfeac66c7698cd07e9a8794c125b1aebf5197db3e3953bf91df96fe",
+   "pdf_sha256": "ca9a6780a7b50224a991078ba9836e46c4fc716994f8b9905738486ab952b303"
+  },
+  "2025-11_s6_01": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-11",
+   "html_sha256": "2356871420a88f26d7ed444b626917c68c2fb9c20d82d5f825ec43b14f256fdb",
+   "pdf_sha256": "dca19222f643d770152b15da6af0ffadaece924b0af3764718f8d0d30f8cdac5"
+  },
+  "2025-11_s7_01": {
+   "class": "R",
+   "supplier": "Lounastupa Helmi Oy",
+   "month": "2025-11",
+   "html_sha256": "8b8dc6a2b8b2df148dfd52cc981b590a8c1942b2f6d82e4a059cad18d5eca509",
+   "pdf_sha256": "91f10f37c5cbf04f3c8ce33f579c706512a0a8e0e231423174e5b519a4dfc7bb"
+  },
+  "2025-11_s8_01": {
+   "class": "T",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-11",
+   "html_sha256": "ead197060a44faff21d3733296485af0477e66817edd2bd4325d3fdd8a23cb0b",
+   "pdf_sha256": "b6563b90d18255485fb65d624dff26499c552d972f97c8c6f95a378f8ae24f64"
+  },
+  "2025-11_jatehuolto-routasuo_01": {
+   "class": "O",
+   "supplier": "Jätehuolto Routasuo Oy",
+   "month": "2025-11",
+   "html_sha256": "ebe2e5d711418352eb47d90a93028eaaf458e236c460192ae3ea2a1cc28ffffd",
+   "pdf_sha256": "ee292854fbea173c90a65c1df8058f1dc3a1cac9a9b484f6ac88625aa09325f5"
+  },
+  "2025-11_tolkeburoo-laine_01": {
+   "class": "O",
+   "supplier": "Tõlkebüroo Laine OÜ",
+   "month": "2025-11",
+   "html_sha256": "00fd0801403cb895f85ddfee6b38d22a2bddddffc4819bae5449c5d735ac37e2",
+   "pdf_sha256": "d1db002d10333cd522ab9785dc5baee06a7b0743b4ce6ac45d8402d73e952bbd"
+  },
+  "2025-12_s1_01": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-12",
+   "html_sha256": "7d2d7ff4a88c91592bc32e370c362c59daff3401886a1af8731034433707f989",
+   "pdf_sha256": "fbd0b81e912850109f008d1b7fcc152a5e2c54d042bdd7944f36f547ac4bf264"
+  },
+  "2025-12_s1_02": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-12",
+   "html_sha256": "93735fa255a75e9f2dac19f8ba7fab8098c0d66c303bb8e257728aea3aeef580",
+   "pdf_sha256": "0eeef19786d1b306dffefe453534c51cb8d03649f2e1a3bd98cc40b4c720ed83"
+  },
+  "2025-12_s1_03": {
+   "class": "R",
+   "supplier": "Salpausselän Puutavara Oy",
+   "month": "2025-12",
+   "html_sha256": "fc80dc537a8a57f923ec7bffe54e0abd3688833df775944cc07bedfd26e058a8",
+   "pdf_sha256": "6eac516ed9bad9d69139c9219ba9f3d4b46d413adae69fbeaacc514f0b136c2f"
+  },
+  "2025-12_s2_01": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-12",
+   "html_sha256": "63934d6ffc20b99f978391f239ad109dcd252c7beda1fc847f7a3a806547a143",
+   "pdf_sha256": "79aa8cea24224ff51f81a5ddb9cc1736794b18d69a7e9833f8db08adc8b8f2ab"
+  },
+  "2025-12_s2_02": {
+   "class": "R",
+   "supplier": "Päijät-Pakkaus Oy",
+   "month": "2025-12",
+   "html_sha256": "d2cb1efce1698550076b2d958bc471e7e583b056be9cf38e33985108ecddfd68",
+   "pdf_sha256": "016f307515f502575d58e00738ac7e8f7a2f6f4909bac88a8b5178e31a48f9a1"
+  },
+  "2025-12_s3_01": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-12",
+   "html_sha256": "57a5ff9bf6232e7f79abe6ba32b8b2a1f210ff9f816daf941f29ce6bd5627489",
+   "pdf_sha256": "8c471d8dbd5e830066cc603173431363f481f9bef434cfcd1737be8d7189851a"
+  },
+  "2025-12_s3_02": {
+   "class": "R",
+   "supplier": "Falkenrath Beschläge GmbH",
+   "month": "2025-12",
+   "html_sha256": "c814140fd30fc273d12b7a86a491d1157516d088163005b35edb2be3de18c5f8",
+   "pdf_sha256": "cf7d6bcf60c8ecdda97733ae1da796048c71e2f97d9205935c2b5c9c3272a4c4"
+  },
+  "2025-12_s4_01": {
+   "class": "F",
+   "supplier": "Möbeltyg Viskan AB",
+   "month": "2025-12",
+   "html_sha256": "7dba363a45eb43d8ca87f553206fe3f44c79fa67d83c95b7e33aeb509ef0e505",
+   "pdf_sha256": "43bb1a10a0773dfb91f57a99e6b185bae680e1ed590d85737ac7aa6e8ab061d8"
+  },
+  "2025-12_s5_01": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-12",
+   "html_sha256": "9cea1508a1afcd638feaea2d8e0a289a3d1530faf6262e935d48ca9b086f004c",
+   "pdf_sha256": "b0fc7a7dc2340ee73616574e1d467efa964986c2d55dced8c5dff2d36ea8b744"
+  },
+  "2025-12_s5_02": {
+   "class": "R",
+   "supplier": "Terasleht OÜ",
+   "month": "2025-12",
+   "html_sha256": "08b1988ddd231a2309f6d6307fb42f975d1221f04fe8ead752713e291b12df02",
+   "pdf_sha256": "b003ab92ff467479dda2ce373991d1c4c41862ad332a3166ac3e3fe4f849a34d"
+  },
+  "2025-12_s6_01": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-12",
+   "html_sha256": "59f1b4f2c79be148afe117d1c108c7fd2e4b2b1b562001aeb29e0e89ddc9d96b",
+   "pdf_sha256": "d1c84eb97cb78bb8e0ce64d8fb17c1751a8fe176ce85398421c9649aa511aee0"
+  },
+  "2025-12_s6_02": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-12",
+   "html_sha256": "b9270bed697f782e987b7cfe95d2dfc392ffdffb9251f2b8b8f7a480dbe23613",
+   "pdf_sha256": "beffccb66cf5fe244d000c1fa5f8a87ee6e61276ff478ae18cd289740ae86eb5"
+  },
+  "2025-12_s6_03": {
+   "class": "R",
+   "supplier": "Vesijärven Rahtilinja Oy",
+   "month": "2025-12",
+   "html_sha256": "f2f720b29fe982942b7df6029c6d5a64ecc3bdeb4e1a91770e437636e1967c57",
+   "pdf_sha256": "9295152919b687c9b533c3b882c79ddc57f07b8c7617c34390c3b827d928ff90"
+  },
+  "2025-12_s7_01": {
+   "class": "R",
+   "supplier": "Lounastupa Helmi Oy",
+   "month": "2025-12",
+   "html_sha256": "c06fe0ab235a942aa25343e4fa30f812285baaf09b9afd27b8e23a888c0f26df",
+   "pdf_sha256": "fd24fd4f65a4a03241c195ce8ae94876f659098c1157f962cea7a9a53fcc0fef"
+  },
+  "2025-12_s8_01": {
+   "class": "T",
+   "supplier": "Työkalu-Tiira Oy",
+   "month": "2025-12",
+   "html_sha256": "9883263ea615457cbcc561f971676965f698453c00414300384d316051b046f3",
+   "pdf_sha256": "56d1ef5bf832a0347e3710cc8b6670a3d46297d508cc66c05eddaa89c0c3df1c"
+  },
+  "2025-12_henkilostopalvelu-kiertola_01": {
+   "class": "O",
+   "supplier": "Henkilöstöpalvelu Kiertola Oy",
+   "month": "2025-12",
+   "html_sha256": "1a62e8fbaf85c11b9a28becd3686a1888c24398961f65fa528d6696326f2f0d6",
+   "pdf_sha256": "bf649f5fa202cc670869a7ca95649cb3c716963e9f9de7b1ca37317567893e0b"
+  },
+  "2025-12_pitopalvelu-sinikello_01": {
+   "class": "O",
+   "supplier": "Pitopalvelu Sinikello Oy",
+   "month": "2025-12",
+   "html_sha256": "162a703a95ef0ee8150693c311bb4c7e0838707b3fe597807d63127cdf306dde",
+   "pdf_sha256": "6d6af6bbf62c951409cee86c0709a3fb34033b02a1372ace771c92ce2aebb749"
+  }
+ }
+}

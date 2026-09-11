@@ -1,0 +1,110 @@
+Canonical case study. Drafted July 2026, promoted to canonical 11 September 2026. Website, training and LinkedIn material derive from this file. Eva's read-through is pending at the September review.
+
+# Hybrid Churn Intelligence
+
+### What a usage-based churn model catches, what a support-ticket reader catches, and what a CFO does with the difference
+
+*This case study runs on synthetic data, engineered by us with a held-out answer key, so we could mark each method's results against ground truth rather than assert them. "Kataja Analytics", its customers, and its competitors are fictional. No real client is described or implied anywhere in this document.*
+
+---
+
+## 1. The account that looked fine until it wasn't
+
+Kataja Analytics is a Helsinki-based B2B SaaS company selling a dashboards-and-reporting platform to mid-market firms – roughly 500 accounts, Nordic and European, 10 to 200 seats each. Its customer success team runs a standard churn model on usage levels, trends and seat utilisation. It works. It catches the accounts whose logins taper off, whose report volume visibly declines before the cancellation email arrives.
+
+It did not catch Bergvik Systems AB.
+
+Bergvik – a Swedish construction firm, 31 seats, Standard plan, €12,426 a year – used the product normally right up until it left, in November 2025. Its usage numbers never moved. What moved was the tone of four support tickets over thirteen months, each longer and more careful than the last, each ending with some version of "no need to treat this as urgent." A dashboard reconciliation problem that made two colleagues quietly start doing the board pack in Excel again. A report template that kept reverting to default, so the team just started keeping their own saved copy rather than ask a fifth time. Nobody escalated, nobody used a harsh word, and the account cancelled anyway.
+
+That is the shape of churn a usage dashboard cannot see – an account behaving normally while trust erodes somewhere a spreadsheet doesn't reach. The support inbox had the story. Nobody had time to sit down and read months of ticket history for every one of five hundred accounts, looking for a pattern like this.
+
+This case study builds a second detector that does exactly that job. An agent reads each account's ticket history in order and produces a risk score and a short explanation, which is then combined with the usage model's score. The only question that matters commercially is whether the combination catches more than either one alone, and what that difference is worth.
+
+## 2. The finding
+
+Two things are true at once. The classical usage model is good on its own terms (AUC 0.899 on a held-out test split, gradient boosting) – a fair baseline for anyone selling "an ML churn model" by itself. And read alongside a text layer, evaluated fairly across the whole account book, the combination catches more of the accounts that matter and misses fewer euros.
+
+Scored out-of-fold across all 500 accounts, against the answer key:
+
+| Approach | AUC | Average precision | Recall @ top-100 |
+|---|---|---|---|
+| Usage model only | 0.867 | 0.777 | 0.594 |
+| Ticket-text agent only | 0.795 | 0.705 | 0.594 |
+| Combined | 0.890 | 0.845 | 0.662 |
+
+Recall at top-100 is the practical number here. If a CS team can review 100 accounts a cycle (a fifth of the book), this is how many of the truly churning accounts make that list. Usage and text each get 59.4%, by different routes. Combined gets 66.2% – nine more genuine churners for the same review effort.
+
+The more useful cut is where each method's hits land. Split the top 100 by which layer flagged the account:
+
+| | Text flags trouble | Text says fine |
+|---|---|---|
+| **Usage flags trouble** | 58 accounts, 57 churners | 42 accounts, 22 churners |
+| **Usage says fine** | 42 accounts, 22 churners | 358 accounts, 32 churners |
+
+The top-left cell is where both layers agree, and they are right almost every time. The bottom-right cell is the honest miss, covered in section 4. The two cross-cells carry the argument. Usage alone flags 22 churners that the text layer missed; the text layer, in turn, flags 22 churners that usage missed entirely. Eighteen of that second group are the "quietly unhappy" type, Bergvik's type – the commercial case in one number.
+
+**The money segment, counted directly against the answer key:**
+
+| Method | Quietly-unhappy accounts caught, of 46 |
+|---|---|
+| Usage model | 23 (50%) |
+| Text agent | 35 (76%) |
+| Combined | 37 (80%) |
+
+Attach revenue. Total ARR inside accounts that actually churned comes to **€6.53M**. Usage alone surfaces €3.71M of that within its top 100; text alone, €4.35M; combined, €4.57M. The figure for a CFO's desk is that delta between the first two. **The text layer surfaces €1.34M of churned ARR that the usage model, alone, does not** – accounts that looked healthy on every dashboard metric until the invoice stopped renewing. Usage returns the favour in the other direction, worth €703K in accounts the text layer under-weighted. Neither layer subsumes the other; that is why combining them, rather than picking one, is the finding.
+
+## 3. Three accounts, in their own words
+
+**Bergvik Systems AB** (quietly unhappy, churned). The agent's read: *"a dashboard/export reconciliation mismatch... two of my colleagues have gone back to reconciling manually in Excel before each board pack, just so we're not presenting numbers we can't trust... a report-builder template reverting for the third time since spring... the customer has quietly built workarounds around problems that keep recurring and is asking for less each time, not more."* Text risk score: 0.75. Usage-model risk score: 0.04 – near the floor, exactly as designed.
+
+**Nieminen Oy** (loud but loyal, retained – a large Finnish public-sector account, €117,767 ARR). Fifteen tickets over two years, some with real edge: *"Connector's down again, same Salesforce auth issue as before. Feels like we're doing your reauth job for you"* and, eight months later, *"I feel like I send this exact ticket every quarter."* Every ticket resolved within a day or two, no competitor ever mentioned. Reading tone rather than resolution, the text agent scored this account 0.70 – high enough for its own top 100. It is not at risk. It has been complaining and renewing on schedule for two years; if irritation predicted departure, it would have left long before now.
+
+**Willems Group B.V.** (also loud but loyal, retained – a Dutch healthcare account, €17,421 ARR). Twenty-nine tickets in a year, recurring faults, fast fixes, no drop-off. Text score: 0.55. Usage score: 0.006. Combined score: 0.20 – well outside the reviewable range. This is fusion doing its job. The text layer's caution gets outweighed by everything else the model knows, and the account drops off the list. Nieminen did not get the same treatment, and stayed near the top of the combined ranking anyway – section 4 explains why, and why that is honest rather than a bug.
+
+## 4. How it works, briefly
+
+Two independent reads of each account, combined by a third, small model:
+
+- **The usage model.** Usage levels, three- and six-month trends, module mix shifts, seat utilisation, fed to a gradient-boosted tree model (a logistic regression baseline runs alongside for comparison, AUC 0.782 against 0.899). Ticket *counts* and resolution times are included as metadata, deliberately, since any CS ops team already has that data whether or not anyone reads a ticket. Ticket *content* is not included here.
+- **The text agent.** For each account, an LLM reads every ticket in order and returns a structured read – frustration trajectory (improving / stable / deteriorating), unresolved-issue count, competitor mentions with context, whether the account has escalated, a one-paragraph narrative, and a risk score. It never sees usage data or the churn label.
+- **Fusion.** A single logistic regression over both scores plus two agent outputs (frustration trajectory, count of serious competitor mentions). Standardised coefficients: the usage score is the strongest input (1.32), then frustration trajectory (0.68), then the text score (0.53), then competitor mentions (0.34). An escalation flag pulls risk slightly *down* (–0.16), because in this dataset "the customer escalated and it got fixed" is disproportionately the shape of a saved account, not a lost one. One small, inspectable model on top of two others – nothing here is a black box.
+
+## 5. What each layer honestly misses
+
+This is the part most vendor case studies leave out, and the part the design was built to make impossible to leave out. Every account here has a planted answer we chose not to feed the models.
+
+**The usage model was never fully blind to the quietly-unhappy pattern, and we report that rather than tune it away.** It took four iterations of data design to make these accounts as quiet as real life allows, and three times the model found a path back in. First, satisfaction scores – quietly unhappy customers stopped filling in surveys, or politely ticked "fine" – and the model leaned on unresolved-ticket counts instead; mean risk rose from 0.591 to 0.666, a negative result we recorded rather than smoothed over. Second, ticket outcomes – support now closes these tickets promptly even though the fix doesn't hold, the familiar real-world pattern, with the truth surviving only in the next polite ticket's text – and the model shifted its weight onto ticket volume itself, rising again to 0.679. These accounts were then generating 6.65 tickets in a trailing six-month window against 1.04 for a healthy one. **An account noisy enough to read is noisy enough to count.** That is a finding in its own right, not a failure to suppress a signal. The final redesign made the archetype genuinely quiet – three to six long, courteous, meticulously documented tickets across an account's whole life, the disengagement expressed as going silent – and the model's read fell to 0.477, with half of these accounts now absent from its top 100 altogether. What visibility remains rides on ticket timing and ordinary closure speeds, and we stopped there by design decision rather than re-engineer the archetype out of resemblance to the thing it models. Every figure in this document comes from that final dataset.
+
+Even so, the usage model returns a weak, ambiguous flag on these accounts (0.48 mean score, against 0.86 for the archetype it's built to catch), with nothing to explain it. The text layer reads the same account and returns a paragraph a CS manager can act on by lunchtime. That gap, not total blindness, is the real product.
+
+**The text layer over-worries about loud-but-loyal accounts, and needs the other layer to correct it.** Twenty of the 55 "loud but loyal" accounts here – Nieminen and Willems' type, accounts that complain often and renew every time – land in the text agent's own top 100, on tone alone. Fusion catches most of this. Of those 20, 19 drop out of the *combined* top 100 once the usage signal and the escalation-then-resolved pattern are folded back in. One does not – Nieminen, whose ticket-volume metadata is itself unusually high, stays flagged even after fusion. We report that as the honest residual rather than substitute a cleaner example.
+
+**Neither layer catches sudden death, and it isn't supposed to.** Thirty accounts here churn for reasons invisible in the product – an acquisition, a budget cut, a champion leaving. Usage looks normal, tickets are routine. Five of the 30 land in the usage model's top 100 anyway, closer to noise than signal; zero land in the text layer's; two survive into the combined top 100. That is roughly what chance would produce on a fifth-of-the-book review budget, and it should be, because there is no legitimate signal here for either method to find. Ask any vendor claiming to catch everything what their number looks like on this row.
+
+## 6. What a CS or finance team does with the list
+
+The combined top 100 splits usefully by ARR and by whether the driver looks fixable.
+
+| Segment | Accounts | Total ARR |
+|---|---|---|
+| Worth actively saving | 46 | €3.83M |
+| Low-leverage (flagged, little to act on) | 54 | €1.30M |
+
+Under a tighter budget (top 50, a tenth of the book), the ranking by euros doesn't quite match the ranking by headcount. Combined catches the most churners (49), but text-only edges it slightly on ARR (€2.74M against €2.59M), because its unique catches happen to be larger accounts that fall just outside the tighter combined cut. Worth knowing if the actual constraint is reviewer-hours rather than a fixed top-100 line.
+
+## 7. What transfers and what does not
+
+The method needs three things from an account base: a written trail held against named accounts, usage or finance metadata of the sort a CS ops team already collects, and a definition of the outcome, meaning which accounts left and when. Support tickets are the written trail here; account emails, CRM notes or call summaries hold the same kind of signal. Most firms selling on subscription already have all three, and the written trail is being paid for whether or not anyone reads it.
+
+The structure carries over – a classical model where the numbers are strong, a reading layer where they are silent, both marked against a holdout, and one small explainable model combining the two. So do the checks that make the marking mean anything: misses counted per archetype rather than in aggregate, negative results from the data design left in the record, and scores taken out-of-fold rather than from the fit.
+
+What does not carry over is the answer key. Ours was planted before any model ran, which is what makes the figures above markable at all; a real account book offers historical outcomes instead, noisier and arriving later. The figures themselves – 0.890 combined AUC, 66.2% recall at the top 100, €1.34M of churned ARR visible only to the text layer – are properties of this dataset and of the archetype mix we chose for it. The narrower claim we would carry to other data is that the two layers catch different accounts, and that the overlap between them is partial enough for the second layer to pay for itself. What mix of accounts a particular book holds is only visible once someone reads it.
+
+## 8. Technical appendix
+
+- **Data**: 500 accounts, 24-month window, churn from month 6 onward, 133 churners (26.6%). 3,777 tickets, generated in two layers – deterministic Python controls every structural signal; an LLM writes only the prose, briefed on structure it may not add to or remove from. `answer_key.csv` never touches training or fusion; it exists solely for the evaluation numbers above.
+- **Eight archetypes**, from healthy-stable (35%) through slow-decay (12%, both layers catch it), quietly-unhappy (8%, the money segment), sudden-death (5%, the designed ceiling), to loud-but-loyal (12%, the credibility check) and saved-account arcs (10%, the false-positive test).
+- **Known artefacts, found and handled**: `tenure_months` is excluded from the trained model – a near-perfect churn proxy purely from how the observation window's end date is fixed, confirmed by ablation (including it lifts AUC to 0.955 for the wrong reason). Usage trends are deseasonalised against a portfolio-wide seasonal index, since retained accounts are always snapshotted in the same calendar window and a raw trend feature would otherwise mistake a summer usage dip for churn risk.
+- **Models**: logistic regression (AUC 0.782, holdout) as a transparent baseline; gradient boosting via LightGBM (AUC 0.899, holdout) as the production candidate, explained with SHAP. Every `ml_risk_score` in the tables above is out-of-fold (5-fold stratified CV, seed 42) – no account is scored by a model that trained on it, a stricter check than the holdout figure, hence 0.867 rather than 0.899 in section 2. Top SHAP drivers overall: `ticket_count_3m`, `mean_resolution_days_6m`, `ticket_count_6m`, followed by usage trend and mix-shift features across dashboards, connectors, and alerts.
+- **Fusion**: one logistic regression, five inputs (`ml_risk_score`, `text_risk_score`, `trajectory_ordinal`, `n_serious_competitor_mentions`, `escalation_pattern`), fit once on the full 500-account set for explainability; the scores reported above come from an out-of-fold pass, not this illustrative fit.
+- **Reproducibility**: one seed (42) throughout, account generation to model scoring. Full pipeline in `code/`; every generated table and the answer key in `data/`. `notebooks/churn_analysis.ipynb` walks the feature build, the model comparison and the fusion evaluation in the order this document reports them. `interactive/churn_explorer.html` carries the same evidence as a browsable page – per-account scores, the archetype breakdowns behind the tables above, and the ticket history behind each agent read.

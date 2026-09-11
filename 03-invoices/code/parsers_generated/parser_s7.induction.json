@@ -1,0 +1,45 @@
+{
+ "parser_slug": "s7",
+ "supplier_id": "s7",
+ "doc_ids": [
+  "2025-01_s7_01",
+  "2025-02_s7_01",
+  "2025-03_s7_01",
+  "2025-04_s7_01",
+  "2025-05_s7_01",
+  "2025-06_s7_01"
+ ],
+ "pdf_paths": [
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\documents\\2025-01_s7_01.pdf",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\documents\\2025-02_s7_01.pdf",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\documents\\2025-03_s7_01.pdf",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\documents\\2025-04_s7_01.pdf",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\documents\\2025-05_s7_01.pdf",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\documents\\2025-06_s7_01.pdf"
+ ],
+ "parse_paths": [
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\llm_parses\\2025-01_s7_01.json",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\llm_parses\\2025-02_s7_01.json",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\llm_parses\\2025-03_s7_01.json",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\llm_parses\\2025-04_s7_01.json",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\llm_parses\\2025-05_s7_01.json",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\llm_parses\\2025-06_s7_01.json"
+ ],
+ "text_paths": [
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\text_layers\\2025-01_s7_01.txt",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\text_layers\\2025-02_s7_01.txt",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\text_layers\\2025-03_s7_01.txt",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\text_layers\\2025-04_s7_01.txt",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\text_layers\\2025-05_s7_01.txt",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\text_layers\\2025-06_s7_01.txt"
+ ],
+ "words_paths": [
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\text_layers\\2025-01_s7_01.words.json",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\text_layers\\2025-02_s7_01.words.json",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\text_layers\\2025-03_s7_01.words.json",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\text_layers\\2025-04_s7_01.words.json",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\text_layers\\2025-05_s7_01.words.json",
+  "C:\\Users\\luigi\\Dropbox\\Archivio famiglia\\Hapax\\Case Studies\\03 Invoices\\data\\runs\\text_layers\\2025-06_s7_01.words.json"
+ ],
+ "written_by": "main loop at overseer dispatch, 3 Jul 2026"
+}

@@ -1,0 +1,21 @@
+Sähköasennus Rautio Oy
+Lasku 1122
+Sähkömiehenkatu 4
+Laskun päivä 07.04.2025
+15140 Lahti
+Eräpäivä 07.05.2025
+Y-tunnus: 2311226-7
+OSTAJA
+Pyökkipaja Oy
+Sorvaajankatu 11
+15520 Lahti
+Y-tunnus: 2417551-8
+NIMIKE MÄÄRÄ YKSIKKÖ A-HINTA ALV % YHTEENSÄ
+Sähköasennustyö, tuotantotila 4 h 64,68 25,5 258,72
+Asennustarvikkeet 1 kpl 619,94 25,5 619,94
+Veroton yhteensä 878,66 €
+ALV 25,5 % 224,06 €
+Maksettava 1 102,72 €
+Y-tunnus 2311226-7 -- ALV-tunnus FI23112267
+Maksuehto: 30 pv netto
+Pankkiyhteys: FI1684203600574112 BIC: DABAFIHH

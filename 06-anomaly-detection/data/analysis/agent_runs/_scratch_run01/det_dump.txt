@@ -1,0 +1,406 @@
+########## DETECTOR UNITS ##########
+==================================================================================================================================
+UNIT DU-01  key=V-0029  n_flags=7  total=4787.53  score_range=[0.006277, 0.02661]
+  VENDOR V-0029: Poratekniikka Tmi [FI] terms=21 allowed=4020;4200
+    ALL-YEAR profile: n=474 total=314884.49 mean=664.31 median=570.31 min=119.83 max=2918.05
+    accounts(all yr)={'4020': 402, '4200': 72}
+    posters(all yr)={'INTEG-01': 382, 'U-176': 19, 'U-058': 18, 'U-204': 16, 'U-142': 15, 'U-117': 13, 'U-031': 11}
+    n flagged 7 of 474 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                           memo
+TXN014582   2025-04-21    V-0029    4020     1137.79         915036  INTEG-01    100  NaN Tavarantoimitus, tilaus 373125
+TXN025294   2025-07-13    V-0029    4200      629.95         915136  INTEG-01    130  NaN Tavarantoimitus, tilaus 373225
+TXN045937   2025-12-09    V-0029    4200      185.72         915321     U-058    116  NaN Tavarantoimitus, tilaus 373410
+TXN046897   2025-12-13    V-0029    4020      148.77         915344  INTEG-01    146  NaN Tavarantoimitus, tilaus 373433
+TXN047068   2025-12-15    V-0029    4200      960.33         915346  INTEG-01     67  NaN Tavarantoimitus, tilaus 373435
+TXN049030   2025-12-28    V-0029    4020     1560.35         915363  INTEG-01     54  NaN Tavarantoimitus, tilaus 373452
+TXN049097   2025-12-29    V-0029    4200      164.62         915367  INTEG-01     42  NaN Tavarantoimitus, tilaus 373456
+==================================================================================================================================
+UNIT DU-02  key=V-0037  n_flags=6  total=7266.2  score_range=[0.000805, 0.044838]
+  VENDOR V-0037: Metallipalvelu Tmi [FI] terms=14 allowed=7900;7400
+    ALL-YEAR profile: n=263 total=263330.45 mean=1001.26 median=824.17 min=120.69 max=2571.01
+    accounts(all yr)={'7900': 223, '7400': 40}
+    posters(all yr)={'INTEG-01': 214, 'U-031': 12, 'U-204': 10, 'U-142': 8, 'U-058': 7, 'U-176': 6, 'U-117': 6}
+    n flagged 6 of 263 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule              memo
+TXN008754   2025-03-08    V-0037    7400     2571.01         945476  INTEG-01     15  NaN Ostolasku, 633802
+TXN019844   2025-05-29    V-0037    7400     1562.58         945533  INTEG-01    154  NaN Ostolasku, 633859
+TXN026715   2025-07-29    V-0037    7900      215.38         945568  INTEG-01    195  NaN Ostolasku, 633894
+TXN031522   2025-09-06    V-0037    7400      341.74         945587  INTEG-01    141  NaN Ostolasku, 633913
+TXN039215   2025-11-02    V-0037    7900     2214.25         945634  INTEG-01     64  NaN Ostolasku, 633960
+TXN044437   2025-11-30    V-0037    7900      361.24         945653  INTEG-01    145  NaN Ostolasku, 633979
+==================================================================================================================================
+UNIT DU-03  key=V-0041  n_flags=5  total=4069.65  score_range=[0.002856, 0.016328]
+  VENDOR V-0041: Tarviketekniikka Oy [FI] terms=21 allowed=4200;4300
+    ALL-YEAR profile: n=584 total=380798.25 mean=652.05 median=567.28 min=104.22 max=2586.27
+    accounts(all yr)={'4200': 492, '4300': 92}
+    posters(all yr)={'INTEG-01': 491, 'U-058': 19, 'U-176': 17, 'U-142': 16, 'U-204': 15, 'U-031': 15, 'U-117': 11}
+    n flagged 5 of 584 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                           memo
+TXN002825   2025-01-25    V-0041    4300      740.43         828374  INTEG-01    175  NaN Tavarantoimitus, tilaus 688523
+TXN033494   2025-09-21    V-0041    4300      176.30         828730  INTEG-01     81  NaN Tavarantoimitus, tilaus 688879
+TXN037268   2025-10-19    V-0041    4300     1264.99         828780  INTEG-01     86  NaN Tavarantoimitus, tilaus 688929
+TXN041664   2025-11-15    V-0041    4300     1251.61         828833  INTEG-01    123  NaN Tavarantoimitus, tilaus 688982
+TXN041770   2025-11-16    V-0041    4300      636.32         828835  INTEG-01     89  NaN Tavarantoimitus, tilaus 688984
+==================================================================================================================================
+UNIT DU-04  key=V-0062  n_flags=3  total=5118.21  score_range=[0.01584, 0.017099]
+  VENDOR V-0062: Metalltechnik GmbH [DE] terms=14 allowed=7900;7100
+    ALL-YEAR profile: n=132 total=139391.78 mean=1056.00 median=909.90 min=205.50 max=3994.29
+    accounts(all yr)={'7900': 111, '7100': 21}
+    posters(all yr)={'INTEG-01': 103, 'U-031': 9, 'U-058': 7, 'U-204': 4, 'U-142': 4, 'U-176': 3, 'U-117': 2}
+    n flagged 3 of 132 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule              memo
+TXN000006   2025-01-01    V-0062    7100     1903.69         139617  INTEG-01     84  NaN Ostolasku, 632966
+TXN010186   2025-03-19    V-0062    7100      348.78         139638     U-058     77  NaN Ostolasku, 632987
+TXN029775   2025-08-24    V-0062    7900     2865.74         139686  INTEG-01     80  NaN Ostolasku, 633035
+==================================================================================================================================
+UNIT DU-05  key=V-0067  n_flags=7  total=11929.72  score_range=[0.001754, 0.029821]
+  VENDOR V-0067: Stahltechnik GmbH [DE] terms=30 allowed=7850;7990
+    ALL-YEAR profile: n=345 total=310982.90 mean=901.40 median=797.40 min=186.83 max=3373.29
+    accounts(all yr)={'7850': 279, '7990': 66}
+    posters(all yr)={'INTEG-01': 281, 'U-058': 15, 'U-031': 12, 'U-142': 11, 'U-176': 11, 'U-117': 9, 'U-204': 6}
+    n flagged 7 of 345 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule              memo
+TXN002028   2025-01-19    V-0067    7850     1441.42         729403  INTEG-01    184  NaN Ostolasku, 043925
+TXN004738   2025-02-08    V-0067    7990     1568.08         729419  INTEG-01     37  NaN Ostolasku, 043941
+TXN005724   2025-02-15    V-0067    7850     2234.86         729425  INTEG-01    104  NaN Ostolasku, 043947
+TXN022201   2025-06-16    V-0067    7990     1330.14         729536  INTEG-01    178  NaN Ostolasku, 044058
+TXN035308   2025-10-04    V-0067    7990     2052.70         729631  INTEG-01    118  NaN Ostolasku, 044153
+TXN045662   2025-12-06    V-0067    7850     2956.57         729707  INTEG-01     65  NaN Ostolasku, 044229
+TXN048223   2025-12-20    V-0067    7990      345.95         729722  INTEG-01     61  NaN Ostolasku, 044244
+==================================================================================================================================
+UNIT DU-06  key=V-0072  n_flags=3  total=1267.02  score_range=[0.000825, 0.020665]
+  VENDOR V-0072: Nostotukku Tmi [FI] terms=30 allowed=4300;4000
+    ALL-YEAR profile: n=361 total=228816.23 mean=633.84 median=560.12 min=144.09 max=2338.38
+    accounts(all yr)={'4300': 299, '4000': 62}
+    posters(all yr)={'INTEG-01': 296, 'U-058': 13, 'U-204': 12, 'U-031': 11, 'U-142': 10, 'U-176': 10, 'U-117': 9}
+    n flagged 3 of 361 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                           memo
+TXN014992   2025-04-24    V-0072    4000      481.75         850904  INTEG-01    192  NaN Tavarantoimitus, tilaus 922826
+TXN028151   2025-08-11    V-0072    4000      487.38         850993  INTEG-01    117  NaN Tavarantoimitus, tilaus 922915
+TXN043039   2025-11-22    V-0072    4000      297.89         851126  INTEG-01     60  NaN Tavarantoimitus, tilaus 923048
+==================================================================================================================================
+UNIT DU-07  key=V-0076  n_flags=4  total=11991.89  score_range=[0.000581, 0.011826]
+  VENDOR V-0076: Vasaravaraosa Tmi [FI] terms=14 allowed=4440;4420
+    ALL-YEAR profile: n=664 total=1235611.22 mean=1860.86 median=1651.24 min=381.17 max=5828.69
+    accounts(all yr)={'4440': 564, '4420': 100}
+    posters(all yr)={'INTEG-01': 536, 'U-117': 31, 'U-176': 27, 'U-142': 22, 'U-058': 17, 'U-031': 16, 'U-204': 15}
+    n flagged 4 of 664 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                 memo
+TXN000283   2025-01-04    V-0076    4420     2191.16         376803  INTEG-01    198  NaN Palvelulasku, 069356
+TXN023878   2025-06-29    V-0076    4420     2454.81         377123  INTEG-01    187  NaN Palvelulasku, 069676
+TXN039147   2025-11-01    V-0076    4420     1992.35         377312  INTEG-01    189  NaN Palvelulasku, 069865
+TXN043047   2025-11-22    V-0076    4440     5353.57         377369  INTEG-01    102  NaN Palvelulasku, 069922
+==================================================================================================================================
+UNIT DU-08  key=V-0078  n_flags=14  total=52254.38  score_range=[0.000675, 0.063041]
+  VENDOR V-0078: Kumipalvelu Oy Ab [FI] terms=14 allowed=4310;4010
+    ALL-YEAR profile: n=160 total=520895.49 mean=3255.60 median=3155.93 min=462.91 max=6588.79
+    accounts(all yr)={'4310': 131, '4010': 29}
+    posters(all yr)={'INTEG-01': 144, 'U-204': 5, 'U-117': 4, 'U-176': 3, 'U-058': 2, 'U-142': 1, 'U-031': 1}
+    n flagged 14 of 160 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                              memo
+TXN001172   2025-01-13    V-0078    4010     1545.46         817535  INTEG-01     51  NaN Materiaalitoimitus, tilaus 068101
+TXN002844   2025-01-25    V-0078    4010     3361.99         817541  INTEG-01     83  NaN Materiaalitoimitus, tilaus 068107
+TXN003746   2025-02-01    V-0078    4010     3430.25         817546  INTEG-01    106  NaN Materiaalitoimitus, tilaus 068112
+TXN007800   2025-03-01    V-0078    4010     4691.92         817558  INTEG-01      4  NaN Materiaalitoimitus, tilaus 068124
+TXN014558   2025-04-20    V-0078    4310     2705.07         817585  INTEG-01     23  NaN Materiaalitoimitus, tilaus 068151
+TXN023145   2025-06-24    V-0078    4010     5267.05         817610     U-204      3  NaN Materiaalitoimitus, tilaus 068176
+TXN024513   2025-07-04    V-0078    4010     4684.71         817612     U-058     17  NaN Materiaalitoimitus, tilaus 068178
+TXN028038   2025-08-09    V-0078    4310     3303.23         817621  INTEG-01     71  NaN Materiaalitoimitus, tilaus 068187
+TXN030627   2025-08-30    V-0078    4010     4126.31         817633  INTEG-01     87  NaN Materiaalitoimitus, tilaus 068199
+TXN035164   2025-10-03    V-0078    4310     4938.04         817653  INTEG-01    196  NaN Materiaalitoimitus, tilaus 068219
+TXN038040   2025-10-24    V-0078    4310     6172.62         817654     U-204     41  NaN Materiaalitoimitus, tilaus 068220
+TXN038176   2025-10-25    V-0078    4310     2006.67         817655  INTEG-01     69  NaN Materiaalitoimitus, tilaus 068221
+TXN044446   2025-11-30    V-0078    4310     4405.53         817678  INTEG-01    197  NaN Materiaalitoimitus, tilaus 068244
+TXN049042   2025-12-28    V-0078    4310     1615.53         817690  INTEG-01     35  NaN Materiaalitoimitus, tilaus 068256
+==================================================================================================================================
+UNIT DU-09  key=V-0090  n_flags=9  total=6269.47  score_range=[0.001507, 0.022181]
+  VENDOR V-0090: Industriehandel GmbH [DE] terms=30 allowed=4300;4200
+    ALL-YEAR profile: n=365 total=239402.65 mean=655.90 median=580.78 min=113.60 max=3757.68
+    accounts(all yr)={'4300': 308, '4200': 57}
+    posters(all yr)={'INTEG-01': 313, 'U-176': 16, 'U-117': 12, 'U-204': 8, 'U-058': 8, 'U-142': 6, 'U-031': 2}
+    n flagged 9 of 365 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                           memo
+TXN002846   2025-01-25    V-0090    4300     1790.95         159984  INTEG-01     52  NaN Tavarantoimitus, tilaus 280967
+TXN006869   2025-02-23    V-0090    4200      319.77         160021  INTEG-01     95  NaN Tavarantoimitus, tilaus 281004
+TXN007802   2025-03-01    V-0090    4200     1126.08         160028  INTEG-01    128  NaN Tavarantoimitus, tilaus 281011
+TXN015438   2025-04-27    V-0090    4200      905.55         160083  INTEG-01     78  NaN Tavarantoimitus, tilaus 281066
+TXN020103   2025-05-31    V-0090    4200      200.53         160116  INTEG-01    108  NaN Tavarantoimitus, tilaus 281099
+TXN026594   2025-07-27    V-0090    4300      493.56         160157  INTEG-01    122  NaN Tavarantoimitus, tilaus 281140
+TXN028092   2025-08-10    V-0090    4200      391.44         160163  INTEG-01    162  NaN Tavarantoimitus, tilaus 281146
+TXN031612   2025-09-07    V-0090    4200      580.78         160199  INTEG-01    186  NaN Tavarantoimitus, tilaus 281182
+TXN035396   2025-10-05    V-0090    4300      460.81         160231  INTEG-01    110  NaN Tavarantoimitus, tilaus 281214
+==================================================================================================================================
+UNIT DU-10  key=V-0098  n_flags=4  total=3672.62  score_range=[0.002932, 0.027171]
+  VENDOR V-0098: Bergsteknik [SE] terms=21 allowed=4300;4020
+    ALL-YEAR profile: n=143 total=92758.03 mean=648.66 median=601.52 min=109.53 max=2098.26
+    accounts(all yr)={'4300': 122, '4020': 21}
+    posters(all yr)={'INTEG-01': 121, 'U-058': 6, 'U-204': 5, 'U-176': 5, 'U-117': 3, 'U-142': 3}
+    n flagged 4 of 143 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                           memo
+TXN002035   2025-01-19    V-0098    4020      738.84         161361  INTEG-01     75  NaN Tavarantoimitus, tilaus 274744
+TXN005240   2025-02-12    V-0098    4020      187.44         161373  INTEG-01    174  NaN Tavarantoimitus, tilaus 274756
+TXN007876   2025-03-02    V-0098    4300      738.74         161375  INTEG-01     40  NaN Tavarantoimitus, tilaus 274758
+TXN019390   2025-05-26    V-0098    4020     2007.60         161407  INTEG-01     53  NaN Tavarantoimitus, tilaus 274790
+==================================================================================================================================
+UNIT DU-11  key=V-0099  n_flags=11  total=40030.42  score_range=[0.001029, 0.045739]
+  VENDOR V-0099: Malmhandel [SE] terms=14 allowed=4440;4410
+    ALL-YEAR profile: n=224 total=450085.38 mean=2009.31 median=1862.69 min=558.68 max=11281.91
+    accounts(all yr)={'4440': 180, '4410': 44}
+    posters(all yr)={'INTEG-01': 177, 'U-031': 12, 'U-058': 12, 'U-117': 8, 'U-176': 8, 'U-204': 4, 'U-142': 3}
+    n flagged 11 of 224 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                 memo
+TXN001482   2025-01-15    V-0099    4440    11281.91         692946  INTEG-01     34  NaN Palvelulasku, 073807
+TXN002852   2025-01-25    V-0099    4410     4113.55         692952  INTEG-01     14  NaN Palvelulasku, 073813
+TXN003822   2025-02-02    V-0099    4410     1590.41         692958  INTEG-01    156  NaN Palvelulasku, 073819
+TXN004917   2025-02-10    V-0099    4410     1044.10         692963  INTEG-01    190  NaN Palvelulasku, 073824
+TXN006777   2025-02-22    V-0099    4410     2609.89         692975  INTEG-01    127  NaN Palvelulasku, 073836
+TXN008107   2025-03-04    V-0099    4410     3634.86         692979  INTEG-01     88  NaN Palvelulasku, 073840
+TXN022945   2025-06-22    V-0099    4410     2238.13         693062  INTEG-01     59  NaN Palvelulasku, 073923
+TXN032489   2025-09-13    V-0099    4440     3956.95         693104  INTEG-01     46  NaN Palvelulasku, 073965
+TXN033430   2025-09-20    V-0099    4440     2504.90         693105  INTEG-01     29  NaN Palvelulasku, 073966
+TXN037513   2025-10-21    V-0099    4440     4309.88         693117  INTEG-01    163  NaN Palvelulasku, 073978
+TXN043055   2025-11-22    V-0099    4410     2745.84         693135  INTEG-01     94  NaN Palvelulasku, 073996
+==================================================================================================================================
+UNIT DU-12  key=V-0110  n_flags=3  total=5779.37  score_range=[0.006118, 0.02113]
+  VENDOR V-0110: Levykomponentti Oy Ab [FI] terms=14 allowed=4000;4210
+    ALL-YEAR profile: n=146 total=88281.23 mean=604.67 median=527.41 min=165.65 max=2268.31
+    accounts(all yr)={'4000': 126, '4210': 20}
+    posters(all yr)={'INTEG-01': 122, 'U-142': 5, 'U-204': 5, 'U-058': 5, 'U-117': 4, 'U-176': 3, 'U-031': 2}
+    n flagged 3 of 146 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                           memo
+TXN018381   2025-05-19    V-0110    4000     2268.31         315138  INTEG-01     57  NaN Tavarantoimitus, tilaus 582104
+TXN034234   2025-09-26    V-0110    4000     1779.06         315178  INTEG-01    149  NaN Tavarantoimitus, tilaus 582144
+TXN038180   2025-10-25    V-0110    4210     1732.00         315188  INTEG-01    105  NaN Tavarantoimitus, tilaus 582154
+==================================================================================================================================
+UNIT DU-13  key=V-0114  n_flags=7  total=5173.85  score_range=[0.000817, 0.033669]
+  VENDOR V-0114: Ratasmateriaali Oy Ab [FI] terms=14 allowed=7250;7200
+    ALL-YEAR profile: n=144 total=136367.82 mean=947.00 median=806.63 min=199.21 max=3403.77
+    accounts(all yr)={'7250': 129, '7200': 15}
+    posters(all yr)={'INTEG-01': 122, 'U-176': 7, 'U-204': 4, 'U-031': 4, 'U-142': 3, 'U-117': 3, 'U-058': 1}
+    n flagged 7 of 144 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule              memo
+TXN008785   2025-03-08    V-0114    7250     1377.82         632774  INTEG-01     28  NaN Ostolasku, 892753
+TXN014566   2025-04-20    V-0114    7250      947.95         632785  INTEG-01     63  NaN Ostolasku, 892764
+TXN018540   2025-05-20    V-0114    7200      352.64         632799  INTEG-01    193  NaN Ostolasku, 892778
+TXN025673   2025-07-17    V-0114    7200     1235.48         632823  INTEG-01     76  NaN Ostolasku, 892802
+TXN026644   2025-07-28    V-0114    7200      362.74         632828  INTEG-01    182  NaN Ostolasku, 892807
+TXN039328   2025-11-03    V-0114    7200      339.73         632868  INTEG-01     55  NaN Ostolasku, 892847
+TXN049413   2025-12-30    V-0114    7200      557.49         632895  INTEG-01     36  NaN Ostolasku, 892874
+==================================================================================================================================
+UNIT DU-14  key=V-0118  n_flags=6  total=2516.04  score_range=[0.00511, 0.018783]
+  VENDOR V-0118: Levypalvelu Oy Ab [FI] terms=30 allowed=4000;4200
+    ALL-YEAR profile: n=217 total=139664.77 mean=643.62 median=597.53 min=125.86 max=2226.87
+    accounts(all yr)={'4000': 180, '4200': 37}
+    posters(all yr)={'INTEG-01': 172, 'U-142': 10, 'U-117': 8, 'U-058': 8, 'U-176': 7, 'U-031': 6, 'U-204': 6}
+    n flagged 6 of 217 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                           memo
+TXN008910   2025-03-10    V-0118    4200      214.32         747500     U-142    159  NaN Tavarantoimitus, tilaus 234876
+TXN016050   2025-05-01    V-0118    4200      461.38         747529  INTEG-01     70  NaN Tavarantoimitus, tilaus 234905
+TXN028095   2025-08-10    V-0118    4200      457.41         747579  INTEG-01    126  NaN Tavarantoimitus, tilaus 234955
+TXN029853   2025-08-25    V-0118    4200      769.74         747584  INTEG-01    101  NaN Tavarantoimitus, tilaus 234960
+TXN035618   2025-10-07    V-0118    4200      303.54         747613  INTEG-01    121  NaN Tavarantoimitus, tilaus 234989
+TXN049050   2025-12-28    V-0118    4000      309.65         747672  INTEG-01    158  NaN Tavarantoimitus, tilaus 235048
+==================================================================================================================================
+UNIT DU-15  key=V-0121  n_flags=6  total=10181.72  score_range=[0.000923, 0.059309]
+  VENDOR V-0121: Putkimateriaali Tmi [FI] terms=21 allowed=7250;7990
+    ALL-YEAR profile: n=390 total=380129.69 mean=974.69 median=801.25 min=200.63 max=4588.56
+    accounts(all yr)={'7250': 336, '7990': 54}
+    posters(all yr)={'INTEG-01': 323, 'U-176': 16, 'U-204': 12, 'U-117': 12, 'U-142': 11, 'U-031': 9, 'U-058': 7}
+    n flagged 6 of 390 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule              memo
+TXN000380   2025-01-06    V-0121    7990     1935.36         940109  INTEG-01     19  NaN Ostolasku, 771607
+TXN009798   2025-03-16    V-0121    7990     1845.80         940191  INTEG-01      9  NaN Ostolasku, 771689
+TXN009799   2025-03-16    V-0121    7990      572.92         940192  INTEG-01    191  NaN Ostolasku, 771690
+TXN019315   2025-05-25    V-0121    7990     1728.53         940255  INTEG-01      5  NaN Ostolasku, 771753
+TXN031554   2025-09-06    V-0121    7990     1747.46         940349  INTEG-01    111  NaN Ostolasku, 771847
+TXN048644   2025-12-23    V-0121    7990     2351.65         940487  INTEG-01    140  NaN Ostolasku, 771985
+==================================================================================================================================
+UNIT DU-16  key=V-0125  n_flags=5  total=7698.2  score_range=[0.003178, 0.020213]
+  VENDOR V-0125: Ratastukku Oy Ab [FI] terms=21 allowed=7990;7400
+    ALL-YEAR profile: n=116 total=115565.75 mean=996.26 median=776.97 min=102.58 max=3489.70
+    accounts(all yr)={'7990': 99, '7400': 17}
+    posters(all yr)={'INTEG-01': 100, 'U-204': 4, 'U-176': 3, 'U-058': 3, 'U-117': 3, 'U-031': 2, 'U-142': 1}
+    n flagged 5 of 116 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule              memo
+TXN003903   2025-02-03    V-0125    7400     1797.13         838870  INTEG-01     62  NaN Ostolasku, 305950
+TXN007967   2025-03-03    V-0125    7400     2119.78         838876  INTEG-01    153  NaN Ostolasku, 305956
+TXN018246   2025-05-17    V-0125    7400     1818.42         838903  INTEG-01    171  NaN Ostolasku, 305983
+TXN020777   2025-06-05    V-0125    7400      961.78         838905  INTEG-01    115  NaN Ostolasku, 305985
+TXN035402   2025-10-05    V-0125    7400     1001.09         838948  INTEG-01    124  NaN Ostolasku, 306028
+==================================================================================================================================
+UNIT DU-17  key=V-0131  n_flags=17  total=66827.78  score_range=[0.002627, 0.057772]
+  VENDOR V-0131: Turvalogistiikka Tmi [FI] terms=30 allowed=4310;4110
+    ALL-YEAR profile: n=166 total=536697.03 mean=3233.11 median=3121.44 min=605.83 max=7066.54
+    accounts(all yr)={'4310': 130, '4110': 36}
+    posters(all yr)={'INTEG-01': 134, 'U-176': 7, 'U-142': 7, 'U-058': 7, 'U-117': 6, 'U-031': 4, 'U-204': 1}
+    n flagged 17 of 166 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                              memo
+TXN000296   2025-01-04    V-0131    4110     2885.76         669568  INTEG-01     79  NaN Materiaalitoimitus, tilaus 410660
+TXN003029   2025-01-27    V-0131    4110     4469.39         669579  INTEG-01      7  NaN Materiaalitoimitus, tilaus 410671
+TXN003766   2025-02-01    V-0131    4110     2342.03         669583  INTEG-01    179  NaN Materiaalitoimitus, tilaus 410675
+TXN008842   2025-03-09    V-0131    4110     4767.10         669605  INTEG-01     11  NaN Materiaalitoimitus, tilaus 410697
+TXN012457   2025-04-04    V-0131    4110     3931.07         669619  INTEG-01     73  NaN Materiaalitoimitus, tilaus 410711
+TXN013643   2025-04-12    V-0131    4110     2906.05         669621  INTEG-01      8  NaN Materiaalitoimitus, tilaus 410713
+TXN014488   2025-04-18    V-0131    4110     1695.20         669624  INTEG-01    125  NaN Materiaalitoimitus, tilaus 410716
+TXN014851   2025-04-23    V-0131    4110     6500.84         669625  INTEG-01     10  NaN Materiaalitoimitus, tilaus 410717
+TXN023177   2025-06-24    V-0131    4110     2856.31         669643  INTEG-01    114  NaN Materiaalitoimitus, tilaus 410735
+TXN025264   2025-07-12    V-0131    4310     1885.01         669650  INTEG-01     49  NaN Materiaalitoimitus, tilaus 410742
+TXN026009   2025-07-21    V-0131    4110     4414.22         669651  INTEG-01     12  NaN Materiaalitoimitus, tilaus 410743
+TXN034396   2025-09-27    V-0131    4310     3939.31         669674  INTEG-01    129  NaN Materiaalitoimitus, tilaus 410766
+TXN038338   2025-10-27    V-0131    4310     4296.78         669678     U-117    165  NaN Materiaalitoimitus, tilaus 410770
+TXN042391   2025-11-19    V-0131    4110     5522.78         669696  INTEG-01     22  NaN Materiaalitoimitus, tilaus 410788
+TXN044757   2025-12-02    V-0131    4110     6938.75         669705  INTEG-01     58  NaN Materiaalitoimitus, tilaus 410797
+TXN047043   2025-12-14    V-0131    4110     4239.02         669715  INTEG-01      6  NaN Materiaalitoimitus, tilaus 410807
+TXN048846   2025-12-24    V-0131    4310     3238.16         669722  INTEG-01    120  NaN Materiaalitoimitus, tilaus 410814
+==================================================================================================================================
+UNIT DU-18  key=V-0132  n_flags=3  total=23808.89  score_range=[0.002807, 0.008423]
+  VENDOR V-0132: Kulmatekniikka Tmi [FI] terms=14 allowed=4310
+    ALL-YEAR profile: n=348 total=1100544.10 mean=3162.48 median=2944.39 min=539.71 max=10039.71
+    accounts(all yr)={'4310': 348}
+    posters(all yr)={'INTEG-01': 277, 'U-058': 16, 'U-204': 12, 'U-117': 12, 'U-142': 11, 'U-031': 11, 'U-176': 9}
+    n flagged 3 of 348 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                              memo
+TXN003828   2025-02-02    V-0132    4310     7190.14         488521  INTEG-01    135  NaN Materiaalitoimitus, tilaus 215932
+TXN022845   2025-06-20    V-0132    4310    10039.71         488660  INTEG-01    152  NaN Materiaalitoimitus, tilaus 216071
+TXN028096   2025-08-10    V-0132    4310     6579.04         488693  INTEG-01    177  NaN Materiaalitoimitus, tilaus 216104
+==================================================================================================================================
+UNIT DU-19  key=V-0135  n_flags=9  total=15274.69  score_range=[0.001788, 0.079014]
+  VENDOR V-0135: Metallijärjestelmä Oy [FI] terms=21 allowed=7200;7400
+    ALL-YEAR profile: n=228 total=209878.35 mean=920.52 median=775.38 min=203.02 max=4091.51
+    accounts(all yr)={'7200': 196, '7400': 32}
+    posters(all yr)={'INTEG-01': 186, 'U-142': 9, 'U-031': 9, 'U-176': 8, 'U-117': 7, 'U-058': 5, 'U-204': 4}
+    n flagged 9 of 228 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule              memo
+TXN001116   2025-01-12    V-0135    7400      448.16         310669  INTEG-01    173  NaN Ostolasku, 914652
+TXN007879   2025-03-02    V-0135    7200     2250.57         310697  INTEG-01    181  NaN Ostolasku, 914680
+TXN010226   2025-03-19    V-0135    7200     4091.51         310705  INTEG-01    112  NaN Ostolasku, 914688
+TXN014695   2025-04-22    V-0135    7400      719.83         310726  INTEG-01    183  NaN Ostolasku, 914709
+TXN024115   2025-07-01    V-0135    7400     3721.96         310770  INTEG-01      1  NaN Ostolasku, 914753
+TXN025063   2025-07-10    V-0135    7400     1134.78         310772  INTEG-01     74  NaN Ostolasku, 914755
+TXN032565   2025-09-14    V-0135    7200     1951.51         310810  INTEG-01    172  NaN Ostolasku, 914793
+TXN042395   2025-11-19    V-0135    7400      445.38         310853  INTEG-01    176  NaN Ostolasku, 914836
+TXN047157   2025-12-15    V-0135    7400      510.99         310875  INTEG-01     21  NaN Ostolasku, 914858
+==================================================================================================================================
+UNIT DU-20  key=V-0155  n_flags=3  total=5053.97  score_range=[0.008436, 0.018616]
+  VENDOR V-0155: Pistetukku Oy Ab [FI] terms=21 allowed=7400;7100
+    ALL-YEAR profile: n=586 total=550241.51 mean=938.98 median=809.99 min=135.64 max=5141.54
+    accounts(all yr)={'7400': 484, '7100': 102}
+    posters(all yr)={'INTEG-01': 480, 'U-117': 20, 'U-058': 19, 'U-031': 19, 'U-176': 18, 'U-204': 16, 'U-142': 14}
+    n flagged 3 of 586 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule              memo
+TXN014574   2025-04-20    V-0155    7100     1943.29         290710  INTEG-01     72  NaN Ostolasku, 222334
+TXN048859   2025-12-24    V-0155    7100     1690.55         291103  INTEG-01     97  NaN Ostolasku, 222727
+TXN048860   2025-12-24    V-0155    7100     1420.13         291104  INTEG-01    134  NaN Ostolasku, 222728
+==================================================================================================================================
+UNIT DU-21  key=V-0156  n_flags=8  total=3531.67  score_range=[0.003588, 0.039246]
+  VENDOR V-0156: Verkkotukku Tmi [FI] terms=21 allowed=4020;4200
+    ALL-YEAR profile: n=171 total=103079.39 mean=602.80 median=552.11 min=98.86 max=2197.98
+    accounts(all yr)={'4020': 142, '4200': 29}
+    posters(all yr)={'INTEG-01': 143, 'U-031': 9, 'U-204': 6, 'U-142': 4, 'U-058': 4, 'U-176': 3, 'U-117': 2}
+    n flagged 8 of 171 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                           memo
+TXN001079   2025-01-11    V-0156    4200      646.40         779936  INTEG-01    109  NaN Tavarantoimitus, tilaus 781088
+TXN001080   2025-01-11    V-0156    4200      280.12         779937  INTEG-01    169  NaN Tavarantoimitus, tilaus 781089
+TXN004775   2025-02-08    V-0156    4020      119.65         779957  INTEG-01    138  NaN Tavarantoimitus, tilaus 781109
+TXN006309   2025-02-19    V-0156    4200       98.86         779963  INTEG-01     68  NaN Tavarantoimitus, tilaus 781115
+TXN012666   2025-04-06    V-0156    4200      811.49         779983  INTEG-01     44  NaN Tavarantoimitus, tilaus 781135
+TXN023045   2025-06-23    V-0156    4200      489.26         780017  INTEG-01     24  NaN Tavarantoimitus, tilaus 781169
+TXN025369   2025-07-14    V-0156    4200      290.69         780028  INTEG-01     50  NaN Tavarantoimitus, tilaus 781180
+TXN034555   2025-09-29    V-0156    4200      795.20         780055  INTEG-01     85  NaN Tavarantoimitus, tilaus 781207
+==================================================================================================================================
+UNIT DU-22  key=V-0157  n_flags=7  total=30021.51  score_range=[0.001609, 0.046047]
+  VENDOR V-0157: Kumitukku Oy Ab [FI] terms=14 allowed=4310;4100
+    ALL-YEAR profile: n=170 total=546429.48 mean=3214.29 median=2962.12 min=1361.62 max=7832.79
+    accounts(all yr)={'4310': 149, '4100': 21}
+    posters(all yr)={'INTEG-01': 139, 'U-031': 9, 'U-142': 6, 'U-117': 5, 'U-058': 5, 'U-176': 4, 'U-204': 2}
+    n flagged 7 of 170 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                              memo
+TXN006313   2025-02-19    V-0157    4100     3744.41         161816  INTEG-01     99  NaN Materiaalitoimitus, tilaus 030167
+TXN016280   2025-05-03    V-0157    4100     4040.76         161851  INTEG-01     39  NaN Materiaalitoimitus, tilaus 030202
+TXN020017   2025-05-30    V-0157    4310     6615.30         161870  INTEG-01     66  NaN Materiaalitoimitus, tilaus 030221
+TXN022104   2025-06-14    V-0157    4310     5206.80         161878  INTEG-01     33  NaN Materiaalitoimitus, tilaus 030229
+TXN025074   2025-07-10    V-0157    4100     3324.69         161889  INTEG-01     31  NaN Materiaalitoimitus, tilaus 030240
+TXN031867   2025-09-09    V-0157    4100     2404.24         161907  INTEG-01    185  NaN Materiaalitoimitus, tilaus 030258
+TXN043168   2025-11-23    V-0157    4310     4685.31         161947  INTEG-01     13  NaN Materiaalitoimitus, tilaus 030298
+==================================================================================================================================
+UNIT DU-23  key=V-0176  n_flags=3  total=2161.5  score_range=[0.006663, 0.037382]
+  VENDOR V-0176: Nordgrossist [SE] terms=14 allowed=4300;4020
+    ALL-YEAR profile: n=203 total=132980.39 mean=655.08 median=552.90 min=159.81 max=3276.52
+    accounts(all yr)={'4300': 165, '4020': 38}
+    posters(all yr)={'INTEG-01': 163, 'U-204': 10, 'U-176': 8, 'U-058': 6, 'U-117': 6, 'U-142': 5, 'U-031': 5}
+    n flagged 3 of 203 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule                           memo
+TXN011658   2025-03-29    V-0176    4300     1246.51         390097  INTEG-01     25  NaN Tavarantoimitus, tilaus 663795
+TXN027003   2025-07-31    V-0176    4020      681.69         390164  INTEG-01    144  NaN Tavarantoimitus, tilaus 663862
+TXN036438   2025-10-13    V-0176    4020      233.30         390200  INTEG-01     26  NaN Tavarantoimitus, tilaus 663898
+==================================================================================================================================
+UNIT DU-24  key=V-0198  n_flags=10  total=11611.52  score_range=[0.005069, 0.041278]
+  VENDOR V-0198: Metallitukku Oy [FI] terms=14 allowed=7250;7850
+    ALL-YEAR profile: n=207 total=182547.93 mean=881.87 median=768.66 min=211.92 max=2872.17
+    accounts(all yr)={'7250': 180, '7850': 27}
+    posters(all yr)={'INTEG-01': 164, 'U-204': 11, 'U-142': 10, 'U-117': 8, 'U-031': 7, 'U-176': 5, 'U-058': 2}
+    n flagged 10 of 207 txns
+   txn_id posting_date vendor_id account  amount_eur invoice_number posted_by  drank rule              memo
+TXN001934   2025-01-17    V-0198    7850      293.92         869579  INTEG-01     96  NaN Ostolasku, 132913
+TXN004814   2025-02-08    V-0198    7250      806.12         869586  INTEG-01    142  NaN Ostolasku, 132920
+TXN010863   2025-03-24    V-0198    7850     2440.87         869611  INTEG-01    119  NaN Ostolasku, 132945
+TXN019937   2025-05-29    V-0198    7850     1441.50         869655  INTEG-01    150  NaN Ostolasku, 132989
+TXN025935   2025-07-19    V-0198    7850     1507.31         869676  INTEG-01     56  NaN Ostolasku, 133010
+TXN029907   2025-08-25    V-0198    7850      211.92         869691     U-117     20  NaN Ostolasku, 133025
+TXN030689   2025-08-30    V-0198    7850     1791.71         869697  INTEG-01    107  NaN Ostolasku, 133031
+TXN034478   2025-09-28    V-0198    7250      519.34         869720  INTEG-01    160  NaN Ostolasku, 133054
+TXN040104   2025-11-06    V-0198    7850      837.52         869743  INTEG-01     98  NaN Ostolasku, 133077
+TXN045749   2025-12-06    V-0198    7850     1761.31         869767  INTEG-01     47  NaN Ostolasku, 133101
+
+
+########## SINGLES ##########
+
+-- TXN010666 rank2 score=0.0750 vendor=V-0071 Verktygsteknik allowed=7400;4430
+   acct=4430(Consulting services) amt=8464.74 poster=INTEG-01 date=2025-03-22 wd=False rule=nan
+   memo='Kertatoimitus, tilaus 307323'
+   vendor profile: n=36 mean=2759.57 median=2325.82 max=8464.74 accts={'7400': 28, '4430': 8}
+
+-- TXN044434 rank16 score=0.0447 vendor=V-0023 Säiliömateriaali Oy Ab allowed=4010;4310
+   acct=4310(Spare parts) amt=4063.03 poster=INTEG-01 date=2025-11-30 wd=False rule=nan
+   memo='Materiaalitoimitus, tilaus 043072'
+   vendor profile: n=18 mean=3297.58 median=3202.16 max=4974.31 accts={'4010': 15, '4310': 3}
+
+-- TXN002870 rank18 score=0.0444 vendor=V-0142 Technikhandel GmbH allowed=4010;4110
+   acct=4110(Seals and components) amt=3999.93 poster=INTEG-01 date=2025-01-25 wd=False rule=nan
+   memo='Materiaalitoimitus, tilaus 095455'
+   vendor profile: n=47 mean=3419.14 median=3262.03 max=7214.84 accts={'4010': 41, '4110': 6}
+
+-- TXN047046 rank27 score=0.0343 vendor=V-0150 Kantahuolto Oy Ab allowed=4000;4300
+   acct=4300(Maintenance supplies) amt=335.83 poster=INTEG-01 date=2025-12-14 wd=False rule=nan
+   memo='Tavarantoimitus, tilaus 781494'
+   vendor profile: n=103 mean=665.93 median=550.82 max=2223.29 accts={'4000': 86, '4300': 17}
+
+-- TXN048135 rank30 score=0.0324 vendor=V-0171 Runkologistiikka Oy allowed=4200;4020
+   acct=4020(Packaging materials) amt=6721.38 poster=INTEG-01 date=2025-12-19 wd=True rule=nan
+   memo='Kertatoimitus, tilaus 743538'
+   vendor profile: n=60 mean=2770.78 median=2141.40 max=7267.65 accts={'4200': 51, '4020': 9}
+
+-- TXN045742 rank32 score=0.0323 vendor=V-0195 Nordhandel AS allowed=7700;4430
+   acct=7700(Representation costs) amt=7575.97 poster=INTEG-01 date=2025-12-06 wd=False rule=nan
+   memo='Kertatoimitus, tilaus 739316'
+   vendor profile: n=57 mean=2301.50 median=2002.51 max=7575.97 accts={'7700': 47, '4430': 10}
+
+-- TXN006870 rank38 score=0.0292 vendor=V-0105 Metallivaraosa Oy Ab allowed=4430
+   acct=4430(Consulting services) amt=6253.77 poster=INTEG-01 date=2025-02-23 wd=False rule=nan
+   memo='Palvelulasku, 331320'
+   vendor profile: n=326 mean=1948.02 median=1701.39 max=6268.10 accts={'4430': 326}
+
+-- TXN025791 rank43 score=0.0265 vendor=V-0075 Rautaväline Tmi allowed=7850;7250
+   acct=7250(Software licences) amt=1434.1 poster=INTEG-01 date=2025-07-18 wd=True rule=nan
+   memo='Ostolasku, 287785'
+   vendor profile: n=113 mean=932.16 median=745.14 max=2800.40 accts={'7850': 102, '7250': 11}
+
+-- TXN002850 rank45 score=0.0256 vendor=V-0095 Rataskomponentti Oy Ab allowed=4110
+   acct=4110(Seals and components) amt=6092.09 poster=INTEG-01 date=2025-01-25 wd=False rule=nan
+   memo='Materiaalitoimitus, tilaus 820283'
+   vendor profile: n=100 mean=3249.13 median=3043.77 max=6954.14 accts={'4110': 100}
+
+-- TXN044442 rank48 score=0.0237 vendor=V-0075 Rautaväline Tmi allowed=7850;7250
+   acct=7250(Software licences) amt=1708.8 poster=INTEG-01 date=2025-11-30 wd=False rule=nan
+   memo='Ostolasku, 287836'
+   vendor profile: n=113 mean=932.16 median=745.14 max=2800.40 accts={'7850': 102, '7250': 11}

@@ -1,0 +1,805 @@
+=== GL shape: (50000, 18)
+=== posters distribution ===
+posted_by
+INTEG-01    41225
+U-058        1538
+U-117        1466
+U-204        1462
+U-142        1457
+U-031        1444
+U-176        1408
+Name: count, dtype: int64
+=== total by account ===
+         count         sum                         name
+account                                                
+4310      2700  8562557.24                  Spare parts
+4440      4332  8262290.79      Other external services
+4100      2050  6259478.21     Steel and metal products
+4000      8140  5403006.33           Domestic purchases
+4430      2795  5295863.50          Consulting services
+4200      6403  4423450.75           Tools and supplies
+4010      1066  3407393.38            Foreign purchases
+7850      3106  3013435.16            Security services
+4020      4306  2831239.79          Packaging materials
+4210      3566  2677559.26         Protective equipment
+4420       905  1727124.75               Subcontracting
+4300      2554  1669124.68         Maintenance supplies
+4110       383  1242061.85         Seals and components
+7990       928  1032558.83     Other operating expenses
+7900       831   924390.37             Energy and water
+4410       436   903457.09                Freight costs
+7250       914   856197.10            Software licences
+7400       796   848261.06                Telecom costs
+7000       446   845102.56                Premises rent
+7300       519   780292.05                    Insurance
+7500       761   749032.08              Office supplies
+7700       599   621144.23         Representation costs
+7800       605   594506.73  Cleaning and waste services
+7200       383   386960.79                  IT services
+7600       264   295373.80                 Travel costs
+7150        65   167253.82  Trade fairs and exhibitions
+7100       146   161089.14                    Marketing
+1200         1    78400.00      Machinery and equipment
+
+==========================================================================================
+UNIT RU-01  type=rule_vendor  key=V-0006  stats={'n_flags': 8, 'months_touched': [9, 10], 'total_eur': 36934.24, 'tests_involved': ['mapping']}
+          posting_date invoice_date   due_date vendor_id                  vendor_name account  amount_eur  invoice_number posted_by                          memo
+txn_id                                                                                                                                                           
+TXN031757   2025-09-09   2025-09-03 2025-09-24    V-0006  Mainostoimisto Kaarniala Oy    7200     2694.75          489171     U-204  Mainoskampanja, syyskuu 2025
+TXN032890   2025-09-17   2025-09-10 2025-10-01    V-0006  Mainostoimisto Kaarniala Oy    7200     5766.00          489172     U-204  Mainoskampanja, syyskuu 2025
+TXN033532   2025-09-22   2025-09-17 2025-10-08    V-0006  Mainostoimisto Kaarniala Oy    7200     5096.64          489173     U-204  Mainoskampanja, syyskuu 2025
+TXN034479   2025-09-29   2025-09-24 2025-10-15    V-0006  Mainostoimisto Kaarniala Oy    7200     4419.05          489174     U-204  Mainoskampanja, syyskuu 2025
+TXN035705   2025-10-08   2025-10-01 2025-10-22    V-0006  Mainostoimisto Kaarniala Oy    7200     5344.05          489175     U-204  Mainoskampanja, lokakuu 2025
+TXN036471   2025-10-14   2025-10-08 2025-10-29    V-0006  Mainostoimisto Kaarniala Oy    7200     3482.12          489176     U-204  Mainoskampanja, lokakuu 2025
+TXN036992   2025-10-17   2025-10-15 2025-11-05    V-0006  Mainostoimisto Kaarniala Oy    7200     5930.93          489177     U-204  Mainoskampanja, lokakuu 2025
+TXN038575   2025-10-29   2025-10-22 2025-11-12    V-0006  Mainostoimisto Kaarniala Oy    7200     4200.70          489178     U-204  Mainoskampanja, lokakuu 2025
+  -- vendor V-0006 Mainostoimisto Kaarniala Oy country=FI terms=21 allowed=7100
+     full-year: n=8 sum=36934.24 mean=4616.78 min=2694.75 max=5930.93
+     accounts used: {'7200': 8}
+     posters: {'U-204': 8}
+
+==========================================================================================
+UNIT RU-02  type=rule_vendor  key=V-0008  stats={'n_flags': 4, 'months_touched': [2, 8], 'total_eur': 2915.4, 'tests_involved': ['duplicate']}
+          posting_date invoice_date   due_date vendor_id        vendor_name account  amount_eur  invoice_number posted_by                      memo
+txn_id                                                                                                                                             
+TXN004166   2025-02-05   2025-02-05 2025-03-07    V-0008  Pulttitarvike Tmi    4000       842.5          801524  INTEG-01  Ostolasku, tilaus 358022
+TXN004816   2025-02-09   2025-02-09 2025-03-11    V-0008  Pulttitarvike Tmi    4000       842.5          801525  INTEG-01  Ostolasku, tilaus 358022
+TXN027877   2025-08-08   2025-08-08 2025-09-07    V-0008  Pulttitarvike Tmi    4000       615.2          801526  INTEG-01  Ostolasku, tilaus 358023
+TXN028688   2025-08-15   2025-08-15 2025-09-14    V-0008  Pulttitarvike Tmi    4000       615.2          801527  INTEG-01  Ostolasku, tilaus 358023
+  -- vendor V-0008 Pulttitarvike Tmi country=FI terms=30 allowed=4000
+     full-year: n=4 sum=2915.40 mean=728.85 min=615.20 max=842.50
+     accounts used: {'4000': 4}
+     posters: {'INTEG-01': 4}
+
+==========================================================================================
+UNIT RU-03  type=rule_vendor  key=V-0009  stats={'n_flags': 4, 'months_touched': [4, 10], 'total_eur': 10291.2, 'tests_involved': ['duplicate']}
+          posting_date invoice_date   due_date vendor_id          vendor_name account  amount_eur  invoice_number posted_by                      memo
+txn_id                                                                                                                                               
+TXN012557   2025-04-05   2025-04-05 2025-04-19    V-0009  Poralogistiikka Tmi    4200      1365.0          930804  INTEG-01  Ostolasku, tilaus 787675
+TXN013198   2025-04-10   2025-04-10 2025-04-24    V-0009  Poralogistiikka Tmi    4200      1365.0          930805  INTEG-01  Ostolasku, tilaus 787675
+TXN035706   2025-10-08   2025-10-08 2025-10-22    V-0009  Poralogistiikka Tmi    4200      3780.6          930806  INTEG-01  Ostolasku, tilaus 787676
+TXN036341   2025-10-13   2025-10-13 2025-10-27    V-0009  Poralogistiikka Tmi    4200      3780.6          930807  INTEG-01  Ostolasku, tilaus 787676
+  -- vendor V-0009 Poralogistiikka Tmi country=FI terms=14 allowed=4200
+     full-year: n=4 sum=10291.20 mean=2572.80 min=1365.00 max=3780.60
+     accounts used: {'4200': 4}
+     posters: {'INTEG-01': 4}
+
+==========================================================================================
+UNIT RU-04  type=rule_vendor  key=V-0010  stats={'n_flags': 4, 'months_touched': [6, 12], 'total_eur': 8122.2, 'tests_involved': ['duplicate']}
+          posting_date invoice_date   due_date vendor_id      vendor_name account  amount_eur  invoice_number posted_by                      memo
+txn_id                                                                                                                                           
+TXN020678   2025-06-05   2025-06-05 2025-06-19    V-0010  Kumipalvelu Tmi    4300     2940.75          716170  INTEG-01  Ostolasku, tilaus 847310
+TXN021479   2025-06-11   2025-06-11 2025-06-25    V-0010  Kumipalvelu Tmi    4300     2940.75          716171  INTEG-01  Ostolasku, tilaus 847310
+TXN045781   2025-12-08   2025-12-08 2025-12-22    V-0010  Kumipalvelu Tmi    4300     1120.35          716172  INTEG-01  Ostolasku, tilaus 847311
+TXN047018   2025-12-14   2025-12-14 2025-12-28    V-0010  Kumipalvelu Tmi    4300     1120.35          716173  INTEG-01  Ostolasku, tilaus 847311
+  -- vendor V-0010 Kumipalvelu Tmi country=FI terms=14 allowed=4300
+     full-year: n=4 sum=8122.20 mean=2030.55 min=1120.35 max=2940.75
+     accounts used: {'4300': 4}
+     posters: {'INTEG-01': 4}
+
+==========================================================================================
+UNIT RU-05  type=rule_vendor  key=V-0011  stats={'n_flags': 6, 'months_touched': [1, 3, 5, 7, 9, 11], 'total_eur': 41000.0, 'tests_involved': ['round_sum']}
+          posting_date invoice_date   due_date vendor_id          vendor_name account  amount_eur  invoice_number posted_by                      memo
+txn_id                                                                                                                                               
+TXN001097   2025-01-12   2025-01-12 2025-02-02    V-0011  Säiliöpalvelu Oy Ab    4100      5000.0          571272  INTEG-01  Ostolasku, tilaus 077948
+TXN009156   2025-03-12   2025-03-12 2025-04-02    V-0011  Säiliöpalvelu Oy Ab    4100      6000.0          571273  INTEG-01  Ostolasku, tilaus 077949
+TXN017323   2025-05-12   2025-05-12 2025-06-02    V-0011  Säiliöpalvelu Oy Ab    4100      7000.0          571274  INTEG-01  Ostolasku, tilaus 077950
+TXN025235   2025-07-12   2025-07-12 2025-08-02    V-0011  Säiliöpalvelu Oy Ab    4100      8000.0          571275  INTEG-01  Ostolasku, tilaus 077951
+TXN032281   2025-09-12   2025-09-12 2025-10-03    V-0011  Säiliöpalvelu Oy Ab    4100      9000.0          571276  INTEG-01  Ostolasku, tilaus 077952
+TXN040884   2025-11-12   2025-11-12 2025-12-03    V-0011  Säiliöpalvelu Oy Ab    4100      6000.0          571277  INTEG-01  Ostolasku, tilaus 077953
+  -- vendor V-0011 Säiliöpalvelu Oy Ab country=FI terms=21 allowed=4100
+     full-year: n=6 sum=41000.00 mean=6833.33 min=5000.00 max=9000.00
+     accounts used: {'4100': 6}
+     posters: {'INTEG-01': 6}
+
+==========================================================================================
+UNIT RU-06  type=rule_vendor  key=V-0012  stats={'n_flags': 4, 'months_touched': [2, 5, 8, 11], 'total_eur': 38843.29, 'tests_involved': ['near_threshold']}
+          posting_date invoice_date   due_date vendor_id     vendor_name account  amount_eur  invoice_number posted_by                      memo
+txn_id                                                                                                                                          
+TXN005976   2025-02-18   2025-02-18 2025-03-04    V-0012  Ratashuolto Oy    4410     9712.45          779956  INTEG-01  Ostolasku, tilaus 499533
+TXN018290   2025-05-18   2025-05-18 2025-06-01    V-0012  Ratashuolto Oy    4410     9580.10          779957  INTEG-01  Ostolasku, tilaus 499534
+TXN028963   2025-08-18   2025-08-18 2025-09-01    V-0012  Ratashuolto Oy    4410     9899.99          779958  INTEG-01  Ostolasku, tilaus 499535
+TXN041970   2025-11-18   2025-11-18 2025-12-02    V-0012  Ratashuolto Oy    4410     9650.75          779959  INTEG-01  Ostolasku, tilaus 499536
+  -- vendor V-0012 Ratashuolto Oy country=FI terms=14 allowed=4410
+     full-year: n=4 sum=38843.29 mean=9710.82 min=9580.10 max=9899.99
+     accounts used: {'4410': 4}
+     posters: {'INTEG-01': 4}
+
+==========================================================================================
+UNIT RU-07  type=rule_vendor  key=V-0013  stats={'n_flags': 4, 'months_touched': [1, 7], 'total_eur': 24566.55, 'tests_involved': ['split']}
+          posting_date invoice_date   due_date vendor_id          vendor_name account  amount_eur  invoice_number posted_by                           memo
+txn_id                                                                                                                                                    
+TXN000828   2025-01-10   2025-01-10 2025-02-09    V-0013  Kantamateriaali Tmi    4110     5820.40          818398  INTEG-01  Ostolasku, osatoimitus 238987
+TXN001098   2025-01-12   2025-01-12 2025-02-11    V-0013  Kantamateriaali Tmi    4110     5495.10          818399  INTEG-01  Ostolasku, osatoimitus 238988
+TXN025001   2025-07-10   2025-07-10 2025-08-09    V-0013  Kantamateriaali Tmi    4110     6340.25          818400  INTEG-01  Ostolasku, osatoimitus 238989
+TXN025125   2025-07-11   2025-07-11 2025-08-10    V-0013  Kantamateriaali Tmi    4110     6910.80          818401  INTEG-01  Ostolasku, osatoimitus 238990
+  -- vendor V-0013 Kantamateriaali Tmi country=FI terms=30 allowed=4110
+     full-year: n=4 sum=24566.55 mean=6141.64 min=5495.10 max=6910.80
+     accounts used: {'4110': 4}
+     posters: {'INTEG-01': 4}
+
+==========================================================================================
+UNIT RU-08  type=rule_vendor  key=V-0014  stats={'n_flags': 4, 'months_touched': [4, 10], 'total_eur': 22767.0, 'tests_involved': ['split']}
+          posting_date invoice_date   due_date vendor_id              vendor_name account  amount_eur  invoice_number posted_by                           memo
+txn_id                                                                                                                                                        
+TXN013199   2025-04-10   2025-04-10 2025-05-01    V-0014  Verkkokomponentti Oy Ab    4310     4780.60          934647  INTEG-01  Ostolasku, osatoimitus 732301
+TXN013687   2025-04-13   2025-04-13 2025-05-04    V-0014  Verkkokomponentti Oy Ab    4310     6255.90          934648  INTEG-01  Ostolasku, osatoimitus 732302
+TXN036071   2025-10-10   2025-10-10 2025-10-31    V-0014  Verkkokomponentti Oy Ab    4310     7120.15          934649  INTEG-01  Ostolasku, osatoimitus 732303
+TXN036313   2025-10-12   2025-10-12 2025-11-02    V-0014  Verkkokomponentti Oy Ab    4310     4610.35          934650  INTEG-01  Ostolasku, osatoimitus 732304
+  -- vendor V-0014 Verkkokomponentti Oy Ab country=FI terms=21 allowed=4310
+     full-year: n=4 sum=22767.00 mean=5691.75 min=4610.35 max=7120.15
+     accounts used: {'4310': 4}
+     posters: {'INTEG-01': 4}
+
+==========================================================================================
+UNIT RU-09  type=rule_vendor  key=V-0015  stats={'n_flags': 2, 'months_touched': [9], 'total_eur': 13330.75, 'tests_involved': ['split']}
+          posting_date invoice_date   due_date vendor_id             vendor_name account  amount_eur  invoice_number posted_by                           memo
+txn_id                                                                                                                                                       
+TXN031912   2025-09-10   2025-09-10 2025-10-01    V-0015  Kairakomponentti Oy Ab    4420     5990.55           73983  INTEG-01  Ostolasku, osatoimitus 890739
+TXN032082   2025-09-11   2025-09-11 2025-10-02    V-0015  Kairakomponentti Oy Ab    4420     7340.20           73984  INTEG-01  Ostolasku, osatoimitus 890740
+  -- vendor V-0015 Kairakomponentti Oy Ab country=FI terms=21 allowed=4420
+     full-year: n=2 sum=13330.75 mean=6665.38 min=5990.55 max=7340.20
+     accounts used: {'4420': 2}
+     posters: {'INTEG-01': 2}
+
+==========================================================================================
+UNIT RU-10  type=rule_vendor  key=V-0016  stats={'n_flags': 12, 'months_touched': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 'total_eur': 180000.0, 'tests_involved': ['round_sum']}
+          posting_date invoice_date   due_date vendor_id                           vendor_name account  amount_eur  invoice_number posted_by                             memo
+txn_id                                                                                                                                                                       
+TXN000001   2025-01-01   2025-01-01 2025-01-31    V-0016  Kiinteistö Oy Vantaan Teollisuustalo    7000     15000.0          674843  INTEG-01   Toimitilavuokra, tammikuu 2025
+TXN003723   2025-02-01   2025-02-01 2025-03-03    V-0016  Kiinteistö Oy Vantaan Teollisuustalo    7000     15000.0          674844  INTEG-01   Toimitilavuokra, helmikuu 2025
+TXN007760   2025-03-01   2025-03-01 2025-03-31    V-0016  Kiinteistö Oy Vantaan Teollisuustalo    7000     15000.0          674845  INTEG-01  Toimitilavuokra, maaliskuu 2025
+TXN011826   2025-04-01   2025-04-01 2025-05-01    V-0016  Kiinteistö Oy Vantaan Teollisuustalo    7000     15000.0          674846  INTEG-01   Toimitilavuokra, huhtikuu 2025
+TXN016010   2025-05-01   2025-05-01 2025-05-31    V-0016  Kiinteistö Oy Vantaan Teollisuustalo    7000     15000.0          674847  INTEG-01   Toimitilavuokra, toukokuu 2025
+TXN020161   2025-06-01   2025-06-01 2025-07-01    V-0016  Kiinteistö Oy Vantaan Teollisuustalo    7000     15000.0          674848  INTEG-01    Toimitilavuokra, kesäkuu 2025
+TXN024028   2025-07-01   2025-07-01 2025-07-31    V-0016  Kiinteistö Oy Vantaan Teollisuustalo    7000     15000.0          674849  INTEG-01   Toimitilavuokra, heinäkuu 2025
+TXN027017   2025-08-01   2025-08-01 2025-08-31    V-0016  Kiinteistö Oy Vantaan Teollisuustalo    7000     15000.0          674850  INTEG-01     Toimitilavuokra, elokuu 2025
+TXN030726   2025-09-01   2025-09-01 2025-10-01    V-0016  Kiinteistö Oy Vantaan Teollisuustalo    7000     15000.0          674851  INTEG-01    Toimitilavuokra, syyskuu 2025
+TXN034757   2025-10-01   2025-10-01 2025-10-31    V-0016  Kiinteistö Oy Vantaan Teollisuustalo    7000     15000.0          674852  INTEG-01    Toimitilavuokra, lokakuu 2025
+TXN039116   2025-11-01   2025-11-01 2025-12-01    V-0016  Kiinteistö Oy Vantaan Teollisuustalo    7000     15000.0          674853  INTEG-01  Toimitilavuokra, marraskuu 2025
+TXN044479   2025-12-01   2025-12-01 2025-12-31    V-0016  Kiinteistö Oy Vantaan Teollisuustalo    7000     15000.0          674854  INTEG-01   Toimitilavuokra, joulukuu 2025
+  -- vendor V-0016 Kiinteistö Oy Vantaan Teollisuustalo country=FI terms=30 allowed=7000
+     full-year: n=12 sum=180000.00 mean=15000.00 min=15000.00 max=15000.00
+     accounts used: {'7000': 12}
+     posters: {'INTEG-01': 12}
+
+==========================================================================================
+UNIT RU-11  type=rule_vendor  key=V-0018  stats={'n_flags': 2, 'months_touched': [6], 'total_eur': 14840.0, 'tests_involved': ['duplicate']}
+          posting_date invoice_date   due_date vendor_id            vendor_name account  amount_eur  invoice_number posted_by                       memo
+txn_id                                                                                                                                                  
+TXN021299   2025-06-10   2025-06-10 2025-07-10    V-0018  Ruuvitukku Halonen Oy    4200      7420.0            5784  INTEG-01  Tavarantoimitus, PO-48213
+TXN022042   2025-06-14   2025-06-14 2025-07-14    V-0018  Ruuvitukku Halonen Oy    4200      7420.0            5785  INTEG-01  Tavarantoimitus, PO-48297
+  -- vendor V-0018 Ruuvitukku Halonen Oy country=FI terms=30 allowed=4200
+     full-year: n=2 sum=14840.00 mean=7420.00 min=7420.00 max=7420.00
+     accounts used: {'4200': 2}
+     posters: {'INTEG-01': 2}
+
+==========================================================================================
+UNIT RU-12  type=rule_user  key=U-031  stats={'n_flags': 2, 'months_touched': [11], 'total_eur': 3101.15, 'tests_involved': ['calendar']}
+          posting_date invoice_date   due_date vendor_id                 vendor_name account  amount_eur  invoice_number posted_by                                    memo
+txn_id                                                                                                                                                                    
+TXN041654   2025-11-15   2025-11-10 2025-12-10    V-0017  Varastopalvelu Toivanen Ky    4420     1260.80          922653     U-031  Sovittu ylityö, inventaario 15.11.2025
+TXN041655   2025-11-15   2025-11-11 2025-12-11    V-0017  Varastopalvelu Toivanen Ky    4420     1840.35          922654     U-031  Sovittu ylityö, inventaario 15.11.2025
+  -- vendor V-0017 Varastopalvelu Toivanen Ky country=FI terms=30 allowed=4420
+     full-year: n=2 sum=3101.15 mean=1550.57 min=1260.80 max=1840.35
+     accounts used: {'4420': 2}
+     posters: {'U-031': 2}
+
+==========================================================================================
+UNIT RU-13  type=rule_user  key=U-117  stats={'n_flags': 8, 'months_touched': [2, 3, 4, 5, 6], 'total_eur': 7504.66, 'tests_involved': ['calendar']}
+          posting_date invoice_date   due_date vendor_id             vendor_name account  amount_eur  invoice_number posted_by                            memo
+txn_id                                                                                                                                                        
+TXN004783   2025-02-08   2025-02-04 2025-03-06    V-0168           Stalhandel AS    4200      300.37           54836     U-117  Tavarantoimitus, tilaus 853203
+TXN008812   2025-03-08   2025-03-04 2025-03-18    V-0184        Kaapeliväline Oy    7850      770.62          142083     U-117               Ostolasku, 912961
+TXN013628   2025-04-12   2025-04-08 2025-04-22    V-0085       Kumiasennus Oy Ab    4210      640.98            2045     U-117    Kertatoimitus, tilaus 412578
+TXN014609   2025-04-21   2025-04-14 2025-04-28    V-0163  Kaapelilogistiikka Tmi    7850      568.24           30998     U-117               Ostolasku, 634520
+TXN017290   2025-05-10   2025-05-06 2025-05-20    V-0194  Laakeritekniikka Oy Ab    4000      943.56          138517     U-117  Tavarantoimitus, tilaus 437150
+TXN019899   2025-05-29   2025-05-25 2025-06-15    V-0145          Verktygshandel    4000     1650.07          445945     U-117    Kertatoimitus, tilaus 373386
+TXN022045   2025-06-14   2025-06-10 2025-07-01    V-0024     Porttimateriaali Oy    4420     2000.20          841794     U-117            Palvelulasku, 597751
+TXN022846   2025-06-20   2025-06-16 2025-07-07    V-0135   Metallijärjestelmä Oy    7200      630.62          310764     U-117               Ostolasku, 914747
+  -- vendor V-0168 Stalhandel AS country=NO terms=30 allowed=4200
+     full-year: n=1533 sum=1005050.92 mean=655.61 min=106.79 max=3593.44
+     accounts used: {'4200': 1533}
+     posters: {'INTEG-01': 1254, 'U-117': 57, 'U-204': 52, 'U-031': 48, 'U-142': 44, 'U-058': 40, 'U-176': 38}
+  -- vendor V-0184 Kaapeliväline Oy country=FI terms=14 allowed=7850
+     full-year: n=151 sum=146583.42 mean=970.75 min=231.53 max=4164.36
+     accounts used: {'7850': 151}
+     posters: {'INTEG-01': 118, 'U-058': 12, 'U-142': 9, 'U-031': 4, 'U-176': 3, 'U-117': 3, 'U-204': 2}
+  -- vendor V-0085 Kumiasennus Oy Ab country=FI terms=14 allowed=4210
+     full-year: n=153 sum=407095.32 mean=2660.75 min=402.55 max=10988.77
+     accounts used: {'4210': 153}
+     posters: {'INTEG-01': 122, 'U-117': 8, 'U-142': 6, 'U-031': 6, 'U-176': 5, 'U-204': 3, 'U-058': 3}
+  -- vendor V-0163 Kaapelilogistiikka Tmi country=FI terms=14 allowed=7850
+     full-year: n=416 sum=395259.84 mean=950.14 min=133.65 max=7830.91
+     accounts used: {'7850': 416}
+     posters: {'INTEG-01': 332, 'U-142': 19, 'U-176': 15, 'U-058': 15, 'U-204': 13, 'U-117': 12, 'U-031': 10}
+  -- vendor V-0194 Laakeritekniikka Oy Ab country=FI terms=14 allowed=4000
+     full-year: n=285 sum=194517.59 mean=682.52 min=123.26 max=2180.64
+     accounts used: {'4000': 285}
+     posters: {'INTEG-01': 238, 'U-058': 11, 'U-031': 9, 'U-204': 8, 'U-142': 7, 'U-117': 7, 'U-176': 5}
+  -- vendor V-0145 Verktygshandel country=SE terms=21 allowed=4000
+     full-year: n=45 sum=142281.80 mean=3161.82 min=850.85 max=12002.60
+     accounts used: {'4000': 45}
+     posters: {'INTEG-01': 38, 'U-117': 3, 'U-058': 2, 'U-176': 1, 'U-031': 1}
+  -- vendor V-0024 Porttimateriaali Oy country=FI terms=21 allowed=4420
+     full-year: n=146 sum=274121.85 mean=1877.55 min=519.35 max=4994.82
+     accounts used: {'4420': 146}
+     posters: {'INTEG-01': 119, 'U-031': 6, 'U-117': 6, 'U-058': 6, 'U-142': 5, 'U-204': 3, 'U-176': 1}
+  -- vendor V-0135 Metallijärjestelmä Oy country=FI terms=21 allowed=7200;7400
+     full-year: n=228 sum=209878.35 mean=920.52 min=203.02 max=4091.51
+     accounts used: {'7200': 196, '7400': 32}
+     posters: {'INTEG-01': 186, 'U-142': 9, 'U-031': 9, 'U-176': 8, 'U-117': 7, 'U-058': 5, 'U-204': 4}
+
+==========================================================================================
+UNIT DU-01  type=detector_vendor  key=V-0029  stats={'n_flags': 7, 'months_touched': [4, 7, 12], 'total_eur': 4787.53, 'score_range': [0.006277, 0.02661]}
+          posting_date invoice_date   due_date vendor_id        vendor_name account  amount_eur  invoice_number posted_by                            memo
+txn_id                                                                                                                                                   
+TXN014582   2025-04-21   2025-04-20 2025-05-11    V-0029  Poratekniikka Tmi    4020     1137.79          915036  INTEG-01  Tavarantoimitus, tilaus 373125
+TXN025294   2025-07-13   2025-07-12 2025-08-02    V-0029  Poratekniikka Tmi    4200      629.95          915136  INTEG-01  Tavarantoimitus, tilaus 373225
+TXN045937   2025-12-09   2025-12-04 2025-12-25    V-0029  Poratekniikka Tmi    4200      185.72          915321     U-058  Tavarantoimitus, tilaus 373410
+TXN046897   2025-12-13   2025-12-12 2026-01-02    V-0029  Poratekniikka Tmi    4020      148.77          915344  INTEG-01  Tavarantoimitus, tilaus 373433
+TXN047068   2025-12-15   2025-12-15 2026-01-05    V-0029  Poratekniikka Tmi    4200      960.33          915346  INTEG-01  Tavarantoimitus, tilaus 373435
+TXN049030   2025-12-28   2025-12-28 2026-01-18    V-0029  Poratekniikka Tmi    4020     1560.35          915363  INTEG-01  Tavarantoimitus, tilaus 373452
+TXN049097   2025-12-29   2025-12-29 2026-01-19    V-0029  Poratekniikka Tmi    4200      164.62          915367  INTEG-01  Tavarantoimitus, tilaus 373456
+  -- vendor V-0029 Poratekniikka Tmi country=FI terms=21 allowed=4020;4200
+     full-year: n=474 sum=314884.49 mean=664.31 min=119.83 max=2918.05
+     accounts used: {'4020': 402, '4200': 72}
+     posters: {'INTEG-01': 382, 'U-176': 19, 'U-058': 18, 'U-204': 16, 'U-142': 15, 'U-117': 13, 'U-031': 11}
+
+==========================================================================================
+UNIT DU-02  type=detector_vendor  key=V-0037  stats={'n_flags': 6, 'months_touched': [3, 5, 7, 9, 11], 'total_eur': 7266.2, 'score_range': [0.000805, 0.044838]}
+          posting_date invoice_date   due_date vendor_id         vendor_name account  amount_eur  invoice_number posted_by               memo
+txn_id                                                                                                                                       
+TXN008754   2025-03-08   2025-03-07 2025-03-21    V-0037  Metallipalvelu Tmi    7400     2571.01          945476  INTEG-01  Ostolasku, 633802
+TXN019844   2025-05-29   2025-05-28 2025-06-11    V-0037  Metallipalvelu Tmi    7400     1562.58          945533  INTEG-01  Ostolasku, 633859
+TXN026715   2025-07-29   2025-07-29 2025-08-12    V-0037  Metallipalvelu Tmi    7900      215.38          945568  INTEG-01  Ostolasku, 633894
+TXN031522   2025-09-06   2025-09-05 2025-09-19    V-0037  Metallipalvelu Tmi    7400      341.74          945587  INTEG-01  Ostolasku, 633913
+TXN039215   2025-11-02   2025-11-02 2025-11-16    V-0037  Metallipalvelu Tmi    7900     2214.25          945634  INTEG-01  Ostolasku, 633960
+TXN044437   2025-11-30   2025-11-29 2025-12-13    V-0037  Metallipalvelu Tmi    7900      361.24          945653  INTEG-01  Ostolasku, 633979
+  -- vendor V-0037 Metallipalvelu Tmi country=FI terms=14 allowed=7900;7400
+     full-year: n=263 sum=263330.45 mean=1001.26 min=120.69 max=2571.01
+     accounts used: {'7900': 223, '7400': 40}
+     posters: {'INTEG-01': 214, 'U-031': 12, 'U-204': 10, 'U-142': 8, 'U-058': 7, 'U-176': 6, 'U-117': 6}
+
+==========================================================================================
+UNIT DU-03  type=detector_vendor  key=V-0041  stats={'n_flags': 5, 'months_touched': [1, 9, 10, 11], 'total_eur': 4069.65, 'score_range': [0.002856, 0.016328]}
+          posting_date invoice_date   due_date vendor_id          vendor_name account  amount_eur  invoice_number posted_by                            memo
+txn_id                                                                                                                                                     
+TXN002825   2025-01-25   2025-01-24 2025-02-14    V-0041  Tarviketekniikka Oy    4300      740.43          828374  INTEG-01  Tavarantoimitus, tilaus 688523
+TXN033494   2025-09-21   2025-09-21 2025-10-12    V-0041  Tarviketekniikka Oy    4300      176.30          828730  INTEG-01  Tavarantoimitus, tilaus 688879
+TXN037268   2025-10-19   2025-10-18 2025-11-08    V-0041  Tarviketekniikka Oy    4300     1264.99          828780  INTEG-01  Tavarantoimitus, tilaus 688929
+TXN041664   2025-11-15   2025-11-15 2025-12-06    V-0041  Tarviketekniikka Oy    4300     1251.61          828833  INTEG-01  Tavarantoimitus, tilaus 688982
+TXN041770   2025-11-16   2025-11-16 2025-12-07    V-0041  Tarviketekniikka Oy    4300      636.32          828835  INTEG-01  Tavarantoimitus, tilaus 688984
+  -- vendor V-0041 Tarviketekniikka Oy country=FI terms=21 allowed=4200;4300
+     full-year: n=584 sum=380798.25 mean=652.05 min=104.22 max=2586.27
+     accounts used: {'4200': 492, '4300': 92}
+     posters: {'INTEG-01': 491, 'U-058': 19, 'U-176': 17, 'U-142': 16, 'U-204': 15, 'U-031': 15, 'U-117': 11}
+
+==========================================================================================
+UNIT DU-04  type=detector_vendor  key=V-0062  stats={'n_flags': 3, 'months_touched': [1, 3, 8], 'total_eur': 5118.21, 'score_range': [0.01584, 0.017099]}
+          posting_date invoice_date   due_date vendor_id         vendor_name account  amount_eur  invoice_number posted_by               memo
+txn_id                                                                                                                                       
+TXN000006   2025-01-01   2025-01-01 2025-01-15    V-0062  Metalltechnik GmbH    7100     1903.69          139617  INTEG-01  Ostolasku, 632966
+TXN010186   2025-03-19   2025-03-15 2025-03-29    V-0062  Metalltechnik GmbH    7100      348.78          139638     U-058  Ostolasku, 632987
+TXN029775   2025-08-24   2025-08-24 2025-09-07    V-0062  Metalltechnik GmbH    7900     2865.74          139686  INTEG-01  Ostolasku, 633035
+  -- vendor V-0062 Metalltechnik GmbH country=DE terms=14 allowed=7900;7100
+     full-year: n=132 sum=139391.78 mean=1056.00 min=205.50 max=3994.29
+     accounts used: {'7900': 111, '7100': 21}
+     posters: {'INTEG-01': 103, 'U-031': 9, 'U-058': 7, 'U-204': 4, 'U-142': 4, 'U-176': 3, 'U-117': 2}
+
+==========================================================================================
+UNIT DU-05  type=detector_vendor  key=V-0067  stats={'n_flags': 7, 'months_touched': [1, 2, 6, 10, 12], 'total_eur': 11929.72, 'score_range': [0.001754, 0.029821]}
+          posting_date invoice_date   due_date vendor_id        vendor_name account  amount_eur  invoice_number posted_by               memo
+txn_id                                                                                                                                      
+TXN002028   2025-01-19   2025-01-19 2025-02-18    V-0067  Stahltechnik GmbH    7850     1441.42          729403  INTEG-01  Ostolasku, 043925
+TXN004738   2025-02-08   2025-02-07 2025-03-09    V-0067  Stahltechnik GmbH    7990     1568.08          729419  INTEG-01  Ostolasku, 043941
+TXN005724   2025-02-15   2025-02-14 2025-03-16    V-0067  Stahltechnik GmbH    7850     2234.86          729425  INTEG-01  Ostolasku, 043947
+TXN022201   2025-06-16   2025-06-16 2025-07-16    V-0067  Stahltechnik GmbH    7990     1330.14          729536  INTEG-01  Ostolasku, 044058
+TXN035308   2025-10-04   2025-10-03 2025-11-02    V-0067  Stahltechnik GmbH    7990     2052.70          729631  INTEG-01  Ostolasku, 044153
+TXN045662   2025-12-06   2025-12-05 2026-01-04    V-0067  Stahltechnik GmbH    7850     2956.57          729707  INTEG-01  Ostolasku, 044229
+TXN048223   2025-12-20   2025-12-19 2026-01-18    V-0067  Stahltechnik GmbH    7990      345.95          729722  INTEG-01  Ostolasku, 044244
+  -- vendor V-0067 Stahltechnik GmbH country=DE terms=30 allowed=7850;7990
+     full-year: n=345 sum=310982.90 mean=901.40 min=186.83 max=3373.29
+     accounts used: {'7850': 279, '7990': 66}
+     posters: {'INTEG-01': 281, 'U-058': 15, 'U-031': 12, 'U-142': 11, 'U-176': 11, 'U-117': 9, 'U-204': 6}
+
+==========================================================================================
+UNIT DU-06  type=detector_vendor  key=V-0072  stats={'n_flags': 3, 'months_touched': [4, 8, 11], 'total_eur': 1267.02, 'score_range': [0.000825, 0.020665]}
+          posting_date invoice_date   due_date vendor_id     vendor_name account  amount_eur  invoice_number posted_by                            memo
+txn_id                                                                                                                                                
+TXN014992   2025-04-24   2025-04-24 2025-05-24    V-0072  Nostotukku Tmi    4000      481.75          850904  INTEG-01  Tavarantoimitus, tilaus 922826
+TXN028151   2025-08-11   2025-08-11 2025-09-10    V-0072  Nostotukku Tmi    4000      487.38          850993  INTEG-01  Tavarantoimitus, tilaus 922915
+TXN043039   2025-11-22   2025-11-21 2025-12-21    V-0072  Nostotukku Tmi    4000      297.89          851126  INTEG-01  Tavarantoimitus, tilaus 923048
+  -- vendor V-0072 Nostotukku Tmi country=FI terms=30 allowed=4300;4000
+     full-year: n=361 sum=228816.23 mean=633.84 min=144.09 max=2338.38
+     accounts used: {'4300': 299, '4000': 62}
+     posters: {'INTEG-01': 296, 'U-058': 13, 'U-204': 12, 'U-031': 11, 'U-142': 10, 'U-176': 10, 'U-117': 9}
+
+==========================================================================================
+UNIT DU-07  type=detector_vendor  key=V-0076  stats={'n_flags': 4, 'months_touched': [1, 6, 11], 'total_eur': 11991.89, 'score_range': [0.000581, 0.011826]}
+          posting_date invoice_date   due_date vendor_id        vendor_name account  amount_eur  invoice_number posted_by                  memo
+txn_id                                                                                                                                         
+TXN000283   2025-01-04   2025-01-03 2025-01-17    V-0076  Vasaravaraosa Tmi    4420     2191.16          376803  INTEG-01  Palvelulasku, 069356
+TXN023878   2025-06-29   2025-06-29 2025-07-13    V-0076  Vasaravaraosa Tmi    4420     2454.81          377123  INTEG-01  Palvelulasku, 069676
+TXN039147   2025-11-01   2025-10-31 2025-11-14    V-0076  Vasaravaraosa Tmi    4420     1992.35          377312  INTEG-01  Palvelulasku, 069865
+TXN043047   2025-11-22   2025-11-21 2025-12-05    V-0076  Vasaravaraosa Tmi    4440     5353.57          377369  INTEG-01  Palvelulasku, 069922
+  -- vendor V-0076 Vasaravaraosa Tmi country=FI terms=14 allowed=4440;4420
+     full-year: n=664 sum=1235611.22 mean=1860.86 min=381.17 max=5828.69
+     accounts used: {'4440': 564, '4420': 100}
+     posters: {'INTEG-01': 536, 'U-117': 31, 'U-176': 27, 'U-142': 22, 'U-058': 17, 'U-031': 16, 'U-204': 15}
+
+==========================================================================================
+UNIT DU-08  type=detector_vendor  key=V-0078  stats={'n_flags': 14, 'months_touched': [1, 2, 3, 4, 6, 7, 8, 10, 11, 12], 'total_eur': 52254.38, 'score_range': [0.000675, 0.063041]}
+          posting_date invoice_date   due_date vendor_id        vendor_name account  amount_eur  invoice_number posted_by                               memo
+txn_id                                                                                                                                                      
+TXN001172   2025-01-13   2025-01-13 2025-01-27    V-0078  Kumipalvelu Oy Ab    4010     1545.46          817535  INTEG-01  Materiaalitoimitus, tilaus 068101
+TXN002844   2025-01-25   2025-01-24 2025-02-07    V-0078  Kumipalvelu Oy Ab    4010     3361.99          817541  INTEG-01  Materiaalitoimitus, tilaus 068107
+TXN003746   2025-02-01   2025-01-31 2025-02-14    V-0078  Kumipalvelu Oy Ab    4010     3430.25          817546  INTEG-01  Materiaalitoimitus, tilaus 068112
+TXN007800   2025-03-01   2025-02-28 2025-03-14    V-0078  Kumipalvelu Oy Ab    4010     4691.92          817558  INTEG-01  Materiaalitoimitus, tilaus 068124
+TXN014558   2025-04-20   2025-04-19 2025-05-03    V-0078  Kumipalvelu Oy Ab    4310     2705.07          817585  INTEG-01  Materiaalitoimitus, tilaus 068151
+TXN023145   2025-06-24   2025-06-16 2025-06-30    V-0078  Kumipalvelu Oy Ab    4010     5267.05          817610     U-204  Materiaalitoimitus, tilaus 068176
+TXN024513   2025-07-04   2025-06-30 2025-07-14    V-0078  Kumipalvelu Oy Ab    4010     4684.71          817612     U-058  Materiaalitoimitus, tilaus 068178
+TXN028038   2025-08-09   2025-08-08 2025-08-22    V-0078  Kumipalvelu Oy Ab    4310     3303.23          817621  INTEG-01  Materiaalitoimitus, tilaus 068187
+TXN030627   2025-08-30   2025-08-29 2025-09-12    V-0078  Kumipalvelu Oy Ab    4010     4126.31          817633  INTEG-01  Materiaalitoimitus, tilaus 068199
+TXN035164   2025-10-03   2025-10-03 2025-10-17    V-0078  Kumipalvelu Oy Ab    4310     4938.04          817653  INTEG-01  Materiaalitoimitus, tilaus 068219
+TXN038040   2025-10-24   2025-10-17 2025-10-31    V-0078  Kumipalvelu Oy Ab    4310     6172.62          817654     U-204  Materiaalitoimitus, tilaus 068220
+TXN038176   2025-10-25   2025-10-24 2025-11-07    V-0078  Kumipalvelu Oy Ab    4310     2006.67          817655  INTEG-01  Materiaalitoimitus, tilaus 068221
+TXN044446   2025-11-30   2025-11-29 2025-12-13    V-0078  Kumipalvelu Oy Ab    4310     4405.53          817678  INTEG-01  Materiaalitoimitus, tilaus 068244
+TXN049042   2025-12-28   2025-12-28 2026-01-11    V-0078  Kumipalvelu Oy Ab    4310     1615.53          817690  INTEG-01  Materiaalitoimitus, tilaus 068256
+  -- vendor V-0078 Kumipalvelu Oy Ab country=FI terms=14 allowed=4310;4010
+     full-year: n=160 sum=520895.49 mean=3255.60 min=462.91 max=6588.79
+     accounts used: {'4310': 131, '4010': 29}
+     posters: {'INTEG-01': 144, 'U-204': 5, 'U-117': 4, 'U-176': 3, 'U-058': 2, 'U-142': 1, 'U-031': 1}
+
+==========================================================================================
+UNIT DU-09  type=detector_vendor  key=V-0090  stats={'n_flags': 9, 'months_touched': [1, 2, 3, 4, 5, 7, 8, 9, 10], 'total_eur': 6269.47, 'score_range': [0.001507, 0.022181]}
+          posting_date invoice_date   due_date vendor_id           vendor_name account  amount_eur  invoice_number posted_by                            memo
+txn_id                                                                                                                                                      
+TXN002846   2025-01-25   2025-01-25 2025-02-24    V-0090  Industriehandel GmbH    4300     1790.95          159984  INTEG-01  Tavarantoimitus, tilaus 280967
+TXN006869   2025-02-23   2025-02-22 2025-03-24    V-0090  Industriehandel GmbH    4200      319.77          160021  INTEG-01  Tavarantoimitus, tilaus 281004
+TXN007802   2025-03-01   2025-02-28 2025-03-30    V-0090  Industriehandel GmbH    4200     1126.08          160028  INTEG-01  Tavarantoimitus, tilaus 281011
+TXN015438   2025-04-27   2025-04-27 2025-05-27    V-0090  Industriehandel GmbH    4200      905.55          160083  INTEG-01  Tavarantoimitus, tilaus 281066
+TXN020103   2025-05-31   2025-05-30 2025-06-29    V-0090  Industriehandel GmbH    4200      200.53          160116  INTEG-01  Tavarantoimitus, tilaus 281099
+TXN026594   2025-07-27   2025-07-27 2025-08-26    V-0090  Industriehandel GmbH    4300      493.56          160157  INTEG-01  Tavarantoimitus, tilaus 281140
+TXN028092   2025-08-10   2025-08-09 2025-09-08    V-0090  Industriehandel GmbH    4200      391.44          160163  INTEG-01  Tavarantoimitus, tilaus 281146
+TXN031612   2025-09-07   2025-09-07 2025-10-07    V-0090  Industriehandel GmbH    4200      580.78          160199  INTEG-01  Tavarantoimitus, tilaus 281182
+TXN035396   2025-10-05   2025-10-05 2025-11-04    V-0090  Industriehandel GmbH    4300      460.81          160231  INTEG-01  Tavarantoimitus, tilaus 281214
+  -- vendor V-0090 Industriehandel GmbH country=DE terms=30 allowed=4300;4200
+     full-year: n=365 sum=239402.65 mean=655.90 min=113.60 max=3757.68
+     accounts used: {'4300': 308, '4200': 57}
+     posters: {'INTEG-01': 313, 'U-176': 16, 'U-117': 12, 'U-204': 8, 'U-058': 8, 'U-142': 6, 'U-031': 2}
+
+==========================================================================================
+UNIT DU-10  type=detector_vendor  key=V-0098  stats={'n_flags': 4, 'months_touched': [1, 2, 3, 5], 'total_eur': 3672.62, 'score_range': [0.002932, 0.027171]}
+          posting_date invoice_date   due_date vendor_id  vendor_name account  amount_eur  invoice_number posted_by                            memo
+txn_id                                                                                                                                             
+TXN002035   2025-01-19   2025-01-18 2025-02-08    V-0098  Bergsteknik    4020      738.84          161361  INTEG-01  Tavarantoimitus, tilaus 274744
+TXN005240   2025-02-12   2025-02-12 2025-03-05    V-0098  Bergsteknik    4020      187.44          161373  INTEG-01  Tavarantoimitus, tilaus 274756
+TXN007876   2025-03-02   2025-03-01 2025-03-22    V-0098  Bergsteknik    4300      738.74          161375  INTEG-01  Tavarantoimitus, tilaus 274758
+TXN019390   2025-05-26   2025-05-26 2025-06-16    V-0098  Bergsteknik    4020     2007.60          161407  INTEG-01  Tavarantoimitus, tilaus 274790
+  -- vendor V-0098 Bergsteknik country=SE terms=21 allowed=4300;4020
+     full-year: n=143 sum=92758.03 mean=648.66 min=109.53 max=2098.26
+     accounts used: {'4300': 122, '4020': 21}
+     posters: {'INTEG-01': 121, 'U-058': 6, 'U-204': 5, 'U-176': 5, 'U-117': 3, 'U-142': 3}
+
+==========================================================================================
+UNIT DU-11  type=detector_vendor  key=V-0099  stats={'n_flags': 11, 'months_touched': [1, 2, 3, 6, 9, 10, 11], 'total_eur': 40030.42, 'score_range': [0.001029, 0.045739]}
+          posting_date invoice_date   due_date vendor_id vendor_name account  amount_eur  invoice_number posted_by                  memo
+txn_id                                                                                                                                  
+TXN001482   2025-01-15   2025-01-14 2025-01-28    V-0099  Malmhandel    4440    11281.91          692946  INTEG-01  Palvelulasku, 073807
+TXN002852   2025-01-25   2025-01-24 2025-02-07    V-0099  Malmhandel    4410     4113.55          692952  INTEG-01  Palvelulasku, 073813
+TXN003822   2025-02-02   2025-02-02 2025-02-16    V-0099  Malmhandel    4410     1590.41          692958  INTEG-01  Palvelulasku, 073819
+TXN004917   2025-02-10   2025-02-10 2025-02-24    V-0099  Malmhandel    4410     1044.10          692963  INTEG-01  Palvelulasku, 073824
+TXN006777   2025-02-22   2025-02-21 2025-03-07    V-0099  Malmhandel    4410     2609.89          692975  INTEG-01  Palvelulasku, 073836
+TXN008107   2025-03-04   2025-03-04 2025-03-18    V-0099  Malmhandel    4410     3634.86          692979  INTEG-01  Palvelulasku, 073840
+TXN022945   2025-06-22   2025-06-21 2025-07-05    V-0099  Malmhandel    4410     2238.13          693062  INTEG-01  Palvelulasku, 073923
+TXN032489   2025-09-13   2025-09-12 2025-09-26    V-0099  Malmhandel    4440     3956.95          693104  INTEG-01  Palvelulasku, 073965
+TXN033430   2025-09-20   2025-09-19 2025-10-03    V-0099  Malmhandel    4440     2504.90          693105  INTEG-01  Palvelulasku, 073966
+TXN037513   2025-10-21   2025-10-21 2025-11-04    V-0099  Malmhandel    4440     4309.88          693117  INTEG-01  Palvelulasku, 073978
+TXN043055   2025-11-22   2025-11-22 2025-12-06    V-0099  Malmhandel    4410     2745.84          693135  INTEG-01  Palvelulasku, 073996
+  -- vendor V-0099 Malmhandel country=SE terms=14 allowed=4440;4410
+     full-year: n=224 sum=450085.38 mean=2009.31 min=558.68 max=11281.91
+     accounts used: {'4440': 180, '4410': 44}
+     posters: {'INTEG-01': 177, 'U-031': 12, 'U-058': 12, 'U-117': 8, 'U-176': 8, 'U-204': 4, 'U-142': 3}
+
+==========================================================================================
+UNIT DU-12  type=detector_vendor  key=V-0110  stats={'n_flags': 3, 'months_touched': [5, 9, 10], 'total_eur': 5779.37, 'score_range': [0.006118, 0.02113]}
+          posting_date invoice_date   due_date vendor_id            vendor_name account  amount_eur  invoice_number posted_by                            memo
+txn_id                                                                                                                                                       
+TXN018381   2025-05-19   2025-05-19 2025-06-02    V-0110  Levykomponentti Oy Ab    4000     2268.31          315138  INTEG-01  Tavarantoimitus, tilaus 582104
+TXN034234   2025-09-26   2025-09-25 2025-10-09    V-0110  Levykomponentti Oy Ab    4000     1779.06          315178  INTEG-01  Tavarantoimitus, tilaus 582144
+TXN038180   2025-10-25   2025-10-24 2025-11-07    V-0110  Levykomponentti Oy Ab    4210     1732.00          315188  INTEG-01  Tavarantoimitus, tilaus 582154
+  -- vendor V-0110 Levykomponentti Oy Ab country=FI terms=14 allowed=4000;4210
+     full-year: n=146 sum=88281.23 mean=604.67 min=165.65 max=2268.31
+     accounts used: {'4000': 126, '4210': 20}
+     posters: {'INTEG-01': 122, 'U-142': 5, 'U-204': 5, 'U-058': 5, 'U-117': 4, 'U-176': 3, 'U-031': 2}
+
+==========================================================================================
+UNIT DU-13  type=detector_vendor  key=V-0114  stats={'n_flags': 7, 'months_touched': [3, 4, 5, 7, 11, 12], 'total_eur': 5173.85, 'score_range': [0.000817, 0.033669]}
+          posting_date invoice_date   due_date vendor_id            vendor_name account  amount_eur  invoice_number posted_by               memo
+txn_id                                                                                                                                          
+TXN008785   2025-03-08   2025-03-07 2025-03-21    V-0114  Ratasmateriaali Oy Ab    7250     1377.82          632774  INTEG-01  Ostolasku, 892753
+TXN014566   2025-04-20   2025-04-20 2025-05-04    V-0114  Ratasmateriaali Oy Ab    7250      947.95          632785  INTEG-01  Ostolasku, 892764
+TXN018540   2025-05-20   2025-05-19 2025-06-02    V-0114  Ratasmateriaali Oy Ab    7200      352.64          632799  INTEG-01  Ostolasku, 892778
+TXN025673   2025-07-17   2025-07-16 2025-07-30    V-0114  Ratasmateriaali Oy Ab    7200     1235.48          632823  INTEG-01  Ostolasku, 892802
+TXN026644   2025-07-28   2025-07-28 2025-08-11    V-0114  Ratasmateriaali Oy Ab    7200      362.74          632828  INTEG-01  Ostolasku, 892807
+TXN039328   2025-11-03   2025-11-03 2025-11-17    V-0114  Ratasmateriaali Oy Ab    7200      339.73          632868  INTEG-01  Ostolasku, 892847
+TXN049413   2025-12-30   2025-12-30 2026-01-13    V-0114  Ratasmateriaali Oy Ab    7200      557.49          632895  INTEG-01  Ostolasku, 892874
+  -- vendor V-0114 Ratasmateriaali Oy Ab country=FI terms=14 allowed=7250;7200
+     full-year: n=144 sum=136367.82 mean=947.00 min=199.21 max=3403.77
+     accounts used: {'7250': 129, '7200': 15}
+     posters: {'INTEG-01': 122, 'U-176': 7, 'U-204': 4, 'U-031': 4, 'U-142': 3, 'U-117': 3, 'U-058': 1}
+
+==========================================================================================
+UNIT DU-14  type=detector_vendor  key=V-0118  stats={'n_flags': 6, 'months_touched': [3, 5, 8, 10, 12], 'total_eur': 2516.04, 'score_range': [0.00511, 0.018783]}
+          posting_date invoice_date   due_date vendor_id        vendor_name account  amount_eur  invoice_number posted_by                            memo
+txn_id                                                                                                                                                   
+TXN008910   2025-03-10   2025-03-06 2025-04-05    V-0118  Levypalvelu Oy Ab    4200      214.32          747500     U-142  Tavarantoimitus, tilaus 234876
+TXN016050   2025-05-01   2025-04-30 2025-05-30    V-0118  Levypalvelu Oy Ab    4200      461.38          747529  INTEG-01  Tavarantoimitus, tilaus 234905
+TXN028095   2025-08-10   2025-08-10 2025-09-09    V-0118  Levypalvelu Oy Ab    4200      457.41          747579  INTEG-01  Tavarantoimitus, tilaus 234955
+TXN029853   2025-08-25   2025-08-25 2025-09-24    V-0118  Levypalvelu Oy Ab    4200      769.74          747584  INTEG-01  Tavarantoimitus, tilaus 234960
+TXN035618   2025-10-07   2025-10-07 2025-11-06    V-0118  Levypalvelu Oy Ab    4200      303.54          747613  INTEG-01  Tavarantoimitus, tilaus 234989
+TXN049050   2025-12-28   2025-12-28 2026-01-27    V-0118  Levypalvelu Oy Ab    4000      309.65          747672  INTEG-01  Tavarantoimitus, tilaus 235048
+  -- vendor V-0118 Levypalvelu Oy Ab country=FI terms=30 allowed=4000;4200
+     full-year: n=217 sum=139664.77 mean=643.62 min=125.86 max=2226.87
+     accounts used: {'4000': 180, '4200': 37}
+     posters: {'INTEG-01': 172, 'U-142': 10, 'U-117': 8, 'U-058': 8, 'U-176': 7, 'U-031': 6, 'U-204': 6}
+
+==========================================================================================
+UNIT DU-15  type=detector_vendor  key=V-0121  stats={'n_flags': 6, 'months_touched': [1, 3, 5, 9, 12], 'total_eur': 10181.72, 'score_range': [0.000923, 0.059309]}
+          posting_date invoice_date   due_date vendor_id          vendor_name account  amount_eur  invoice_number posted_by               memo
+txn_id                                                                                                                                        
+TXN000380   2025-01-06   2025-01-06 2025-01-27    V-0121  Putkimateriaali Tmi    7990     1935.36          940109  INTEG-01  Ostolasku, 771607
+TXN009798   2025-03-16   2025-03-16 2025-04-06    V-0121  Putkimateriaali Tmi    7990     1845.80          940191  INTEG-01  Ostolasku, 771689
+TXN009799   2025-03-16   2025-03-16 2025-04-06    V-0121  Putkimateriaali Tmi    7990      572.92          940192  INTEG-01  Ostolasku, 771690
+TXN019315   2025-05-25   2025-05-25 2025-06-15    V-0121  Putkimateriaali Tmi    7990     1728.53          940255  INTEG-01  Ostolasku, 771753
+TXN031554   2025-09-06   2025-09-05 2025-09-26    V-0121  Putkimateriaali Tmi    7990     1747.46          940349  INTEG-01  Ostolasku, 771847
+TXN048644   2025-12-23   2025-12-23 2026-01-13    V-0121  Putkimateriaali Tmi    7990     2351.65          940487  INTEG-01  Ostolasku, 771985
+  -- vendor V-0121 Putkimateriaali Tmi country=FI terms=21 allowed=7250;7990
+     full-year: n=390 sum=380129.69 mean=974.69 min=200.63 max=4588.56
+     accounts used: {'7250': 336, '7990': 54}
+     posters: {'INTEG-01': 323, 'U-176': 16, 'U-204': 12, 'U-117': 12, 'U-142': 11, 'U-031': 9, 'U-058': 7}
+
+==========================================================================================
+UNIT DU-16  type=detector_vendor  key=V-0125  stats={'n_flags': 5, 'months_touched': [2, 3, 5, 6, 10], 'total_eur': 7698.2, 'score_range': [0.003178, 0.020213]}
+          posting_date invoice_date   due_date vendor_id       vendor_name account  amount_eur  invoice_number posted_by               memo
+txn_id                                                                                                                                     
+TXN003903   2025-02-03   2025-02-03 2025-02-24    V-0125  Ratastukku Oy Ab    7400     1797.13          838870  INTEG-01  Ostolasku, 305950
+TXN007967   2025-03-03   2025-03-03 2025-03-24    V-0125  Ratastukku Oy Ab    7400     2119.78          838876  INTEG-01  Ostolasku, 305956
+TXN018246   2025-05-17   2025-05-16 2025-06-06    V-0125  Ratastukku Oy Ab    7400     1818.42          838903  INTEG-01  Ostolasku, 305983
+TXN020777   2025-06-05   2025-06-05 2025-06-26    V-0125  Ratastukku Oy Ab    7400      961.78          838905  INTEG-01  Ostolasku, 305985
+TXN035402   2025-10-05   2025-10-04 2025-10-25    V-0125  Ratastukku Oy Ab    7400     1001.09          838948  INTEG-01  Ostolasku, 306028
+  -- vendor V-0125 Ratastukku Oy Ab country=FI terms=21 allowed=7990;7400
+     full-year: n=116 sum=115565.75 mean=996.26 min=102.58 max=3489.70
+     accounts used: {'7990': 99, '7400': 17}
+     posters: {'INTEG-01': 100, 'U-204': 4, 'U-176': 3, 'U-058': 3, 'U-117': 3, 'U-031': 2, 'U-142': 1}
+
+==========================================================================================
+UNIT DU-17  type=detector_vendor  key=V-0131  stats={'n_flags': 17, 'months_touched': [1, 2, 3, 4, 6, 7, 9, 10, 11, 12], 'total_eur': 66827.78, 'score_range': [0.002627, 0.057772]}
+          posting_date invoice_date   due_date vendor_id           vendor_name account  amount_eur  invoice_number posted_by                               memo
+txn_id                                                                                                                                                         
+TXN000296   2025-01-04   2025-01-03 2025-02-02    V-0131  Turvalogistiikka Tmi    4110     2885.76          669568  INTEG-01  Materiaalitoimitus, tilaus 410660
+TXN003029   2025-01-27   2025-01-27 2025-02-26    V-0131  Turvalogistiikka Tmi    4110     4469.39          669579  INTEG-01  Materiaalitoimitus, tilaus 410671
+TXN003766   2025-02-01   2025-01-31 2025-03-02    V-0131  Turvalogistiikka Tmi    4110     2342.03          669583  INTEG-01  Materiaalitoimitus, tilaus 410675
+TXN008842   2025-03-09   2025-03-08 2025-04-07    V-0131  Turvalogistiikka Tmi    4110     4767.10          669605  INTEG-01  Materiaalitoimitus, tilaus 410697
+TXN012457   2025-04-04   2025-04-03 2025-05-03    V-0131  Turvalogistiikka Tmi    4110     3931.07          669619  INTEG-01  Materiaalitoimitus, tilaus 410711
+TXN013643   2025-04-12   2025-04-11 2025-05-11    V-0131  Turvalogistiikka Tmi    4110     2906.05          669621  INTEG-01  Materiaalitoimitus, tilaus 410713
+TXN014488   2025-04-18   2025-04-18 2025-05-18    V-0131  Turvalogistiikka Tmi    4110     1695.20          669624  INTEG-01  Materiaalitoimitus, tilaus 410716
+TXN014851   2025-04-23   2025-04-23 2025-05-23    V-0131  Turvalogistiikka Tmi    4110     6500.84          669625  INTEG-01  Materiaalitoimitus, tilaus 410717
+TXN023177   2025-06-24   2025-06-24 2025-07-24    V-0131  Turvalogistiikka Tmi    4110     2856.31          669643  INTEG-01  Materiaalitoimitus, tilaus 410735
+TXN025264   2025-07-12   2025-07-11 2025-08-10    V-0131  Turvalogistiikka Tmi    4310     1885.01          669650  INTEG-01  Materiaalitoimitus, tilaus 410742
+TXN026009   2025-07-21   2025-07-20 2025-08-19    V-0131  Turvalogistiikka Tmi    4110     4414.22          669651  INTEG-01  Materiaalitoimitus, tilaus 410743
+TXN034396   2025-09-27   2025-09-27 2025-10-27    V-0131  Turvalogistiikka Tmi    4310     3939.31          669674  INTEG-01  Materiaalitoimitus, tilaus 410766
+TXN038338   2025-10-27   2025-10-21 2025-11-20    V-0131  Turvalogistiikka Tmi    4310     4296.78          669678     U-117  Materiaalitoimitus, tilaus 410770
+TXN042391   2025-11-19   2025-11-19 2025-12-19    V-0131  Turvalogistiikka Tmi    4110     5522.78          669696  INTEG-01  Materiaalitoimitus, tilaus 410788
+TXN044757   2025-12-02   2025-12-01 2025-12-31    V-0131  Turvalogistiikka Tmi    4110     6938.75          669705  INTEG-01  Materiaalitoimitus, tilaus 410797
+TXN047043   2025-12-14   2025-12-13 2026-01-12    V-0131  Turvalogistiikka Tmi    4110     4239.02          669715  INTEG-01  Materiaalitoimitus, tilaus 410807
+TXN048846   2025-12-24   2025-12-23 2026-01-22    V-0131  Turvalogistiikka Tmi    4310     3238.16          669722  INTEG-01  Materiaalitoimitus, tilaus 410814
+  -- vendor V-0131 Turvalogistiikka Tmi country=FI terms=30 allowed=4310;4110
+     full-year: n=166 sum=536697.03 mean=3233.11 min=605.83 max=7066.54
+     accounts used: {'4310': 130, '4110': 36}
+     posters: {'INTEG-01': 134, 'U-176': 7, 'U-142': 7, 'U-058': 7, 'U-117': 6, 'U-031': 4, 'U-204': 1}
+
+==========================================================================================
+UNIT DU-18  type=detector_vendor  key=V-0132  stats={'n_flags': 3, 'months_touched': [2, 6, 8], 'total_eur': 23808.89, 'score_range': [0.002807, 0.008423]}
+          posting_date invoice_date   due_date vendor_id         vendor_name account  amount_eur  invoice_number posted_by                               memo
+txn_id                                                                                                                                                       
+TXN003828   2025-02-02   2025-02-02 2025-02-16    V-0132  Kulmatekniikka Tmi    4310     7190.14          488521  INTEG-01  Materiaalitoimitus, tilaus 215932
+TXN022845   2025-06-20   2025-06-19 2025-07-03    V-0132  Kulmatekniikka Tmi    4310    10039.71          488660  INTEG-01  Materiaalitoimitus, tilaus 216071
+TXN028096   2025-08-10   2025-08-10 2025-08-24    V-0132  Kulmatekniikka Tmi    4310     6579.04          488693  INTEG-01  Materiaalitoimitus, tilaus 216104
+  -- vendor V-0132 Kulmatekniikka Tmi country=FI terms=14 allowed=4310
+     full-year: n=348 sum=1100544.10 mean=3162.48 min=539.71 max=10039.71
+     accounts used: {'4310': 348}
+     posters: {'INTEG-01': 277, 'U-058': 16, 'U-204': 12, 'U-117': 12, 'U-142': 11, 'U-031': 11, 'U-176': 9}
+
+==========================================================================================
+UNIT DU-19  type=detector_vendor  key=V-0135  stats={'n_flags': 9, 'months_touched': [1, 3, 4, 7, 9, 11, 12], 'total_eur': 15274.69, 'score_range': [0.001788, 0.079014]}
+          posting_date invoice_date   due_date vendor_id            vendor_name account  amount_eur  invoice_number posted_by               memo
+txn_id                                                                                                                                          
+TXN001116   2025-01-12   2025-01-11 2025-02-01    V-0135  Metallijärjestelmä Oy    7400      448.16          310669  INTEG-01  Ostolasku, 914652
+TXN007879   2025-03-02   2025-03-02 2025-03-23    V-0135  Metallijärjestelmä Oy    7200     2250.57          310697  INTEG-01  Ostolasku, 914680
+TXN010226   2025-03-19   2025-03-18 2025-04-08    V-0135  Metallijärjestelmä Oy    7200     4091.51          310705  INTEG-01  Ostolasku, 914688
+TXN014695   2025-04-22   2025-04-22 2025-05-13    V-0135  Metallijärjestelmä Oy    7400      719.83          310726  INTEG-01  Ostolasku, 914709
+TXN024115   2025-07-01   2025-07-01 2025-07-22    V-0135  Metallijärjestelmä Oy    7400     3721.96          310770  INTEG-01  Ostolasku, 914753
+TXN025063   2025-07-10   2025-07-10 2025-07-31    V-0135  Metallijärjestelmä Oy    7400     1134.78          310772  INTEG-01  Ostolasku, 914755
+TXN032565   2025-09-14   2025-09-14 2025-10-05    V-0135  Metallijärjestelmä Oy    7200     1951.51          310810  INTEG-01  Ostolasku, 914793
+TXN042395   2025-11-19   2025-11-19 2025-12-10    V-0135  Metallijärjestelmä Oy    7400      445.38          310853  INTEG-01  Ostolasku, 914836
+TXN047157   2025-12-15   2025-12-15 2026-01-05    V-0135  Metallijärjestelmä Oy    7400      510.99          310875  INTEG-01  Ostolasku, 914858
+  -- vendor V-0135 Metallijärjestelmä Oy country=FI terms=21 allowed=7200;7400
+     full-year: n=228 sum=209878.35 mean=920.52 min=203.02 max=4091.51
+     accounts used: {'7200': 196, '7400': 32}
+     posters: {'INTEG-01': 186, 'U-142': 9, 'U-031': 9, 'U-176': 8, 'U-117': 7, 'U-058': 5, 'U-204': 4}
+
+==========================================================================================
+UNIT DU-20  type=detector_vendor  key=V-0155  stats={'n_flags': 3, 'months_touched': [4, 12], 'total_eur': 5053.97, 'score_range': [0.008436, 0.018616]}
+          posting_date invoice_date   due_date vendor_id       vendor_name account  amount_eur  invoice_number posted_by               memo
+txn_id                                                                                                                                     
+TXN014574   2025-04-20   2025-04-19 2025-05-10    V-0155  Pistetukku Oy Ab    7100     1943.29          290710  INTEG-01  Ostolasku, 222334
+TXN048859   2025-12-24   2025-12-23 2026-01-13    V-0155  Pistetukku Oy Ab    7100     1690.55          291103  INTEG-01  Ostolasku, 222727
+TXN048860   2025-12-24   2025-12-23 2026-01-13    V-0155  Pistetukku Oy Ab    7100     1420.13          291104  INTEG-01  Ostolasku, 222728
+  -- vendor V-0155 Pistetukku Oy Ab country=FI terms=21 allowed=7400;7100
+     full-year: n=586 sum=550241.51 mean=938.98 min=135.64 max=5141.54
+     accounts used: {'7400': 484, '7100': 102}
+     posters: {'INTEG-01': 480, 'U-117': 20, 'U-058': 19, 'U-031': 19, 'U-176': 18, 'U-204': 16, 'U-142': 14}
+
+==========================================================================================
+UNIT DU-21  type=detector_vendor  key=V-0156  stats={'n_flags': 8, 'months_touched': [1, 2, 4, 6, 7, 9], 'total_eur': 3531.67, 'score_range': [0.003588, 0.039246]}
+          posting_date invoice_date   due_date vendor_id      vendor_name account  amount_eur  invoice_number posted_by                            memo
+txn_id                                                                                                                                                 
+TXN001079   2025-01-11   2025-01-10 2025-01-31    V-0156  Verkkotukku Tmi    4200      646.40          779936  INTEG-01  Tavarantoimitus, tilaus 781088
+TXN001080   2025-01-11   2025-01-11 2025-02-01    V-0156  Verkkotukku Tmi    4200      280.12          779937  INTEG-01  Tavarantoimitus, tilaus 781089
+TXN004775   2025-02-08   2025-02-07 2025-02-28    V-0156  Verkkotukku Tmi    4020      119.65          779957  INTEG-01  Tavarantoimitus, tilaus 781109
+TXN006309   2025-02-19   2025-02-18 2025-03-11    V-0156  Verkkotukku Tmi    4200       98.86          779963  INTEG-01  Tavarantoimitus, tilaus 781115
+TXN012666   2025-04-06   2025-04-06 2025-04-27    V-0156  Verkkotukku Tmi    4200      811.49          779983  INTEG-01  Tavarantoimitus, tilaus 781135
+TXN023045   2025-06-23   2025-06-23 2025-07-14    V-0156  Verkkotukku Tmi    4200      489.26          780017  INTEG-01  Tavarantoimitus, tilaus 781169
+TXN025369   2025-07-14   2025-07-13 2025-08-03    V-0156  Verkkotukku Tmi    4200      290.69          780028  INTEG-01  Tavarantoimitus, tilaus 781180
+TXN034555   2025-09-29   2025-09-29 2025-10-20    V-0156  Verkkotukku Tmi    4200      795.20          780055  INTEG-01  Tavarantoimitus, tilaus 781207
+  -- vendor V-0156 Verkkotukku Tmi country=FI terms=21 allowed=4020;4200
+     full-year: n=171 sum=103079.39 mean=602.80 min=98.86 max=2197.98
+     accounts used: {'4020': 142, '4200': 29}
+     posters: {'INTEG-01': 143, 'U-031': 9, 'U-204': 6, 'U-142': 4, 'U-058': 4, 'U-176': 3, 'U-117': 2}
+
+==========================================================================================
+UNIT DU-22  type=detector_vendor  key=V-0157  stats={'n_flags': 7, 'months_touched': [2, 5, 6, 7, 9, 11], 'total_eur': 30021.51, 'score_range': [0.001609, 0.046047]}
+          posting_date invoice_date   due_date vendor_id      vendor_name account  amount_eur  invoice_number posted_by                               memo
+txn_id                                                                                                                                                    
+TXN006313   2025-02-19   2025-02-18 2025-03-04    V-0157  Kumitukku Oy Ab    4100     3744.41          161816  INTEG-01  Materiaalitoimitus, tilaus 030167
+TXN016280   2025-05-03   2025-05-02 2025-05-16    V-0157  Kumitukku Oy Ab    4100     4040.76          161851  INTEG-01  Materiaalitoimitus, tilaus 030202
+TXN020017   2025-05-30   2025-05-30 2025-06-13    V-0157  Kumitukku Oy Ab    4310     6615.30          161870  INTEG-01  Materiaalitoimitus, tilaus 030221
+TXN022104   2025-06-14   2025-06-13 2025-06-27    V-0157  Kumitukku Oy Ab    4310     5206.80          161878  INTEG-01  Materiaalitoimitus, tilaus 030229
+TXN025074   2025-07-10   2025-07-09 2025-07-23    V-0157  Kumitukku Oy Ab    4100     3324.69          161889  INTEG-01  Materiaalitoimitus, tilaus 030240
+TXN031867   2025-09-09   2025-09-09 2025-09-23    V-0157  Kumitukku Oy Ab    4100     2404.24          161907  INTEG-01  Materiaalitoimitus, tilaus 030258
+TXN043168   2025-11-23   2025-11-22 2025-12-06    V-0157  Kumitukku Oy Ab    4310     4685.31          161947  INTEG-01  Materiaalitoimitus, tilaus 030298
+  -- vendor V-0157 Kumitukku Oy Ab country=FI terms=14 allowed=4310;4100
+     full-year: n=170 sum=546429.48 mean=3214.29 min=1361.62 max=7832.79
+     accounts used: {'4310': 149, '4100': 21}
+     posters: {'INTEG-01': 139, 'U-031': 9, 'U-142': 6, 'U-117': 5, 'U-058': 5, 'U-176': 4, 'U-204': 2}
+
+==========================================================================================
+UNIT DU-23  type=detector_vendor  key=V-0176  stats={'n_flags': 3, 'months_touched': [3, 7, 10], 'total_eur': 2161.5, 'score_range': [0.006663, 0.037382]}
+          posting_date invoice_date   due_date vendor_id   vendor_name account  amount_eur  invoice_number posted_by                            memo
+txn_id                                                                                                                                              
+TXN011658   2025-03-29   2025-03-28 2025-04-11    V-0176  Nordgrossist    4300     1246.51          390097  INTEG-01  Tavarantoimitus, tilaus 663795
+TXN027003   2025-07-31   2025-07-30 2025-08-13    V-0176  Nordgrossist    4020      681.69          390164  INTEG-01  Tavarantoimitus, tilaus 663862
+TXN036438   2025-10-13   2025-10-13 2025-10-27    V-0176  Nordgrossist    4020      233.30          390200  INTEG-01  Tavarantoimitus, tilaus 663898
+  -- vendor V-0176 Nordgrossist country=SE terms=14 allowed=4300;4020
+     full-year: n=203 sum=132980.39 mean=655.08 min=159.81 max=3276.52
+     accounts used: {'4300': 165, '4020': 38}
+     posters: {'INTEG-01': 163, 'U-204': 10, 'U-176': 8, 'U-058': 6, 'U-117': 6, 'U-142': 5, 'U-031': 5}
+
+==========================================================================================
+UNIT DU-24  type=detector_vendor  key=V-0198  stats={'n_flags': 10, 'months_touched': [1, 2, 3, 5, 7, 8, 9, 11, 12], 'total_eur': 11611.52, 'score_range': [0.005069, 0.041278]}
+          posting_date invoice_date   due_date vendor_id      vendor_name account  amount_eur  invoice_number posted_by               memo
+txn_id                                                                                                                                    
+TXN001934   2025-01-17   2025-01-17 2025-01-31    V-0198  Metallitukku Oy    7850      293.92          869579  INTEG-01  Ostolasku, 132913
+TXN004814   2025-02-08   2025-02-07 2025-02-21    V-0198  Metallitukku Oy    7250      806.12          869586  INTEG-01  Ostolasku, 132920
+TXN010863   2025-03-24   2025-03-24 2025-04-07    V-0198  Metallitukku Oy    7850     2440.87          869611  INTEG-01  Ostolasku, 132945
+TXN019937   2025-05-29   2025-05-28 2025-06-11    V-0198  Metallitukku Oy    7850     1441.50          869655  INTEG-01  Ostolasku, 132989
+TXN025935   2025-07-19   2025-07-18 2025-08-01    V-0198  Metallitukku Oy    7850     1507.31          869676  INTEG-01  Ostolasku, 133010
+TXN029907   2025-08-25   2025-08-20 2025-09-03    V-0198  Metallitukku Oy    7850      211.92          869691     U-117  Ostolasku, 133025
+TXN030689   2025-08-30   2025-08-29 2025-09-12    V-0198  Metallitukku Oy    7850     1791.71          869697  INTEG-01  Ostolasku, 133031
+TXN034478   2025-09-28   2025-09-28 2025-10-12    V-0198  Metallitukku Oy    7250      519.34          869720  INTEG-01  Ostolasku, 133054
+TXN040104   2025-11-06   2025-11-05 2025-11-19    V-0198  Metallitukku Oy    7850      837.52          869743  INTEG-01  Ostolasku, 133077
+TXN045749   2025-12-06   2025-12-05 2025-12-19    V-0198  Metallitukku Oy    7850     1761.31          869767  INTEG-01  Ostolasku, 133101
+  -- vendor V-0198 Metallitukku Oy country=FI terms=14 allowed=7250;7850
+     full-year: n=207 sum=182547.93 mean=881.87 min=211.92 max=2872.17
+     accounts used: {'7250': 180, '7850': 27}
+     posters: {'INTEG-01': 164, 'U-204': 11, 'U-142': 10, 'U-117': 8, 'U-031': 7, 'U-176': 5, 'U-058': 2}
+
+==========================================================================================
+UNIT SINGLES  type=detector_singles  key=None  stats={'n_flags': 10, 'months_touched': [1, 2, 3, 7, 11, 12], 'total_eur': 46649.64, 'score_range': [0.023722, 0.075024]}
+          posting_date invoice_date   due_date vendor_id             vendor_name account  amount_eur  invoice_number posted_by                               memo
+txn_id                                                                                                                                                           
+TXN002850   2025-01-25   2025-01-24 2025-02-14    V-0095  Rataskomponentti Oy Ab    4110     6092.09          886621  INTEG-01  Materiaalitoimitus, tilaus 820283
+TXN002870   2025-01-25   2025-01-24 2025-02-07    V-0142      Technikhandel GmbH    4110     3999.93          542467  INTEG-01  Materiaalitoimitus, tilaus 095455
+TXN006870   2025-02-23   2025-02-23 2025-03-25    V-0105    Metallivaraosa Oy Ab    4430     6253.77           22825  INTEG-01               Palvelulasku, 331320
+TXN010666   2025-03-22   2025-03-22 2025-04-21    V-0071          Verktygsteknik    4430     8464.74           64055  INTEG-01       Kertatoimitus, tilaus 307323
+TXN025791   2025-07-18   2025-07-18 2025-08-17    V-0075         Rautaväline Tmi    7250     1434.10          242213  INTEG-01                  Ostolasku, 287785
+TXN044434   2025-11-30   2025-11-30 2025-12-21    V-0023  Säiliömateriaali Oy Ab    4310     4063.03          612169  INTEG-01  Materiaalitoimitus, tilaus 043072
+TXN044442   2025-11-30   2025-11-30 2025-12-30    V-0075         Rautaväline Tmi    7250     1708.80          242264  INTEG-01                  Ostolasku, 287836
+TXN045742   2025-12-06   2025-12-05 2025-12-26    V-0195           Nordhandel AS    7700     7575.97          164308  INTEG-01       Kertatoimitus, tilaus 739316
+TXN047046   2025-12-14   2025-12-14 2026-01-13    V-0150       Kantahuolto Oy Ab    4300      335.83           44682  INTEG-01     Tavarantoimitus, tilaus 781494
+TXN048135   2025-12-19   2025-12-19 2026-01-02    V-0171     Runkologistiikka Oy    4020     6721.38          334964  INTEG-01       Kertatoimitus, tilaus 743538
+  -- vendor V-0095 Rataskomponentti Oy Ab country=FI terms=21 allowed=4110
+     full-year: n=100 sum=324913.36 mean=3249.13 min=444.45 max=6954.14
+     accounts used: {'4110': 100}
+     posters: {'INTEG-01': 84, 'U-117': 5, 'U-058': 4, 'U-142': 3, 'U-031': 2, 'U-204': 2}
+  -- vendor V-0142 Technikhandel GmbH country=DE terms=14 allowed=4010;4110
+     full-year: n=47 sum=160699.78 mean=3419.14 min=1108.21 max=7214.84
+     accounts used: {'4010': 41, '4110': 6}
+     posters: {'INTEG-01': 40, 'U-142': 3, 'U-031': 2, 'U-204': 2}
+  -- vendor V-0105 Metallivaraosa Oy Ab country=FI terms=30 allowed=4430
+     full-year: n=326 sum=635053.35 mean=1948.02 min=444.08 max=6268.10
+     accounts used: {'4430': 326}
+     posters: {'INTEG-01': 253, 'U-117': 18, 'U-058': 13, 'U-204': 13, 'U-176': 10, 'U-031': 10, 'U-142': 9}
+  -- vendor V-0071 Verktygsteknik country=SE terms=30 allowed=7400;4430
+     full-year: n=36 sum=99344.67 mean=2759.57 min=624.41 max=8464.74
+     accounts used: {'7400': 28, '4430': 8}
+     posters: {'INTEG-01': 29, 'U-176': 2, 'U-142': 2, 'U-117': 1, 'U-058': 1, 'U-031': 1}
+  -- vendor V-0075 Rautaväline Tmi country=FI terms=30 allowed=7850;7250
+     full-year: n=113 sum=105334.62 mean=932.16 min=196.05 max=2800.40
+     accounts used: {'7850': 102, '7250': 11}
+     posters: {'INTEG-01': 85, 'U-117': 7, 'U-176': 5, 'U-142': 5, 'U-058': 4, 'U-204': 4, 'U-031': 3}
+  -- vendor V-0023 Säiliömateriaali Oy Ab country=FI terms=21 allowed=4010;4310
+     full-year: n=18 sum=59356.39 mean=3297.58 min=1685.58 max=4974.31
+     accounts used: {'4010': 15, '4310': 3}
+     posters: {'INTEG-01': 16, 'U-031': 1, 'U-204': 1}
+  -- vendor V-0195 Nordhandel AS country=NO terms=21 allowed=7700;4430
+     full-year: n=57 sum=131185.31 mean=2301.50 min=435.95 max=7575.97
+     accounts used: {'7700': 47, '4430': 10}
+     posters: {'INTEG-01': 45, 'U-142': 4, 'U-031': 3, 'U-204': 3, 'U-117': 1, 'U-058': 1}
+  -- vendor V-0150 Kantahuolto Oy Ab country=FI terms=30 allowed=4000;4300
+     full-year: n=103 sum=68590.84 mean=665.93 min=152.43 max=2223.29
+     accounts used: {'4000': 86, '4300': 17}
+     posters: {'INTEG-01': 87, 'U-058': 4, 'U-204': 4, 'U-031': 4, 'U-117': 2, 'U-176': 1, 'U-142': 1}
+  -- vendor V-0171 Runkologistiikka Oy country=FI terms=14 allowed=4200;4020
+     full-year: n=60 sum=166246.62 mean=2770.78 min=730.57 max=7267.65
+     accounts used: {'4200': 51, '4020': 9}
+     posters: {'INTEG-01': 52, 'U-176': 2, 'U-031': 2, 'U-204': 2, 'U-058': 1, 'U-117': 1}
+
+==========================================================================================
+UNIT RESIDUAL  type=detector_residual  key=None  stats={'n_flags': 30, 'months_touched': [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12], 'total_eur': 105890.93, 'score_range': [0.000505, 0.016032]}
+          posting_date invoice_date   due_date vendor_id             vendor_name account  amount_eur  invoice_number posted_by                               memo
+txn_id                                                                                                                                                           
+TXN000014   2025-01-01   2025-01-01 2025-01-15    V-0163  Kaapelilogistiikka Tmi    7850     7830.91           30877  INTEG-01                  Ostolasku, 634399
+TXN001110   2025-01-12   2025-01-11 2025-02-01    V-0087      Suojamateriaali Ky    7700     2941.40          623756  INTEG-01                  Ostolasku, 316954
+TXN001120   2025-01-12   2025-01-11 2025-01-25    V-0159          Palkkitukku Oy    4430     5391.36          739741  INTEG-01               Palvelulasku, 638350
+TXN001122   2025-01-12   2025-01-12 2025-02-11    V-0162      Kiskomateriaali Oy    4430     4143.12          840408  INTEG-01               Palvelulasku, 044970
+TXN002011   2025-01-18   2025-01-17 2025-02-07    V-0195           Nordhandel AS    4430      857.93          164255  INTEG-01       Kertatoimitus, tilaus 739263
+TXN002906   2025-01-25   2025-01-24 2025-02-14    V-0191    Runkologistiikka Tmi    4010     3596.42          403318  INTEG-01  Materiaalitoimitus, tilaus 785611
+TXN004862   2025-02-09   2025-02-08 2025-03-01    V-0197           Nordhandel 18    4100     8587.24          846919  INTEG-01  Materiaalitoimitus, tilaus 805653
+TXN005847   2025-02-16   2025-02-16 2025-03-02    V-0194  Laakeritekniikka Oy Ab    4000     1374.89          138452  INTEG-01     Tavarantoimitus, tilaus 437085
+TXN009813   2025-03-16   2025-03-15 2025-04-05    V-0189         Vaunuvaraosa Ky    7000     1156.42          338506  INTEG-01       Kertatoimitus, tilaus 544468
+TXN010906   2025-03-25   2025-03-21 2025-04-20    V-0069   Porttijärjestelmä Tmi    7250      516.13          467587     U-176                  Ostolasku, 299592
+TXN012655   2025-04-06   2025-04-06 2025-04-20    V-0085       Kumiasennus Oy Ab    4210     8320.68            2043  INTEG-01       Kertatoimitus, tilaus 412576
+TXN012661   2025-04-06   2025-04-05 2025-05-05    V-0138        Rautatukku Oy Ab    4020      858.21          742673  INTEG-01     Tavarantoimitus, tilaus 504777
+TXN013613   2025-04-12   2025-04-11 2025-05-02    V-0068               VaruGrupp    4310     7394.10          531534  INTEG-01  Materiaalitoimitus, tilaus 473961
+TXN013690   2025-04-13   2025-04-13 2025-05-13    V-0040         Kiskovaraosa Ky    7600      359.66          178513  INTEG-01                  Ostolasku, 911811
+TXN022076   2025-06-14   2025-06-13 2025-07-13    V-0094      Levylogistiikka Oy    4100     6083.32          331453  INTEG-01  Materiaalitoimitus, tilaus 494792
+TXN024660   2025-07-06   2025-07-05 2025-08-04    V-0081        Suojaasennus Tmi    4430     4220.07          114150  INTEG-01               Palvelulasku, 127923
+TXN024676   2025-07-06   2025-07-06 2025-07-27    V-0191    Runkologistiikka Tmi    4010     9447.82          403416  INTEG-01  Materiaalitoimitus, tilaus 785709
+TXN028087   2025-08-10   2025-08-09 2025-08-23    V-0051           Runkotukku Oy    4020      328.90          192998  INTEG-01     Tavarantoimitus, tilaus 674610
+TXN029305   2025-08-20   2025-08-19 2025-09-18    V-0150       Kantahuolto Oy Ab    4300      950.29           44643  INTEG-01     Tavarantoimitus, tilaus 781455
+TXN030135   2025-08-27   2025-08-26 2025-09-25    V-0069   Porttijärjestelmä Tmi    7250     1282.43          467621  INTEG-01                  Ostolasku, 299626
+TXN032543   2025-09-14   2025-09-13 2025-09-27    V-0033      Runkopalvelu Oy Ab    4200     2821.34          743483  INTEG-01       Kertatoimitus, tilaus 771648
+TXN035335   2025-10-04   2025-10-03 2025-11-02    V-0138        Rautatukku Oy Ab    4020     1601.67          742752  INTEG-01     Tavarantoimitus, tilaus 504856
+TXN037272   2025-10-19   2025-10-19 2025-11-09    V-0068               VaruGrupp    4310     3792.41          531634  INTEG-01  Materiaalitoimitus, tilaus 474061
+TXN039217   2025-11-02   2025-11-02 2025-11-16    V-0051           Runkotukku Oy    4020      375.10          193057  INTEG-01     Tavarantoimitus, tilaus 674669
+TXN041793   2025-11-16   2025-11-15 2025-12-06    V-0153           Bergsgrossist    4310     5521.84          364549  INTEG-01  Materiaalitoimitus, tilaus 381759
+TXN045682   2025-12-06   2025-12-06 2025-12-20    V-0108   Kiskomateriaali Oy Ab    4310     6133.54          630971  INTEG-01  Materiaalitoimitus, tilaus 055145
+TXN048788   2025-12-24   2025-12-23 2026-01-13    V-0027             Sjogrossist    7800      922.08          842804  INTEG-01                  Ostolasku, 729851
+TXN048964   2025-12-26   2025-12-26 2026-01-09    V-0093       Verktoyteknikk AS    4000     4060.34          460578  INTEG-01     Tavarantoimitus, tilaus 211201
+TXN049049   2025-12-28   2025-12-27 2026-01-10    V-0108   Kiskomateriaali Oy Ab    4310     4751.50          630986  INTEG-01  Materiaalitoimitus, tilaus 055160
+TXN049082   2025-12-28   2025-12-27 2026-01-10    V-0194  Laakeritekniikka Oy Ab    4000      269.81          138688  INTEG-01     Tavarantoimitus, tilaus 437321
+  -- vendor V-0163 Kaapelilogistiikka Tmi country=FI terms=14 allowed=7850
+     full-year: n=416 sum=395259.84 mean=950.14 min=133.65 max=7830.91
+     accounts used: {'7850': 416}
+     posters: {'INTEG-01': 332, 'U-142': 19, 'U-176': 15, 'U-058': 15, 'U-204': 13, 'U-117': 12, 'U-031': 10}
+  -- vendor V-0087 Suojamateriaali Ky country=FI terms=21 allowed=7700
+     full-year: n=180 sum=162603.27 mean=903.35 min=239.94 max=4276.62
+     accounts used: {'7700': 180}
+     posters: {'INTEG-01': 139, 'U-058': 12, 'U-176': 9, 'U-117': 8, 'U-142': 5, 'U-031': 4, 'U-204': 3}
+  -- vendor V-0159 Palkkitukku Oy country=FI terms=14 allowed=4430
+     full-year: n=751 sum=1394732.18 mean=1857.17 min=376.34 max=8509.85
+     accounts used: {'4430': 751}
+     posters: {'INTEG-01': 625, 'U-204': 26, 'U-058': 25, 'U-117': 25, 'U-142': 24, 'U-031': 16, 'U-176': 10}
+  -- vendor V-0162 Kiskomateriaali Oy country=FI terms=30 allowed=4430
+     full-year: n=429 sum=808680.81 mean=1885.04 min=380.73 max=8430.66
+     accounts used: {'4430': 429}
+     posters: {'INTEG-01': 353, 'U-031': 17, 'U-117': 15, 'U-204': 14, 'U-058': 11, 'U-142': 10, 'U-176': 9}
+  -- vendor V-0195 Nordhandel AS country=NO terms=21 allowed=7700;4430
+     full-year: n=57 sum=131185.31 mean=2301.50 min=435.95 max=7575.97
+     accounts used: {'7700': 47, '4430': 10}
+     posters: {'INTEG-01': 45, 'U-142': 4, 'U-031': 3, 'U-204': 3, 'U-117': 1, 'U-058': 1}
+  -- vendor V-0191 Runkologistiikka Tmi country=FI terms=21 allowed=4010
+     full-year: n=218 sum=709345.19 mean=3253.88 min=1017.88 max=9447.82
+     accounts used: {'4010': 218}
+     posters: {'INTEG-01': 171, 'U-058': 10, 'U-142': 9, 'U-117': 8, 'U-204': 7, 'U-176': 7, 'U-031': 6}
+  -- vendor V-0197 Nordhandel 18 country=SE terms=21 allowed=4100
+     full-year: n=1624 sum=4668633.30 mean=2874.77 min=405.21 max=8587.24
+     accounts used: {'4100': 1624}
+     posters: {'INTEG-01': 1334, 'U-142': 57, 'U-031': 51, 'U-204': 49, 'U-176': 48, 'U-117': 45, 'U-058': 40}
+  -- vendor V-0194 Laakeritekniikka Oy Ab country=FI terms=14 allowed=4000
+     full-year: n=285 sum=194517.59 mean=682.52 min=123.26 max=2180.64
+     accounts used: {'4000': 285}
+     posters: {'INTEG-01': 238, 'U-058': 11, 'U-031': 9, 'U-204': 8, 'U-142': 7, 'U-117': 7, 'U-176': 5}
+  -- vendor V-0189 Vaunuvaraosa Ky country=FI terms=21 allowed=7000
+     full-year: n=68 sum=184064.88 mean=2706.84 min=509.99 max=11831.56
+     accounts used: {'7000': 68}
+     posters: {'INTEG-01': 52, 'U-176': 4, 'U-031': 3, 'U-204': 3, 'U-117': 3, 'U-058': 2, 'U-142': 1}
+  -- vendor V-0069 Porttijärjestelmä Tmi country=FI terms=30 allowed=7300;7250
+     full-year: n=97 sum=90613.21 mean=934.16 min=177.31 max=2966.75
+     accounts used: {'7300': 84, '7250': 13}
+     posters: {'INTEG-01': 78, 'U-176': 5, 'U-142': 4, 'U-117': 3, 'U-031': 3, 'U-204': 2, 'U-058': 2}
+  -- vendor V-0085 Kumiasennus Oy Ab country=FI terms=14 allowed=4210
+     full-year: n=153 sum=407095.32 mean=2660.75 min=402.55 max=10988.77
+     accounts used: {'4210': 153}
+     posters: {'INTEG-01': 122, 'U-117': 8, 'U-142': 6, 'U-031': 6, 'U-176': 5, 'U-204': 3, 'U-058': 3}
+  -- vendor V-0138 Rautatukku Oy Ab country=FI terms=30 allowed=4020
+     full-year: n=176 sum=111868.90 mean=635.62 min=158.15 max=2248.38
+     accounts used: {'4020': 176}
+     posters: {'INTEG-01': 152, 'U-142': 9, 'U-204': 4, 'U-117': 3, 'U-058': 3, 'U-031': 3, 'U-176': 2}
+  -- vendor V-0068 VaruGrupp country=EE terms=21 allowed=4310
+     full-year: n=198 sum=644810.59 mean=3256.62 min=478.88 max=9491.43
+     accounts used: {'4310': 198}
+     posters: {'INTEG-01': 165, 'U-058': 9, 'U-176': 6, 'U-031': 5, 'U-204': 5, 'U-142': 4, 'U-117': 4}
+  -- vendor V-0040 Kiskovaraosa Ky country=FI terms=30 allowed=7600
+     full-year: n=31 sum=27728.23 mean=894.46 min=310.82 max=2394.39
+     accounts used: {'7600': 31}
+     posters: {'INTEG-01': 26, 'U-117': 1, 'U-204': 1, 'U-142': 1, 'U-031': 1, 'U-058': 1}
+  -- vendor V-0094 Levylogistiikka Oy country=FI terms=30 allowed=4100
+     full-year: n=93 sum=293879.54 mean=3160.00 min=1264.47 max=7925.43
+     accounts used: {'4100': 93}
+     posters: {'INTEG-01': 77, 'U-117': 4, 'U-031': 4, 'U-176': 3, 'U-142': 3, 'U-204': 2}
+  -- vendor V-0081 Suojaasennus Tmi country=FI terms=30 allowed=4430
+     full-year: n=105 sum=207110.79 mean=1972.48 min=515.67 max=4724.73
+     accounts used: {'4430': 105}
+     posters: {'INTEG-01': 89, 'U-031': 5, 'U-204': 4, 'U-176': 3, 'U-058': 3, 'U-117': 1}
+  -- vendor V-0051 Runkotukku Oy country=FI terms=14 allowed=4020
+     full-year: n=303 sum=193743.84 mean=639.42 min=128.33 max=1771.12
+     accounts used: {'4020': 303}
+     posters: {'INTEG-01': 249, 'U-117': 13, 'U-031': 11, 'U-204': 11, 'U-142': 9, 'U-058': 7, 'U-176': 3}
+  -- vendor V-0150 Kantahuolto Oy Ab country=FI terms=30 allowed=4000;4300
+     full-year: n=103 sum=68590.84 mean=665.93 min=152.43 max=2223.29
+     accounts used: {'4000': 86, '4300': 17}
+     posters: {'INTEG-01': 87, 'U-058': 4, 'U-204': 4, 'U-031': 4, 'U-117': 2, 'U-176': 1, 'U-142': 1}
+  -- vendor V-0033 Runkopalvelu Oy Ab country=FI terms=14 allowed=4200
+     full-year: n=15 sum=32752.93 mean=2183.53 min=1081.29 max=4680.41
+     accounts used: {'4200': 15}
+     posters: {'INTEG-01': 13, 'U-058': 2}
+  -- vendor V-0153 Bergsgrossist country=SE terms=21 allowed=4310
+     full-year: n=245 sum=772336.78 mean=3152.40 min=524.12 max=7737.10
+     accounts used: {'4310': 245}
+     posters: {'INTEG-01': 206, 'U-176': 10, 'U-204': 9, 'U-142': 8, 'U-031': 6, 'U-058': 5, 'U-117': 1}
+  -- vendor V-0108 Kiskomateriaali Oy Ab country=FI terms=14 allowed=4310
+     full-year: n=261 sum=815603.51 mean=3124.92 min=746.11 max=7209.08
+     accounts used: {'4310': 261}
+     posters: {'INTEG-01': 219, 'U-176': 11, 'U-031': 7, 'U-204': 7, 'U-117': 7, 'U-142': 6, 'U-058': 4}
+  -- vendor V-0027 Sjogrossist country=SE terms=21 allowed=7000;7800
+     full-year: n=130 sum=128597.73 mean=989.21 min=198.79 max=3645.34
+     accounts used: {'7000': 103, '7800': 27}
+     posters: {'INTEG-01': 118, 'U-117': 3, 'U-176': 3, 'U-058': 3, 'U-204': 1, 'U-142': 1, 'U-031': 1}
+  -- vendor V-0093 Verktoyteknikk AS country=NO terms=14 allowed=4000
+     full-year: n=259 sum=156340.29 mean=603.63 min=126.47 max=4060.34
+     accounts used: {'4000': 259}
+     posters: {'INTEG-01': 220, 'U-142': 11, 'U-058': 9, 'U-117': 6, 'U-204': 5, 'U-031': 4, 'U-176': 4}

@@ -1,0 +1,172 @@
+########## RULE UNITS (RU-01..RU-13) ##########
+==================================================================================================================================
+UNIT RU-01  type=rule_vendor  key=V-0006  n_flags=8  total=36934.24
+  tests=['mapping']  score_range=None  months=[9, 10]
+  VENDOR V-0006: Mainostoimisto Kaarniala Oy [FI] terms=21 allowed=7100
+    all-year: n_txn=8 total=36934.24 mean=4616.78 median=4757.84
+    accounts_used(all yr)={'7200': 8}
+    posters(all yr)={'U-204': 8}
+    vat=FI73341113 iban=FI2507673518319836
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by    test  drank  dscore                         memo
+TXN031757   2025-09-09   2025-09-03 2025-09-24    7200     2694.75         489171     U-204 mapping    NaN     NaN Mainoskampanja, syyskuu 2025
+TXN032890   2025-09-17   2025-09-10 2025-10-01    7200     5766.00         489172     U-204 mapping    NaN     NaN Mainoskampanja, syyskuu 2025
+TXN033532   2025-09-22   2025-09-17 2025-10-08    7200     5096.64         489173     U-204 mapping    NaN     NaN Mainoskampanja, syyskuu 2025
+TXN034479   2025-09-29   2025-09-24 2025-10-15    7200     4419.05         489174     U-204 mapping    NaN     NaN Mainoskampanja, syyskuu 2025
+TXN035705   2025-10-08   2025-10-01 2025-10-22    7200     5344.05         489175     U-204 mapping    NaN     NaN Mainoskampanja, lokakuu 2025
+TXN036471   2025-10-14   2025-10-08 2025-10-29    7200     3482.12         489176     U-204 mapping    NaN     NaN Mainoskampanja, lokakuu 2025
+TXN036992   2025-10-17   2025-10-15 2025-11-05    7200     5930.93         489177     U-204 mapping    NaN     NaN Mainoskampanja, lokakuu 2025
+TXN038575   2025-10-29   2025-10-22 2025-11-12    7200     4200.70         489178     U-204 mapping    NaN     NaN Mainoskampanja, lokakuu 2025
+==================================================================================================================================
+UNIT RU-02  type=rule_vendor  key=V-0008  n_flags=4  total=2915.4
+  tests=['duplicate']  score_range=None  months=[2, 8]
+  VENDOR V-0008: Pulttitarvike Tmi [FI] terms=30 allowed=4000
+    all-year: n_txn=4 total=2915.4 mean=728.85 median=728.85
+    accounts_used(all yr)={'4000': 4}
+    posters(all yr)={'INTEG-01': 4}
+    vat=FI19280810 iban=FI4000056762520810
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by      test  drank  dscore                     memo
+TXN004166   2025-02-05   2025-02-05 2025-03-07    4000       842.5         801524  INTEG-01 duplicate    NaN     NaN Ostolasku, tilaus 358022
+TXN004816   2025-02-09   2025-02-09 2025-03-11    4000       842.5         801525  INTEG-01 duplicate    NaN     NaN Ostolasku, tilaus 358022
+TXN027877   2025-08-08   2025-08-08 2025-09-07    4000       615.2         801526  INTEG-01 duplicate    NaN     NaN Ostolasku, tilaus 358023
+TXN028688   2025-08-15   2025-08-15 2025-09-14    4000       615.2         801527  INTEG-01 duplicate    NaN     NaN Ostolasku, tilaus 358023
+==================================================================================================================================
+UNIT RU-03  type=rule_vendor  key=V-0009  n_flags=4  total=10291.2
+  tests=['duplicate']  score_range=None  months=[4, 10]
+  VENDOR V-0009: Poralogistiikka Tmi [FI] terms=14 allowed=4200
+    all-year: n_txn=4 total=10291.2 mean=2572.8 median=2572.8
+    accounts_used(all yr)={'4200': 4}
+    posters(all yr)={'INTEG-01': 4}
+    vat=FI41198877 iban=FI7469847534140718
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by      test  drank  dscore                     memo
+TXN012557   2025-04-05   2025-04-05 2025-04-19    4200      1365.0         930804  INTEG-01 duplicate    NaN     NaN Ostolasku, tilaus 787675
+TXN013198   2025-04-10   2025-04-10 2025-04-24    4200      1365.0         930805  INTEG-01 duplicate    NaN     NaN Ostolasku, tilaus 787675
+TXN035706   2025-10-08   2025-10-08 2025-10-22    4200      3780.6         930806  INTEG-01 duplicate    NaN     NaN Ostolasku, tilaus 787676
+TXN036341   2025-10-13   2025-10-13 2025-10-27    4200      3780.6         930807  INTEG-01 duplicate    NaN     NaN Ostolasku, tilaus 787676
+==================================================================================================================================
+UNIT RU-04  type=rule_vendor  key=V-0010  n_flags=4  total=8122.2
+  tests=['duplicate']  score_range=None  months=[6, 12]
+  VENDOR V-0010: Kumipalvelu Tmi [FI] terms=14 allowed=4300
+    all-year: n_txn=4 total=8122.2 mean=2030.55 median=2030.55
+    accounts_used(all yr)={'4300': 4}
+    posters(all yr)={'INTEG-01': 4}
+    vat=FI74370899 iban=FI3717481682140733
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by      test  drank  dscore                     memo
+TXN020678   2025-06-05   2025-06-05 2025-06-19    4300     2940.75         716170  INTEG-01 duplicate    NaN     NaN Ostolasku, tilaus 847310
+TXN021479   2025-06-11   2025-06-11 2025-06-25    4300     2940.75         716171  INTEG-01 duplicate    NaN     NaN Ostolasku, tilaus 847310
+TXN045781   2025-12-08   2025-12-08 2025-12-22    4300     1120.35         716172  INTEG-01 duplicate    NaN     NaN Ostolasku, tilaus 847311
+TXN047018   2025-12-14   2025-12-14 2025-12-28    4300     1120.35         716173  INTEG-01 duplicate    NaN     NaN Ostolasku, tilaus 847311
+==================================================================================================================================
+UNIT RU-05  type=rule_vendor  key=V-0011  n_flags=6  total=41000.0
+  tests=['round_sum']  score_range=None  months=[1, 3, 5, 7, 9, 11]
+  VENDOR V-0011: Säiliöpalvelu Oy Ab [FI] terms=21 allowed=4100
+    all-year: n_txn=6 total=41000.0 mean=6833.33 median=6500.0
+    accounts_used(all yr)={'4100': 6}
+    posters(all yr)={'INTEG-01': 6}
+    vat=FI25125132 iban=FI9717427316556211
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by      test  drank  dscore                     memo
+TXN001097   2025-01-12   2025-01-12 2025-02-02    4100      5000.0         571272  INTEG-01 round_sum    NaN     NaN Ostolasku, tilaus 077948
+TXN009156   2025-03-12   2025-03-12 2025-04-02    4100      6000.0         571273  INTEG-01 round_sum    NaN     NaN Ostolasku, tilaus 077949
+TXN017323   2025-05-12   2025-05-12 2025-06-02    4100      7000.0         571274  INTEG-01 round_sum    NaN     NaN Ostolasku, tilaus 077950
+TXN025235   2025-07-12   2025-07-12 2025-08-02    4100      8000.0         571275  INTEG-01 round_sum    NaN     NaN Ostolasku, tilaus 077951
+TXN032281   2025-09-12   2025-09-12 2025-10-03    4100      9000.0         571276  INTEG-01 round_sum    NaN     NaN Ostolasku, tilaus 077952
+TXN040884   2025-11-12   2025-11-12 2025-12-03    4100      6000.0         571277  INTEG-01 round_sum    NaN     NaN Ostolasku, tilaus 077953
+==================================================================================================================================
+UNIT RU-06  type=rule_vendor  key=V-0012  n_flags=4  total=38843.29
+  tests=['near_threshold']  score_range=None  months=[2, 5, 8, 11]
+  VENDOR V-0012: Ratashuolto Oy [FI] terms=14 allowed=4410
+    all-year: n_txn=4 total=38843.29 mean=9710.82 median=9681.6
+    accounts_used(all yr)={'4410': 4}
+    posters(all yr)={'INTEG-01': 4}
+    vat=FI75200344 iban=FI4880175626522114
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by           test  drank  dscore                     memo
+TXN005976   2025-02-18   2025-02-18 2025-03-04    4410     9712.45         779956  INTEG-01 near_threshold    NaN     NaN Ostolasku, tilaus 499533
+TXN018290   2025-05-18   2025-05-18 2025-06-01    4410     9580.10         779957  INTEG-01 near_threshold    NaN     NaN Ostolasku, tilaus 499534
+TXN028963   2025-08-18   2025-08-18 2025-09-01    4410     9899.99         779958  INTEG-01 near_threshold    NaN     NaN Ostolasku, tilaus 499535
+TXN041970   2025-11-18   2025-11-18 2025-12-02    4410     9650.75         779959  INTEG-01 near_threshold    NaN     NaN Ostolasku, tilaus 499536
+==================================================================================================================================
+UNIT RU-07  type=rule_vendor  key=V-0013  n_flags=4  total=24566.55
+  tests=['split']  score_range=None  months=[1, 7]
+  VENDOR V-0013: Kantamateriaali Tmi [FI] terms=30 allowed=4110
+    all-year: n_txn=4 total=24566.55 mean=6141.64 median=6080.32
+    accounts_used(all yr)={'4110': 4}
+    posters(all yr)={'INTEG-01': 4}
+    vat=FI12388112 iban=FI3645251236592993
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by  test  drank  dscore                          memo
+TXN000828   2025-01-10   2025-01-10 2025-02-09    4110     5820.40         818398  INTEG-01 split    NaN     NaN Ostolasku, osatoimitus 238987
+TXN001098   2025-01-12   2025-01-12 2025-02-11    4110     5495.10         818399  INTEG-01 split    NaN     NaN Ostolasku, osatoimitus 238988
+TXN025001   2025-07-10   2025-07-10 2025-08-09    4110     6340.25         818400  INTEG-01 split    NaN     NaN Ostolasku, osatoimitus 238989
+TXN025125   2025-07-11   2025-07-11 2025-08-10    4110     6910.80         818401  INTEG-01 split    NaN     NaN Ostolasku, osatoimitus 238990
+==================================================================================================================================
+UNIT RU-08  type=rule_vendor  key=V-0014  n_flags=4  total=22767.0
+  tests=['split']  score_range=None  months=[4, 10]
+  VENDOR V-0014: Verkkokomponentti Oy Ab [FI] terms=21 allowed=4310
+    all-year: n_txn=4 total=22767.0 mean=5691.75 median=5518.25
+    accounts_used(all yr)={'4310': 4}
+    posters(all yr)={'INTEG-01': 4}
+    vat=FI55445710 iban=FI9156787746676478
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by  test  drank  dscore                          memo
+TXN013199   2025-04-10   2025-04-10 2025-05-01    4310     4780.60         934647  INTEG-01 split    NaN     NaN Ostolasku, osatoimitus 732301
+TXN013687   2025-04-13   2025-04-13 2025-05-04    4310     6255.90         934648  INTEG-01 split    NaN     NaN Ostolasku, osatoimitus 732302
+TXN036071   2025-10-10   2025-10-10 2025-10-31    4310     7120.15         934649  INTEG-01 split    NaN     NaN Ostolasku, osatoimitus 732303
+TXN036313   2025-10-12   2025-10-12 2025-11-02    4310     4610.35         934650  INTEG-01 split    NaN     NaN Ostolasku, osatoimitus 732304
+==================================================================================================================================
+UNIT RU-09  type=rule_vendor  key=V-0015  n_flags=2  total=13330.75
+  tests=['split']  score_range=None  months=[9]
+  VENDOR V-0015: Kairakomponentti Oy Ab [FI] terms=21 allowed=4420
+    all-year: n_txn=2 total=13330.75 mean=6665.38 median=6665.38
+    accounts_used(all yr)={'4420': 2}
+    posters(all yr)={'INTEG-01': 2}
+    vat=FI47595213 iban=FI6618495678959172
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by  test  drank  dscore                          memo
+TXN031912   2025-09-10   2025-09-10 2025-10-01    4420     5990.55         073983  INTEG-01 split    NaN     NaN Ostolasku, osatoimitus 890739
+TXN032082   2025-09-11   2025-09-11 2025-10-02    4420     7340.20         073984  INTEG-01 split    NaN     NaN Ostolasku, osatoimitus 890740
+==================================================================================================================================
+UNIT RU-10  type=rule_vendor  key=V-0016  n_flags=12  total=180000.0
+  tests=['round_sum']  score_range=None  months=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  VENDOR V-0016: Kiinteistö Oy Vantaan Teollisuustalo [FI] terms=30 allowed=7000
+    all-year: n_txn=12 total=180000.0 mean=15000.0 median=15000.0
+    accounts_used(all yr)={'7000': 12}
+    posters(all yr)={'INTEG-01': 12}
+    vat=FI77509374 iban=FI9143066935559876
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by      test  drank  dscore                            memo
+TXN000001   2025-01-01   2025-01-01 2025-01-31    7000     15000.0         674843  INTEG-01 round_sum    NaN     NaN  Toimitilavuokra, tammikuu 2025
+TXN003723   2025-02-01   2025-02-01 2025-03-03    7000     15000.0         674844  INTEG-01 round_sum    NaN     NaN  Toimitilavuokra, helmikuu 2025
+TXN007760   2025-03-01   2025-03-01 2025-03-31    7000     15000.0         674845  INTEG-01 round_sum    NaN     NaN Toimitilavuokra, maaliskuu 2025
+TXN011826   2025-04-01   2025-04-01 2025-05-01    7000     15000.0         674846  INTEG-01 round_sum    NaN     NaN  Toimitilavuokra, huhtikuu 2025
+TXN016010   2025-05-01   2025-05-01 2025-05-31    7000     15000.0         674847  INTEG-01 round_sum    NaN     NaN  Toimitilavuokra, toukokuu 2025
+TXN020161   2025-06-01   2025-06-01 2025-07-01    7000     15000.0         674848  INTEG-01 round_sum    NaN     NaN   Toimitilavuokra, kesäkuu 2025
+TXN024028   2025-07-01   2025-07-01 2025-07-31    7000     15000.0         674849  INTEG-01 round_sum    NaN     NaN  Toimitilavuokra, heinäkuu 2025
+TXN027017   2025-08-01   2025-08-01 2025-08-31    7000     15000.0         674850  INTEG-01 round_sum    NaN     NaN    Toimitilavuokra, elokuu 2025
+TXN030726   2025-09-01   2025-09-01 2025-10-01    7000     15000.0         674851  INTEG-01 round_sum    NaN     NaN   Toimitilavuokra, syyskuu 2025
+TXN034757   2025-10-01   2025-10-01 2025-10-31    7000     15000.0         674852  INTEG-01 round_sum    NaN     NaN   Toimitilavuokra, lokakuu 2025
+TXN039116   2025-11-01   2025-11-01 2025-12-01    7000     15000.0         674853  INTEG-01 round_sum    NaN     NaN Toimitilavuokra, marraskuu 2025
+TXN044479   2025-12-01   2025-12-01 2025-12-31    7000     15000.0         674854  INTEG-01 round_sum    NaN     NaN  Toimitilavuokra, joulukuu 2025
+==================================================================================================================================
+UNIT RU-11  type=rule_vendor  key=V-0018  n_flags=2  total=14840.0
+  tests=['duplicate']  score_range=None  months=[6]
+  VENDOR V-0018: Ruuvitukku Halonen Oy [FI] terms=30 allowed=4200
+    all-year: n_txn=2 total=14840.0 mean=7420.0 median=7420.0
+    accounts_used(all yr)={'4200': 2}
+    posters(all yr)={'INTEG-01': 2}
+    vat=FI41541796 iban=FI9127746504466224
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by      test  drank  dscore                      memo
+TXN021299   2025-06-10   2025-06-10 2025-07-10    4200      7420.0         005784  INTEG-01 duplicate    NaN     NaN Tavarantoimitus, PO-48213
+TXN022042   2025-06-14   2025-06-14 2025-07-14    4200      7420.0         005785  INTEG-01 duplicate    NaN     NaN Tavarantoimitus, PO-48297
+==================================================================================================================================
+UNIT RU-12  type=rule_user  key=U-031  n_flags=2  total=3101.15
+  tests=['calendar']  score_range=None  months=[11]
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by     test  drank  dscore                                   memo
+TXN041654   2025-11-15   2025-11-10 2025-12-10    4420     1260.80         922653     U-031 calendar    NaN     NaN Sovittu ylityö, inventaario 15.11.2025
+TXN041655   2025-11-15   2025-11-11 2025-12-11    4420     1840.35         922654     U-031 calendar    NaN     NaN Sovittu ylityö, inventaario 15.11.2025
+==================================================================================================================================
+UNIT RU-13  type=rule_user  key=U-117  n_flags=8  total=7504.66
+  tests=['calendar']  score_range=None  months=[2, 3, 4, 5, 6]
+   txn_id posting_date invoice_date   due_date account  amount_eur invoice_number posted_by     test  drank  dscore                           memo
+TXN004783   2025-02-08   2025-02-04 2025-03-06    4200      300.37         054836     U-117 calendar    NaN     NaN Tavarantoimitus, tilaus 853203
+TXN008812   2025-03-08   2025-03-04 2025-03-18    7850      770.62         142083     U-117 calendar    NaN     NaN              Ostolasku, 912961
+TXN013628   2025-04-12   2025-04-08 2025-04-22    4210      640.98         002045     U-117 calendar    NaN     NaN   Kertatoimitus, tilaus 412578
+TXN014609   2025-04-21   2025-04-14 2025-04-28    7850      568.24         030998     U-117 calendar    NaN     NaN              Ostolasku, 634520
+TXN017290   2025-05-10   2025-05-06 2025-05-20    4000      943.56         138517     U-117 calendar    NaN     NaN Tavarantoimitus, tilaus 437150
+TXN019899   2025-05-29   2025-05-25 2025-06-15    4000     1650.07         445945     U-117 calendar    NaN     NaN   Kertatoimitus, tilaus 373386
+TXN022045   2025-06-14   2025-06-10 2025-07-01    4420     2000.20         841794     U-117 calendar    NaN     NaN           Palvelulasku, 597751
+TXN022846   2025-06-20   2025-06-16 2025-07-07    7200      630.62         310764     U-117 calendar    NaN     NaN              Ostolasku, 914747

@@ -1,0 +1,22 @@
+Vesijärven Rahtilinja Oy
+Lasku 202541312
+Satamakatu 6
+Laskun päivä 28.04.2025
+15140 Lahti
+Eräpäivä 12.05.2025
+Y-tunnus: 2255667-5
+Viitenumero 74919978
+OSTAJA
+Pyökkipaja Oy
+Sorvaajankatu 11
+15520 Lahti
+Y-tunnus: 2417551-8
+NIMIKE MÄÄRÄ YKSIKKÖ A-HINTA ALV % YHTEENSÄ
+Jakelukuljetus, pääkaupunkiseutu 1 kpl 199,82 25,5 199,82
+Nostopalvelu, purku 1 kpl 312,59 25,5 312,59
+Veroton yhteensä 512,41 €
+ALV 25,5 % 130,66 €
+Maksettava 643,07 €
+Y-tunnus 2255667-5 -- ALV-tunnus FI22556675
+Maksuehto: 14 pv netto -- Viitenumero: 74919978
+Pankkiyhteys: FI4480001470683126 BIC: DABAFIHH

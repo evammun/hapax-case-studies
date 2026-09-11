@@ -1,0 +1,727 @@
+====================================================================================================
+PER-UNIT DUMP
+====================================================================================================
+
+##########################################################################################
+UNIT RU-01 type=rule_vendor key=V-0006 stats={'n_flags': 8, 'months_touched': [9, 10], 'total_eur': 36934.24, 'tests_involved': ['mapping']}
+  VENDOR V-0006 Mainostoimisto Kaarniala Oy country=FI vat=FI73341113 iban=FI2507673518319836
+    terms_days=21 allowed_accounts=7100 active_from=2025-01-01 addr=Ratakatu 52, 38823 Helsinki
+    total_txns=8 total_eur=36934.24 accounts_used=['7200']
+    amt_stats: min=2694.75 med=4757.85 mean=4616.78 max=5930.93
+  --- flagged txns ---
+  TXN031757 post=2025-09-09(wd=True) inv=2025-09-03 due=2025-09-24 acct=7200(IT services) amt=2694.75 invno=489171 by=U-204 | Mainoskampanja, syyskuu 2025 | tests=['mapping'] 
+  TXN032890 post=2025-09-17(wd=True) inv=2025-09-10 due=2025-10-01 acct=7200(IT services) amt=5766.00 invno=489172 by=U-204 | Mainoskampanja, syyskuu 2025 | tests=['mapping'] 
+  TXN033532 post=2025-09-22(wd=True) inv=2025-09-17 due=2025-10-08 acct=7200(IT services) amt=5096.64 invno=489173 by=U-204 | Mainoskampanja, syyskuu 2025 | tests=['mapping'] 
+  TXN034479 post=2025-09-29(wd=True) inv=2025-09-24 due=2025-10-15 acct=7200(IT services) amt=4419.05 invno=489174 by=U-204 | Mainoskampanja, syyskuu 2025 | tests=['mapping'] 
+  TXN035705 post=2025-10-08(wd=True) inv=2025-10-01 due=2025-10-22 acct=7200(IT services) amt=5344.05 invno=489175 by=U-204 | Mainoskampanja, lokakuu 2025 | tests=['mapping'] 
+  TXN036471 post=2025-10-14(wd=True) inv=2025-10-08 due=2025-10-29 acct=7200(IT services) amt=3482.12 invno=489176 by=U-204 | Mainoskampanja, lokakuu 2025 | tests=['mapping'] 
+  TXN036992 post=2025-10-17(wd=True) inv=2025-10-15 due=2025-11-05 acct=7200(IT services) amt=5930.93 invno=489177 by=U-204 | Mainoskampanja, lokakuu 2025 | tests=['mapping'] 
+  TXN038575 post=2025-10-29(wd=True) inv=2025-10-22 due=2025-11-12 acct=7200(IT services) amt=4200.70 invno=489178 by=U-204 | Mainoskampanja, lokakuu 2025 | tests=['mapping'] 
+
+##########################################################################################
+UNIT RU-02 type=rule_vendor key=V-0008 stats={'n_flags': 4, 'months_touched': [2, 8], 'total_eur': 2915.4, 'tests_involved': ['duplicate']}
+  VENDOR V-0008 Pulttitarvike Tmi country=FI vat=FI19280810 iban=FI4000056762520810
+    terms_days=30 allowed_accounts=4000 active_from=2025-01-01 addr=Varikkokatu 51, 52253 Vantaa
+    total_txns=4 total_eur=2915.40 accounts_used=['4000']
+    amt_stats: min=615.20 med=728.85 mean=728.85 max=842.50
+  --- flagged txns ---
+  TXN004166 post=2025-02-05(wd=True) inv=2025-02-05 due=2025-03-07 acct=4000(Domestic purchases) amt=842.50 invno=801524 by=INTEG-01 | Ostolasku, tilaus 358022 | tests=['duplicate'] 
+  TXN004816 post=2025-02-09(wd=False) inv=2025-02-09 due=2025-03-11 acct=4000(Domestic purchases) amt=842.50 invno=801525 by=INTEG-01 | Ostolasku, tilaus 358022 | tests=['duplicate'] 
+  TXN027877 post=2025-08-08(wd=True) inv=2025-08-08 due=2025-09-07 acct=4000(Domestic purchases) amt=615.20 invno=801526 by=INTEG-01 | Ostolasku, tilaus 358023 | tests=['duplicate'] 
+  TXN028688 post=2025-08-15(wd=True) inv=2025-08-15 due=2025-09-14 acct=4000(Domestic purchases) amt=615.20 invno=801527 by=INTEG-01 | Ostolasku, tilaus 358023 | tests=['duplicate'] 
+
+##########################################################################################
+UNIT RU-03 type=rule_vendor key=V-0009 stats={'n_flags': 4, 'months_touched': [4, 10], 'total_eur': 10291.2, 'tests_involved': ['duplicate']}
+  VENDOR V-0009 Poralogistiikka Tmi country=FI vat=FI41198877 iban=FI7469847534140718
+    terms_days=14 allowed_accounts=4200 active_from=2025-01-01 addr=Satamakatu 6, 31918 Vantaa
+    total_txns=4 total_eur=10291.20 accounts_used=['4200']
+    amt_stats: min=1365.00 med=2572.80 mean=2572.80 max=3780.60
+  --- flagged txns ---
+  TXN012557 post=2025-04-05(wd=False) inv=2025-04-05 due=2025-04-19 acct=4200(Tools and supplies) amt=1365.00 invno=930804 by=INTEG-01 | Ostolasku, tilaus 787675 | tests=['duplicate'] 
+  TXN013198 post=2025-04-10(wd=True) inv=2025-04-10 due=2025-04-24 acct=4200(Tools and supplies) amt=1365.00 invno=930805 by=INTEG-01 | Ostolasku, tilaus 787675 | tests=['duplicate'] 
+  TXN035706 post=2025-10-08(wd=True) inv=2025-10-08 due=2025-10-22 acct=4200(Tools and supplies) amt=3780.60 invno=930806 by=INTEG-01 | Ostolasku, tilaus 787676 | tests=['duplicate'] 
+  TXN036341 post=2025-10-13(wd=True) inv=2025-10-13 due=2025-10-27 acct=4200(Tools and supplies) amt=3780.60 invno=930807 by=INTEG-01 | Ostolasku, tilaus 787676 | tests=['duplicate'] 
+
+##########################################################################################
+UNIT RU-04 type=rule_vendor key=V-0010 stats={'n_flags': 4, 'months_touched': [6, 12], 'total_eur': 8122.2, 'tests_involved': ['duplicate']}
+  VENDOR V-0010 Kumipalvelu Tmi country=FI vat=FI74370899 iban=FI3717481682140733
+    terms_days=14 allowed_accounts=4300 active_from=2025-01-01 addr=Teollisuuskatu 13, 51499 Jyväskylä
+    total_txns=4 total_eur=8122.20 accounts_used=['4300']
+    amt_stats: min=1120.35 med=2030.55 mean=2030.55 max=2940.75
+  --- flagged txns ---
+  TXN020678 post=2025-06-05(wd=True) inv=2025-06-05 due=2025-06-19 acct=4300(Maintenance supplies) amt=2940.75 invno=716170 by=INTEG-01 | Ostolasku, tilaus 847310 | tests=['duplicate'] 
+  TXN021479 post=2025-06-11(wd=True) inv=2025-06-11 due=2025-06-25 acct=4300(Maintenance supplies) amt=2940.75 invno=716171 by=INTEG-01 | Ostolasku, tilaus 847310 | tests=['duplicate'] 
+  TXN045781 post=2025-12-08(wd=True) inv=2025-12-08 due=2025-12-22 acct=4300(Maintenance supplies) amt=1120.35 invno=716172 by=INTEG-01 | Ostolasku, tilaus 847311 | tests=['duplicate'] 
+  TXN047018 post=2025-12-14(wd=False) inv=2025-12-14 due=2025-12-28 acct=4300(Maintenance supplies) amt=1120.35 invno=716173 by=INTEG-01 | Ostolasku, tilaus 847311 | tests=['duplicate'] 
+
+##########################################################################################
+UNIT RU-05 type=rule_vendor key=V-0011 stats={'n_flags': 6, 'months_touched': [1, 3, 5, 7, 9, 11], 'total_eur': 41000.0, 'tests_involved': ['round_sum']}
+  VENDOR V-0011 Säiliöpalvelu Oy Ab country=FI vat=FI25125132 iban=FI9717427316556211
+    terms_days=21 allowed_accounts=4100 active_from=2025-01-01 addr=Terästie 25, 15827 Vantaa
+    total_txns=6 total_eur=41000.00 accounts_used=['4100']
+    amt_stats: min=5000.00 med=6500.00 mean=6833.33 max=9000.00
+  --- flagged txns ---
+  TXN001097 post=2025-01-12(wd=False) inv=2025-01-12 due=2025-02-02 acct=4100(Steel and metal products) amt=5000.00 invno=571272 by=INTEG-01 | Ostolasku, tilaus 077948 | tests=['round_sum'] 
+  TXN009156 post=2025-03-12(wd=True) inv=2025-03-12 due=2025-04-02 acct=4100(Steel and metal products) amt=6000.00 invno=571273 by=INTEG-01 | Ostolasku, tilaus 077949 | tests=['round_sum'] 
+  TXN017323 post=2025-05-12(wd=True) inv=2025-05-12 due=2025-06-02 acct=4100(Steel and metal products) amt=7000.00 invno=571274 by=INTEG-01 | Ostolasku, tilaus 077950 | tests=['round_sum'] 
+  TXN025235 post=2025-07-12(wd=False) inv=2025-07-12 due=2025-08-02 acct=4100(Steel and metal products) amt=8000.00 invno=571275 by=INTEG-01 | Ostolasku, tilaus 077951 | tests=['round_sum'] 
+  TXN032281 post=2025-09-12(wd=True) inv=2025-09-12 due=2025-10-03 acct=4100(Steel and metal products) amt=9000.00 invno=571276 by=INTEG-01 | Ostolasku, tilaus 077952 | tests=['round_sum'] 
+  TXN040884 post=2025-11-12(wd=True) inv=2025-11-12 due=2025-12-03 acct=4100(Steel and metal products) amt=6000.00 invno=571277 by=INTEG-01 | Ostolasku, tilaus 077953 | tests=['round_sum'] 
+
+##########################################################################################
+UNIT RU-06 type=rule_vendor key=V-0012 stats={'n_flags': 4, 'months_touched': [2, 5, 8, 11], 'total_eur': 38843.29, 'tests_involved': ['near_threshold']}
+  VENDOR V-0012 Ratashuolto Oy country=FI vat=FI75200344 iban=FI4880175626522114
+    terms_days=14 allowed_accounts=4410 active_from=2025-01-01 addr=Ratakatu 8, 31639 Oulu
+    total_txns=4 total_eur=38843.29 accounts_used=['4410']
+    amt_stats: min=9580.10 med=9681.60 mean=9710.82 max=9899.99
+  --- flagged txns ---
+  TXN005976 post=2025-02-18(wd=True) inv=2025-02-18 due=2025-03-04 acct=4410(Freight costs) amt=9712.45 invno=779956 by=INTEG-01 | Ostolasku, tilaus 499533 | tests=['near_threshold'] 
+  TXN018290 post=2025-05-18(wd=False) inv=2025-05-18 due=2025-06-01 acct=4410(Freight costs) amt=9580.10 invno=779957 by=INTEG-01 | Ostolasku, tilaus 499534 | tests=['near_threshold'] 
+  TXN028963 post=2025-08-18(wd=True) inv=2025-08-18 due=2025-09-01 acct=4410(Freight costs) amt=9899.99 invno=779958 by=INTEG-01 | Ostolasku, tilaus 499535 | tests=['near_threshold'] 
+  TXN041970 post=2025-11-18(wd=True) inv=2025-11-18 due=2025-12-02 acct=4410(Freight costs) amt=9650.75 invno=779959 by=INTEG-01 | Ostolasku, tilaus 499536 | tests=['near_threshold'] 
+
+##########################################################################################
+UNIT RU-07 type=rule_vendor key=V-0013 stats={'n_flags': 4, 'months_touched': [1, 7], 'total_eur': 24566.55, 'tests_involved': ['split']}
+  VENDOR V-0013 Kantamateriaali Tmi country=FI vat=FI12388112 iban=FI3645251236592993
+    terms_days=30 allowed_accounts=4110 active_from=2025-01-01 addr=Tehtaankatu 43, 89600 Kuopio
+    total_txns=4 total_eur=24566.55 accounts_used=['4110']
+    amt_stats: min=5495.10 med=6080.32 mean=6141.64 max=6910.80
+  --- flagged txns ---
+  TXN000828 post=2025-01-10(wd=True) inv=2025-01-10 due=2025-02-09 acct=4110(Seals and components) amt=5820.40 invno=818398 by=INTEG-01 | Ostolasku, osatoimitus 238987 | tests=['split'] 
+  TXN001098 post=2025-01-12(wd=False) inv=2025-01-12 due=2025-02-11 acct=4110(Seals and components) amt=5495.10 invno=818399 by=INTEG-01 | Ostolasku, osatoimitus 238988 | tests=['split'] 
+  TXN025001 post=2025-07-10(wd=True) inv=2025-07-10 due=2025-08-09 acct=4110(Seals and components) amt=6340.25 invno=818400 by=INTEG-01 | Ostolasku, osatoimitus 238989 | tests=['split'] 
+  TXN025125 post=2025-07-11(wd=True) inv=2025-07-11 due=2025-08-10 acct=4110(Seals and components) amt=6910.80 invno=818401 by=INTEG-01 | Ostolasku, osatoimitus 238990 | tests=['split'] 
+
+##########################################################################################
+UNIT RU-08 type=rule_vendor key=V-0014 stats={'n_flags': 4, 'months_touched': [4, 10], 'total_eur': 22767.0, 'tests_involved': ['split']}
+  VENDOR V-0014 Verkkokomponentti Oy Ab country=FI vat=FI55445710 iban=FI9156787746676478
+    terms_days=21 allowed_accounts=4310 active_from=2025-01-01 addr=Teollisuuskatu 34, 11701 Helsinki
+    total_txns=4 total_eur=22767.00 accounts_used=['4310']
+    amt_stats: min=4610.35 med=5518.25 mean=5691.75 max=7120.15
+  --- flagged txns ---
+  TXN013199 post=2025-04-10(wd=True) inv=2025-04-10 due=2025-05-01 acct=4310(Spare parts) amt=4780.60 invno=934647 by=INTEG-01 | Ostolasku, osatoimitus 732301 | tests=['split'] 
+  TXN013687 post=2025-04-13(wd=False) inv=2025-04-13 due=2025-05-04 acct=4310(Spare parts) amt=6255.90 invno=934648 by=INTEG-01 | Ostolasku, osatoimitus 732302 | tests=['split'] 
+  TXN036071 post=2025-10-10(wd=True) inv=2025-10-10 due=2025-10-31 acct=4310(Spare parts) amt=7120.15 invno=934649 by=INTEG-01 | Ostolasku, osatoimitus 732303 | tests=['split'] 
+  TXN036313 post=2025-10-12(wd=False) inv=2025-10-12 due=2025-11-02 acct=4310(Spare parts) amt=4610.35 invno=934650 by=INTEG-01 | Ostolasku, osatoimitus 732304 | tests=['split'] 
+
+##########################################################################################
+UNIT RU-09 type=rule_vendor key=V-0015 stats={'n_flags': 2, 'months_touched': [9], 'total_eur': 13330.75, 'tests_involved': ['split']}
+  VENDOR V-0015 Kairakomponentti Oy Ab country=FI vat=FI47595213 iban=FI6618495678959172
+    terms_days=21 allowed_accounts=4420 active_from=2025-01-01 addr=Terästie 6, 49847 Oulu
+    total_txns=2 total_eur=13330.75 accounts_used=['4420']
+    amt_stats: min=5990.55 med=6665.38 mean=6665.38 max=7340.20
+  --- flagged txns ---
+  TXN031912 post=2025-09-10(wd=True) inv=2025-09-10 due=2025-10-01 acct=4420(Subcontracting) amt=5990.55 invno=073983 by=INTEG-01 | Ostolasku, osatoimitus 890739 | tests=['split'] 
+  TXN032082 post=2025-09-11(wd=True) inv=2025-09-11 due=2025-10-02 acct=4420(Subcontracting) amt=7340.20 invno=073984 by=INTEG-01 | Ostolasku, osatoimitus 890740 | tests=['split'] 
+
+##########################################################################################
+UNIT RU-10 type=rule_vendor key=V-0016 stats={'n_flags': 12, 'months_touched': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 'total_eur': 180000.0, 'tests_involved': ['round_sum']}
+  VENDOR V-0016 Kiinteistö Oy Vantaan Teollisuustalo country=FI vat=FI77509374 iban=FI9143066935559876
+    terms_days=30 allowed_accounts=7000 active_from=2025-01-01 addr=Varikkokatu 14, 90699 Vantaa
+    total_txns=12 total_eur=180000.00 accounts_used=['7000']
+    amt_stats: min=15000.00 med=15000.00 mean=15000.00 max=15000.00
+  --- flagged txns ---
+  TXN000001 post=2025-01-01(wd=False) inv=2025-01-01 due=2025-01-31 acct=7000(Premises rent) amt=15000.00 invno=674843 by=INTEG-01 | Toimitilavuokra, tammikuu 2025 | tests=['round_sum'] 
+  TXN003723 post=2025-02-01(wd=False) inv=2025-02-01 due=2025-03-03 acct=7000(Premises rent) amt=15000.00 invno=674844 by=INTEG-01 | Toimitilavuokra, helmikuu 2025 | tests=['round_sum'] 
+  TXN007760 post=2025-03-01(wd=False) inv=2025-03-01 due=2025-03-31 acct=7000(Premises rent) amt=15000.00 invno=674845 by=INTEG-01 | Toimitilavuokra, maaliskuu 2025 | tests=['round_sum'] 
+  TXN011826 post=2025-04-01(wd=True) inv=2025-04-01 due=2025-05-01 acct=7000(Premises rent) amt=15000.00 invno=674846 by=INTEG-01 | Toimitilavuokra, huhtikuu 2025 | tests=['round_sum'] 
+  TXN016010 post=2025-05-01(wd=False) inv=2025-05-01 due=2025-05-31 acct=7000(Premises rent) amt=15000.00 invno=674847 by=INTEG-01 | Toimitilavuokra, toukokuu 2025 | tests=['round_sum'] 
+  TXN020161 post=2025-06-01(wd=False) inv=2025-06-01 due=2025-07-01 acct=7000(Premises rent) amt=15000.00 invno=674848 by=INTEG-01 | Toimitilavuokra, kesäkuu 2025 | tests=['round_sum'] 
+  TXN024028 post=2025-07-01(wd=True) inv=2025-07-01 due=2025-07-31 acct=7000(Premises rent) amt=15000.00 invno=674849 by=INTEG-01 | Toimitilavuokra, heinäkuu 2025 | tests=['round_sum'] 
+  TXN027017 post=2025-08-01(wd=True) inv=2025-08-01 due=2025-08-31 acct=7000(Premises rent) amt=15000.00 invno=674850 by=INTEG-01 | Toimitilavuokra, elokuu 2025 | tests=['round_sum'] 
+  TXN030726 post=2025-09-01(wd=True) inv=2025-09-01 due=2025-10-01 acct=7000(Premises rent) amt=15000.00 invno=674851 by=INTEG-01 | Toimitilavuokra, syyskuu 2025 | tests=['round_sum'] 
+  TXN034757 post=2025-10-01(wd=True) inv=2025-10-01 due=2025-10-31 acct=7000(Premises rent) amt=15000.00 invno=674852 by=INTEG-01 | Toimitilavuokra, lokakuu 2025 | tests=['round_sum'] 
+  TXN039116 post=2025-11-01(wd=False) inv=2025-11-01 due=2025-12-01 acct=7000(Premises rent) amt=15000.00 invno=674853 by=INTEG-01 | Toimitilavuokra, marraskuu 2025 | tests=['round_sum'] 
+  TXN044479 post=2025-12-01(wd=True) inv=2025-12-01 due=2025-12-31 acct=7000(Premises rent) amt=15000.00 invno=674854 by=INTEG-01 | Toimitilavuokra, joulukuu 2025 | tests=['round_sum'] 
+
+##########################################################################################
+UNIT RU-11 type=rule_vendor key=V-0018 stats={'n_flags': 2, 'months_touched': [6], 'total_eur': 14840.0, 'tests_involved': ['duplicate']}
+  VENDOR V-0018 Ruuvitukku Halonen Oy country=FI vat=FI41541796 iban=FI9127746504466224
+    terms_days=30 allowed_accounts=4200 active_from=2025-01-01 addr=Terästie 48, 67021 Kuopio
+    total_txns=2 total_eur=14840.00 accounts_used=['4200']
+    amt_stats: min=7420.00 med=7420.00 mean=7420.00 max=7420.00
+  --- flagged txns ---
+  TXN021299 post=2025-06-10(wd=True) inv=2025-06-10 due=2025-07-10 acct=4200(Tools and supplies) amt=7420.00 invno=005784 by=INTEG-01 | Tavarantoimitus, PO-48213 | tests=['duplicate'] 
+  TXN022042 post=2025-06-14(wd=False) inv=2025-06-14 due=2025-07-14 acct=4200(Tools and supplies) amt=7420.00 invno=005785 by=INTEG-01 | Tavarantoimitus, PO-48297 | tests=['duplicate'] 
+
+##########################################################################################
+UNIT RU-12 type=rule_user key=U-031 stats={'n_flags': 2, 'months_touched': [11], 'total_eur': 3101.15, 'tests_involved': ['calendar']}
+  VENDOR V-0017 Varastopalvelu Toivanen Ky country=FI vat=FI83771217 iban=FI8830468541842631
+    terms_days=30 allowed_accounts=4420 active_from=2025-01-01 addr=Tehtaankatu 18, 01977 Jyväskylä
+    total_txns=2 total_eur=3101.15 accounts_used=['4420']
+    amt_stats: min=1260.80 med=1550.57 mean=1550.57 max=1840.35
+  --- flagged txns ---
+  TXN041654 post=2025-11-15(wd=False) inv=2025-11-10 due=2025-12-10 acct=4420(Subcontracting) amt=1260.80 invno=922653 by=U-031 | Sovittu ylityö, inventaario 15.11.2025 | tests=['calendar'] 
+  TXN041655 post=2025-11-15(wd=False) inv=2025-11-11 due=2025-12-11 acct=4420(Subcontracting) amt=1840.35 invno=922654 by=U-031 | Sovittu ylityö, inventaario 15.11.2025 | tests=['calendar'] 
+
+##########################################################################################
+UNIT RU-13 type=rule_user key=U-117 stats={'n_flags': 8, 'months_touched': [2, 3, 4, 5, 6], 'total_eur': 7504.66, 'tests_involved': ['calendar']}
+  VENDOR V-0024 Porttimateriaali Oy country=FI vat=FI55536381 iban=FI9800121531635782
+    terms_days=21 allowed_accounts=4420 active_from=2025-01-01 addr=Ratakatu 59, 12723 Helsinki
+    total_txns=146 total_eur=274121.85 accounts_used=['4420']
+    amt_stats: min=519.35 med=1701.15 mean=1877.55 max=4994.82
+  VENDOR V-0085 Kumiasennus Oy Ab country=FI vat=FI93811741 iban=FI1253259104466504
+    terms_days=14 allowed_accounts=4210 active_from=2025-01-01 addr=Teollisuuskatu 33, 24404 Helsinki
+    total_txns=153 total_eur=407095.32 accounts_used=['4210']
+    amt_stats: min=402.55 med=2303.49 mean=2660.75 max=10988.77
+  VENDOR V-0135 Metallijärjestelmä Oy country=FI vat=FI18216701 iban=FI3887372047631351
+    terms_days=21 allowed_accounts=7200;7400 active_from=2025-01-01 addr=Tehtaankatu 30, 69635 Vantaa
+    total_txns=228 total_eur=209878.35 accounts_used=['7200', '7400']
+    amt_stats: min=203.02 med=775.38 mean=920.52 max=4091.51
+  VENDOR V-0145 Verktygshandel country=SE vat=SE688049670101 iban=SE7219324086805259602718
+    terms_days=21 allowed_accounts=4000 active_from=2025-01-01 addr=Industrigatan 15, 46247 Malmö
+    total_txns=45 total_eur=142281.80 accounts_used=['4000']
+    amt_stats: min=850.85 med=2653.48 mean=3161.82 max=12002.60
+  VENDOR V-0163 Kaapelilogistiikka Tmi country=FI vat=FI27310411 iban=FI0158374351816780
+    terms_days=14 allowed_accounts=7850 active_from=2025-01-01 addr=Konepajankatu 28, 88069 Helsinki
+    total_txns=416 total_eur=395259.84 accounts_used=['7850']
+    amt_stats: min=133.65 med=811.23 mean=950.14 max=7830.91
+  VENDOR V-0168 Stalhandel AS country=NO vat=NO186846361MVA iban=NO8176910877437
+    terms_days=30 allowed_accounts=4200 active_from=2025-01-01 addr=Havnegata 27, 75353 Bergen
+    total_txns=1533 total_eur=1005050.92 accounts_used=['4200']
+    amt_stats: min=106.79 med=589.08 mean=655.61 max=3593.44
+  VENDOR V-0184 Kaapeliväline Oy country=FI vat=FI13240704 iban=FI2927062258942311
+    terms_days=14 allowed_accounts=7850 active_from=2025-01-01 addr=Varastotie 39, 81573 Lahti
+    total_txns=151 total_eur=146583.42 accounts_used=['7850']
+    amt_stats: min=231.53 med=835.24 mean=970.75 max=4164.36
+  VENDOR V-0194 Laakeritekniikka Oy Ab country=FI vat=FI21596619 iban=FI8287803120260267
+    terms_days=14 allowed_accounts=4000 active_from=2025-01-01 addr=Varikkokatu 17, 39085 Oulu
+    total_txns=285 total_eur=194517.59 accounts_used=['4000']
+    amt_stats: min=123.26 med=597.54 mean=682.52 max=2180.64
+  --- flagged txns ---
+  TXN004783 post=2025-02-08(wd=False) inv=2025-02-04 due=2025-03-06 acct=4200(Tools and supplies) amt=300.37 invno=054836 by=U-117 | Tavarantoimitus, tilaus 853203 | tests=['calendar'] 
+  TXN008812 post=2025-03-08(wd=False) inv=2025-03-04 due=2025-03-18 acct=7850(Security services) amt=770.62 invno=142083 by=U-117 | Ostolasku, 912961 | tests=['calendar'] 
+  TXN013628 post=2025-04-12(wd=False) inv=2025-04-08 due=2025-04-22 acct=4210(Protective equipment) amt=640.98 invno=002045 by=U-117 | Kertatoimitus, tilaus 412578 | tests=['calendar'] 
+  TXN014609 post=2025-04-21(wd=False) inv=2025-04-14 due=2025-04-28 acct=7850(Security services) amt=568.24 invno=030998 by=U-117 | Ostolasku, 634520 | tests=['calendar'] 
+  TXN017290 post=2025-05-10(wd=False) inv=2025-05-06 due=2025-05-20 acct=4000(Domestic purchases) amt=943.56 invno=138517 by=U-117 | Tavarantoimitus, tilaus 437150 | tests=['calendar'] 
+  TXN019899 post=2025-05-29(wd=False) inv=2025-05-25 due=2025-06-15 acct=4000(Domestic purchases) amt=1650.07 invno=445945 by=U-117 | Kertatoimitus, tilaus 373386 | tests=['calendar'] 
+  TXN022045 post=2025-06-14(wd=False) inv=2025-06-10 due=2025-07-01 acct=4420(Subcontracting) amt=2000.20 invno=841794 by=U-117 | Palvelulasku, 597751 | tests=['calendar'] 
+  TXN022846 post=2025-06-20(wd=False) inv=2025-06-16 due=2025-07-07 acct=7200(IT services) amt=630.62 invno=310764 by=U-117 | Ostolasku, 914747 | tests=['calendar'] 
+
+##########################################################################################
+UNIT DU-01 type=detector_vendor key=V-0029 stats={'n_flags': 7, 'months_touched': [4, 7, 12], 'total_eur': 4787.53, 'score_range': [0.006277, 0.02661]}
+  VENDOR V-0029 Poratekniikka Tmi country=FI vat=FI22945412 iban=FI2393215687279050
+    terms_days=21 allowed_accounts=4020;4200 active_from=2025-01-01 addr=Varikkokatu 53, 81702 Kuopio
+    total_txns=474 total_eur=314884.49 accounts_used=['4020', '4200']
+    amt_stats: min=119.83 med=570.31 mean=664.31 max=2918.05
+  --- flagged txns ---
+  TXN014582 post=2025-04-21(wd=False) inv=2025-04-20 due=2025-05-11 acct=4020(Packaging materials) amt=1137.79 invno=915036 by=INTEG-01 | Tavarantoimitus, tilaus 373125 | tests=[] score=0.01247 rank=100
+  TXN025294 post=2025-07-13(wd=False) inv=2025-07-12 due=2025-08-02 acct=4200(Tools and supplies) amt=629.95 invno=915136 by=INTEG-01 | Tavarantoimitus, tilaus 373225 | tests=[] score=0.00856 rank=130
+  TXN045937 post=2025-12-09(wd=True) inv=2025-12-04 due=2025-12-25 acct=4200(Tools and supplies) amt=185.72 invno=915321 by=U-058 | Tavarantoimitus, tilaus 373410 | tests=[] score=0.01050 rank=116
+  TXN046897 post=2025-12-13(wd=False) inv=2025-12-12 due=2026-01-02 acct=4020(Packaging materials) amt=148.77 invno=915344 by=INTEG-01 | Tavarantoimitus, tilaus 373433 | tests=[] score=0.00628 rank=146
+  TXN047068 post=2025-12-15(wd=True) inv=2025-12-15 due=2026-01-05 acct=4200(Tools and supplies) amt=960.33 invno=915346 by=INTEG-01 | Tavarantoimitus, tilaus 373435 | tests=[] score=0.01941 rank=67
+  TXN049030 post=2025-12-28(wd=False) inv=2025-12-28 due=2026-01-18 acct=4020(Packaging materials) amt=1560.35 invno=915363 by=INTEG-01 | Tavarantoimitus, tilaus 373452 | tests=[] score=0.02132 rank=54
+  TXN049097 post=2025-12-29(wd=True) inv=2025-12-29 due=2026-01-19 acct=4200(Tools and supplies) amt=164.62 invno=915367 by=INTEG-01 | Tavarantoimitus, tilaus 373456 | tests=[] score=0.02661 rank=42
+
+##########################################################################################
+UNIT DU-02 type=detector_vendor key=V-0037 stats={'n_flags': 6, 'months_touched': [3, 5, 7, 9, 11], 'total_eur': 7266.2, 'score_range': [0.000805, 0.044838]}
+  VENDOR V-0037 Metallipalvelu Tmi country=FI vat=FI42751325 iban=FI9159665402199976
+    terms_days=14 allowed_accounts=7900;7400 active_from=2025-01-01 addr=Terästie 38, 80455 Jyväskylä
+    total_txns=263 total_eur=263330.45 accounts_used=['7400', '7900']
+    amt_stats: min=120.69 med=824.17 mean=1001.26 max=2571.01
+  --- flagged txns ---
+  TXN008754 post=2025-03-08(wd=False) inv=2025-03-07 due=2025-03-21 acct=7400(Telecom costs) amt=2571.01 invno=945476 by=INTEG-01 | Ostolasku, 633802 | tests=[] score=0.04484 rank=15
+  TXN019844 post=2025-05-29(wd=False) inv=2025-05-28 due=2025-06-11 acct=7400(Telecom costs) amt=1562.58 invno=945533 by=INTEG-01 | Ostolasku, 633859 | tests=[] score=0.00548 rank=154
+  TXN026715 post=2025-07-29(wd=True) inv=2025-07-29 due=2025-08-12 acct=7900(Energy and water) amt=215.38 invno=945568 by=INTEG-01 | Ostolasku, 633894 | tests=[] score=0.00081 rank=195
+  TXN031522 post=2025-09-06(wd=False) inv=2025-09-05 due=2025-09-19 acct=7400(Telecom costs) amt=341.74 invno=945587 by=INTEG-01 | Ostolasku, 633913 | tests=[] score=0.00758 rank=141
+  TXN039215 post=2025-11-02(wd=False) inv=2025-11-02 due=2025-11-16 acct=7900(Energy and water) amt=2214.25 invno=945634 by=INTEG-01 | Ostolasku, 633960 | tests=[] score=0.01987 rank=64
+  TXN044437 post=2025-11-30(wd=False) inv=2025-11-29 due=2025-12-13 acct=7900(Energy and water) amt=361.24 invno=945653 by=INTEG-01 | Ostolasku, 633979 | tests=[] score=0.00650 rank=145
+
+##########################################################################################
+UNIT DU-03 type=detector_vendor key=V-0041 stats={'n_flags': 5, 'months_touched': [1, 9, 10, 11], 'total_eur': 4069.65, 'score_range': [0.002856, 0.016328]}
+  VENDOR V-0041 Tarviketekniikka Oy country=FI vat=FI94313413 iban=FI5558826976245801
+    terms_days=21 allowed_accounts=4200;4300 active_from=2025-01-01 addr=Terästie 10, 63445 Kuopio
+    total_txns=584 total_eur=380798.25 accounts_used=['4200', '4300']
+    amt_stats: min=104.22 med=567.28 mean=652.05 max=2586.27
+  --- flagged txns ---
+  TXN002825 post=2025-01-25(wd=False) inv=2025-01-24 due=2025-02-14 acct=4300(Maintenance supplies) amt=740.43 invno=828374 by=INTEG-01 | Tavarantoimitus, tilaus 688523 | tests=[] score=0.00286 rank=175
+  TXN033494 post=2025-09-21(wd=False) inv=2025-09-21 due=2025-10-12 acct=4300(Maintenance supplies) amt=176.30 invno=828730 by=INTEG-01 | Tavarantoimitus, tilaus 688879 | tests=[] score=0.01633 rank=81
+  TXN037268 post=2025-10-19(wd=False) inv=2025-10-18 due=2025-11-08 acct=4300(Maintenance supplies) amt=1264.99 invno=828780 by=INTEG-01 | Tavarantoimitus, tilaus 688929 | tests=[] score=0.01549 rank=86
+  TXN041664 post=2025-11-15(wd=False) inv=2025-11-15 due=2025-12-06 acct=4300(Maintenance supplies) amt=1251.61 invno=828833 by=INTEG-01 | Tavarantoimitus, tilaus 688982 | tests=[] score=0.00963 rank=123
+  TXN041770 post=2025-11-16(wd=False) inv=2025-11-16 due=2025-12-07 acct=4300(Maintenance supplies) amt=636.32 invno=828835 by=INTEG-01 | Tavarantoimitus, tilaus 688984 | tests=[] score=0.01528 rank=89
+
+##########################################################################################
+UNIT DU-04 type=detector_vendor key=V-0062 stats={'n_flags': 3, 'months_touched': [1, 3, 8], 'total_eur': 5118.21, 'score_range': [0.01584, 0.017099]}
+  VENDOR V-0062 Metalltechnik GmbH country=DE vat=DE288778565 iban=DE03587185539168259996
+    terms_days=14 allowed_accounts=7900;7100 active_from=2025-01-01 addr=Industriestraße 7, 86807 Hamburg
+    total_txns=132 total_eur=139391.78 accounts_used=['7100', '7900']
+    amt_stats: min=205.50 med=909.90 mean=1056.00 max=3994.29
+  --- flagged txns ---
+  TXN000006 post=2025-01-01(wd=False) inv=2025-01-01 due=2025-01-15 acct=7100(Marketing) amt=1903.69 invno=139617 by=INTEG-01 | Ostolasku, 632966 | tests=[] score=0.01584 rank=84
+  TXN010186 post=2025-03-19(wd=True) inv=2025-03-15 due=2025-03-29 acct=7100(Marketing) amt=348.78 invno=139638 by=U-058 | Ostolasku, 632987 | tests=[] score=0.01710 rank=77
+  TXN029775 post=2025-08-24(wd=False) inv=2025-08-24 due=2025-09-07 acct=7900(Energy and water) amt=2865.74 invno=139686 by=INTEG-01 | Ostolasku, 633035 | tests=[] score=0.01636 rank=80
+
+##########################################################################################
+UNIT DU-05 type=detector_vendor key=V-0067 stats={'n_flags': 7, 'months_touched': [1, 2, 6, 10, 12], 'total_eur': 11929.72, 'score_range': [0.001754, 0.029821]}
+  VENDOR V-0067 Stahltechnik GmbH country=DE vat=DE929457643 iban=DE10428299491330285578
+    terms_days=30 allowed_accounts=7850;7990 active_from=2025-01-01 addr=Bahnhofstraße 21, 69300 Bremen
+    total_txns=345 total_eur=310982.90 accounts_used=['7850', '7990']
+    amt_stats: min=186.83 med=797.40 mean=901.40 max=3373.29
+  --- flagged txns ---
+  TXN002028 post=2025-01-19(wd=False) inv=2025-01-19 due=2025-02-18 acct=7850(Security services) amt=1441.42 invno=729403 by=INTEG-01 | Ostolasku, 043925 | tests=[] score=0.00175 rank=184
+  TXN004738 post=2025-02-08(wd=False) inv=2025-02-07 due=2025-03-09 acct=7990(Other operating expenses) amt=1568.08 invno=729419 by=INTEG-01 | Ostolasku, 043941 | tests=[] score=0.02982 rank=37
+  TXN005724 post=2025-02-15(wd=False) inv=2025-02-14 due=2025-03-16 acct=7850(Security services) amt=2234.86 invno=729425 by=INTEG-01 | Ostolasku, 043947 | tests=[] score=0.01175 rank=104
+  TXN022201 post=2025-06-16(wd=True) inv=2025-06-16 due=2025-07-16 acct=7990(Other operating expenses) amt=1330.14 invno=729536 by=INTEG-01 | Ostolasku, 044058 | tests=[] score=0.00268 rank=178
+  TXN035308 post=2025-10-04(wd=False) inv=2025-10-03 due=2025-11-02 acct=7990(Other operating expenses) amt=2052.70 invno=729631 by=INTEG-01 | Ostolasku, 044153 | tests=[] score=0.01024 rank=118
+  TXN045662 post=2025-12-06(wd=False) inv=2025-12-05 due=2026-01-04 acct=7850(Security services) amt=2956.57 invno=729707 by=INTEG-01 | Ostolasku, 044229 | tests=[] score=0.01975 rank=65
+  TXN048223 post=2025-12-20(wd=False) inv=2025-12-19 due=2026-01-18 acct=7990(Other operating expenses) amt=345.95 invno=729722 by=INTEG-01 | Ostolasku, 044244 | tests=[] score=0.02038 rank=61
+
+##########################################################################################
+UNIT DU-06 type=detector_vendor key=V-0072 stats={'n_flags': 3, 'months_touched': [4, 8, 11], 'total_eur': 1267.02, 'score_range': [0.000825, 0.020665]}
+  VENDOR V-0072 Nostotukku Tmi country=FI vat=FI80633168 iban=FI0501107180210176
+    terms_days=30 allowed_accounts=4300;4000 active_from=2025-01-01 addr=Logistiikkatie 47, 84372 Tampere
+    total_txns=361 total_eur=228816.23 accounts_used=['4000', '4300']
+    amt_stats: min=144.09 med=560.12 mean=633.84 max=2338.38
+  --- flagged txns ---
+  TXN014992 post=2025-04-24(wd=True) inv=2025-04-24 due=2025-05-24 acct=4000(Domestic purchases) amt=481.75 invno=850904 by=INTEG-01 | Tavarantoimitus, tilaus 922826 | tests=[] score=0.00083 rank=192
+  TXN028151 post=2025-08-11(wd=True) inv=2025-08-11 due=2025-09-10 acct=4000(Domestic purchases) amt=487.38 invno=850993 by=INTEG-01 | Tavarantoimitus, tilaus 922915 | tests=[] score=0.01038 rank=117
+  TXN043039 post=2025-11-22(wd=False) inv=2025-11-21 due=2025-12-21 acct=4000(Domestic purchases) amt=297.89 invno=851126 by=INTEG-01 | Tavarantoimitus, tilaus 923048 | tests=[] score=0.02067 rank=60
+
+##########################################################################################
+UNIT DU-07 type=detector_vendor key=V-0076 stats={'n_flags': 4, 'months_touched': [1, 6, 11], 'total_eur': 11991.89, 'score_range': [0.000581, 0.011826]}
+  VENDOR V-0076 Vasaravaraosa Tmi country=FI vat=FI51906015 iban=FI7667660624602900
+    terms_days=14 allowed_accounts=4440;4420 active_from=2025-01-01 addr=Ratakatu 55, 53599 Tampere
+    total_txns=664 total_eur=1235611.22 accounts_used=['4420', '4440']
+    amt_stats: min=381.17 med=1651.24 mean=1860.86 max=5828.69
+  --- flagged txns ---
+  TXN000283 post=2025-01-04(wd=False) inv=2025-01-03 due=2025-01-17 acct=4420(Subcontracting) amt=2191.16 invno=376803 by=INTEG-01 | Palvelulasku, 069356 | tests=[] score=0.00058 rank=198
+  TXN023878 post=2025-06-29(wd=False) inv=2025-06-29 due=2025-07-13 acct=4420(Subcontracting) amt=2454.81 invno=377123 by=INTEG-01 | Palvelulasku, 069676 | tests=[] score=0.00150 rank=187
+  TXN039147 post=2025-11-01(wd=False) inv=2025-10-31 due=2025-11-14 acct=4420(Subcontracting) amt=1992.35 invno=377312 by=INTEG-01 | Palvelulasku, 069865 | tests=[] score=0.00115 rank=189
+  TXN043047 post=2025-11-22(wd=False) inv=2025-11-21 due=2025-12-05 acct=4440(Other external services) amt=5353.57 invno=377369 by=INTEG-01 | Palvelulasku, 069922 | tests=[] score=0.01183 rank=102
+
+##########################################################################################
+UNIT DU-08 type=detector_vendor key=V-0078 stats={'n_flags': 14, 'months_touched': [1, 2, 3, 4, 6, 7, 8, 10, 11, 12], 'total_eur': 52254.38, 'score_range': [0.000675, 0.063041]}
+  VENDOR V-0078 Kumipalvelu Oy Ab country=FI vat=FI53579846 iban=FI9358838869096337
+    terms_days=14 allowed_accounts=4310;4010 active_from=2025-01-01 addr=Teollisuuskatu 25, 09351 Lahti
+    total_txns=160 total_eur=520895.49 accounts_used=['4010', '4310']
+    amt_stats: min=462.91 med=3155.93 mean=3255.60 max=6588.79
+  --- flagged txns ---
+  TXN001172 post=2025-01-13(wd=True) inv=2025-01-13 due=2025-01-27 acct=4010(Foreign purchases) amt=1545.46 invno=817535 by=INTEG-01 | Materiaalitoimitus, tilaus 068101 | tests=[] score=0.02315 rank=51
+  TXN002844 post=2025-01-25(wd=False) inv=2025-01-24 due=2025-02-07 acct=4010(Foreign purchases) amt=3361.99 invno=817541 by=INTEG-01 | Materiaalitoimitus, tilaus 068107 | tests=[] score=0.01596 rank=83
+  TXN003746 post=2025-02-01(wd=False) inv=2025-01-31 due=2025-02-14 acct=4010(Foreign purchases) amt=3430.25 invno=817546 by=INTEG-01 | Materiaalitoimitus, tilaus 068112 | tests=[] score=0.01170 rank=106
+  TXN007800 post=2025-03-01(wd=False) inv=2025-02-28 due=2025-03-14 acct=4010(Foreign purchases) amt=4691.92 invno=817558 by=INTEG-01 | Materiaalitoimitus, tilaus 068124 | tests=[] score=0.06125 rank=4
+  TXN014558 post=2025-04-20(wd=False) inv=2025-04-19 due=2025-05-03 acct=4310(Spare parts) amt=2705.07 invno=817585 by=INTEG-01 | Materiaalitoimitus, tilaus 068151 | tests=[] score=0.03989 rank=23
+  TXN023145 post=2025-06-24(wd=True) inv=2025-06-16 due=2025-06-30 acct=4010(Foreign purchases) amt=5267.05 invno=817610 by=U-204 | Materiaalitoimitus, tilaus 068176 | tests=[] score=0.06304 rank=3
+  TXN024513 post=2025-07-04(wd=True) inv=2025-06-30 due=2025-07-14 acct=4010(Foreign purchases) amt=4684.71 invno=817612 by=U-058 | Materiaalitoimitus, tilaus 068178 | tests=[] score=0.04450 rank=17
+  TXN028038 post=2025-08-09(wd=False) inv=2025-08-08 due=2025-08-22 acct=4310(Spare parts) amt=3303.23 invno=817621 by=INTEG-01 | Materiaalitoimitus, tilaus 068187 | tests=[] score=0.01874 rank=71
+  TXN030627 post=2025-08-30(wd=False) inv=2025-08-29 due=2025-09-12 acct=4010(Foreign purchases) amt=4126.31 invno=817633 by=INTEG-01 | Materiaalitoimitus, tilaus 068199 | tests=[] score=0.01538 rank=87
+  TXN035164 post=2025-10-03(wd=True) inv=2025-10-03 due=2025-10-17 acct=4310(Spare parts) amt=4938.04 invno=817653 by=INTEG-01 | Materiaalitoimitus, tilaus 068219 | tests=[] score=0.00075 rank=196
+  TXN038040 post=2025-10-24(wd=True) inv=2025-10-17 due=2025-10-31 acct=4310(Spare parts) amt=6172.62 invno=817654 by=U-204 | Materiaalitoimitus, tilaus 068220 | tests=[] score=0.02692 rank=41
+  TXN038176 post=2025-10-25(wd=False) inv=2025-10-24 due=2025-11-07 acct=4310(Spare parts) amt=2006.67 invno=817655 by=INTEG-01 | Materiaalitoimitus, tilaus 068221 | tests=[] score=0.01904 rank=69
+  TXN044446 post=2025-11-30(wd=False) inv=2025-11-29 due=2025-12-13 acct=4310(Spare parts) amt=4405.53 invno=817678 by=INTEG-01 | Materiaalitoimitus, tilaus 068244 | tests=[] score=0.00068 rank=197
+  TXN049042 post=2025-12-28(wd=False) inv=2025-12-28 due=2026-01-11 acct=4310(Spare parts) amt=1615.53 invno=817690 by=INTEG-01 | Materiaalitoimitus, tilaus 068256 | tests=[] score=0.03137 rank=35
+
+##########################################################################################
+UNIT DU-09 type=detector_vendor key=V-0090 stats={'n_flags': 9, 'months_touched': [1, 2, 3, 4, 5, 7, 8, 9, 10], 'total_eur': 6269.47, 'score_range': [0.001507, 0.022181]}
+  VENDOR V-0090 Industriehandel GmbH country=DE vat=DE567873804 iban=DE63574954124672030363
+    terms_days=30 allowed_accounts=4300;4200 active_from=2025-01-01 addr=Bahnhofstraße 21, 37930 Dortmund
+    total_txns=365 total_eur=239402.65 accounts_used=['4200', '4300']
+    amt_stats: min=113.60 med=580.78 mean=655.90 max=3757.68
+  --- flagged txns ---
+  TXN002846 post=2025-01-25(wd=False) inv=2025-01-25 due=2025-02-24 acct=4300(Maintenance supplies) amt=1790.95 invno=159984 by=INTEG-01 | Tavarantoimitus, tilaus 280967 | tests=[] score=0.02218 rank=52
+  TXN006869 post=2025-02-23(wd=False) inv=2025-02-22 due=2025-03-24 acct=4200(Tools and supplies) amt=319.77 invno=160021 by=INTEG-01 | Tavarantoimitus, tilaus 281004 | tests=[] score=0.01438 rank=95
+  TXN007802 post=2025-03-01(wd=False) inv=2025-02-28 due=2025-03-30 acct=4200(Tools and supplies) amt=1126.08 invno=160028 by=INTEG-01 | Tavarantoimitus, tilaus 281011 | tests=[] score=0.00901 rank=128
+  TXN015438 post=2025-04-27(wd=False) inv=2025-04-27 due=2025-05-27 acct=4200(Tools and supplies) amt=905.55 invno=160083 by=INTEG-01 | Tavarantoimitus, tilaus 281066 | tests=[] score=0.01678 rank=78
+  TXN020103 post=2025-05-31(wd=False) inv=2025-05-30 due=2025-06-29 acct=4200(Tools and supplies) amt=200.53 invno=160116 by=INTEG-01 | Tavarantoimitus, tilaus 281099 | tests=[] score=0.01165 rank=108
+  TXN026594 post=2025-07-27(wd=False) inv=2025-07-27 due=2025-08-26 acct=4300(Maintenance supplies) amt=493.56 invno=160157 by=INTEG-01 | Tavarantoimitus, tilaus 281140 | tests=[] score=0.00990 rank=122
+  TXN028092 post=2025-08-10(wd=False) inv=2025-08-09 due=2025-09-08 acct=4200(Tools and supplies) amt=391.44 invno=160163 by=INTEG-01 | Tavarantoimitus, tilaus 281146 | tests=[] score=0.00480 rank=162
+  TXN031612 post=2025-09-07(wd=False) inv=2025-09-07 due=2025-10-07 acct=4200(Tools and supplies) amt=580.78 invno=160199 by=INTEG-01 | Tavarantoimitus, tilaus 281182 | tests=[] score=0.00151 rank=186
+  TXN035396 post=2025-10-05(wd=False) inv=2025-10-05 due=2025-11-04 acct=4300(Maintenance supplies) amt=460.81 invno=160231 by=INTEG-01 | Tavarantoimitus, tilaus 281214 | tests=[] score=0.01135 rank=110
+
+##########################################################################################
+UNIT DU-10 type=detector_vendor key=V-0098 stats={'n_flags': 4, 'months_touched': [1, 2, 3, 5], 'total_eur': 3672.62, 'score_range': [0.002932, 0.027171]}
+  VENDOR V-0098 Bergsteknik country=SE vat=SE565792464101 iban=SE0310362195389425216108
+    terms_days=21 allowed_accounts=4300;4020 active_from=2025-01-01 addr=Hamngatan 4, 25727 Norrköping
+    total_txns=143 total_eur=92758.03 accounts_used=['4020', '4300']
+    amt_stats: min=109.53 med=601.52 mean=648.66 max=2098.26
+  --- flagged txns ---
+  TXN002035 post=2025-01-19(wd=False) inv=2025-01-18 due=2025-02-08 acct=4020(Packaging materials) amt=738.84 invno=161361 by=INTEG-01 | Tavarantoimitus, tilaus 274744 | tests=[] score=0.01798 rank=75
+  TXN005240 post=2025-02-12(wd=True) inv=2025-02-12 due=2025-03-05 acct=4020(Packaging materials) amt=187.44 invno=161373 by=INTEG-01 | Tavarantoimitus, tilaus 274756 | tests=[] score=0.00293 rank=174
+  TXN007876 post=2025-03-02(wd=False) inv=2025-03-01 due=2025-03-22 acct=4300(Maintenance supplies) amt=738.74 invno=161375 by=INTEG-01 | Tavarantoimitus, tilaus 274758 | tests=[] score=0.02717 rank=40
+  TXN019390 post=2025-05-26(wd=True) inv=2025-05-26 due=2025-06-16 acct=4020(Packaging materials) amt=2007.60 invno=161407 by=INTEG-01 | Tavarantoimitus, tilaus 274790 | tests=[] score=0.02216 rank=53
+
+##########################################################################################
+UNIT DU-11 type=detector_vendor key=V-0099 stats={'n_flags': 11, 'months_touched': [1, 2, 3, 6, 9, 10, 11], 'total_eur': 40030.42, 'score_range': [0.001029, 0.045739]}
+  VENDOR V-0099 Malmhandel country=SE vat=SE086005240101 iban=SE3816550708249266966215
+    terms_days=14 allowed_accounts=4440;4410 active_from=2025-01-01 addr=Hamngatan 10, 49409 Göteborg
+    total_txns=224 total_eur=450085.38 accounts_used=['4410', '4440']
+    amt_stats: min=558.68 med=1862.69 mean=2009.31 max=11281.91
+  --- flagged txns ---
+  TXN001482 post=2025-01-15(wd=True) inv=2025-01-14 due=2025-01-28 acct=4440(Other external services) amt=11281.91 invno=692946 by=INTEG-01 | Palvelulasku, 073807 | tests=[] score=0.03203 rank=34
+  TXN002852 post=2025-01-25(wd=False) inv=2025-01-24 due=2025-02-07 acct=4410(Freight costs) amt=4113.55 invno=692952 by=INTEG-01 | Palvelulasku, 073813 | tests=[] score=0.04574 rank=14
+  TXN003822 post=2025-02-02(wd=False) inv=2025-02-02 due=2025-02-16 acct=4410(Freight costs) amt=1590.41 invno=692958 by=INTEG-01 | Palvelulasku, 073819 | tests=[] score=0.00537 rank=156
+  TXN004917 post=2025-02-10(wd=True) inv=2025-02-10 due=2025-02-24 acct=4410(Freight costs) amt=1044.10 invno=692963 by=INTEG-01 | Palvelulasku, 073824 | tests=[] score=0.00103 rank=190
+  TXN006777 post=2025-02-22(wd=False) inv=2025-02-21 due=2025-03-07 acct=4410(Freight costs) amt=2609.89 invno=692975 by=INTEG-01 | Palvelulasku, 073836 | tests=[] score=0.00902 rank=127
+  TXN008107 post=2025-03-04(wd=True) inv=2025-03-04 due=2025-03-18 acct=4410(Freight costs) amt=3634.86 invno=692979 by=INTEG-01 | Palvelulasku, 073840 | tests=[] score=0.01530 rank=88
+  TXN022945 post=2025-06-22(wd=False) inv=2025-06-21 due=2025-07-05 acct=4410(Freight costs) amt=2238.13 invno=693062 by=INTEG-01 | Palvelulasku, 073923 | tests=[] score=0.02075 rank=59
+  TXN032489 post=2025-09-13(wd=False) inv=2025-09-12 due=2025-09-26 acct=4440(Other external services) amt=3956.95 invno=693104 by=INTEG-01 | Palvelulasku, 073965 | tests=[] score=0.02397 rank=46
+  TXN033430 post=2025-09-20(wd=False) inv=2025-09-19 due=2025-10-03 acct=4440(Other external services) amt=2504.90 invno=693105 by=INTEG-01 | Palvelulasku, 073966 | tests=[] score=0.03366 rank=29
+  TXN037513 post=2025-10-21(wd=True) inv=2025-10-21 due=2025-11-04 acct=4440(Other external services) amt=4309.88 invno=693117 by=INTEG-01 | Palvelulasku, 073978 | tests=[] score=0.00472 rank=163
+  TXN043055 post=2025-11-22(wd=False) inv=2025-11-22 due=2025-12-06 acct=4410(Freight costs) amt=2745.84 invno=693135 by=INTEG-01 | Palvelulasku, 073996 | tests=[] score=0.01462 rank=94
+
+##########################################################################################
+UNIT DU-12 type=detector_vendor key=V-0110 stats={'n_flags': 3, 'months_touched': [5, 9, 10], 'total_eur': 5779.37, 'score_range': [0.006118, 0.02113]}
+  VENDOR V-0110 Levykomponentti Oy Ab country=FI vat=FI51513625 iban=FI6729223068971485
+    terms_days=14 allowed_accounts=4000;4210 active_from=2025-01-01 addr=Satamakatu 18, 55614 Lahti
+    total_txns=146 total_eur=88281.23 accounts_used=['4000', '4210']
+    amt_stats: min=165.65 med=527.41 mean=604.67 max=2268.31
+  --- flagged txns ---
+  TXN018381 post=2025-05-19(wd=True) inv=2025-05-19 due=2025-06-02 acct=4000(Domestic purchases) amt=2268.31 invno=315138 by=INTEG-01 | Tavarantoimitus, tilaus 582104 | tests=[] score=0.02113 rank=57
+  TXN034234 post=2025-09-26(wd=True) inv=2025-09-25 due=2025-10-09 acct=4000(Domestic purchases) amt=1779.06 invno=315178 by=INTEG-01 | Tavarantoimitus, tilaus 582144 | tests=[] score=0.00612 rank=149
+  TXN038180 post=2025-10-25(wd=False) inv=2025-10-24 due=2025-11-07 acct=4210(Protective equipment) amt=1732.00 invno=315188 by=INTEG-01 | Tavarantoimitus, tilaus 582154 | tests=[] score=0.01173 rank=105
+
+##########################################################################################
+UNIT DU-13 type=detector_vendor key=V-0114 stats={'n_flags': 7, 'months_touched': [3, 4, 5, 7, 11, 12], 'total_eur': 5173.85, 'score_range': [0.000817, 0.033669]}
+  VENDOR V-0114 Ratasmateriaali Oy Ab country=FI vat=FI13396122 iban=FI5219286685978246
+    terms_days=14 allowed_accounts=7250;7200 active_from=2025-01-01 addr=Konepajankatu 27, 72475 Tampere
+    total_txns=144 total_eur=136367.82 accounts_used=['7200', '7250']
+    amt_stats: min=199.21 med=806.63 mean=947.00 max=3403.77
+  --- flagged txns ---
+  TXN008785 post=2025-03-08(wd=False) inv=2025-03-07 due=2025-03-21 acct=7250(Software licences) amt=1377.82 invno=632774 by=INTEG-01 | Ostolasku, 892753 | tests=[] score=0.03367 rank=28
+  TXN014566 post=2025-04-20(wd=False) inv=2025-04-20 due=2025-05-04 acct=7250(Software licences) amt=947.95 invno=632785 by=INTEG-01 | Ostolasku, 892764 | tests=[] score=0.02019 rank=63
+  TXN018540 post=2025-05-20(wd=True) inv=2025-05-19 due=2025-06-02 acct=7200(IT services) amt=352.64 invno=632799 by=INTEG-01 | Ostolasku, 892778 | tests=[] score=0.00082 rank=193
+  TXN025673 post=2025-07-17(wd=True) inv=2025-07-16 due=2025-07-30 acct=7200(IT services) amt=1235.48 invno=632823 by=INTEG-01 | Ostolasku, 892802 | tests=[] score=0.01740 rank=76
+  TXN026644 post=2025-07-28(wd=True) inv=2025-07-28 due=2025-08-11 acct=7200(IT services) amt=362.74 invno=632828 by=INTEG-01 | Ostolasku, 892807 | tests=[] score=0.00232 rank=182
+  TXN039328 post=2025-11-03(wd=True) inv=2025-11-03 due=2025-11-17 acct=7200(IT services) amt=339.73 invno=632868 by=INTEG-01 | Ostolasku, 892847 | tests=[] score=0.02121 rank=55
+  TXN049413 post=2025-12-30(wd=True) inv=2025-12-30 due=2026-01-13 acct=7200(IT services) amt=557.49 invno=632895 by=INTEG-01 | Ostolasku, 892874 | tests=[] score=0.03018 rank=36
+
+##########################################################################################
+UNIT DU-14 type=detector_vendor key=V-0118 stats={'n_flags': 6, 'months_touched': [3, 5, 8, 10, 12], 'total_eur': 2516.04, 'score_range': [0.00511, 0.018783]}
+  VENDOR V-0118 Levypalvelu Oy Ab country=FI vat=FI23897196 iban=FI5421900681849305
+    terms_days=30 allowed_accounts=4000;4200 active_from=2025-01-01 addr=Konepajankatu 48, 15377 Jyväskylä
+    total_txns=217 total_eur=139664.77 accounts_used=['4000', '4200']
+    amt_stats: min=125.86 med=597.53 mean=643.62 max=2226.87
+  --- flagged txns ---
+  TXN008910 post=2025-03-10(wd=True) inv=2025-03-06 due=2025-04-05 acct=4200(Tools and supplies) amt=214.32 invno=747500 by=U-142 | Tavarantoimitus, tilaus 234876 | tests=[] score=0.00511 rank=159
+  TXN016050 post=2025-05-01(wd=False) inv=2025-04-30 due=2025-05-30 acct=4200(Tools and supplies) amt=461.38 invno=747529 by=INTEG-01 | Tavarantoimitus, tilaus 234905 | tests=[] score=0.01878 rank=70
+  TXN028095 post=2025-08-10(wd=False) inv=2025-08-10 due=2025-09-09 acct=4200(Tools and supplies) amt=457.41 invno=747579 by=INTEG-01 | Tavarantoimitus, tilaus 234955 | tests=[] score=0.00912 rank=126
+  TXN029853 post=2025-08-25(wd=True) inv=2025-08-25 due=2025-09-24 acct=4200(Tools and supplies) amt=769.74 invno=747584 by=INTEG-01 | Tavarantoimitus, tilaus 234960 | tests=[] score=0.01227 rank=101
+  TXN035618 post=2025-10-07(wd=True) inv=2025-10-07 due=2025-11-06 acct=4200(Tools and supplies) amt=303.54 invno=747613 by=INTEG-01 | Tavarantoimitus, tilaus 234989 | tests=[] score=0.00994 rank=121
+  TXN049050 post=2025-12-28(wd=False) inv=2025-12-28 due=2026-01-27 acct=4000(Domestic purchases) amt=309.65 invno=747672 by=INTEG-01 | Tavarantoimitus, tilaus 235048 | tests=[] score=0.00530 rank=158
+
+##########################################################################################
+UNIT DU-15 type=detector_vendor key=V-0121 stats={'n_flags': 6, 'months_touched': [1, 3, 5, 9, 12], 'total_eur': 10181.72, 'score_range': [0.000923, 0.059309]}
+  VENDOR V-0121 Putkimateriaali Tmi country=FI vat=FI02131777 iban=FI7099321791359813
+    terms_days=21 allowed_accounts=7250;7990 active_from=2025-01-01 addr=Varastotie 43, 17401 Lahti
+    total_txns=390 total_eur=380129.69 accounts_used=['7250', '7990']
+    amt_stats: min=200.63 med=801.25 mean=974.69 max=4588.56
+  --- flagged txns ---
+  TXN000380 post=2025-01-06(wd=False) inv=2025-01-06 due=2025-01-27 acct=7990(Other operating expenses) amt=1935.36 invno=940109 by=INTEG-01 | Ostolasku, 771607 | tests=[] score=0.04193 rank=19
+  TXN009798 post=2025-03-16(wd=False) inv=2025-03-16 due=2025-04-06 acct=7990(Other operating expenses) amt=1845.80 invno=940191 by=INTEG-01 | Ostolasku, 771689 | tests=[] score=0.04953 rank=9
+  TXN009799 post=2025-03-16(wd=False) inv=2025-03-16 due=2025-04-06 acct=7990(Other operating expenses) amt=572.92 invno=940192 by=INTEG-01 | Ostolasku, 771690 | tests=[] score=0.00092 rank=191
+  TXN019315 post=2025-05-25(wd=False) inv=2025-05-25 due=2025-06-15 acct=7990(Other operating expenses) amt=1728.53 invno=940255 by=INTEG-01 | Ostolasku, 771753 | tests=[] score=0.05931 rank=5
+  TXN031554 post=2025-09-06(wd=False) inv=2025-09-05 due=2025-09-26 acct=7990(Other operating expenses) amt=1747.46 invno=940349 by=INTEG-01 | Ostolasku, 771847 | tests=[] score=0.01108 rank=111
+  TXN048644 post=2025-12-23(wd=True) inv=2025-12-23 due=2026-01-13 acct=7990(Other operating expenses) amt=2351.65 invno=940487 by=INTEG-01 | Ostolasku, 771985 | tests=[] score=0.00778 rank=140
+
+##########################################################################################
+UNIT DU-16 type=detector_vendor key=V-0125 stats={'n_flags': 5, 'months_touched': [2, 3, 5, 6, 10], 'total_eur': 7698.2, 'score_range': [0.003178, 0.020213]}
+  VENDOR V-0125 Ratastukku Oy Ab country=FI vat=FI90592526 iban=FI2008451879085822
+    terms_days=21 allowed_accounts=7990;7400 active_from=2025-01-01 addr=Terästie 20, 15674 Vantaa
+    total_txns=116 total_eur=115565.75 accounts_used=['7400', '7990']
+    amt_stats: min=102.58 med=776.97 mean=996.26 max=3489.70
+  --- flagged txns ---
+  TXN003903 post=2025-02-03(wd=True) inv=2025-02-03 due=2025-02-24 acct=7400(Telecom costs) amt=1797.13 invno=838870 by=INTEG-01 | Ostolasku, 305950 | tests=[] score=0.02021 rank=62
+  TXN007967 post=2025-03-03(wd=True) inv=2025-03-03 due=2025-03-24 acct=7400(Telecom costs) amt=2119.78 invno=838876 by=INTEG-01 | Ostolasku, 305956 | tests=[] score=0.00553 rank=153
+  TXN018246 post=2025-05-17(wd=False) inv=2025-05-16 due=2025-06-06 acct=7400(Telecom costs) amt=1818.42 invno=838903 by=INTEG-01 | Ostolasku, 305983 | tests=[] score=0.00318 rank=171
+  TXN020777 post=2025-06-05(wd=True) inv=2025-06-05 due=2025-06-26 acct=7400(Telecom costs) amt=961.78 invno=838905 by=INTEG-01 | Ostolasku, 305985 | tests=[] score=0.01055 rank=115
+  TXN035402 post=2025-10-05(wd=False) inv=2025-10-04 due=2025-10-25 acct=7400(Telecom costs) amt=1001.09 invno=838948 by=INTEG-01 | Ostolasku, 306028 | tests=[] score=0.00960 rank=124
+
+##########################################################################################
+UNIT DU-17 type=detector_vendor key=V-0131 stats={'n_flags': 17, 'months_touched': [1, 2, 3, 4, 6, 7, 9, 10, 11, 12], 'total_eur': 66827.78, 'score_range': [0.002627, 0.057772]}
+  VENDOR V-0131 Turvalogistiikka Tmi country=FI vat=FI34183443 iban=FI1607324328815550
+    terms_days=30 allowed_accounts=4310;4110 active_from=2025-01-01 addr=Teollisuuskatu 34, 43974 Oulu
+    total_txns=166 total_eur=536697.03 accounts_used=['4110', '4310']
+    amt_stats: min=605.83 med=3121.44 mean=3233.11 max=7066.54
+  --- flagged txns ---
+  TXN000296 post=2025-01-04(wd=False) inv=2025-01-03 due=2025-02-02 acct=4110(Seals and components) amt=2885.76 invno=669568 by=INTEG-01 | Materiaalitoimitus, tilaus 410660 | tests=[] score=0.01671 rank=79
+  TXN003029 post=2025-01-27(wd=True) inv=2025-01-27 due=2025-02-26 acct=4110(Seals and components) amt=4469.39 invno=669579 by=INTEG-01 | Materiaalitoimitus, tilaus 410671 | tests=[] score=0.05495 rank=7
+  TXN003766 post=2025-02-01(wd=False) inv=2025-01-31 due=2025-03-02 acct=4110(Seals and components) amt=2342.03 invno=669583 by=INTEG-01 | Materiaalitoimitus, tilaus 410675 | tests=[] score=0.00263 rank=179
+  TXN008842 post=2025-03-09(wd=False) inv=2025-03-08 due=2025-04-07 acct=4110(Seals and components) amt=4767.10 invno=669605 by=INTEG-01 | Materiaalitoimitus, tilaus 410697 | tests=[] score=0.04823 rank=11
+  TXN012457 post=2025-04-04(wd=True) inv=2025-04-03 due=2025-05-03 acct=4110(Seals and components) amt=3931.07 invno=669619 by=INTEG-01 | Materiaalitoimitus, tilaus 410711 | tests=[] score=0.01832 rank=73
+  TXN013643 post=2025-04-12(wd=False) inv=2025-04-11 due=2025-05-11 acct=4110(Seals and components) amt=2906.05 invno=669621 by=INTEG-01 | Materiaalitoimitus, tilaus 410713 | tests=[] score=0.05466 rank=8
+  TXN014488 post=2025-04-18(wd=False) inv=2025-04-18 due=2025-05-18 acct=4110(Seals and components) amt=1695.20 invno=669624 by=INTEG-01 | Materiaalitoimitus, tilaus 410716 | tests=[] score=0.00959 rank=125
+  TXN014851 post=2025-04-23(wd=True) inv=2025-04-23 due=2025-05-23 acct=4110(Seals and components) amt=6500.84 invno=669625 by=INTEG-01 | Materiaalitoimitus, tilaus 410717 | tests=[] score=0.04928 rank=10
+  TXN023177 post=2025-06-24(wd=True) inv=2025-06-24 due=2025-07-24 acct=4110(Seals and components) amt=2856.31 invno=669643 by=INTEG-01 | Materiaalitoimitus, tilaus 410735 | tests=[] score=0.01060 rank=114
+  TXN025264 post=2025-07-12(wd=False) inv=2025-07-11 due=2025-08-10 acct=4310(Spare parts) amt=1885.01 invno=669650 by=INTEG-01 | Materiaalitoimitus, tilaus 410742 | tests=[] score=0.02360 rank=49
+  TXN026009 post=2025-07-21(wd=True) inv=2025-07-20 due=2025-08-19 acct=4110(Seals and components) amt=4414.22 invno=669651 by=INTEG-01 | Materiaalitoimitus, tilaus 410743 | tests=[] score=0.04676 rank=12
+  TXN034396 post=2025-09-27(wd=False) inv=2025-09-27 due=2025-10-27 acct=4310(Spare parts) amt=3939.31 invno=669674 by=INTEG-01 | Materiaalitoimitus, tilaus 410766 | tests=[] score=0.00890 rank=129
+  TXN038338 post=2025-10-27(wd=True) inv=2025-10-21 due=2025-11-20 acct=4310(Spare parts) amt=4296.78 invno=669678 by=U-117 | Materiaalitoimitus, tilaus 410770 | tests=[] score=0.00462 rank=165
+  TXN042391 post=2025-11-19(wd=True) inv=2025-11-19 due=2025-12-19 acct=4110(Seals and components) amt=5522.78 invno=669696 by=INTEG-01 | Materiaalitoimitus, tilaus 410788 | tests=[] score=0.04003 rank=22
+  TXN044757 post=2025-12-02(wd=True) inv=2025-12-01 due=2025-12-31 acct=4110(Seals and components) amt=6938.75 invno=669705 by=INTEG-01 | Materiaalitoimitus, tilaus 410797 | tests=[] score=0.02096 rank=58
+  TXN047043 post=2025-12-14(wd=False) inv=2025-12-13 due=2026-01-12 acct=4110(Seals and components) amt=4239.02 invno=669715 by=INTEG-01 | Materiaalitoimitus, tilaus 410807 | tests=[] score=0.05777 rank=6
+  TXN048846 post=2025-12-24(wd=False) inv=2025-12-23 due=2026-01-22 acct=4310(Spare parts) amt=3238.16 invno=669722 by=INTEG-01 | Materiaalitoimitus, tilaus 410814 | tests=[] score=0.01008 rank=120
+
+##########################################################################################
+UNIT DU-18 type=detector_vendor key=V-0132 stats={'n_flags': 3, 'months_touched': [2, 6, 8], 'total_eur': 23808.89, 'score_range': [0.002807, 0.008423]}
+  VENDOR V-0132 Kulmatekniikka Tmi country=FI vat=FI78360714 iban=FI7708062345718654
+    terms_days=14 allowed_accounts=4310 active_from=2025-01-01 addr=Varikkokatu 55, 02689 Jyväskylä
+    total_txns=348 total_eur=1100544.10 accounts_used=['4310']
+    amt_stats: min=539.71 med=2944.39 mean=3162.48 max=10039.71
+  --- flagged txns ---
+  TXN003828 post=2025-02-02(wd=False) inv=2025-02-02 due=2025-02-16 acct=4310(Spare parts) amt=7190.14 invno=488521 by=INTEG-01 | Materiaalitoimitus, tilaus 215932 | tests=[] score=0.00842 rank=135
+  TXN022845 post=2025-06-20(wd=False) inv=2025-06-19 due=2025-07-03 acct=4310(Spare parts) amt=10039.71 invno=488660 by=INTEG-01 | Materiaalitoimitus, tilaus 216071 | tests=[] score=0.00567 rank=152
+  TXN028096 post=2025-08-10(wd=False) inv=2025-08-10 due=2025-08-24 acct=4310(Spare parts) amt=6579.04 invno=488693 by=INTEG-01 | Materiaalitoimitus, tilaus 216104 | tests=[] score=0.00281 rank=177
+
+##########################################################################################
+UNIT DU-19 type=detector_vendor key=V-0135 stats={'n_flags': 9, 'months_touched': [1, 3, 4, 7, 9, 11, 12], 'total_eur': 15274.69, 'score_range': [0.001788, 0.079014]}
+  VENDOR V-0135 Metallijärjestelmä Oy country=FI vat=FI18216701 iban=FI3887372047631351
+    terms_days=21 allowed_accounts=7200;7400 active_from=2025-01-01 addr=Tehtaankatu 30, 69635 Vantaa
+    total_txns=228 total_eur=209878.35 accounts_used=['7200', '7400']
+    amt_stats: min=203.02 med=775.38 mean=920.52 max=4091.51
+  --- flagged txns ---
+  TXN001116 post=2025-01-12(wd=False) inv=2025-01-11 due=2025-02-01 acct=7400(Telecom costs) amt=448.16 invno=310669 by=INTEG-01 | Ostolasku, 914652 | tests=[] score=0.00294 rank=173
+  TXN007879 post=2025-03-02(wd=False) inv=2025-03-02 due=2025-03-23 acct=7200(IT services) amt=2250.57 invno=310697 by=INTEG-01 | Ostolasku, 914680 | tests=[] score=0.00252 rank=181
+  TXN010226 post=2025-03-19(wd=True) inv=2025-03-18 due=2025-04-08 acct=7200(IT services) amt=4091.51 invno=310705 by=INTEG-01 | Ostolasku, 914688 | tests=[] score=0.01083 rank=112
+  TXN014695 post=2025-04-22(wd=True) inv=2025-04-22 due=2025-05-13 acct=7400(Telecom costs) amt=719.83 invno=310726 by=INTEG-01 | Ostolasku, 914709 | tests=[] score=0.00179 rank=183
+  TXN024115 post=2025-07-01(wd=True) inv=2025-07-01 due=2025-07-22 acct=7400(Telecom costs) amt=3721.96 invno=310770 by=INTEG-01 | Ostolasku, 914753 | tests=[] score=0.07901 rank=1
+  TXN025063 post=2025-07-10(wd=True) inv=2025-07-10 due=2025-07-31 acct=7400(Telecom costs) amt=1134.78 invno=310772 by=INTEG-01 | Ostolasku, 914755 | tests=[] score=0.01806 rank=74
+  TXN032565 post=2025-09-14(wd=False) inv=2025-09-14 due=2025-10-05 acct=7200(IT services) amt=1951.51 invno=310810 by=INTEG-01 | Ostolasku, 914793 | tests=[] score=0.00315 rank=172
+  TXN042395 post=2025-11-19(wd=True) inv=2025-11-19 due=2025-12-10 acct=7400(Telecom costs) amt=445.38 invno=310853 by=INTEG-01 | Ostolasku, 914836 | tests=[] score=0.00283 rank=176
+  TXN047157 post=2025-12-15(wd=True) inv=2025-12-15 due=2026-01-05 acct=7400(Telecom costs) amt=510.99 invno=310875 by=INTEG-01 | Ostolasku, 914858 | tests=[] score=0.04012 rank=21
+
+##########################################################################################
+UNIT DU-20 type=detector_vendor key=V-0155 stats={'n_flags': 3, 'months_touched': [4, 12], 'total_eur': 5053.97, 'score_range': [0.008436, 0.018616]}
+  VENDOR V-0155 Pistetukku Oy Ab country=FI vat=FI83347848 iban=FI6856172959369331
+    terms_days=21 allowed_accounts=7400;7100 active_from=2025-01-01 addr=Ratakatu 17, 08977 Tampere
+    total_txns=586 total_eur=550241.51 accounts_used=['7100', '7400']
+    amt_stats: min=135.64 med=809.99 mean=938.98 max=5141.54
+  --- flagged txns ---
+  TXN014574 post=2025-04-20(wd=False) inv=2025-04-19 due=2025-05-10 acct=7100(Marketing) amt=1943.29 invno=290710 by=INTEG-01 | Ostolasku, 222334 | tests=[] score=0.01862 rank=72
+  TXN048859 post=2025-12-24(wd=False) inv=2025-12-23 due=2026-01-13 acct=7100(Marketing) amt=1690.55 invno=291103 by=INTEG-01 | Ostolasku, 222727 | tests=[] score=0.01300 rank=97
+  TXN048860 post=2025-12-24(wd=False) inv=2025-12-23 due=2026-01-13 acct=7100(Marketing) amt=1420.13 invno=291104 by=INTEG-01 | Ostolasku, 222728 | tests=[] score=0.00844 rank=134
+
+##########################################################################################
+UNIT DU-21 type=detector_vendor key=V-0156 stats={'n_flags': 8, 'months_touched': [1, 2, 4, 6, 7, 9], 'total_eur': 3531.67, 'score_range': [0.003588, 0.039246]}
+  VENDOR V-0156 Verkkotukku Tmi country=FI vat=FI68849338 iban=FI7535240861702598
+    terms_days=21 allowed_accounts=4020;4200 active_from=2025-01-01 addr=Ratakatu 12, 55181 Vantaa
+    total_txns=171 total_eur=103079.39 accounts_used=['4020', '4200']
+    amt_stats: min=98.86 med=552.11 mean=602.80 max=2197.98
+  --- flagged txns ---
+  TXN001079 post=2025-01-11(wd=False) inv=2025-01-10 due=2025-01-31 acct=4200(Tools and supplies) amt=646.40 invno=779936 by=INTEG-01 | Tavarantoimitus, tilaus 781088 | tests=[] score=0.01152 rank=109
+  TXN001080 post=2025-01-11(wd=False) inv=2025-01-11 due=2025-02-01 acct=4200(Tools and supplies) amt=280.12 invno=779937 by=INTEG-01 | Tavarantoimitus, tilaus 781089 | tests=[] score=0.00359 rank=169
+  TXN004775 post=2025-02-08(wd=False) inv=2025-02-07 due=2025-02-28 acct=4020(Packaging materials) amt=119.65 invno=779957 by=INTEG-01 | Tavarantoimitus, tilaus 781109 | tests=[] score=0.00815 rank=138
+  TXN006309 post=2025-02-19(wd=True) inv=2025-02-18 due=2025-03-11 acct=4200(Tools and supplies) amt=98.86 invno=779963 by=INTEG-01 | Tavarantoimitus, tilaus 781115 | tests=[] score=0.01934 rank=68
+  TXN012666 post=2025-04-06(wd=False) inv=2025-04-06 due=2025-04-27 acct=4200(Tools and supplies) amt=811.49 invno=779983 by=INTEG-01 | Tavarantoimitus, tilaus 781135 | tests=[] score=0.02589 rank=44
+  TXN023045 post=2025-06-23(wd=True) inv=2025-06-23 due=2025-07-14 acct=4200(Tools and supplies) amt=489.26 invno=780017 by=INTEG-01 | Tavarantoimitus, tilaus 781169 | tests=[] score=0.03925 rank=24
+  TXN025369 post=2025-07-14(wd=True) inv=2025-07-13 due=2025-08-03 acct=4200(Tools and supplies) amt=290.69 invno=780028 by=INTEG-01 | Tavarantoimitus, tilaus 781180 | tests=[] score=0.02326 rank=50
+  TXN034555 post=2025-09-29(wd=True) inv=2025-09-29 due=2025-10-20 acct=4200(Tools and supplies) amt=795.20 invno=780055 by=INTEG-01 | Tavarantoimitus, tilaus 781207 | tests=[] score=0.01554 rank=85
+
+##########################################################################################
+UNIT DU-22 type=detector_vendor key=V-0157 stats={'n_flags': 7, 'months_touched': [2, 5, 6, 7, 9, 11], 'total_eur': 30021.51, 'score_range': [0.001609, 0.046047]}
+  VENDOR V-0157 Kumitukku Oy Ab country=FI vat=FI96283869 iban=FI3934381227194182
+    terms_days=14 allowed_accounts=4310;4100 active_from=2025-01-01 addr=Tehtaankatu 46, 71806 Tampere
+    total_txns=170 total_eur=546429.48 accounts_used=['4100', '4310']
+    amt_stats: min=1361.62 med=2962.12 mean=3214.29 max=7832.79
+  --- flagged txns ---
+  TXN006313 post=2025-02-19(wd=True) inv=2025-02-18 due=2025-03-04 acct=4100(Steel and metal products) amt=3744.41 invno=161816 by=INTEG-01 | Materiaalitoimitus, tilaus 030167 | tests=[] score=0.01252 rank=99
+  TXN016280 post=2025-05-03(wd=False) inv=2025-05-02 due=2025-05-16 acct=4100(Steel and metal products) amt=4040.76 invno=161851 by=INTEG-01 | Materiaalitoimitus, tilaus 030202 | tests=[] score=0.02819 rank=39
+  TXN020017 post=2025-05-30(wd=True) inv=2025-05-30 due=2025-06-13 acct=4310(Spare parts) amt=6615.30 invno=161870 by=INTEG-01 | Materiaalitoimitus, tilaus 030221 | tests=[] score=0.01962 rank=66
+  TXN022104 post=2025-06-14(wd=False) inv=2025-06-13 due=2025-06-27 acct=4310(Spare parts) amt=5206.80 invno=161878 by=INTEG-01 | Materiaalitoimitus, tilaus 030229 | tests=[] score=0.03208 rank=33
+  TXN025074 post=2025-07-10(wd=True) inv=2025-07-09 due=2025-07-23 acct=4100(Steel and metal products) amt=3324.69 invno=161889 by=INTEG-01 | Materiaalitoimitus, tilaus 030240 | tests=[] score=0.03233 rank=31
+  TXN031867 post=2025-09-09(wd=True) inv=2025-09-09 due=2025-09-23 acct=4100(Steel and metal products) amt=2404.24 invno=161907 by=INTEG-01 | Materiaalitoimitus, tilaus 030258 | tests=[] score=0.00161 rank=185
+  TXN043168 post=2025-11-23(wd=False) inv=2025-11-22 due=2025-12-06 acct=4310(Spare parts) amt=4685.31 invno=161947 by=INTEG-01 | Materiaalitoimitus, tilaus 030298 | tests=[] score=0.04605 rank=13
+
+##########################################################################################
+UNIT DU-23 type=detector_vendor key=V-0176 stats={'n_flags': 3, 'months_touched': [3, 7, 10], 'total_eur': 2161.5, 'score_range': [0.006663, 0.037382]}
+  VENDOR V-0176 Nordgrossist country=SE vat=SE580558381001 iban=SE6019759420421262210995
+    terms_days=14 allowed_accounts=4300;4020 active_from=2025-01-01 addr=Hamngatan 57, 99912 Norrköping
+    total_txns=203 total_eur=132980.39 accounts_used=['4020', '4300']
+    amt_stats: min=159.81 med=552.90 mean=655.08 max=3276.52
+  --- flagged txns ---
+  TXN011658 post=2025-03-29(wd=False) inv=2025-03-28 due=2025-04-11 acct=4300(Maintenance supplies) amt=1246.51 invno=390097 by=INTEG-01 | Tavarantoimitus, tilaus 663795 | tests=[] score=0.03738 rank=25
+  TXN027003 post=2025-07-31(wd=True) inv=2025-07-30 due=2025-08-13 acct=4020(Packaging materials) amt=681.69 invno=390164 by=INTEG-01 | Tavarantoimitus, tilaus 663862 | tests=[] score=0.00666 rank=144
+  TXN036438 post=2025-10-13(wd=True) inv=2025-10-13 due=2025-10-27 acct=4020(Packaging materials) amt=233.30 invno=390200 by=INTEG-01 | Tavarantoimitus, tilaus 663898 | tests=[] score=0.03539 rank=26
+
+##########################################################################################
+UNIT DU-24 type=detector_vendor key=V-0198 stats={'n_flags': 10, 'months_touched': [1, 2, 3, 5, 7, 8, 9, 11, 12], 'total_eur': 11611.52, 'score_range': [0.005069, 0.041278]}
+  VENDOR V-0198 Metallitukku Oy country=FI vat=FI17130028 iban=FI6752438326708680
+    terms_days=14 allowed_accounts=7250;7850 active_from=2025-01-01 addr=Teollisuuskatu 41, 43009 Kuopio
+    total_txns=207 total_eur=182547.93 accounts_used=['7250', '7850']
+    amt_stats: min=211.92 med=768.66 mean=881.87 max=2872.17
+  --- flagged txns ---
+  TXN001934 post=2025-01-17(wd=True) inv=2025-01-17 due=2025-01-31 acct=7850(Security services) amt=293.92 invno=869579 by=INTEG-01 | Ostolasku, 132913 | tests=[] score=0.01342 rank=96
+  TXN004814 post=2025-02-08(wd=False) inv=2025-02-07 due=2025-02-21 acct=7250(Software licences) amt=806.12 invno=869586 by=INTEG-01 | Ostolasku, 132920 | tests=[] score=0.00744 rank=142
+  TXN010863 post=2025-03-24(wd=True) inv=2025-03-24 due=2025-04-07 acct=7850(Security services) amt=2440.87 invno=869611 by=INTEG-01 | Ostolasku, 132945 | tests=[] score=0.01020 rank=119
+  TXN019937 post=2025-05-29(wd=False) inv=2025-05-28 due=2025-06-11 acct=7850(Security services) amt=1441.50 invno=869655 by=INTEG-01 | Ostolasku, 132989 | tests=[] score=0.00605 rank=150
+  TXN025935 post=2025-07-19(wd=False) inv=2025-07-18 due=2025-08-01 acct=7850(Security services) amt=1507.31 invno=869676 by=INTEG-01 | Ostolasku, 133010 | tests=[] score=0.02121 rank=56
+  TXN029907 post=2025-08-25(wd=True) inv=2025-08-20 due=2025-09-03 acct=7850(Security services) amt=211.92 invno=869691 by=U-117 | Ostolasku, 133025 | tests=[] score=0.04128 rank=20
+  TXN030689 post=2025-08-30(wd=False) inv=2025-08-29 due=2025-09-12 acct=7850(Security services) amt=1791.71 invno=869697 by=INTEG-01 | Ostolasku, 133031 | tests=[] score=0.01170 rank=107
+  TXN034478 post=2025-09-28(wd=False) inv=2025-09-28 due=2025-10-12 acct=7250(Software licences) amt=519.34 invno=869720 by=INTEG-01 | Ostolasku, 133054 | tests=[] score=0.00507 rank=160
+  TXN040104 post=2025-11-06(wd=True) inv=2025-11-05 due=2025-11-19 acct=7850(Security services) amt=837.52 invno=869743 by=INTEG-01 | Ostolasku, 133077 | tests=[] score=0.01273 rank=98
+  TXN045749 post=2025-12-06(wd=False) inv=2025-12-05 due=2025-12-19 acct=7850(Security services) amt=1761.31 invno=869767 by=INTEG-01 | Ostolasku, 133101 | tests=[] score=0.02388 rank=47
+
+##########################################################################################
+UNIT SINGLES type=detector_singles key=None stats={'n_flags': 10, 'months_touched': [1, 2, 3, 7, 11, 12], 'total_eur': 46649.64, 'score_range': [0.023722, 0.075024]}
+  VENDOR V-0023 Säiliömateriaali Oy Ab country=FI vat=FI93927773 iban=FI3285902564385949
+    terms_days=21 allowed_accounts=4010;4310 active_from=2025-01-01 addr=Kauppakatu 58, 30528 Tampere
+    total_txns=18 total_eur=59356.39 accounts_used=['4010', '4310']
+    amt_stats: min=1685.58 med=3202.16 mean=3297.58 max=4974.31
+  VENDOR V-0071 Verktygsteknik country=SE vat=SE784526242601 iban=SE9848213517700730014297
+    terms_days=30 allowed_accounts=7400;4430 active_from=2025-01-01 addr=Lagervägen 35, 36975 Malmö
+    total_txns=36 total_eur=99344.67 accounts_used=['4430', '7400']
+    amt_stats: min=624.41 med=2325.82 mean=2759.57 max=8464.74
+  VENDOR V-0075 Rautaväline Tmi country=FI vat=FI14205167 iban=FI5340611397650874
+    terms_days=30 allowed_accounts=7850;7250 active_from=2025-01-01 addr=Konepajankatu 15, 41574 Vantaa
+    total_txns=113 total_eur=105334.62 accounts_used=['7250', '7850']
+    amt_stats: min=196.05 med=745.14 mean=932.16 max=2800.40
+  VENDOR V-0095 Rataskomponentti Oy Ab country=FI vat=FI55640159 iban=FI0158860216914045
+    terms_days=21 allowed_accounts=4110 active_from=2025-01-01 addr=Varikkokatu 53, 15918 Kuopio
+    total_txns=100 total_eur=324913.36 accounts_used=['4110']
+    amt_stats: min=444.45 med=3043.77 mean=3249.13 max=6954.14
+  VENDOR V-0105 Metallivaraosa Oy Ab country=FI vat=FI35740807 iban=FI9106807672475294
+    terms_days=30 allowed_accounts=4430 active_from=2025-01-01 addr=Kauppakatu 30, 04122 Vantaa
+    total_txns=326 total_eur=635053.35 accounts_used=['4430']
+    amt_stats: min=444.08 med=1701.39 mean=1948.02 max=6268.10
+  VENDOR V-0142 Technikhandel GmbH country=DE vat=DE739480438 iban=DE02668796623655069808
+    terms_days=14 allowed_accounts=4010;4110 active_from=2025-01-01 addr=Industriestraße 50, 39316 Dortmund
+    total_txns=47 total_eur=160699.78 accounts_used=['4010', '4110']
+    amt_stats: min=1108.21 med=3262.03 mean=3419.14 max=7214.84
+  VENDOR V-0150 Kantahuolto Oy Ab country=FI vat=FI75360711 iban=FI8686288233045352
+    terms_days=30 allowed_accounts=4000;4300 active_from=2025-01-01 addr=Kauppakatu 36, 88356 Helsinki
+    total_txns=103 total_eur=68590.84 accounts_used=['4000', '4300']
+    amt_stats: min=152.43 med=550.82 mean=665.93 max=2223.29
+  VENDOR V-0171 Runkologistiikka Oy country=FI vat=FI40261946 iban=FI6623034757600261
+    terms_days=14 allowed_accounts=4200;4020 active_from=2025-01-01 addr=Ratakatu 42, 87174 Tampere
+    total_txns=60 total_eur=166246.62 accounts_used=['4020', '4200']
+    amt_stats: min=730.57 med=2141.40 mean=2770.78 max=7267.65
+  VENDOR V-0195 Nordhandel AS country=NO vat=NO851035849MVA iban=NO8212047615723
+    terms_days=21 allowed_accounts=7700;4430 active_from=2025-01-01 addr=Industriveien 51, 48393 Drammen
+    total_txns=57 total_eur=131185.31 accounts_used=['4430', '7700']
+    amt_stats: min=435.95 med=2002.51 mean=2301.50 max=7575.97
+  --- flagged txns ---
+  TXN002850 post=2025-01-25(wd=False) inv=2025-01-24 due=2025-02-14 acct=4110(Seals and components) amt=6092.09 invno=886621 by=INTEG-01 | Materiaalitoimitus, tilaus 820283 | tests=[] score=0.02563 rank=45
+  TXN002870 post=2025-01-25(wd=False) inv=2025-01-24 due=2025-02-07 acct=4110(Seals and components) amt=3999.93 invno=542467 by=INTEG-01 | Materiaalitoimitus, tilaus 095455 | tests=[] score=0.04438 rank=18
+  TXN006870 post=2025-02-23(wd=False) inv=2025-02-23 due=2025-03-25 acct=4430(Consulting services) amt=6253.77 invno=022825 by=INTEG-01 | Palvelulasku, 331320 | tests=[] score=0.02917 rank=38
+  TXN010666 post=2025-03-22(wd=False) inv=2025-03-22 due=2025-04-21 acct=4430(Consulting services) amt=8464.74 invno=064055 by=INTEG-01 | Kertatoimitus, tilaus 307323 | tests=[] score=0.07502 rank=2
+  TXN025791 post=2025-07-18(wd=True) inv=2025-07-18 due=2025-08-17 acct=7250(Software licences) amt=1434.10 invno=242213 by=INTEG-01 | Ostolasku, 287785 | tests=[] score=0.02650 rank=43
+  TXN044434 post=2025-11-30(wd=False) inv=2025-11-30 due=2025-12-21 acct=4310(Spare parts) amt=4063.03 invno=612169 by=INTEG-01 | Materiaalitoimitus, tilaus 043072 | tests=[] score=0.04467 rank=16
+  TXN044442 post=2025-11-30(wd=False) inv=2025-11-30 due=2025-12-30 acct=7250(Software licences) amt=1708.80 invno=242264 by=INTEG-01 | Ostolasku, 287836 | tests=[] score=0.02372 rank=48
+  TXN045742 post=2025-12-06(wd=False) inv=2025-12-05 due=2025-12-26 acct=7700(Representation costs) amt=7575.97 invno=164308 by=INTEG-01 | Kertatoimitus, tilaus 739316 | tests=[] score=0.03230 rank=32
+  TXN047046 post=2025-12-14(wd=False) inv=2025-12-14 due=2026-01-13 acct=4300(Maintenance supplies) amt=335.83 invno=044682 by=INTEG-01 | Tavarantoimitus, tilaus 781494 | tests=[] score=0.03433 rank=27
+  TXN048135 post=2025-12-19(wd=True) inv=2025-12-19 due=2026-01-02 acct=4020(Packaging materials) amt=6721.38 invno=334964 by=INTEG-01 | Kertatoimitus, tilaus 743538 | tests=[] score=0.03241 rank=30
+
+##########################################################################################
+UNIT RESIDUAL type=detector_residual key=None stats={'n_flags': 30, 'months_touched': [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12], 'total_eur': 105890.93, 'score_range': [0.000505, 0.016032]}
+  VENDOR V-0027 Sjogrossist country=SE vat=SE741233977801 iban=SE8093310499809493028998
+    terms_days=21 allowed_accounts=7000;7800 active_from=2025-01-01 addr=Lagervägen 51, 59126 Göteborg
+    total_txns=130 total_eur=128597.73 accounts_used=['7000', '7800']
+    amt_stats: min=198.79 med=844.83 mean=989.21 max=3645.34
+  VENDOR V-0033 Runkopalvelu Oy Ab country=FI vat=FI17007563 iban=FI7643013734127929
+    terms_days=14 allowed_accounts=4200 active_from=2025-01-01 addr=Kauppakatu 37, 68797 Oulu
+    total_txns=15 total_eur=32752.93 accounts_used=['4200']
+    amt_stats: min=1081.29 med=1634.19 mean=2183.53 max=4680.41
+  VENDOR V-0040 Kiskovaraosa Ky country=FI vat=FI62880792 iban=FI6987674386928220
+    terms_days=30 allowed_accounts=7600 active_from=2025-01-01 addr=Ratakatu 15, 35690 Vantaa
+    total_txns=31 total_eur=27728.23 accounts_used=['7600']
+    amt_stats: min=310.82 med=720.07 mean=894.46 max=2394.39
+  VENDOR V-0051 Runkotukku Oy country=FI vat=FI02006972 iban=FI0404870373038164
+    terms_days=14 allowed_accounts=4020 active_from=2025-01-01 addr=Varikkokatu 6, 46989 Vantaa
+    total_txns=303 total_eur=193743.84 accounts_used=['4020']
+    amt_stats: min=128.33 med=562.43 mean=639.42 max=1771.12
+  VENDOR V-0068 VaruGrupp country=EE vat=EE809830672 iban=EE701221802090048198
+    terms_days=21 allowed_accounts=4310 active_from=2025-01-01 addr=Laoplats 44, 39788 Tartu
+    total_txns=198 total_eur=644810.59 accounts_used=['4310']
+    amt_stats: min=478.88 med=2955.75 mean=3256.62 max=9491.43
+  VENDOR V-0069 Porttijärjestelmä Tmi country=FI vat=FI11398496 iban=FI9373615846536216
+    terms_days=30 allowed_accounts=7300;7250 active_from=2025-01-01 addr=Ratakatu 52, 33474 Turku
+    total_txns=97 total_eur=90613.21 accounts_used=['7250', '7300']
+    amt_stats: min=177.31 med=765.30 mean=934.16 max=2966.75
+  VENDOR V-0081 Suojaasennus Tmi country=FI vat=FI10878355 iban=FI9482065511854598
+    terms_days=30 allowed_accounts=4430 active_from=2025-01-01 addr=Varastotie 55, 11292 Helsinki
+    total_txns=105 total_eur=207110.79 accounts_used=['4430']
+    amt_stats: min=515.67 med=1718.48 mean=1972.48 max=4724.73
+  VENDOR V-0085 Kumiasennus Oy Ab country=FI vat=FI93811741 iban=FI1253259104466504
+    terms_days=14 allowed_accounts=4210 active_from=2025-01-01 addr=Teollisuuskatu 33, 24404 Helsinki
+    total_txns=153 total_eur=407095.32 accounts_used=['4210']
+    amt_stats: min=402.55 med=2303.49 mean=2660.75 max=10988.77
+  VENDOR V-0087 Suojamateriaali Ky country=FI vat=FI38996959 iban=FI1735832138332564
+    terms_days=21 allowed_accounts=7700 active_from=2025-01-01 addr=Terästie 29, 60119 Kuopio
+    total_txns=180 total_eur=162603.27 accounts_used=['7700']
+    amt_stats: min=239.94 med=754.74 mean=903.35 max=4276.62
+  VENDOR V-0093 Verktoyteknikk AS country=NO vat=NO568633483MVA iban=NO8987201040418
+    terms_days=14 allowed_accounts=4000 active_from=2025-01-01 addr=Havnegata 16, 85532 Bergen
+    total_txns=259 total_eur=156340.29 accounts_used=['4000']
+    amt_stats: min=126.47 med=558.55 mean=603.63 max=4060.34
+  VENDOR V-0094 Levylogistiikka Oy country=FI vat=FI42341462 iban=FI1226143428891746
+    terms_days=30 allowed_accounts=4100 active_from=2025-01-01 addr=Satamakatu 16, 24402 Tampere
+    total_txns=93 total_eur=293879.54 accounts_used=['4100']
+    amt_stats: min=1264.47 med=2941.27 mean=3160.00 max=7925.43
+  VENDOR V-0108 Kiskomateriaali Oy Ab country=FI vat=FI61830379 iban=FI9519862445707085
+    terms_days=14 allowed_accounts=4310 active_from=2025-01-01 addr=Logistiikkatie 18, 65731 Vantaa
+    total_txns=261 total_eur=815603.51 accounts_used=['4310']
+    amt_stats: min=746.11 med=2962.97 mean=3124.92 max=7209.08
+  VENDOR V-0138 Rautatukku Oy Ab country=FI vat=FI22039769 iban=FI7968928750242114
+    terms_days=30 allowed_accounts=4020 active_from=2025-01-01 addr=Tehtaankatu 36, 71197 Jyväskylä
+    total_txns=176 total_eur=111868.90 accounts_used=['4020']
+    amt_stats: min=158.15 med=556.83 mean=635.62 max=2248.38
+  VENDOR V-0150 Kantahuolto Oy Ab country=FI vat=FI75360711 iban=FI8686288233045352
+    terms_days=30 allowed_accounts=4000;4300 active_from=2025-01-01 addr=Kauppakatu 36, 88356 Helsinki
+    total_txns=103 total_eur=68590.84 accounts_used=['4000', '4300']
+    amt_stats: min=152.43 med=550.82 mean=665.93 max=2223.29
+  VENDOR V-0153 Bergsgrossist country=SE vat=SE407475365301 iban=SE7752667992108863041883
+    terms_days=21 allowed_accounts=4310 active_from=2025-01-01 addr=Hamngatan 26, 46919 Göteborg
+    total_txns=245 total_eur=772336.78 accounts_used=['4310']
+    amt_stats: min=524.12 med=2967.24 mean=3152.40 max=7737.10
+  VENDOR V-0159 Palkkitukku Oy country=FI vat=FI03359294 iban=FI4377120130206015
+    terms_days=14 allowed_accounts=4430 active_from=2025-01-01 addr=Terästie 41, 96829 Vantaa
+    total_txns=751 total_eur=1394732.18 accounts_used=['4430']
+    amt_stats: min=376.34 med=1681.39 mean=1857.17 max=8509.85
+  VENDOR V-0162 Kiskomateriaali Oy country=FI vat=FI87419381 iban=FI4500115919693603
+    terms_days=30 allowed_accounts=4430 active_from=2025-01-01 addr=Varastotie 48, 34412 Tampere
+    total_txns=429 total_eur=808680.81 accounts_used=['4430']
+    amt_stats: min=380.73 med=1682.40 mean=1885.04 max=8430.66
+  VENDOR V-0163 Kaapelilogistiikka Tmi country=FI vat=FI27310411 iban=FI0158374351816780
+    terms_days=14 allowed_accounts=7850 active_from=2025-01-01 addr=Konepajankatu 28, 88069 Helsinki
+    total_txns=416 total_eur=395259.84 accounts_used=['7850']
+    amt_stats: min=133.65 med=811.23 mean=950.14 max=7830.91
+  VENDOR V-0189 Vaunuvaraosa Ky country=FI vat=FI32923030 iban=FI7510783201759405
+    terms_days=21 allowed_accounts=7000 active_from=2025-01-01 addr=Tehtaankatu 55, 91668 Oulu
+    total_txns=68 total_eur=184064.88 accounts_used=['7000']
+    amt_stats: min=509.99 med=2368.19 mean=2706.84 max=11831.56
+  VENDOR V-0191 Runkologistiikka Tmi country=FI vat=FI80172056 iban=FI0067252504426347
+    terms_days=21 allowed_accounts=4010 active_from=2025-01-01 addr=Konepajankatu 40, 15269 Kuopio
+    total_txns=218 total_eur=709345.19 accounts_used=['4010']
+    amt_stats: min=1017.88 med=2991.39 mean=3253.88 max=9447.82
+  VENDOR V-0194 Laakeritekniikka Oy Ab country=FI vat=FI21596619 iban=FI8287803120260267
+    terms_days=14 allowed_accounts=4000 active_from=2025-01-01 addr=Varikkokatu 17, 39085 Oulu
+    total_txns=285 total_eur=194517.59 accounts_used=['4000']
+    amt_stats: min=123.26 med=597.54 mean=682.52 max=2180.64
+  VENDOR V-0195 Nordhandel AS country=NO vat=NO851035849MVA iban=NO8212047615723
+    terms_days=21 allowed_accounts=7700;4430 active_from=2025-01-01 addr=Industriveien 51, 48393 Drammen
+    total_txns=57 total_eur=131185.31 accounts_used=['4430', '7700']
+    amt_stats: min=435.95 med=2002.51 mean=2301.50 max=7575.97
+  VENDOR V-0197 Nordhandel 18 country=SE vat=SE589761217401 iban=SE6608104094787891753406
+    terms_days=21 allowed_accounts=4100 active_from=2025-01-01 addr=Lagervägen 59, 66286 Norrköping
+    total_txns=1624 total_eur=4668633.30 accounts_used=['4100']
+    amt_stats: min=405.21 med=2823.19 mean=2874.77 max=8587.24
+  --- flagged txns ---
+  TXN000014 post=2025-01-01(wd=False) inv=2025-01-01 due=2025-01-15 acct=7850(Security services) amt=7830.91 invno=030877 by=INTEG-01 | Ostolasku, 634399 | tests=[] score=0.00543 rank=155
+  TXN001110 post=2025-01-12(wd=False) inv=2025-01-11 due=2025-02-01 acct=7700(Representation costs) amt=2941.40 invno=623756 by=INTEG-01 | Ostolasku, 316954 | tests=[] score=0.00615 rank=148
+  TXN001120 post=2025-01-12(wd=False) inv=2025-01-11 due=2025-01-25 acct=4430(Consulting services) amt=5391.36 invno=739741 by=INTEG-01 | Palvelulasku, 638350 | tests=[] score=0.01071 rank=113
+  TXN001122 post=2025-01-12(wd=False) inv=2025-01-12 due=2025-02-11 acct=4430(Consulting services) amt=4143.12 invno=840408 by=INTEG-01 | Palvelulasku, 044970 | tests=[] score=0.00082 rank=194
+  TXN002011 post=2025-01-18(wd=False) inv=2025-01-17 due=2025-02-07 acct=4430(Consulting services) amt=857.93 invno=164255 by=INTEG-01 | Kertatoimitus, tilaus 739263 | tests=[] score=0.00491 rank=161
+  TXN002906 post=2025-01-25(wd=False) inv=2025-01-24 due=2025-02-14 acct=4010(Foreign purchases) amt=3596.42 invno=403318 by=INTEG-01 | Materiaalitoimitus, tilaus 785611 | tests=[] score=0.00721 rank=143
+  TXN004862 post=2025-02-09(wd=False) inv=2025-02-08 due=2025-03-01 acct=4100(Steel and metal products) amt=8587.24 invno=846919 by=INTEG-01 | Materiaalitoimitus, tilaus 805653 | tests=[] score=0.00621 rank=147
+  TXN005847 post=2025-02-16(wd=False) inv=2025-02-16 due=2025-03-02 acct=4000(Domestic purchases) amt=1374.89 invno=138452 by=INTEG-01 | Tavarantoimitus, tilaus 437085 | tests=[] score=0.00849 rank=133
+  TXN009813 post=2025-03-16(wd=False) inv=2025-03-15 due=2025-04-05 acct=7000(Premises rent) amt=1156.42 invno=338506 by=INTEG-01 | Kertatoimitus, tilaus 544468 | tests=[] score=0.00579 rank=151
+  TXN010906 post=2025-03-25(wd=True) inv=2025-03-21 due=2025-04-20 acct=7250(Software licences) amt=516.13 invno=467587 by=U-176 | Ostolasku, 299592 | tests=[] score=0.00824 rank=137
+  TXN012655 post=2025-04-06(wd=False) inv=2025-04-06 due=2025-04-20 acct=4210(Protective equipment) amt=8320.68 invno=002043 by=INTEG-01 | Kertatoimitus, tilaus 412576 | tests=[] score=0.00319 rank=170
+  TXN012661 post=2025-04-06(wd=False) inv=2025-04-05 due=2025-05-05 acct=4020(Packaging materials) amt=858.21 invno=742673 by=INTEG-01 | Tavarantoimitus, tilaus 504777 | tests=[] score=0.00534 rank=157
+  TXN013613 post=2025-04-12(wd=False) inv=2025-04-11 due=2025-05-02 acct=4310(Spare parts) amt=7394.10 invno=531534 by=INTEG-01 | Materiaalitoimitus, tilaus 473961 | tests=[] score=0.00466 rank=164
+  TXN013690 post=2025-04-13(wd=False) inv=2025-04-13 due=2025-05-13 acct=7600(Travel costs) amt=359.66 invno=178513 by=INTEG-01 | Ostolasku, 911811 | tests=[] score=0.00854 rank=132
+  TXN022076 post=2025-06-14(wd=False) inv=2025-06-13 due=2025-07-13 acct=4100(Steel and metal products) amt=6083.32 invno=331453 by=INTEG-01 | Materiaalitoimitus, tilaus 494792 | tests=[] score=0.00145 rank=188
+  TXN024660 post=2025-07-06(wd=False) inv=2025-07-05 due=2025-08-04 acct=4430(Consulting services) amt=4220.07 invno=114150 by=INTEG-01 | Palvelulasku, 127923 | tests=[] score=0.00841 rank=136
+  TXN024676 post=2025-07-06(wd=False) inv=2025-07-06 due=2025-07-27 acct=4010(Foreign purchases) amt=9447.82 invno=403416 by=INTEG-01 | Materiaalitoimitus, tilaus 785709 | tests=[] score=0.01175 rank=103
+  TXN028087 post=2025-08-10(wd=False) inv=2025-08-09 due=2025-08-23 acct=4020(Packaging materials) amt=328.90 invno=192998 by=INTEG-01 | Tavarantoimitus, tilaus 674610 | tests=[] score=0.00369 rank=168
+  TXN029305 post=2025-08-20(wd=True) inv=2025-08-19 due=2025-09-18 acct=4300(Maintenance supplies) amt=950.29 invno=044643 by=INTEG-01 | Tavarantoimitus, tilaus 781455 | tests=[] score=0.00056 rank=199
+  TXN030135 post=2025-08-27(wd=True) inv=2025-08-26 due=2025-09-25 acct=7250(Software licences) amt=1282.43 invno=467621 by=INTEG-01 | Ostolasku, 299626 | tests=[] score=0.00377 rank=167
+  TXN032543 post=2025-09-14(wd=False) inv=2025-09-13 due=2025-09-27 acct=4200(Tools and supplies) amt=2821.34 invno=743483 by=INTEG-01 | Kertatoimitus, tilaus 771648 | tests=[] score=0.01523 rank=90
+  TXN035335 post=2025-10-04(wd=False) inv=2025-10-03 due=2025-11-02 acct=4020(Packaging materials) amt=1601.67 invno=742752 by=INTEG-01 | Tavarantoimitus, tilaus 504856 | tests=[] score=0.01468 rank=92
+  TXN037272 post=2025-10-19(wd=False) inv=2025-10-19 due=2025-11-09 acct=4310(Spare parts) amt=3792.41 invno=531634 by=INTEG-01 | Materiaalitoimitus, tilaus 474061 | tests=[] score=0.00781 rank=139
+  TXN039217 post=2025-11-02(wd=False) inv=2025-11-02 due=2025-11-16 acct=4020(Packaging materials) amt=375.10 invno=193057 by=INTEG-01 | Tavarantoimitus, tilaus 674669 | tests=[] score=0.00261 rank=180
+  TXN041793 post=2025-11-16(wd=False) inv=2025-11-15 due=2025-12-06 acct=4310(Spare parts) amt=5521.84 invno=364549 by=INTEG-01 | Materiaalitoimitus, tilaus 381759 | tests=[] score=0.00855 rank=131
+  TXN045682 post=2025-12-06(wd=False) inv=2025-12-06 due=2025-12-20 acct=4310(Spare parts) amt=6133.54 invno=630971 by=INTEG-01 | Materiaalitoimitus, tilaus 055145 | tests=[] score=0.01485 rank=91
+  TXN048788 post=2025-12-24(wd=False) inv=2025-12-23 due=2026-01-13 acct=7800(Cleaning and waste services) amt=922.08 invno=842804 by=INTEG-01 | Ostolasku, 729851 | tests=[] score=0.00419 rank=166
+  TXN048964 post=2025-12-26(wd=False) inv=2025-12-26 due=2026-01-09 acct=4000(Domestic purchases) amt=4060.34 invno=460578 by=INTEG-01 | Tavarantoimitus, tilaus 211201 | tests=[] score=0.01468 rank=93
+  TXN049049 post=2025-12-28(wd=False) inv=2025-12-27 due=2026-01-10 acct=4310(Spare parts) amt=4751.50 invno=630986 by=INTEG-01 | Materiaalitoimitus, tilaus 055160 | tests=[] score=0.01603 rank=82
+  TXN049082 post=2025-12-28(wd=False) inv=2025-12-27 due=2026-01-10 acct=4000(Domestic purchases) amt=269.81 invno=138688 by=INTEG-01 | Tavarantoimitus, tilaus 437321 | tests=[] score=0.00050 rank=200
