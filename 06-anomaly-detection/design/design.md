@@ -3,6 +3,17 @@
 Project 6 of the Hapax case-study portfolio. Theme 3: "The data storyteller."
 
 Status: draft for Eva's review. Nothing downstream gets generated until this is signed off.
+
+**[Reconciliation note, 11 Sep 2026]** Delivered and packaged 3 Jul 2026 — all six
+phases complete (see the project `README.md`). The gate was proxy-passed by Luigi;
+Eva's formal design-doc review is still owed (README "Open items"). Several
+passages below describe *expected* outcomes as if the detector and the cluster
+count had not yet run; they have, and several came out differently than
+predicted. Nothing below is edited or deleted — every place where the as-run
+result diverges from what this section anticipated is annotated in place,
+pointing at the frozen deviation and `DECISIONS.md`'s 3 Jul 2026 entries, the
+same reconciliation treatment `01 Churn/design/design.md` received.
+
 Companion research: `audit_research.md` (sourced [S] vs inferred [I] throughout); running log: `DECISIONS.md`.
 
 ---
@@ -60,7 +71,7 @@ Eight anomaly classes (the seven from `project_specs.md` plus the designed ceili
 | **W** — non-working-day postings | 8 postings by one user (U-117), Feb–Jun: five Saturdays, Easter Monday 21 Apr, Ascension 29 May, Midsummer Eve 20 Jun | 8 | **Rules** (calendar test) |
 | **V** — vendor name variants | One real supplier existing as three master records — Kärrenbach / Kaerrenbach / KARRENBACH DICHTUNGSTECHNIK GMBH — shared VAT ID and address, distinct IBANs, spend split 7/5/3 | 15 | **Agents only** (free hunt) |
 | **A** — mis-posted account | Kaarniala (advertising) invoices posted to the IT-services account by a new clerk (U-204), Sep–Oct | 8 | **Rules** (mapping test) |
-| **G** — gradual drift *(the exemplum)* | Teräskontio: from July, freight is silently consolidated into goods invoices (+8% step, memo gains "sis. rahtikulut"), **and once freight sits inside the bundled price, the vendor's price rises become invisible** — a further +2%/month compounding, December ≈ +19% over baseline. Baseline invoice variance pinned tight (σ ≈ 3% of the vendor mean) so the elevation is unambiguous. **The euros reconcile by design**: Kuormaraitti's Teräskontio-lane freight billing declines from July by ≈ the step portion in euros (the answer key stores both sides; validated within a stated band) — the creep beyond the step is the separate, hidden mechanism | 12 (the elevated Jul–Dec invoices; the vendor's 12 H1 invoices are normal) | **Detector** (elevated `vendor_amount_z` pushes the late-month invoices into the flagged tail), then agents for the story |
+| **G** — gradual drift *(the exemplum)* | Teräskontio: from July, freight is silently consolidated into goods invoices (+8% step, memo gains "sis. rahtikulut"), **and once freight sits inside the bundled price, the vendor's price rises become invisible** — a further +2%/month compounding, December ≈ +19% over baseline. Baseline invoice variance pinned tight (σ ≈ 3% of the vendor mean) so the elevation is unambiguous. **The euros reconcile by design**: Kuormaraitti's Teräskontio-lane freight billing declines from July by ≈ the step portion in euros (the answer key stores both sides; validated within a stated band) — the creep beyond the step is the separate, hidden mechanism | 12 (the elevated Jul–Dec invoices; the vendor's 12 H1 invoices are normal) | **Detector** (elevated `vendor_amount_z` pushes the late-month invoices into the flagged tail), then agents for the story **[Reconciliation note, 11 Sep 2026: this is the confident, expected mechanism, written before the detector first ran. As-run it did not hold — 0 of G's 12 elevated invoices were flagged (§3 line ~105, `DECISIONS.md` 3 Jul 2026), and all three blinded agent runs' free hunts also left the story unclaimed (0/3). The diagnosed cause: `vendor_amount_z` measures each invoice against the vendor's own full-year mean, so a sustained drift inflates its own baseline and erases its own signal — this is exactly the failure 06b's standing drift review was built to fix (see `design-06b-drift-report.md`).]** |
 | **S** — split purchases | 5 events: one purchase split into two same-vendor invoices ≤3 days apart, parts €4,500–8,000 (non-round), sums €11k–15k vs the €10k tier; 3 vendors | 10 | **Rules** (split test) |
 | **C** — the ceiling | Neuvantila: twelve unremarkable monthly consulting invoices (€3,800–5,600), correct account, correct cadence, mid-month weekdays. Catchable only with data this corpus does not contain (contracts, deliverables, three-way match) | 12 | **Nobody** — by design |
 
@@ -104,6 +115,8 @@ No transaction trips two tests — a set of generation constraints, each auditab
 
 **Detector layer:** contamination 0.004 → exactly 200 flags of 50,000 (spike-verified). Designed outcomes, **checked when the detector first runs at Phase 3 — a joint-space Isolation Forest cannot be guaranteed from single-feature bounds at generation time, so any miss is a frozen, reported deviation, not a retune**: ≥6 of G's 12 elevated invoices flagged; B4 and B5 flagged; **zero flags on C** (generation-side control: C's amounts are drawn tight around the vendor mean with ordinary cadence, so joint-space isolation is implausible; if the detector nonetheless flags a C transaction, the ceiling claim is weakened to "rule-invisible" and reported as such). Incidental detector flags on D/R/S/W/A members are permitted and recorded (overlap does not break any per-test arithmetic). The remaining ~185 flags are the December cluster (B6) and ordinary tail outliers — the stand-down mass that makes the false-positive-discipline exhibit real.
 
+**[Reconciliation note, 11 Sep 2026 — as-run, `DECISIONS.md` 3 Jul 2026]** These were the pre-registered expectations, checked once and frozen, not adjusted afterward. The actual result: **G 0/12 flagged (pre-registered ≥6 — MISSED)**; **B4 0/1, B5 0/1 (expected top singletons — MISSED)**; **C 0/12 (zero-flag requirement — MET)**. The 200 detector flags overlap zero answer-key transactions — every designed positive catch failed, and the one designed negative held. Diagnosis (recorded at deviation time): `vendor_amount_z` measures against the vendor's own full-year mean, so a sustained drift inflates its own baseline and erases its own signal (Teräskontio's H2 z peaks at +2.13 against a clean-baseline estimate of ~+6.5); the pinned neutral edge-cases make single-invoice vendors invisible (B4/B5's only live signal was `log10_amount`); and a +19% shift on one tight-σ vendor is small against heavy-tailed organic amounts. `data/analysis/report.md` §1 carries the full confirmation. 06b (`design-06b-drift-report.md`) is the fix built directly from this diagnosis.
+
 **Expected findings (the 2×2, Case 1/Case 5 convention):**
 
 | | Real problem | Benign |
@@ -111,7 +124,11 @@ No transaction trips two tests — a set of generation constraints, each auditab
 | **Flagged by a layer** | D, R, W, A, S (rules); G (detector) — agents must explain | B1–B5, B6, tail noise — agents must stand down |
 | **Not flagged** | V (agent free hunt); C (nobody — the ceiling) | the other ~49,700 rows |
 
+**[Reconciliation note, 11 Sep 2026]** This matrix was drawn up before the detector first ran. As-run, G moved from "flagged by a layer" to "not flagged" — the detector missed it (0/12, see the §3 reconciliation note above), so its discovery path shifted to the agents' free hunt, where all three runs also missed it (0/3, see below). **B4 and B5 also moved cells**: the detector never flagged either (0/1 each, expected top singletons), so both sit in "not flagged / benign" as-run rather than "flagged by a layer / benign" as designed — no verdict was expected or scored for them under the original pre-registered matching rules (`DECISIONS.md` 3 Jul 2026: "B4/B5 move from 'flagged benign, stand-down expected' to 'unflagged benign, no verdict expected' in the 2×2"). Marking still used the original pre-registered expectations, adjudicated with this context.
+
 **Pre-registered run expectations (three blinded runs):** worry-with-correct-mechanism on D, R, W, A, S and on G's step itself — expected 3/3. G's full second-order story (the Kuormaraitti freight mirror) — expected ≥1/3, honestly uncertain (05 precedent: the sharpest designed evidence can go unclaimed). V found via free hunt — ≥1/3. Stand-downs on B1–B5 and benign detector clusters — 3/3. C findings — 0/3 (any Neuvantila accusation is a false positive). Target false positives: zero.
+
+**[Reconciliation note, 11 Sep 2026 — as-run, `data/analysis/report.md` §§3–4]** G's step itself: **0/3**, not the expected 3/3 — no run's worry-with-correct-mechanism reached it, because the detector never surfaced it as a cluster and none of the three bounded free hunts drilled into a per-vendor H1/H2 movers sweep. G's second-order story (the Kuormaraitti mirror): **0/3**, the pre-registered ≥1/3 also missed. V found via free hunt: **3/3**, comfortably ahead of the ≥1/3 target, each run's top action item with the full mechanism. Stand-downs on B1–B5 and benign detector clusters: **3/3** held (all 26 detector units correctly stood down by every run, 78/78 verdicts). C findings: **0/3** held — the false-positive trap was not tripped. False positives actually recorded: 2 across 120 unit verdicts (both the same B3 hedge, adjudicated as false positives despite the designed distinct-PO evidence being present) — not the targeted zero, but small and diagnosed, not a design failure of the same order as G.
 
 ---
 
@@ -216,7 +233,12 @@ Declared exclusions (Eva question 8): Benford's law (out, with reasoning — `au
 
 - Rule flags: grouped by vendor (all rule flags for one vendor form one cluster), except calendar-test flags, which group by `posted_by` (the story is the user, not the vendor).
 - Detector flags: grouped by vendor where ≥ 3 flags; then by calendar month where a month still holds ≥ 15 ungrouped flags (this is what surfaces the December/B6 cluster); the top 10 remaining singletons by anomaly score form one "notable singles" list; and **everything left is one "residual tail" unit** that must receive its own aggregate verdict with evidence (distributional reasoning is acceptable evidence for a residual stand-down).
+
+**[Reconciliation note, 11 Sep 2026 — as-run, `DECISIONS.md` 3 Jul 2026]** The month-grouping rule never fired: the mechanical vendor-grouping pass (≥ 3 flags) absorbed the detector's 200 flags into 24 vendor clusters before any single calendar month accumulated ≥ 15 ungrouped flags on its own — so no separate December/B6 month-cluster ever formed. B6 (the December procurement peak) is still a declared benign pattern in the answer key; it simply never became its own verdict unit under the rule as specified.
+
 - Every flag therefore belongs to exactly one **verdict unit**; expected ≈ 20–22 units (13 rule-side; detector-side: G, the December month-cluster, a few vendor/noise clusters, the singles list, the residual). The exact list is produced mechanically at Phase 3 and recorded. Every unit receives a verdict from every run.
+
+**[Reconciliation note, 11 Sep 2026 — as-run, `DECISIONS.md` 3 Jul 2026]** The mechanically produced list came to **39 verdict units** (13 rule-side; 24 detector-vendor clusters + the singles list + the residual — no month-cluster, per the note above), not the ≈20–22 estimated here. The ≈20–22 figure was a pre-Phase-3 estimate, not a pre-registered count with its own pass/fail gate; the rule that actually ran (vendor-grouping first, then month-grouping, then singles, then residual) is what was pre-registered, and 39 is its exact, mechanical output (`data/analysis/report.md` §3 confirms 39 units marked per run).
 
 ### The storyteller protocol (Case 5 method)
 
