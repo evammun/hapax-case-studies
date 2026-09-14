@@ -21,7 +21,7 @@ pipeline, and a `design/` folder with the design doc and running decision log.
 
 Each case runs a method end to end on data engineered so that the right answer
 is known in advance and held out of the pipeline throughout, which is what lets
-every result be marked against ground truth rather than asserted. Company names,
+every result be marked against ground truth. Company names,
 customers and datasets are fictional unless stated otherwise; nothing here
 describes or implies a real client. One case, `04-contracts`, runs on real
 documents — 150 SEC-filed contracts from CUAD v1, a public dataset released by
