@@ -29,14 +29,14 @@
   .hpx-h1{font-weight:500; font-size:clamp(34px,5.4vw,54px); line-height:1.08; letter-spacing:-.01em; margin:14px 0 18px;}
   .hpx-h1 em{font-style:italic; color:var(--hpx-oxblood);}
   .hpx-h2{font-weight:500; font-size:clamp(24px,3vw,31px); line-height:1.15; margin-bottom:14px;}
-  .hpx-lede{font-size:clamp(19px,1.8vw,21.5px); color:var(--hpx-mute); max-width:64ch;}
-  .hpx-p{max-width:66ch; margin:0 0 14px;}
+  .hpx-lede{font-size:clamp(19px,1.8vw,21.5px); color:var(--hpx-mute); max-width: none;}
+  .hpx-p{max-width: none; margin:0 0 14px;}
   .hpx-p--mute{color:var(--hpx-mute);}
   .hpx-header{padding:62px 0 12px; border-bottom:1px solid var(--hpx-rule);}
-  .hpx-note{font-size:16.5px; color:var(--hpx-mute); max-width:66ch; font-style:italic;}
+  .hpx-note{font-size:16.5px; color:var(--hpx-mute); max-width: none; font-style:italic;}
   .hpx-honesty{border:1px solid var(--hpx-rule); background:var(--hpx-c-fill); padding:14px 18px; margin:22px 0 0; font-size:15.5px; max-width:none; color:var(--hpx-ink);}
   .hpx-honesty strong{color:var(--hpx-oxblood);}
-  .hpx-try{border-left:2px solid var(--hpx-gold); background:var(--hpx-bg); padding:8px 14px; margin:14px 0 2px; font-size:15px; color:var(--hpx-mute); max-width:66ch;}
+  .hpx-try{border-left:2px solid var(--hpx-gold); background:var(--hpx-bg); padding:8px 14px; margin:14px 0 2px; font-size:15px; color:var(--hpx-mute); max-width: none;}
   .hpx-try strong{font-family:var(--hpx-mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--hpx-gold); font-weight:500;}
 
   .hpx-tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:1px; background:var(--hpx-rule); border:1px solid var(--hpx-rule); margin:26px 0 8px;}
@@ -101,15 +101,15 @@
     <div class="hpx-wrap">
       <p class="hpx-mono">Hapax · working demonstration · <span class="hpx-mono--gold">synthetic corpus, answer key published</span></p>
       <h1 class="hpx-h1">Supplier by <em>supplier</em></h1>
-      <p class="hpx-lede">A year of PDF invoices arrives from twenty-six suppliers in five languages. An agent reads them; an overseer watches, and writes an ordinary parser for each supplier it comes to know – so the model ends the year handling only what genuinely needs it. Every number below is marked against a held-out answer key, not asserted.</p>
+      <p class="hpx-lede">A year of PDF invoices arrives from twenty-six suppliers in five languages. An agent reads them; an overseer watches, and writes an ordinary parser for each supplier it comes to know – so the model ends the year handling only what genuinely needs it. Every number below is marked against a held-out answer key.</p>
       <div class="hpx-tiles">
         <div class="hpx-tile"><span class="hpx-tile-v">198</span><span class="hpx-tile-l hpx-mono">documents · 26 suppliers</span></div>
         <div class="hpx-tile"><span class="hpx-tile-v" id="t-fields">–</span><span class="hpx-tile-l hpx-mono">fields marked against the key</span></div>
         <div class="hpx-tile"><span class="hpx-tile-v" id="t-wrong">–</span><span class="hpx-tile-l hpx-mono">wrong values · both planted at source</span></div>
         <div class="hpx-tile"><span class="hpx-tile-v" id="t-llm">–</span><span class="hpx-tile-l hpx-mono">model reads · zero extraction errors</span></div>
       </div>
-      <p class="hpx-note">The company, the suppliers and every invoice below are invented; the pipeline, the parsers and the marking are real. Fields that matter – IBANs, reference numbers, VAT arithmetic – are scored digit for digit.</p>
-      <div class="hpx-honesty"><strong>This is a demonstration on data we engineered.</strong> Pyökkipaja and its twenty-six suppliers are invented – 198 invoices, with a source error and a mid-year layout redesign planted on purpose, and an answer key held out of the parsing pipeline throughout. Every number on this page is marked against that key. That discipline, not the invoices themselves, is what is being sold.</div>
+      <p class="hpx-note">The company, the suppliers and every invoice below are invented; the pipeline, the parsers and the marking are real. Fields that matter (IBANs, reference numbers, VAT arithmetic) are scored digit for digit.</p>
+      <div class="hpx-honesty"><strong>This is a demonstration on data we engineered.</strong> Pyökkipaja and its twenty-six suppliers are invented – 198 invoices, with a source error and a mid-year layout redesign planted on purpose, and an answer key held out of the parsing pipeline throughout. Every number on this page is marked against that key. That discipline is what is being sold.</div>
     </div>
   </header>
 
@@ -184,7 +184,7 @@
     <div class="hpx-wrap">
       <div class="hpx-kicker"><span class="hpx-num">iv</span><span class="hpx-mono">The long tail</span></div>
       <h2 class="hpx-h2">A third of the suppliers, nine tenths of the paper</h2>
-      <p class="hpx-p hpx-p--mute">Eight suppliers were worth teaching; they carry ninety per cent of the volume. The other eighteen – one or two invoices each – stay with the model on purpose. The ceiling on automation is set by the shape of the supplier base, not by parser quality.</p>
+      <p class="hpx-p hpx-p--mute">Eight suppliers were worth teaching; they carry ninety per cent of the volume. The other eighteen – one or two invoices each – stay with the model on purpose. The ceiling on automation is set by the shape of the supplier base.</p>
       <div class="hpx-fig" id="fig-tail"></div>
       <div class="hpx-fig" id="fig-monthly"></div>
       <div class="hpx-legend">
@@ -196,7 +196,7 @@
 
   <section class="hpx-section" id="s5">
     <div class="hpx-wrap">
-      <div class="hpx-kicker"><span class="hpx-num">v</span><span class="hpx-mono">Marked, not asserted</span></div>
+      <div class="hpx-kicker"><span class="hpx-num">v</span><span class="hpx-mono">Marked against the answer key</span></div>
       <h2 class="hpx-h2">What the answer key saw</h2>
       <div class="hpx-scroll"><table class="hpx-table" id="acc-table">
         <thead><tr><th>Path</th><th>Documents</th><th>Fields</th><th>Wrong values</th><th>Accuracy</th></tr></thead>
@@ -204,7 +204,7 @@
       </table></div>
       <p class="hpx-p hpx-p--mute" style="margin-top:16px;">The two wrong values share one explanation. One November invoice was built to lie at the source – quantity and unit price transposed, the line total identical either way:</p>
       <div class="hpx-spool" id="sdoc-line" style="max-height:80px;"></div>
-      <p class="hpx-caption">Printed: 50 kpl à 2,00 €. Ordered: 2 kpl à 50,00 €. Every automated check passes; the parser reads faithfully; only the answer key – in production, a three-way match against the purchase order – sees it.</p>
+      <p class="hpx-caption">Printed: 50 kpl à 2,00 €. Ordered: 2 kpl à 50,00 €. Every automated check passes; the parser reads faithfully; only the answer key (in production, a three-way match against the purchase order) sees it.</p>
       <h2 class="hpx-h2" style="margin-top:40px;">The pre-registered scorecard</h2>
       <p class="hpx-p hpx-p--mute">Every document was assigned a designed outcome before any parsing ran; the run is scored against that plan, deviations included.</p>
       <div class="hpx-scroll"><table class="hpx-table" id="score-table">
@@ -231,7 +231,7 @@
   <section class="hpx-section" id="s7">
     <div class="hpx-wrap">
       <h2 class="hpx-h2">What this would look like on your invoices</h2>
-      <p class="hpx-p hpx-p--mute">Your accounts-payable inbox already has this shape – a handful of suppliers sending the same layout every month, and a long tail who don’t. The pattern transfers directly – an agent parses everything at first, an overseer watches which suppliers repeat and writes an ordinary parser for each one it comes to know, and the model’s path shrinks to the one-offs and the odd fallback. Year one roughly breaks even, because the parsers have to earn out their own construction cost before they save anything outright; the saving compounds from year two, once they are written and only the tail is left. The invoices, the answer key and the parsers are published in full – this is one run of a method, not a promise about your numbers.</p>
+      <p class="hpx-p hpx-p--mute">Your accounts-payable inbox already has this shape – a handful of suppliers sending the same layout every month, and a long tail who don’t. The pattern transfers directly – an agent parses everything at first, an overseer watches which suppliers repeat and writes an ordinary parser for each one it comes to know, and the model’s path shrinks to the one-offs and the odd fallback. Year one roughly breaks even, because the parsers have to earn out their own construction cost before they save anything outright; the saving compounds from year two, once they are written and only the tail is left. The invoices, the answer key and the parsers are published in full – this is one run of a method, and your numbers will differ.</p>
       <p class="hpx-p" style="margin-top:16px;"><a href="#">Read the long-form case study</a> · <a href="#">Code and dataset</a> · <a href="#">Contact Hapax</a> <span style="color:var(--hpx-mute2)">(links added on publish)</span></p>
     </div>
   </section>
@@ -455,7 +455,7 @@ var DATA = {"tiles":{"docs":198,"suppliers":26,"fields":13650,"wrong":2,"llm_par
     DATA.scorecard.forEach(function(r){
       tb.insertAdjacentHTML("beforeend", "<tr><td>" + r.cls + "</td><td>" + fmt(r.designed) + "</td><td>" + fmt(r.actual) + "</td><td>" + VERDICT[r.cls] + "</td></tr>");
     });
-    $("dev-note").textContent = "Deviations are frozen and reported, never patched after the fact. The defeated trap and the four two-page fallbacks are the run’s two departures from the pre-registered plan; both argue for the design rather than against it.";
+    $("dev-note").textContent = "Deviations are frozen and reported. The defeated trap and the four two-page fallbacks are the run’s two departures from the pre-registered plan. Both argue for the design.";
   })();
 
   /* ---- costs ---- */
@@ -464,10 +464,10 @@ var DATA = {"tiles":{"docs":198,"suppliers":26,"fields":13650,"wrong":2,"llm_par
     $("c-hybrid").textContent = fmtUsd(c.hybrid_central);
     $("c-cf").textContent = fmtUsd(c.cf_central);
     $("c-yr2").textContent = "~" + fmtUsd(c.yr2_hybrid_est);
-    $("cost-note").innerHTML = "At this stream length the overseer’s one-time cost – " +
+    $("cost-note").innerHTML = "At this stream length the overseer’s one-time cost (" +
       Math.round(c.tokens_overseer / 1000) + "k of the " + Math.round(c.tokens_total / 1000) +
-      "k measured tokens went on writing the nine parsers – roughly equals the model reads it displaced: year one approximately breaks even. The parsers persist. In a second year of the same stream the model reads only the one-off tail and the odd fallback (~" +
-      c.yr2_llm_docs + " documents), and the estimate falls to about a seventh of the counterfactual. The crossover, not the year-one percentage, is the exhibit. Bands: hybrid " +
+      "k measured tokens went on writing the nine parsers) roughly equals the model reads it displaced, so year one approximately breaks even. The parsers persist. In a second year of the same stream the model reads only the one-off tail and the odd fallback (~" +
+      c.yr2_llm_docs + " documents), and the estimate falls to about a seventh of the counterfactual. Bands: hybrid " +
       fmtUsd(c.hybrid_floor) + "–" + fmtUsd(c.hybrid_ceiling) + ", counterfactual " + fmtUsd(c.cf_floor) + "–" + fmtUsd(c.cf_ceiling) + ".";
     $("pricing-note").textContent = "Pricing basis: " + c.pricing + ". " + c.pricing_note;
   })();

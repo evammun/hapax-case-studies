@@ -41,8 +41,8 @@ html,body{margin:0;padding:0;background:#FBFAF5}
 .hpx-head{padding:64px 0 40px}
 .hpx-head .hpx-kicker{display:flex;gap:14px;align-items:baseline;margin-bottom:18px}
 .hpx-head h1{margin:6px 0 18px}
-.hpx-honesty{border-left:2px solid var(--hpx-gold);padding:10px 0 10px 18px;max-width:62ch}
-.hpx-try{border-left:2px solid var(--hpx-gold);background:var(--hpx-bg);padding:8px 14px;font-size:15.5px;color:var(--hpx-mute);max-width:64ch;margin:14px 0}
+.hpx-honesty{border-left:2px solid var(--hpx-gold);padding:10px 0 10px 18px;max-width: none}
+.hpx-try{border-left:2px solid var(--hpx-gold);background:var(--hpx-bg);padding:8px 14px;font-size:15.5px;color:var(--hpx-mute);max-width: none;margin:14px 0}
 .hpx-try strong{font-family:var(--hpx-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--hpx-gold);font-weight:500}
 
 /* month control */
@@ -139,9 +139,9 @@ table.hpx-var{border-collapse:collapse;width:100%;min-width:640px;font-family:va
   <div class="hpx-wrap">
     <div class="hpx-kicker"><span class="hpx-mono hpx-mono--gold">Hapax – case study</span><span class="hpx-mono">The data storyteller</span></div>
     <h1>The board pack that answers back</h1>
-    <p class="hpx-lede">A deterministic variance pack says what moved. An agent layer reads the same tables and says why – or says, with evidence, that nothing is wrong.</p>
+    <p class="hpx-lede">A deterministic variance pack says what moved. An agent layer reads the same tables and says why, or says with evidence that nothing is wrong.</p>
     <div class="hpx-honesty">
-      <p class="hpx-note" style="margin:0">This dataset is synthetic and we say so prominently. <em>Paju Consumer Products Oy</em> is a fictional Nordic consumer-goods manufacturer; every figure below is generated from a seeded driver model (seed 42, byte-for-byte reproducible) with four stories planted against a held-out answer key – one of them a trap. Built this way so the results can be marked, not asserted.</p>
+      <p class="hpx-note" style="margin:0">This dataset is synthetic and we say so prominently. <em>Paju Consumer Products Oy</em> is a fictional Nordic consumer-goods manufacturer. Every figure below is generated from a seeded driver model (seed 42, byte-for-byte reproducible) with four stories planted against a held-out answer key, one of them a trap. Built this way so the results can be marked against the answer key.</p>
     </div>
   </div>
 </header>
@@ -151,7 +151,7 @@ table.hpx-var{border-collapse:collapse;width:100%;min-width:640px;font-family:va
   <div class="hpx-wrap">
     <span class="hpx-mono">i · The pack</span>
     <h2 style="margin:10px 0 8px">Twelve months, 327 flags, zero causes</h2>
-    <p class="hpx-note" style="max-width:62ch">The deterministic layer reads the ledgers and flags every threshold breach – mechanically, correctly, and without a word about why. Pick a month. January is where most boards would start worrying.</p>
+    <p class="hpx-note" style="max-width: none">The deterministic layer reads the ledgers and flags every threshold breach, mechanically and correctly, without a word about why. Pick a month. January is where most boards would start worrying.</p>
     <p class="hpx-try"><strong>Try this</strong> – step through the months and watch the tiles and table update. Every red cell is a genuine threshold breach; the pack still will not tell you why any of them happened.</p>
     <div class="hpx-months" id="hpx-months" role="group" aria-label="Choose a month of 2025"></div>
     <div class="hpx-tiles" id="hpx-tiles"></div>
@@ -165,7 +165,7 @@ table.hpx-var{border-collapse:collapse;width:100%;min-width:640px;font-family:va
   <div class="hpx-wrap">
     <span class="hpx-mono">ii · The six clusters</span>
     <h2 style="margin:10px 0 8px">What the pack says. What the agents found.</h2>
-    <p class="hpx-note" style="max-width:62ch">Three independent agent runs received the pack and the raw tables – never the answer key – and had to deliver a verdict on each recurring flag cluster. A correct “stand down” counts for as much as a correct alarm.</p>
+    <p class="hpx-note" style="max-width: none">Three independent agent runs received the pack and the raw tables – never the answer key – and had to deliver a verdict on each recurring flag cluster. A correct “stand down” counts for as much as a correct alarm.</p>
     <p class="hpx-try"><strong>Try this</strong> – switch to “What the agents found” and open a card’s evidence. The toggle swaps a flagged number for its explanation; the drill shows the evidence behind the verdict.</p>
     <div class="hpx-toggle" role="group" aria-label="Switch between pack view and agent view">
       <button id="hpx-tg-pack" aria-pressed="true">What the pack says</button>
@@ -179,28 +179,28 @@ table.hpx-var{border-collapse:collapse;width:100%;min-width:640px;font-family:va
 <section class="hpx-section" id="hpx-marking" style="background:var(--hpx-bg-soft)">
   <div class="hpx-wrap">
     <span class="hpx-mono">iii · The marking</span>
-    <h2 style="margin:10px 0 8px">Marked against the answer key, not asserted</h2>
-    <p class="hpx-note" style="max-width:62ch">The stories were planted; the answer key stayed out of the agents’ reach. This is the designed outcome, as delivered – including what no run found.</p>
+    <h2 style="margin:10px 0 8px">Marked against the answer key</h2>
+    <p class="hpx-note" style="max-width: none">The stories were planted and the answer key stayed out of the agents’ reach. This is the designed outcome as delivered, including what no run found.</p>
     <div class="hpx-grid22" id="hpx-grid22">
       <span></span>
       <span class="hpx-mono hpx-g22-col">Real story</span>
       <span class="hpx-mono hpx-g22-col">No story</span>
       <span class="hpx-mono hpx-g22-row">Pack raises an alarm</span>
-      <div class="hpx-g22-cell"><h4>S1 – material costs read as input inflation</h4><p>The pack is right to flag it; the cause is mix and promotional pricing, not commodities.</p><span class="hpx-out">Explained, not parroted – 3/3</span></div>
-      <div class="hpx-g22-cell"><h4>S4 – the January cliff</h4><p>Seasonal; in line with budget and prior year.</p><span class="hpx-out">Stood down, with evidence – 3/3</span></div>
+      <div class="hpx-g22-cell"><h4>S1 – material costs read as input inflation</h4><p>The pack is right to flag it. The cause is mix and promotional pricing.</p><span class="hpx-out">Explained with evidence – 3/3</span></div>
+      <div class="hpx-g22-cell"><h4>S4 – the January cliff</h4><p>Seasonal, in line with budget and prior year.</p><span class="hpx-out">Stood down, with evidence – 3/3</span></div>
       <span class="hpx-mono hpx-g22-row">Pack stays calm</span>
-      <div class="hpx-g22-cell"><h4>S2 – DSO behind a one-off · S3 – bought growth</h4><p>Every headline looks fine; both had to be surfaced unprompted.</p><span class="hpx-out">Surfaced – 3/3 *</span></div>
+      <div class="hpx-g22-cell"><h4>S2 – DSO behind a one-off · S3 – bought growth</h4><p>Every headline looks fine. Both had to be surfaced unprompted.</p><span class="hpx-out">Surfaced – 3/3 *</span></div>
       <div class="hpx-g22-cell"><h4>Everything else</h4><p>Three mundane one-offs and a structurally optimistic budget.</p><span class="hpx-out">Left unnarrated – no run dramatised noise</span></div>
     </div>
     <div class="hpx-misses">
-      <span class="hpx-mono hpx-mono--wine">* The honest misses – in the data, claimed by 0 of 3 runs</span>
-      <p class="hpx-note" style="margin:12px 0 0;max-width:66ch">S3’s two sharpest exhibits went unclaimed by every run. Three accounts sit above an 18% discount in December 2025, and the volume bought per promotional euro is ~38% weaker in the second half – both provably present, neither surfaced. One-pass investigation finds the mechanism and misses the best evidence; without a held-out answer key, nobody would know where that ceiling sits. That gap is the case for an evaluation harness.</p>
+      <span class="hpx-mono hpx-mono--wine">* The honest misses, present in the data, claimed by 0 of 3 runs</span>
+      <p class="hpx-note" style="margin:12px 0 0;max-width: none">S3’s two sharpest exhibits went unclaimed by every run. Three accounts sit above an 18% discount in December 2025, and the volume bought per promotional euro is ~38% weaker in the second half. Both were provably present and neither was surfaced. A one-pass investigation finds the mechanism and misses the best evidence, and without a held-out answer key nobody would know where that ceiling sits.</p>
       <div class="hpx-misses-charts">
         <div><span class="hpx-mono">Discount rate per named account · Dec 2025</span><div class="hpx-chart" id="hpx-ch-cust"></div></div>
         <div><span class="hpx-mono">Volume per promotional euro · 2025</span><div class="hpx-chart" id="hpx-ch-resp"></div></div>
       </div>
     </div>
-    <p class="hpx-small" style="margin-top:26px;max-width:66ch">Method, honestly: three blinded Claude (Opus) agent runs inside Claude Code, identical pinned briefing, transcripts audited – every file each run opened is listed, and none touched the answer key. Runs were not cost-metered; no cost figures are claimed. Zero false positives and zero incorrect cited figures survived adjudication across all thirty findings.</p>
+    <p class="hpx-small" style="margin-top:26px;max-width: none">Method, honestly: three blinded Claude (Opus) agent runs inside Claude Code, identical pinned briefing, transcripts audited. Every file each run opened is listed, and none touched the answer key. Runs were not cost-metered; no cost figures are claimed. Zero false positives and zero incorrect cited figures survived adjudication across all thirty findings.</p>
   </div>
 </section>
 <hr class="hpx-rule">
@@ -209,7 +209,7 @@ table.hpx-var{border-collapse:collapse;width:100%;min-width:640px;font-family:va
   <div class="hpx-wrap">
     <span class="hpx-mono">iv · Your reporting</span>
     <h2 style="margin:10px 0 8px">What this would look like on your reporting</h2>
-    <p class="hpx-note" style="max-width:64ch">A monthly board pack’s variance analysis is deterministic and, once built, cheap to run – the arithmetic here costs nothing per cycle. What costs time is the story behind each flagged number, and that is exactly what an agent layer can go looking for, cluster by cluster, without waiting for someone to open the receivables appendix. It does not find everything unprompted: two of the sharpest pieces of evidence in the Baltics story went unclaimed by all three runs here, a miss the write-up covers in full. The method only earns its keep once those findings are checked against something known, not trusted because the memo reads with confidence.</p>
+    <p class="hpx-note" style="max-width: none">A monthly board pack’s variance analysis is deterministic and, once built, cheap to run – the arithmetic here costs nothing per cycle. What costs time is the story behind each flagged number, and that is exactly what an agent layer can go looking for, cluster by cluster, without waiting for someone to open the receivables appendix. It does not find everything unprompted: two of the sharpest pieces of evidence in the Baltics story went unclaimed by all three runs here, a miss the write-up covers in full. The method only earns its keep once those findings are checked against something known, not trusted because the memo reads with confidence.</p>
     <p><a href="#">Read the long-form case study</a> · <a href="#">Code and dataset</a> · <a href="#">Contact Hapax</a> <span style="color:var(--hpx-mute2)">(links added on publish)</span></p>
   </div>
 </section>
@@ -217,7 +217,7 @@ table.hpx-var{border-collapse:collapse;width:100%;min-width:640px;font-family:va
 
 <footer class="hpx-foot">
   <div class="hpx-wrap">
-    <p class="hpx-note" style="max-width:62ch">Everything regenerates from seed 42: generator → validator (12 coherence rules) → deterministic pack → three agent runs → evaluation. The code, the data, the answer key and the adjudicated scorecard are all part of the case study.</p>
+    <p class="hpx-note" style="max-width: none">Everything regenerates from seed 42: generator → validator (12 coherence rules) → deterministic pack → three agent runs → evaluation. The code, the data, the answer key and the adjudicated scorecard are all part of the case study.</p>
     <span class="hpx-mono">Hapax · Helsinki · MMXXVI</span>
   </div>
 </footer>
@@ -337,9 +337,9 @@ var cards=[
  {id:"c1",label:"Cluster 1 · January 2025",
   pack:"Net revenue −28.7% month-on-month. Flagged at every grain, on every measure.",
   chip:"stand",verdict:"Stand down – 3/3 runs",
-  cause:"The calendar, not the business: +2.6% on last January, −1.6% against a budget that assumes the same December peak and January trough.",
+  cause:"+2.6% on last January, −1.6% against a budget that assumes the same December peak and January trough. The month-on-month drop is seasonal.",
   ev:["Actual and budget carry an identical seasonal build – the alarm exists only in the month-on-month view.",
-      "A storyteller that cries wolf here loses the room; none did."],
+      "All three runs de-escalated it on the year-on-year and budget comparisons."],
   mark:"Answer key: S4, the trap · de-escalated 3/3",
   chart:function(el){seriesChart(el,[
     {n:"Actual",v:D.company.net_revenue,c:WINE},
@@ -348,8 +348,8 @@ var cards=[
  {id:"c2",label:"Cluster 2 · Nordics material cost",
   pack:"Material cost +11.5% year on year; above budget continuously from February.",
   chip:"stand",verdict:"Stand down on procurement – 3/3",
-  cause:"Unit material costs are flat (±0.5%) and at-or-below budget. The euro rise is volume and mix – a promotion moved share into the material-heavy line at ~19% discount. The leak is pricing, not purchasing.",
-  ev:["Home Care rises from ~36% to ~46% of Nordics volume; net price on the promoted line ~−13%.",
+  cause:"Unit material costs are flat (±0.5%) and at-or-below budget, so the euro rise in material spend comes from volume and mix. A promotion moved share into the material-heavy line at ~19% discount, and the margin loss sits at the pricing line.",
+  ev:["Home Care rises from ~36% to ~46% of Nordics volume, and net price on the promoted line is ~−13%.",
       "All three runs filed the material flag as a false trail and delivered the real cause under margin."],
   mark:"Answer key: S1 · found with correct cause 3/3",
   chart:function(el){seriesChart(el,[
@@ -360,8 +360,8 @@ var cards=[
  {id:"c3",label:"Cluster 3 · Baltics & Poland revenue",
   pack:"Net revenue +27% year on year – ahead of plan nearly every month.",
   chip:"worry",verdict:"Worry – 3/3 runs",
-  cause:"The growth is bought: promotional discount climbs from 8% to 17% of gross across the year and the BU’s margin gives up ~4.8pp by the final quarter. The headline is genuine; its economics are not.",
-  ev:["Discount rises every month – a ladder, not a step; opex outruns budget alongside it.",
+  cause:"Promotional discount climbs from 8% to 17% of gross across the year, buying the revenue growth at the cost of ~4.8pp of margin by the final quarter.",
+  ev:["Discount rises every month in a steady climb, and opex outruns budget alongside it.",
       "One run computed the counterfactual: ~€5.9M of gross profit given away against holding 2024 rates."],
   mark:"Answer key: S3 · found 3/3 – but see the honest misses below",
   chart:function(el){seriesChart(el,[
@@ -371,17 +371,17 @@ var cards=[
  {id:"c4",label:"Cluster 4 · EBITDA vs budget",
   pack:"Reported EBITDA below budget in most months of 2025, concentrated in Nordics and Baltics & Poland.",
   chip:"worry",verdict:"Worry – 3/3 runs",
-  cause:"Underlying EBITDA fell 13.7% year on year once April’s €2.2M gain is stripped out – a discounting problem at the gross-margin line, not a cost-control one.",
-  ev:["Revenue beat budget by ~€6.0M while underlying EBITDA missed it by ~€5.6M – the gap is price, not volume.",
+  cause:"Underlying EBITDA fell 13.7% year on year once April’s €2.2M gain is stripped out. The deterioration is at the gross-margin line, driven by discounting.",
+  ev:["Revenue beat budget by ~€6.0M while underlying EBITDA missed it by ~€5.6M, a gap driven by price.",
       "One run of three also separated the standing ~8% budget optimism (visible in 2024, before any story) from 2025’s real deterioration."],
   mark:"Answer key: composite of S1 + S3 effects · N4 noted by 1/3",
   chart:null},
  {id:"c5",label:"Cluster 5 · Central Europe DSO",
   pack:"Days sales outstanding worsening year on year every month from April – roughly 24 days by late 2025.",
   chip:"worry",verdict:"Worry – 3/3 runs, one customer named",
-  cause:"Rheinkauf Gruppe – the BU’s largest account – doubles its outstanding balance (€2.06M → €4.49M) on essentially flat billing: the same volume, paid for later. A credit matter, not a market one.",
-  ev:["~87% of the Central Europe receivables build is this one account; the rest of the book sits near terms.",
-      "The evidence lives in the receivables-by-customer appendix – the table nobody reads in a standard pack."],
+  cause:"Rheinkauf Gruppe, the BU’s largest account, doubles its outstanding balance (€2.06M → €4.49M) while billing stays essentially flat. One customer is being paid later for the same volume.",
+  ev:["~87% of the Central Europe receivables build is this one account. The rest of the book sits near terms.",
+      "The evidence is in the receivables-by-customer appendix."],
   mark:"Answer key: S2, the designed-hardest story · found and named 3/3",
   chart:function(el){seriesChart(el,[
     {n:"Rheinkauf AR",v:D.s2.rheinkauf_ar,c:WINE},
@@ -391,9 +391,9 @@ var cards=[
  {id:"c6",label:"Cluster 6 · April 2025",
   pack:"Reported EBITDA +196% month-on-month; a €2.2M other-income line, the only one in two years.",
   chip:"stand",verdict:"Stand down – 3/3 runs",
-  cause:"A warehouse sale-and-leaseback: €2.2M gain in other income, €5.5M proceeds in investing. Exclude it from the run-rate – and notice what it flatters: reported cash conversion looks ordinary while the underlying figure has fallen hard.",
+  cause:"A warehouse sale-and-leaseback produced a €2.2M gain in other income and €5.5M in investing proceeds. Once that is stripped from the run-rate, reported cash conversion still looks ordinary, but the underlying figure has fallen hard.",
   ev:["H1 conversion: ~106% in 2024 (Q1 collects the Christmas receivables), ~72% reported in 2025, ~63% underlying.",
-      "Every number was disclosed; nothing was connected. The mask is attention, not concealment."],
+      "Every figure appeared in the pack individually. What was missing was the connection between them, which required reading across tables."],
   mark:"Answer key: S2’s masking half · linked by 3/3",
   chart:function(el){
     var c=D.s2.conversion;

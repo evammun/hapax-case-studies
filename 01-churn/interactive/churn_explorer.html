@@ -43,11 +43,11 @@
   .hpx-page h1 { font-size: clamp(30px, 5vw, 46px); font-weight: 500; line-height: 1.12; margin: 14px 0 16px; max-width: 20ch; }
   .hpx-page h2 { font-size: clamp(21px, 3vw, 27px); font-weight: 500; margin: 0 0 10px; }
   .hpx-page h3 { font-size: 18.5px; font-weight: 600; margin: 0 0 6px; }
-  .hpx-page p { margin: 0 0 14px; max-width: 68ch; }
+  .hpx-page p { margin: 0 0 14px; max-width: none; }
   .hpx-page p:last-child { margin-bottom: 0; }
 
   .hpx-head { padding: 42px 0 26px; }
-  .hpx-lede { font-size: 19.5px; color: var(--hpx-mute); max-width: 62ch; font-style: italic; }
+  .hpx-lede { font-size: 19.5px; color: var(--hpx-mute); max-width: none; font-style: italic; }
   .hpx-honesty {
     border: 1px solid var(--hpx-rule); background: var(--hpx-beige);
     padding: 14px 18px; margin: 20px 0 0; font-size: 16px; max-width: none;
@@ -66,7 +66,7 @@
   .hpx-sec > .hpx-wrap > p.hpx-intro { color: var(--hpx-mute); font-size: 17px; }
   .hpx-try {
     border-left: 2px solid var(--hpx-gold); background: var(--hpx-bg);
-    padding: 8px 14px; font-size: 16px; color: var(--hpx-mute); max-width: 68ch;
+    padding: 8px 14px; font-size: 16px; color: var(--hpx-mute); max-width: none;
   }
   .hpx-try strong { font-family: var(--hpx-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--hpx-gold); font-weight: 500; }
   .hpx-table--finding { min-width: 0; max-width: 480px; }
@@ -323,16 +323,16 @@
         <tbody id="hpx-finding-body"></tbody>
       </table>
     </div>
-    <p>Attach revenue. €6.53M of ARR sat inside accounts that actually churned. The text layer surfaces <strong>€1.34M of churned ARR the usage model alone does not</strong> – accounts that looked healthy on every dashboard metric until the invoice stopped renewing. Usage returns the favour in the other direction, worth €703K in accounts the text layer under-weighted. Neither layer subsumes the other; that is why the finding is the combination, not a winner.</p>
+    <p>Attach revenue. €6.53M of ARR sat inside accounts that actually churned. The text layer surfaces <strong>€1.34M of churned ARR the usage model alone does not</strong> – accounts that looked healthy on every dashboard metric until the invoice stopped renewing. Usage returns the favour in the other direction, worth €703K in accounts the text layer under-weighted. Neither layer subsumes the other, which is why the finding is the combination.</p>
     <div class="hpx-cards" id="hpx-callout-cards"></div>
-    <p style="margin-top:14px">And thirty accounts here churn for reasons invisible in the product – an acquisition, a budget cut, a champion leaving. Two of the thirty survive into the combined top-100, roughly what chance would produce, because there is no signal for either method to find. Ask any vendor claiming to catch everything what their number looks like on that row.</p>
+    <p style="margin-top:14px">And thirty accounts here churn for reasons invisible in the product – an acquisition, a budget cut, a champion leaving. Two of the thirty survive into the combined top-100, roughly what chance would produce, because there is no signal for either method to find. Any model claiming to catch everything should be asked what its number looks like on that row.</p>
   </div>
 </section>
 
 <section class="hpx-sec">
   <div class="hpx-wrap">
     <h2>What this would look like on your data</h2>
-    <p>Your ticket system already holds this signal; it costs nothing extra to collect. The method transfers to any account base with a support history: a classical model where the numbers are strong, a reading layer where they are silent, and one small, explainable model combining the two. The write-up documents every miss as carefully as every catch – the misses are the part worth paying for.</p>
+    <p>Your ticket system already holds this signal; it costs nothing extra to collect. The method transfers to any account base with a support history: a classical model where the numbers are strong, a reading layer where they are silent, and one small, explainable model combining the two. The write-up documents every miss as carefully as every catch – the misses tell you where the ceiling sits.</p>
     <p><a href="#">Read the long-form case study</a> · <a href="#">Code and dataset</a> · <a href="#">Contact Hapax</a> <span style="color:var(--hpx-mute2)">(links added on publish)</span></p>
   </div>
 </section>
@@ -467,7 +467,7 @@
     var c2 = el("div", "hpx-card", wrap);
     el("h3", null, c2, "The credibility check");
     el("b", "hpx-big", c2, a7.n_rescued_out_of_combined_top100 + " of " + a7.n_a7_in_text_top100);
-    el("p", null, c2, "loud-but-loyal accounts – frequent complainers that renew every time – wrongly flagged by the text layer on tone alone, then rescued by fusion. An agent that just counts angry words loses the room; this one reads resolution, not tone.");
+    el("p", null, c2, "loud-but-loyal accounts, frequent complainers that renew every time, wrongly flagged by the text layer on tone alone and then rescued by fusion. The agent reads resolution, and that is what keeps these accounts off the list.");
   }
 
   // ---------------------------------------------------------------------

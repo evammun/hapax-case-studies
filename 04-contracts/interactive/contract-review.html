@@ -23,8 +23,8 @@
   .hpx-rule{height:1px;background:var(--hpx-rule);border:0;margin:36px 0 0}
   .hpx-h1{font-size:clamp(30px,5vw,46px);font-weight:500;line-height:1.12;margin:6px 0 14px}
   .hpx-h2{font-size:26px;font-weight:500;margin:4px 0 10px}
-  .hpx-lede{font-size:20px;max-width:56ch;color:var(--hpx-ink)}
-  .hpx-note{font-size:15px;color:var(--hpx-mute);max-width:70ch}
+  .hpx-lede{font-size:20px;max-width: none;color:var(--hpx-ink)}
+  .hpx-note{font-size:15px;color:var(--hpx-mute);max-width: none}
   .hpx-numbers{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--hpx-rule);border:1px solid var(--hpx-rule);margin:26px 0 0}
   .hpx-num{background:var(--hpx-bg);padding:14px 14px 12px}
   .hpx-num b{display:block;font-size:30px;font-weight:500;line-height:1.05}
@@ -76,7 +76,7 @@
   .hpx-honesty strong{color:var(--hpx-oxblood)}
 
   /* ---- try-this prompts ---- */
-  .hpx-try{border-left:2px solid var(--hpx-gold);background:var(--hpx-bg);padding:8px 14px;font-size:15px;color:var(--hpx-mute);max-width:68ch;margin:16px 0 4px}
+  .hpx-try{border-left:2px solid var(--hpx-gold);background:var(--hpx-bg);padding:8px 14px;font-size:15px;color:var(--hpx-mute);max-width: none;margin:16px 0 4px}
   .hpx-try strong{font-family:var(--hpx-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--hpx-gold);font-weight:500}
 
   /* ---- category filter bar ---- */
@@ -114,8 +114,8 @@
       <h1 class="hpx-h1">The clauses that retire the model</h1>
       <p class="hpx-lede">A language model read fifty real commercial contracts and answered twelve review questions about each. An overseer watched its accepted answers, wrote ordinary code for the questions that looked formulaic, and retired the model from them – under a gate that could refuse a matcher and shadow checks that could kill one in production. Everything was then marked against annotations we didn’t write.</p>
       <div class="hpx-honesty">
-        <span class="hpx-mono-tag">Real data · marked, not trusted</span>
-        <strong>This case runs on real contracts, not engineered ones.</strong> The corpus is CUAD – 510 real contracts filed with the SEC, annotated by law students and attorneys under The Atticus Project (CC BY 4.0). The external expert answer key was held out of the pipeline throughout and read exactly once, after the stream closed, by the one script that scores against it – then never edited. We pre-registered a prediction for every category before running anything; the data marked us 4 of 12, wrong in both directions. Of the 80 pipeline-versus-key disagreements, read by hand rather than sampled, about 15 turned out to be the key’s own errors or arguably so. Nothing on this page is legal advice.
+        <span class="hpx-mono-tag">Real data · marked against an external key</span>
+        <strong>This case runs on real contracts.</strong> The corpus is CUAD – 510 real contracts filed with the SEC, annotated by law students and attorneys under The Atticus Project (CC BY 4.0). The external expert answer key was held out of the pipeline throughout and read exactly once, after the stream closed, by the one script that scores against it – then never edited. We pre-registered a prediction for every category before running anything; the data marked us 4 of 12, wrong in both directions. Of the 80 pipeline-versus-key disagreements, read by hand rather than sampled, about 15 turned out to be the key’s own errors or arguably so. Nothing on this page is legal advice.
       </div>
       <div class="hpx-numbers" id="hpx-numbers"></div>
     </header>
@@ -134,7 +134,7 @@
     <section class="hpx-section">
       <p class="hpx-kicker">II · The stream</p>
       <h2 class="hpx-h2">Fifty contracts, eight batches, a shrinking job</h2>
-      <p class="hpx-note">Each batch the model was asked only the questions no matcher had earned. Gold markers are matcher births; wine markers are demotions – a matcher killed in flight by a shadow check. The narrowing was won, and then partly lost, which is the honest shape of the experiment.</p>
+      <p class="hpx-note">Each batch the model was asked only the questions no matcher had earned. Gold markers are matcher births; wine markers are demotions – a matcher killed in flight by a shadow check. The narrowing was won, and then partly lost, and both movements are in the data.</p>
       <div class="hpx-svgbox" id="hpx-timeline"></div>
     </section>
 
@@ -176,7 +176,7 @@
       <p class="hpx-note" id="hpx-adj-note"></p>
       <div class="hpx-adjbar" id="hpx-adjbar"></div>
       <div class="hpx-adjlegend" id="hpx-adjlegend"></div>
-      <p class="hpx-small" style="margin-top:14px">The key was never edited. As-marked scores stand; the adjudication is published beside them. Against everything marked, the arguable key errors amount to roughly 2% – the ordinary margin of expert annotation, and the reason marked-not-trusted pipelines matter.</p>
+      <p class="hpx-small" style="margin-top:14px">The key was never edited. As-marked scores stand; the adjudication is published beside them. Against everything marked, the arguable key errors amount to roughly 2% – the ordinary margin of expert annotation.</p>
     </section>
 
     <hr class="hpx-rule">
@@ -192,7 +192,7 @@
     <section class="hpx-section">
       <p class="hpx-kicker">VIII · Beyond this dataset</p>
       <h2 class="hpx-h2">What this would look like on your contracts</h2>
-      <p class="hpx-note">An overseer watches which review questions keep getting answered by the same handful of phrasings and writes ordinary code to take them over; the model keeps everything genuinely negotiated, permanently. What doesn’t transfer is the count – which categories automate, and how many, depends on your documents, not on the method. That is why we pre-registered a split and let the data mark eight of our twelve guesses wrong, instead of publishing a number we had not measured.</p>
+      <p class="hpx-note">An overseer watches which review questions keep getting answered by the same handful of phrasings and writes ordinary code to take them over; the model keeps everything genuinely negotiated, permanently. What doesn’t transfer is the count – which categories automate, and how many, depends on your documents. We pre-registered a split and let the data mark eight of our twelve guesses wrong.</p>
       <p class="hpx-note">Read the long-form case study · Code and dataset · Contact Hapax <span style="color:var(--hpx-mute2)">(links added on publish)</span></p>
     </section>
 
@@ -460,7 +460,7 @@
       "All figures are estimates – the run used subscription subagents, so costs are computed from "+
       (c.total_tokens/1e6).toFixed(1)+"M measured tokens at published per-token prices (central estimate at introductory pricing; ≈$"+
       c.run_central_list_usd.toFixed(0)+" at list). Model-reading the hundred held-out contracts would have cost roughly $"+
-      c.counterfactual_central_intro_usd.toFixed(0)+" more at the stream’s mean "+Math.round(c.mean_tokens_per_read/1000)+"k tokens per read; the eight surviving matchers answered their 176 holdout questions for nothing, and keep doing so. This is not a cost-crossover story – the demonstrated saving is the residual: what code now covers never touches the model again.";
+      c.counterfactual_central_intro_usd.toFixed(0)+" more at the stream’s mean "+Math.round(c.mean_tokens_per_read/1000)+"k tokens per read. The eight surviving matchers answered their 176 holdout questions for nothing, and keep doing so. What code now covers never touches the model again.";
   })();
 
   /* ---- attribution ---- */

@@ -31,14 +31,14 @@
   .hpx-h1{font-weight:500; font-size:clamp(34px,5.4vw,54px); line-height:1.08; letter-spacing:-.01em; margin:14px 0 18px;}
   .hpx-h1 em{font-style:italic; color:var(--hpx-oxblood);}
   .hpx-h2{font-weight:500; font-size:clamp(24px,3vw,31px); line-height:1.15; margin-bottom:14px;}
-  .hpx-lede{font-size:clamp(19px,1.8vw,21.5px); color:var(--hpx-mute); max-width:62ch;}
-  .hpx-p{max-width:66ch; margin:0 0 14px; color:var(--hpx-ink);}
+  .hpx-lede{font-size:clamp(19px,1.8vw,21.5px); color:var(--hpx-mute); max-width: none;}
+  .hpx-p{max-width: none; margin:0 0 14px; color:var(--hpx-ink);}
   .hpx-p--mute{color:var(--hpx-mute);}
   .hpx-header{padding:64px 0 10px; border-bottom:1px solid var(--hpx-rule);}
-  .hpx-note{font-size:16.5px; color:var(--hpx-mute); max-width:66ch; font-style:italic;}
-  .hpx-honesty{border:1px solid var(--hpx-rule); background:var(--hpx-beige); padding:14px 18px; margin:22px 0 0; font-size:16px; max-width:66ch;}
+  .hpx-note{font-size:16.5px; color:var(--hpx-mute); max-width: none; font-style:italic;}
+  .hpx-honesty{border:1px solid var(--hpx-rule); background:var(--hpx-beige); padding:14px 18px; margin:22px 0 0; font-size:16px; max-width: none;}
   .hpx-honesty strong{color:var(--hpx-oxblood);}
-  .hpx-try{border-left:2px solid var(--hpx-gold); background:var(--hpx-bg); padding:8px 14px; margin:14px 0 18px; font-size:16px; color:var(--hpx-mute); max-width:66ch;}
+  .hpx-try{border-left:2px solid var(--hpx-gold); background:var(--hpx-bg); padding:8px 14px; margin:14px 0 18px; font-size:16px; color:var(--hpx-mute); max-width: none;}
   .hpx-try strong{font-family:var(--hpx-mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--hpx-gold); font-weight:500;}
 
   /* horror viewer */
@@ -105,7 +105,7 @@
       <p class="hpx-mono">Hapax · working demonstration · <span class="hpx-mono--gold">synthetic corpus, answer key published</span></p>
       <h1 class="hpx-h1">The parser that <em>retires itself</em></h1>
       <p class="hpx-lede">A language model reads a legacy ERP&rsquo;s spool files; an overseer watches it work, writes ordinary deterministic parsers for the routine formats, and keeps the model only for exceptions. Below, the whole demonstration &ndash; run on an engineered corpus with a known answer key, so every number is marked against a known correct answer.</p>
-      <div class="hpx-honesty"><strong>This is a demonstration on data we engineered.</strong> Jalavakoski Konepaja Oy does not exist &ndash; 240 synthetic SAP-style month-end exports, generated deterministically with an answer key held out of the whole pipeline, planted traps included. Every number on this page is marked against that key. That is the method we sell.</div>
+      <div class="hpx-honesty"><strong>This is a demonstration on data we engineered.</strong> Jalavakoski Konepaja Oy does not exist &ndash; 240 synthetic SAP-style month-end exports, generated deterministically with an answer key held out of the whole pipeline, planted traps included. Every number on this page is marked against that key. That is what this page demonstrates.</div>
     </div>
   </header>
 
@@ -171,7 +171,7 @@
         <thead><tr><th>class</th><th>designed outcome</th><th>what happened</th></tr></thead>
         <tbody></tbody>
       </table>
-      <p class="hpx-p hpx-p--mute" style="margin-top:16px">Two of our planted failures were defeated by the system itself: the generated FBL1N parser handled the currency trap we set for it, and an earlier version of the silent error had to be redesigned twice because the parsers kept reading it correctly. Pre-registering the outcomes is what makes that checkable &ndash; the deviations are reported, not retouched. The one error that survived everything was caught by nothing except the answer key; in production that argument is called sampled reconciliation, and a line-level price&thinsp;&times;&thinsp;quantity check would have caught this particular one.</p>
+      <p class="hpx-p hpx-p--mute" style="margin-top:16px">Two of our planted failures were defeated by the system itself: the generated FBL1N parser handled the currency trap we set for it, and an earlier version of the silent error had to be redesigned twice because the parsers kept reading it correctly. Pre-registering the outcomes is what makes that checkable &ndash; the deviations are reported as they ran. The one error that survived everything was caught by nothing except the answer key; in production that argument is called sampled reconciliation, and a line-level price&thinsp;&times;&thinsp;quantity check would have caught this particular one.</p>
       <hr class="hpx-rule">
     </div>
   </section>
@@ -179,7 +179,7 @@
   <section class="hpx-section">
     <div class="hpx-wrap">
       <h2 class="hpx-h2">What this would look like on your ERP</h2>
-      <p class="hpx-p hpx-p--mute">None of this is particular to Jalavakoski Konepaja Oy&rsquo;s five report types. An agent does the manual parsing to start with, at the model&rsquo;s usual cost per document, while an overseer watches what it produces. Once a report type turns out consistent enough, the overseer writes an ordinary deterministic parser for it, and the model stops being called for anything routine; it stays only for the genuine variants. That pattern transfers to any legacy ERP output old enough that one person still reads it from memory. The cost story, not the specific formats, is the argument.</p>
+      <p class="hpx-p hpx-p--mute">None of this is particular to Jalavakoski Konepaja Oy&rsquo;s five report types. An agent does the manual parsing to start with, at the model&rsquo;s usual cost per document, while an overseer watches what it produces. Once a report type turns out consistent enough, the overseer writes an ordinary deterministic parser for it, and the model stops being called for anything routine; it stays only for the genuine variants. That pattern transfers to any legacy ERP output old enough that one person still reads it from memory. The cost story is the argument.</p>
       <p class="hpx-p"><a href="#">Read the long-form case study</a> &middot; <a href="#">Code and dataset</a> &middot; <a href="#">Contact Hapax</a> <span style="color:var(--hpx-mute2)">(links added on publish)</span></p>
       <hr class="hpx-rule">
     </div>
@@ -188,7 +188,7 @@
   <footer class="hpx-foot">
     <div class="hpx-wrap">
       <span class="hpx-mono">Method</span>
-      <p class="hpx-p hpx-p--mute">The corpus is synthetic by design: 240 SAP-style documents for an invented Finnish manufacturer, generated deterministically with every true value recorded in an answer key the pipeline never sees. The generation code, the corpus, the generated parsers, and the evaluation are published; every number on this page reproduces from two scripts. Jalavakoski Konepaja Oy does not exist &ndash; which is precisely why its results can be marked honestly.</p>
+      <p class="hpx-p hpx-p--mute">The corpus is synthetic by design: 240 SAP-style documents for an invented Finnish manufacturer, generated deterministically with every true value recorded in an answer key the pipeline never sees. The generation code, the corpus, the generated parsers, and the evaluation are published; every number on this page reproduces from two scripts. Jalavakoski Konepaja Oy does not exist &ndash; so its results can be marked against the answer key.</p>
     </div>
   </footer>
 </div>

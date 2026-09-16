@@ -21,7 +21,7 @@
 .hpx-page p{margin:0 0 14px;max-width:72ch}
 .hpx-sec{padding:34px 0;border-top:1px solid var(--hpx-rule-soft)}
 .hpx-head{padding:44px 0 26px}
-.hpx-lede{font-size:20px;color:var(--hpx-mute);max-width:64ch}
+.hpx-lede{font-size:20px;color:var(--hpx-mute);max-width: none}
 .hpx-honesty{border:1px solid var(--hpx-rule);background:var(--hpx-beige);padding:14px 18px;margin:20px 0 0;font-size:16.5px;max-width:none}
 .hpx-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--hpx-rule);border:1px solid var(--hpx-rule);margin:26px 0 0}
 .hpx-stat{background:var(--hpx-bg);padding:14px 16px}
@@ -103,7 +103,7 @@
       </svg>
     </div>
     <div class="hpx-legend"><i style="background:#A8352A"></i>rule-test flags (64) <i style="background:#41529E"></i>detector flags (200)</div>
-    <p class="hpx-cap">Detector flags cluster where the ledger is busiest – the year-end seasonal peak – which is the first hint of what they turn out to be: statistical texture, not wrongdoing.</p>
+    <p class="hpx-cap">Detector flags cluster where the ledger is busiest, at the year-end seasonal peak. They turn out to be statistical texture.</p>
   </div>
 </section>
 
@@ -115,12 +115,12 @@
         <h3>The rules</h3>
         <b class="hpx-big">48 / 64</b>
         <p>flags on planted anomalies – <strong>75% first-pass precision</strong>, exactly as pre-registered, with 100% recall on every rule-shaped class. The other 16 flags are the designed benign bank: contractual round rent, an agreed stocktake weekend, one coincidental equal-amount pair.</p>
-        <p class="hpx-cap">A second pass (recurring-identical suppression, materiality floors) would silence most of the 16 – stated, not implemented.</p>
+        <p class="hpx-cap">A second pass (recurring-identical suppression, materiality floors) would silence most of the 16. That pass is described in the write-up but was not implemented.</p>
       </div>
       <div class="hpx-card">
         <h3>The detector</h3>
         <b class="hpx-big">0 / 200</b>
-        <p>flags on anything planted. The Isolation Forest missed all three designed catches – the drift vendor’s best invoice ranked 818th of 50,000 – and reaching the designed six catches would have required flagging <strong>29% of the whole ledger</strong>. A frozen, pre-registered deviation: reported, not retuned.</p>
+        <p>flags on anything planted. The Isolation Forest missed all three designed catches – the drift vendor’s best invoice ranked 818th of 50,000 – and reaching the designed six catches would have required flagging <strong>29% of the whole ledger</strong>. A frozen, pre-registered deviation, reported as it ran.</p>
         <p class="hpx-cap">Diagnosis in the notebook: a sustained drift inflates the very baseline it is measured against, and single-invoice vendors present no history to be unusual against.</p>
       </div>
       <div class="hpx-card">
@@ -135,8 +135,8 @@
 
 <section class="hpx-sec">
   <div class="hpx-wrap">
-    <h2>The catch matrix – designed against as-run</h2>
-    <p>Eight anomaly classes were planted, each with a pre-registered prediction of which layer would catch it. Seven behaved. The eighth is the case’s honest headline.</p>
+    <h2>The catch matrix, designed against as-run</h2>
+    <p>Eight anomaly classes were planted, each with a pre-registered prediction of which layer would catch it. Seven behaved. The eighth did not.</p>
     <div class="hpx-fig" style="overflow-x:auto">
     <table class="hpx-table">
       <thead><tr><th>Class</th><th>What was planted</th><th>Txns</th><th>Designed catch</th><th>As run</th></tr></thead>
@@ -152,7 +152,7 @@
       </tbody>
     </table>
     </div>
-    <p class="hpx-cap">The case was designed with one class nothing catches. As run, it has two – and the second is the story it was named for. A ~€1,800-a-month drift on one vendor is invisible in account-level totals; only a per-vendor movers sweep with a drill-down would have surfaced it, and no run drilled there.</p>
+    <p class="hpx-cap">The case was designed with one class nothing catches. As run, it has two. A ~€1,800-a-month drift on one vendor is invisible in account-level totals. Only a per-vendor movers sweep with a drill-down would have surfaced it, and no run drilled there.</p>
   </div>
 </section>
 
@@ -176,11 +176,11 @@
       <details data-miss="1"><summary><span class="hpx-uid">RU-08</span><span class="hpx-ukey">Verkkokomponentti Oy Ab</span><span class="hpx-umeta">split · 4 flags · €22,767</span><span><span class="hpx-chip hpx-chip--worry">exp W</span><span class="hpx-chip hpx-chip--worry">W</span><span class="hpx-chip hpx-chip--miss">S</span><span class="hpx-chip hpx-chip--worry">W</span></span></summary><div class="hpx-udetail">Two more S events; same split of opinion, same miss by run 02.</div></details>
       <details data-miss="1"><summary><span class="hpx-uid">RU-09</span><span class="hpx-ukey">Kairakomponentti Oy Ab</span><span class="hpx-umeta">split · 2 flags · €13,331</span><span><span class="hpx-chip hpx-chip--worry">exp W</span><span class="hpx-chip hpx-chip--worry">W</span><span class="hpx-chip hpx-chip--miss">S</span><span class="hpx-chip hpx-chip--worry">W</span></span></summary><div class="hpx-udetail">The fifth S event. Runs 01 and 03 worried; run 02 stood down.</div></details>
       <details data-miss="0"><summary><span class="hpx-uid">RU-10</span><span class="hpx-ukey">Kiinteistö Oy Vantaan Teollisuustalo</span><span class="hpx-umeta">round_sum · 12 flags · €180,000</span><span><span class="hpx-chip hpx-chip--sd">exp S</span><span class="hpx-chip hpx-chip--sd">S</span><span class="hpx-chip hpx-chip--sd">S</span><span class="hpx-chip hpx-chip--sd">S</span></span></summary><div class="hpx-udetail">The landlord’s rent: €15,000.00, monthly, by contract (benign B1). All three runs stood down with the recurring-contract evidence – the designed round-sum false positive, triaged correctly three times.</div></details>
-      <details data-miss="1"><summary><span class="hpx-uid">RU-11</span><span class="hpx-ukey">Ruuvitukku Halonen Oy</span><span class="hpx-umeta">duplicate · 2 flags · €14,840</span><span><span class="hpx-chip hpx-chip--sd">exp S</span><span class="hpx-chip hpx-chip--sd">S</span><span class="hpx-chip hpx-chip--miss">W</span><span class="hpx-chip hpx-chip--miss">W</span></span></summary><div class="hpx-udetail">The designed coincidence (benign B3): €7,420.00 twice, four days apart, genuinely distinct deliveries evidenced by two different PO references in the memos. Run 01 read the POs and stood down. Runs 02 and 03 saw the same POs and hedged to worry anyway – the case’s only two false positives, both cautious, not invented.</div></details>
+      <details data-miss="1"><summary><span class="hpx-uid">RU-11</span><span class="hpx-ukey">Ruuvitukku Halonen Oy</span><span class="hpx-umeta">duplicate · 2 flags · €14,840</span><span><span class="hpx-chip hpx-chip--sd">exp S</span><span class="hpx-chip hpx-chip--sd">S</span><span class="hpx-chip hpx-chip--miss">W</span><span class="hpx-chip hpx-chip--miss">W</span></span></summary><div class="hpx-udetail">The designed coincidence (benign B3): €7,420.00 twice, four days apart, genuinely distinct deliveries evidenced by two different PO references in the memos. Run 01 read the POs and stood down. Runs 02 and 03 saw the same POs and hedged to worry anyway – the case’s only two false positives, both cautious hedges on genuine uncertainty.</div></details>
       <details data-miss="0"><summary><span class="hpx-uid">RU-12</span><span class="hpx-ukey">U-031</span><span class="hpx-umeta">calendar · 2 flags · €3,101</span><span><span class="hpx-chip hpx-chip--sd">exp S</span><span class="hpx-chip hpx-chip--sd">S</span><span class="hpx-chip hpx-chip--sd">S</span><span class="hpx-chip hpx-chip--sd">S</span></span></summary><div class="hpx-udetail">Two Saturday postings whose memos state the agreed stocktake overtime (benign B2). Stood down 3/3, memo quoted as evidence each time.</div></details>
       <details data-miss="1"><summary><span class="hpx-uid">RU-13</span><span class="hpx-ukey">U-117</span><span class="hpx-umeta">calendar · 8 flags · €7,505</span><span><span class="hpx-chip hpx-chip--worry">exp W</span><span class="hpx-chip hpx-chip--miss">S</span><span class="hpx-chip hpx-chip--worry">W</span><span class="hpx-chip hpx-chip--worry">W</span></span></summary><div class="hpx-udetail">One user, eight postings on Saturdays and holidays, no stated justification, peers at zero (class W). Run 01 read it as flexible-hours data entry and stood down; runs 02 and 03 flagged the control question.</div></details>
       <p class="hpx-mono" style="margin:18px 0 8px">Detector-side units (26) – every one benign, every one stood down by every run</p>
-      <details data-miss="0"><summary><span class="hpx-uid">DU-01…24</span><span class="hpx-ukey">24 vendor clusters, 160 flags, €0 wrong</span><span class="hpx-umeta">3–17 flags each · €1,267–€66,828</span><span><span class="hpx-chip hpx-chip--sd">exp S ×24</span><span class="hpx-chip hpx-chip--sd">S ×72/72</span></span></summary><div class="hpx-udetail">Twenty-four vendors whose statistically odd rows – rare-but-allowed accounts, own-history amount tails, seasonal timing – explain themselves on inspection. All three runs stood every one down, each verdict with recomputed within-vendor evidence. This is the false-positive discipline the case was built to measure: 72 of 72 verdicts correct on the model’s noise.</div></details>
+      <details data-miss="0"><summary><span class="hpx-uid">DU-01…24</span><span class="hpx-ukey">24 vendor clusters, 160 flags, €0 wrong</span><span class="hpx-umeta">3–17 flags each · €1,267–€66,828</span><span><span class="hpx-chip hpx-chip--sd">exp S ×24</span><span class="hpx-chip hpx-chip--sd">S ×72/72</span></span></summary><div class="hpx-udetail">Twenty-four vendors whose statistically odd rows – rare-but-allowed accounts, own-history amount tails, seasonal timing – explain themselves on inspection. All three runs stood every one down, each verdict with recomputed within-vendor evidence. 72 of 72 verdicts were correct on the model’s noise, which is the false-positive discipline the case was built to measure.</div></details>
       <details data-miss="0"><summary><span class="hpx-uid">SINGLES</span><span class="hpx-ukey">Notable singles (top 10 by score)</span><span class="hpx-umeta">10 flags · €46,650</span><span><span class="hpx-chip hpx-chip--sd">exp S</span><span class="hpx-chip hpx-chip--sd">S</span><span class="hpx-chip hpx-chip--sd">S</span><span class="hpx-chip hpx-chip--sd">S</span></span></summary><div class="hpx-udetail">The detector’s ten highest-scoring unclustered rows. Nothing planted among them; stood down 3/3.</div></details>
       <details data-miss="0"><summary><span class="hpx-uid">RESIDUAL</span><span class="hpx-ukey">Residual tail</span><span class="hpx-umeta">30 flags · €105,891</span><span><span class="hpx-chip hpx-chip--sd">exp S</span><span class="hpx-chip hpx-chip--sd">S</span><span class="hpx-chip hpx-chip--sd">S</span><span class="hpx-chip hpx-chip--sd">S</span></span></summary><div class="hpx-udetail">Everything left. One aggregate distributional verdict per run; stood down 3/3.</div></details>
     </div>
@@ -189,7 +189,7 @@
 
 <section class="hpx-sec">
   <div class="hpx-wrap">
-    <h2>What only reasoning caught – and what even reasoning missed</h2>
+    <h2>What reasoning caught and what it missed</h2>
     <div class="hpx-cards">
       <div class="hpx-card" style="border-left:2px solid #41529E">
         <h3>Found 3/3: the Kärrenbach trio</h3>
@@ -197,24 +197,24 @@
       </div>
       <div class="hpx-card" style="border-left:2px solid #B68A2C">
         <h3>Found 0/3: the drift</h3>
-        <p>From July, Teräskontio’s invoices carry "sis. rahtikulut" – freight bundled in, a +8% step – and then price rises hidden inside the bundle, December landing 19% over baseline, while the freight carrier’s own billing shows the mirrored decline. The evidence sits in plain memo text and one vendor-level comparison. The detector missed it; all three analysts, spending their bounded free hunts elsewhere, missed it too. The advisory-page story this case set out to demonstrate is the one that got away – which is the demonstration.</p>
+        <p>From July, Teräskontio’s invoices carry "sis. rahtikulut" – freight bundled in, a +8% step – and then price rises hidden inside the bundle, December landing 19% over baseline, while the freight carrier’s own billing shows the mirrored decline. The evidence sits in plain memo text and one vendor-level comparison. The detector missed it; all three analysts, spending their bounded free hunts elsewhere, missed it too. The advisory-page story this case set out to demonstrate is the one no layer found.</p>
       </div>
     </div>
-    <p style="margin-top:10px">And the ceiling class held in both directions: nothing flagged Neuvantila’s twelve unremarkable consulting invoices, and no run accused them without evidence. The production catches this ledger deliberately cannot support – three-way matching, fuzzy vendor-master hygiene, recurring-invoice suppression – are stated in the write-up, not pretended at here.</p>
+    <p style="margin-top:10px">And the ceiling class held in both directions: nothing flagged Neuvantila’s twelve unremarkable consulting invoices, and no run accused them without evidence. The production catches this ledger deliberately cannot support – three-way matching, fuzzy vendor-master hygiene, recurring-invoice suppression – are stated in the write-up.</p>
   </div>
 </section>
 
 <section class="hpx-sec">
   <div class="hpx-wrap">
     <h2>What this would look like on your data</h2>
-    <p>Your own purchase ledger already carries this shape of signal – duplicate submissions, round-sum habits, a vendor whose invoicing has quietly drifted – no extra instrumentation needed. The method transfers as built – deterministic rule tests and a statistical detector for whatever the numbers alone can show, reasoning agents reading memos and vendor records for whatever needs explaining, every layer marked against something known before anyone trusts it unattended. On this ledger that marking cut the other way; the detector caught none of what was planted, and it was the reasoning layer that carried the account. What is worth buying here is not a system that promises to catch everything, but the discipline of knowing, in writing, what each layer actually catches before it runs on a ledger that matters.</p>
+    <p>Your own purchase ledger already carries this shape of signal: duplicate submissions, round-sum habits, a vendor whose invoicing has quietly drifted. No extra instrumentation is needed. The method transfers as built. Deterministic rule tests and a statistical detector cover whatever the numbers alone can show, and reasoning agents read memos and vendor records for whatever needs explaining. Every layer is marked against something known before anyone trusts it unattended. On this ledger, the detector caught none of what was planted, and the reasoning layer carried the account.</p>
     <p><a href="#">Read the long-form case study</a> · <a href="#">Code and dataset</a> · <a href="#">Contact Hapax</a> <span style="color:var(--hpx-mute2)">(links added on publish)</span></p>
   </div>
 </section>
 
 <footer class="hpx-foot">
   <div class="hpx-wrap">
-    <p>Method, honestly: the three analyst runs are Claude Code subagents (Opus), mutually blinded, each given the same pinned briefing verbatim; every run’s file-access audit list was clean. No cost figures are claimed. The rule layer, detector, dataset and marking regenerate deterministically from seed 42 on the pinned environment; the agent runs are session artefacts, and their variance – 37, 35, 38 of 39 – is part of the result. Full marking: the adjudicated scorecard and the analysis notebook in the case-study folder. This page is a single self-contained file; the data behind every figure is embedded below.</p>
+    <p>Method: the three analyst runs are Claude Code subagents (Opus), mutually blinded, each given the same pinned briefing verbatim. Every run’s file-access audit list was clean. No cost figures are claimed. The rule layer, detector, dataset and marking regenerate deterministically from seed 42 on the pinned environment. The agent runs are session artefacts, and their variance (37, 35, 38 of 39) is part of the result. Full marking: the adjudicated scorecard and the analysis notebook in the case-study folder. This page is a single self-contained file; the data behind every figure is embedded below.</p>
   </div>
 </footer>
 
