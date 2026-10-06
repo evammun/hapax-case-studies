@@ -42,6 +42,9 @@ from sklearn.model_selection import StratifiedKFold, train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
+# Explicit, deterministic tie-break for every ranked cut (see code/ranking.py).
+import ranking
+
 warnings.filterwarnings("ignore", category=UserWarning)
 
 # ---------------------------------------------------------------------------
@@ -216,6 +219,8 @@ def load_features():
     X = features_df[feature_columns].copy()
     y = features_df["churned"].astype(int).to_numpy()
     account_ids = features_df["account_id"].to_numpy()
+    # The tie-break in recall_at_k relies on features.csv rows being in ascending account_id order.
+    assert features_df["account_id"].is_monotonic_increasing, "features.csv must be sorted by account_id"
 
     print(f"  {len(features_df)} accounts, {len(feature_columns)} feature columns, churn rate {y.mean():.1%}")
     print(f"  Excluded from model (see comment above FEATURES_EXCLUDED_FROM_MODEL): {FEATURES_EXCLUDED_FROM_MODEL}")
@@ -239,21 +244,29 @@ def make_logistic_pipeline():
 # Evaluation helpers
 # ---------------------------------------------------------------------------
 
-def recall_at_k(y_true: np.ndarray, scores: np.ndarray, k: int) -> float:
-    """Fraction of all positives captured in the top-k ranked-by-score accounts."""
+def recall_at_k(y_true: np.ndarray, scores: np.ndarray, k: int, tie_break_keys: np.ndarray) -> float:
+    """
+    Fraction of all positives captured in the top-k ranked-by-score accounts.
+
+    Usage-arm rule (code/ranking.py): score descending, then account order ascending.
+    tie_break_keys are the accounts' row positions in features.csv, which is sorted by
+    account_id, so ascending key == ascending account_id. Scores here are continuous
+    model probabilities, so the clause rarely fires; it is stated so the cut is
+    reproducible by rule rather than by whatever order numpy's quicksort leaves.
+    """
     k = min(k, len(scores))
-    top_k_idx = np.argsort(-scores)[:k]
+    top_k_idx = ranking.ranked_order(tie_break_keys, scores, arm=ranking.ARM_USAGE)[:k]
     total_positives = y_true.sum()
     if total_positives == 0:
         return np.nan
     return y_true[top_k_idx].sum() / total_positives
 
 
-def evaluate_model(name: str, y_test: np.ndarray, scores_test: np.ndarray) -> dict:
+def evaluate_model(name: str, y_test: np.ndarray, scores_test: np.ndarray, tie_break_keys: np.ndarray) -> dict:
     """Computes AUC, average precision, and recall@K for one model's test-set scores."""
     auc = roc_auc_score(y_test, scores_test)
     ap = average_precision_score(y_test, scores_test)
-    recall_k = recall_at_k(y_test, scores_test, TOP_K_RECALL)
+    recall_k = recall_at_k(y_test, scores_test, TOP_K_RECALL, tie_break_keys)
     print(f"  {name}: AUC={auc:.3f}  AP={ap:.3f}  recall@top{TOP_K_RECALL}={recall_k:.3f}")
     return {"model": name, "auc": auc, "average_precision": ap, f"recall_at_top_{TOP_K_RECALL}": recall_k}
 
@@ -276,13 +289,13 @@ def run_holdout_evaluation(X: pd.DataFrame, y: np.ndarray, feature_columns: list
     lr_pipeline = make_logistic_pipeline()
     lr_pipeline.fit(X_train, y_train)
     lr_scores = lr_pipeline.predict_proba(X_test)[:, 1]
-    results.append(evaluate_model("Logistic regression", y_test, lr_scores))
+    results.append(evaluate_model("Logistic regression", y_test, lr_scores, X_test.index.to_numpy()))
 
     # Gradient boosting candidate
     gb_model = make_gb_model()
     gb_model.fit(X_train, y_train)
     gb_scores = gb_model.predict_proba(X_test)[:, 1]
-    results.append(evaluate_model(f"Gradient boosting ({GB_BACKEND})", y_test, gb_scores))
+    results.append(evaluate_model(f"Gradient boosting ({GB_BACKEND})", y_test, gb_scores, X_test.index.to_numpy()))
 
     return results
 
@@ -362,7 +375,7 @@ def run_tenure_ablation(features_df: pd.DataFrame, feature_columns_without_tenur
     gb_model = make_gb_model()
     gb_model.fit(X_train, y_train)
     scores = gb_model.predict_proba(X_test)[:, 1]
-    result = evaluate_model("Gradient boosting WITH tenure_months (ablation, not the official model)", y_test, scores)
+    result = evaluate_model("Gradient boosting WITH tenure_months (ablation, not the official model)", y_test, scores, X_test.index.to_numpy())
     return result
 
 
@@ -435,7 +448,10 @@ def evaluate_against_answer_key(scores_df: pd.DataFrame) -> pd.DataFrame:
     merged = scores_df.merge(answer_key[["account_id", "archetype"]], on="account_id", how="left")
     assert merged["archetype"].notna().all(), "Every scored account must have an archetype in the answer key"
 
-    merged = merged.sort_values("ml_risk_score", ascending=False).reset_index(drop=True)
+    # Usage-arm cut rule (code/ranking.py): score descending, then account_id ascending.
+    # (Previously default sort order; no tie existed at rank 100, so no figure moves.)
+    merged = merged.sort_values(["ml_risk_score", "account_id"], ascending=[False, True],
+                                kind="mergesort").reset_index(drop=True)
     merged["in_top_100"] = merged.index < TOP_K_ANSWER_KEY
 
     archetype_table = (
@@ -555,20 +571,21 @@ def write_report(holdout_results, archetype_table, merged_scores, shap_df, featu
         a4_diag = ticket_diag_by_archetype.loc["A4"]
         a3_diag = ticket_diag_by_archetype.loc["A3"]
         lines.append(
-            f"**Note for the A4 discussion below (v3, post-close-the-tickets):** within the trailing 6-month "
-            f"window the model actually sees, A4 now has a mean unresolved-ticket count of "
+            f"**Note for the A4 discussion below (v3, post-close-the-tickets):** in v3, within the trailing 6-month "
+            f"window the model actually saw, A4 had a mean unresolved-ticket count of "
             f"{a4_diag['mean_unresolved_count_6m']:.2f} per account -- literally 0 for every single A4 account, "
             f"same for `resolved_rate_6m` (exactly 1.0 for every A4 account) -- vs A3's "
             f"{a3_diag['mean_unresolved_count_6m']:.2f}. In the v2 run, before `code/fix_a4_ticket_metadata.py` "
             f"closed A4's tickets at source, this same figure was 1.61 per account, the highest of all eight "
             f"archetypes, and `mean_resolution_days_6m` / `unresolved_count_6m` were the two largest SHAP "
-            f"drivers of A4's risk score. That specific leak is now closed: `unresolved_count_6m` and "
-            f"`resolved_rate_6m` are constants for A4 and can no longer discriminate between A4 accounts. See "
-            f"item 3 below and the SHAP breakdown further down for what the model leans on instead.\n"
+            f"drivers of A4's risk score. That specific leak was closed in v3: `unresolved_count_6m` and "
+            f"`resolved_rate_6m` became constants for A4 and could no longer discriminate between A4 accounts. "
+            f"In the shipped v4 data the picture has moved again -- see item 3 below and the SHAP breakdown "
+            f"further down for what the model leans on instead.\n"
         )
     lines.append(
         "Non-churning archetype A6 now shows *higher* mean trailing-window ticket volume than either "
-        "churning archetype A3 or A4 (7.02 vs 5.91 and 6.65), and A7 sits well above the healthy archetypes "
+        "churning archetype A3 or A4 (7.02 vs 5.91 and 2.93), and A7 sits well above the healthy archetypes "
         "(4.71, close to A3/A4) despite never churning -- both archetypes' designed arcs (A6's "
         "escalation-then-recovery, A7's steady stream of angry-but-resolved tickets) genuinely generate more "
         "support contact, they just don't churn over it. A1 (healthy-stable) no longer reads as uniformly "
@@ -583,23 +600,25 @@ def write_report(holdout_results, archetype_table, merged_scores, shap_df, featu
         "redundant views of the same underlying signal).\n"
     )
     lines.append(
-        "**3. A4's ticket-OUTCOME leak (unresolved count, slow resolution) has been FIXED at source (in "
-        "v3, unchanged this run).** The v2 run's negative result (A4 mean risk score rose from 0.591 to 0.666 despite csat "
+        "**3. A4's ticket-OUTCOME leak (unresolved count, slow resolution) was FIXED at source in v3 "
+        "(superseded by the v4 volume redesign below).** The v2 run's negative result (A4 mean risk score rose from 0.591 to 0.666 despite csat "
         "being quieted -- see \"Previous runs\" appendix below) traced to `unresolved_count_6m` and "
         "`mean_resolution_days_6m`: A4's designed ticket arc includes a genuinely unresolved complaint stage, "
         "and that OUTCOME was legible from ticket metadata even though its sentiment was not. "
-        "`code/fix_a4_ticket_metadata.py` closes the loop consistent with the design decision taken for this "
-        "run: A4 tickets now get marked resolved by support (resolution_days drawn 1-5, support closes "
+        "`code/fix_a4_ticket_metadata.py` closed the loop consistent with the design decision taken for "
+        "v3: A4 tickets got marked resolved by support (resolution_days drawn 1-5, support closes "
         "tickets promptly) even though the underlying fix does not hold -- the real-world \"marked resolved, "
         "problem persists\" pattern. Only the `resolved` and `resolution_days` fields were changed, in both "
         "`ticket_briefs.json` and the corresponding `tickets_raw/batch_*.json` records; not one word of ticket "
         "prose was touched (the later tickets already say the fix did not hold). A4's unresolved-ticket rate "
-        "in `tickets.csv` is now 0.0% (was 23.1%), at or below every other archetype's rate. **This did NOT "
+        "in `tickets.csv` became 0.0% (was 23.1%), at or below every other archetype's rate. **This did NOT "
         "make A4 invisible to the classical model** -- see \"A4 before -> after\" below: the model's weight "
         "simply shifted from ticket OUTCOME features onto ticket VOLUME features (`ticket_count_6m` / "
-        "`ticket_count_3m`), because A4's designed arc still generates far more tickets than a healthy account "
-        "(mean 6.65 in the trailing 6 months vs A1's 1.04) -- that volume, independent of how the tickets "
-        "resolved, remains a residual metadata fingerprint.\n"
+        "`ticket_count_3m`), because in v3, A4's designed arc still generated far more tickets than a healthy "
+        "account (mean 6.65 in the trailing 6 months vs A1's 1.04) -- that volume, independent of how the "
+        "tickets resolved, remained a residual metadata fingerprint. In the shipped v4 data the figure is "
+        "2.93 (see the ticket-window diagnostic table above and \"A4 before -> after\" below) -- the volume "
+        "redesign that finally addresses this leak.\n"
     )
     lines.append(
         "**4. Calendar seasonality is a fourth, subtler confound, unaffected by any run's fixes.** SHAP "

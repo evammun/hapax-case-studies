@@ -29,29 +29,29 @@ Scored out-of-fold across all 500 accounts, against the answer key:
 | Approach | AUC | Average precision | Recall @ top-100 |
 |---|---|---|---|
 | Usage model only | 0.867 | 0.777 | 0.594 |
-| Ticket-text agent only | 0.795 | 0.705 | 0.594 |
+| Ticket-text agent only | 0.795 | 0.705 | 0.586 |
 | Combined | 0.890 | 0.845 | 0.662 |
 
-Recall at top-100 is the practical number here. If a CS team can review 100 accounts a cycle (a fifth of the book), this is how many of the truly churning accounts make that list. Usage and text each get 59.4%, by different routes. Combined gets 66.2%, 9 more genuine churners for the same review effort.
+Recall at top-100 is the practical number here. If a CS team can review 100 accounts a cycle (a fifth of the book), this is how many of the truly churning accounts make that list. Usage gets 59.4%; text gets 58.6%, by a different route. Combined gets 66.2%, 9 more genuine churners for the same review effort.
 
 The more useful cut is where each method's hits land. Split the top 100 by which layer flagged the account:
 
 | | Text flags trouble | Text says fine |
 |---|---|---|
-| **Usage flags trouble** | 58 accounts, 57 churners | 42 accounts, 22 churners |
-| **Usage says fine** | 42 accounts, 22 churners | 358 accounts, 32 churners |
+| **Usage flags trouble** | 59 accounts, 57 churners | 41 accounts, 22 churners |
+| **Usage says fine** | 41 accounts, 21 churners | 359 accounts, 33 churners |
 
-Both layers agree in the top-left cell, and they are right almost every time. Bottom-right is the honest miss, covered in section 4. Both cross-cells carry the argument. Usage alone flags 22 churners that the text layer missed; the text layer, in turn, flags 22 churners that usage missed entirely. 18 of that second group are the "quietly unhappy" type, Bergvik's type, the commercial case in one number.
+Both layers agree in the top-left cell, and they are right almost every time. Bottom-right is the honest miss, covered in section 4. Both cross-cells carry the argument. Usage alone flags 22 churners that the text layer missed; the text layer, in turn, flags 21 churners that usage missed entirely. 18 of that second group are the "quietly unhappy" type, Bergvik's type, the commercial case in one number.
 
 **The money segment, counted directly against the answer key:**
 
 | Method | Quietly-unhappy accounts caught, of 46 |
 |---|---|
 | Usage model | 23 (50%) |
-| Text agent | 35 (76%) |
+| Text agent | 34 (74%) |
 | Combined | 37 (80%) |
 
-Attach revenue. Total ARR inside accounts that actually churned comes to **€6.53M**. Usage alone surfaces €3.71M of that within its top 100; text alone, €4.35M; combined, €4.57M. The figure for a CFO's desk is that delta between the first two. **The text layer surfaces €1.34M of churned ARR that the usage model, alone, does not**, because those accounts looked healthy on every dashboard metric until the invoice stopped renewing. Usage returns the favour in the other direction, adding €703K in accounts the text layer under-weighted. Neither layer subsumes the other, which is why combining them is the finding.
+Attach revenue. Total ARR inside accounts that actually churned comes to **€6.53M**. Usage alone surfaces €3.71M of that within its top 100; text alone, €4.14M; combined, €4.57M. The figure for a CFO's desk is that delta between the first two. **The text layer surfaces €1.14M of churned ARR that the usage model, alone, does not**, because those accounts looked healthy on every dashboard metric until the invoice stopped renewing. Usage returns the favour in the other direction, adding €716K in accounts the text layer under-weighted. Neither layer subsumes the other, which is why combining them is the finding.
 
 ## 3. Three accounts, in their own words
 
@@ -77,7 +77,7 @@ Every account here has a planted answer we chose not to feed the models. Every m
 
 Even so, the usage model returns a weak, ambiguous flag on these accounts (0.48 mean score, against 0.86 for the archetype it is built to catch), with nothing to explain it. The text layer reads the same account and returns a paragraph a CS manager can act on by lunchtime. That gap, not total blindness, is the real product.
 
-**The text layer over-worries about loud-but-loyal accounts, and needs the other layer to correct it.** 20 of the 55 "loud but loyal" accounts here, Nieminen and Willems' type, accounts that complain often and renew every time, land in the text agent's own top 100, on tone alone. Fusion catches most of this. Of those 20, 19 drop out of the *combined* top 100 once the usage signal and the escalation-then-resolved pattern are folded back in. Nieminen does not. Its ticket-volume metadata is itself unusually high, so it stays flagged even after fusion. We report Nieminen as the residual the model cannot resolve.
+**The text layer over-worries about loud-but-loyal accounts, and needs the other layer to correct it.** 19 of the 55 "loud but loyal" accounts here, Nieminen and Willems' type, accounts that complain often and renew every time, land in the text agent's own top 100, on tone alone. Fusion catches most of this. Of those 19, 18 drop out of the *combined* top 100 once the usage signal and the escalation-then-resolved pattern are folded back in. Nieminen does not. Its ticket-volume metadata is itself unusually high, so it stays flagged even after fusion. We report Nieminen as the residual the model cannot resolve.
 
 **Neither layer catches sudden death, and it is not supposed to.** 30 accounts here churn for reasons invisible in the product, such as an acquisition, a budget cut, or a champion leaving. Usage looks normal, tickets are routine. 5 of the 30 land in the usage model's top 100 anyway, closer to noise than signal; 0 land in the text layer's; 2 survive into the combined top 100. That is roughly what chance would produce on a fifth-of-the-book review budget, and it should be, because there is no legitimate signal here for either method to find.
 
@@ -98,7 +98,7 @@ The method needs three things from an account base: a written trail held against
 
 The structure carries over. A classical model where the numbers are strong, a reading layer where they are silent, both marked against a holdout, and one small explainable model combining the two. So do the checks that make the marking mean anything: misses counted per archetype, not in aggregate, negative results from the data design left in the record, and scores taken out-of-fold, not from the fit.
 
-What does not carry over is the answer key. Ours was planted before any model ran, which is what makes the figures above markable at all; a real account book offers historical outcomes instead, noisier and arriving later. The figures (0.890 combined AUC, 66.2% recall at the top 100, €1.34M of churned ARR visible only to the text layer) are properties of this dataset and of the archetype mix we chose for it. The narrower claim we would carry to other data is that the 2 layers catch different accounts, and that the overlap between them is partial enough for the second layer to pay for itself.
+What does not carry over is the answer key. Ours was planted before any model ran, which is what makes the figures above markable at all; a real account book offers historical outcomes instead, noisier and arriving later. The figures (0.890 combined AUC, 66.2% recall at the top 100, €1.14M of churned ARR visible only to the text layer) are properties of this dataset and of the archetype mix we chose for it. The narrower claim we would carry to other data is that the 2 layers catch different accounts, and that the overlap between them is partial enough for the second layer to pay for itself.
 
 ## 8. Technical appendix
 

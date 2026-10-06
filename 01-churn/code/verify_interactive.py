@@ -32,7 +32,9 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 PROJECT_ROOT = HERE.parent
-PAGE_PATH = PROJECT_ROOT / "interactive" / "churn_explorer.html"
+# Optional first argument: a different page to check (e.g. interactive/staging/churn_explorer.staging.html).
+PAGE_PATH = (Path(sys.argv[1]).resolve() if len(sys.argv) > 1
+             else PROJECT_ROOT / "interactive" / "churn_explorer.html")
 RESULTS_SUMMARY_PATH = PROJECT_ROOT / "data" / "fusion" / "results_summary.json"
 ACCOUNTS_PATH = PROJECT_ROOT / "data" / "accounts.csv"
 TICKETS_PATH = PROJECT_ROOT / "data" / "tickets.csv"

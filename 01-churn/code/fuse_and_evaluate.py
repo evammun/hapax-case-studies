@@ -48,6 +48,9 @@ from sklearn.metrics import average_precision_score, roc_auc_score
 from sklearn.model_selection import StratifiedKFold
 from sklearn.preprocessing import StandardScaler
 
+# Explicit, deterministic tie-break for every ranked cut (see code/ranking.py).
+import ranking
+
 # ---------------------------------------------------------------------------
 # Resolve paths
 # ---------------------------------------------------------------------------
@@ -60,6 +63,7 @@ ML_SCORES_PATH   = DATA_DIR / "model" / "ml_scores.csv"
 TEXT_SCORES_PATH = DATA_DIR / "agent" / "text_scores.csv"
 ACCOUNTS_PATH    = DATA_DIR / "accounts.csv"
 ANSWER_KEY_PATH  = DATA_DIR / "answer_key.csv"          # evaluation ONLY -- never a model input
+TICKETS_PATH     = DATA_DIR / "tickets.csv"             # read ONLY for each account's most recent ticket date (rank tie-break)
 
 FUSION_DIR = DATA_DIR / "fusion"
 FUSION_DIR.mkdir(parents=True, exist_ok=True)
@@ -68,7 +72,7 @@ COMBINED_SCORES_PATH   = FUSION_DIR / "combined_scores.csv"
 EVALUATION_REPORT_PATH = FUSION_DIR / "evaluation_report.md"
 RESULTS_SUMMARY_PATH   = FUSION_DIR / "results_summary.json"
 
-INPUT_PATHS = [ML_SCORES_PATH, TEXT_SCORES_PATH, ACCOUNTS_PATH, ANSWER_KEY_PATH]
+INPUT_PATHS = [ML_SCORES_PATH, TEXT_SCORES_PATH, ACCOUNTS_PATH, ANSWER_KEY_PATH, TICKETS_PATH]
 OUTPUT_PATHS = [COMBINED_SCORES_PATH, EVALUATION_REPORT_PATH, RESULTS_SUMMARY_PATH]
 
 # Confirm output paths never collide with input paths -- non-negotiable safety rule.
@@ -147,6 +151,16 @@ def load_inputs():
         )
 
     log(f"Loaded and joined {len(merged)} accounts across accounts/ml_scores/text_scores/answer_key.")
+    # Most recent ticket date per account: the recency tie-break for the text and
+    # combined arms (see code/ranking.py). Tickets are text-layer data, so this
+    # keeps the text arm independent of the usage arm.
+    tickets = pd.read_csv(TICKETS_PATH, usecols=["account_id", "created_at"])
+    last_ticket_dates = ranking.last_ticket_date_by_account(tickets)
+    merged["last_ticket_date"] = merged["account_id"].map(last_ticket_dates)
+    if merged["last_ticket_date"].isna().any():
+        n_undated = int(merged["last_ticket_date"].isna().sum())
+        log(f"  Note: {n_undated} account(s) have no tickets and sort last at equal score.")
+
     return merged
 
 
@@ -234,17 +248,31 @@ def run_fusion_model(df):
 # Step 2: head-to-head evaluation
 # ---------------------------------------------------------------------------
 
-def top_k_flags(scores, k):
-    """Return a boolean array flagging the top-k accounts by score (ties broken by original order)."""
-    ranked_positions = np.argsort(-np.asarray(scores), kind="stable")
-    flags = np.zeros(len(scores), dtype=bool)
-    flags[ranked_positions[:k]] = True
-    return flags
+# Which tie-break arm each score column belongs to (see code/ranking.py).
+ARM_BY_SCORE_COLUMN = {
+    "ml_risk_score": ranking.ARM_USAGE,
+    "text_risk_score": ranking.ARM_TEXT,
+    "combined_score": ranking.ARM_COMBINED,
+}
 
 
-def recall_at_k(y_true, scores, k):
+def top_k_flags(df, score_column, k):
+    """
+    Boolean array flagging the top-k accounts by score_column, cut by the explicit rule
+    in code/ranking.py (score desc, then most recent ticket date desc for the text and
+    combined arms, then account_id asc). Not by row order: the text arm's score has
+    only 33 distinct values, so its top-100 cut falls inside a tie.
+    """
+    return ranking.top_k_flags_ranked(
+        df["account_id"].values, df[score_column].values, k,
+        last_ticket_dates=df["last_ticket_date"].values,
+        arm=ARM_BY_SCORE_COLUMN[score_column],
+    )
+
+
+def recall_at_k(y_true, df, score_column, k):
     """Fraction of all true churners captured within the top-k accounts by score."""
-    flags = top_k_flags(scores, k)
+    flags = top_k_flags(df, score_column, k)
     total_churners = int(np.sum(y_true))
     if total_churners == 0:
         return 0.0
@@ -258,18 +286,19 @@ def compute_head_to_head(df):
     y_true = df["churned"].astype(int).values
 
     approaches = {
-        "ml_only": df["ml_risk_score"].values,
-        "text_only": df["text_risk_score"].values,
-        "combined": df["combined_score"].values,
+        "ml_only": "ml_risk_score",
+        "text_only": "text_risk_score",
+        "combined": "combined_score",
     }
 
     results = {}
-    for name, scores in approaches.items():
+    for name, score_column in approaches.items():
+        scores = df[score_column].values
         results[name] = {
             "auc": round(float(roc_auc_score(y_true, scores)), FLOAT_ROUND),
             "average_precision": round(float(average_precision_score(y_true, scores)), FLOAT_ROUND),
-            "recall_at_50": round(float(recall_at_k(y_true, scores, TOP_K_SMALL)), FLOAT_ROUND),
-            "recall_at_100": round(float(recall_at_k(y_true, scores, TOP_K_LARGE)), FLOAT_ROUND),
+            "recall_at_50": round(float(recall_at_k(y_true, df, score_column, TOP_K_SMALL)), FLOAT_ROUND),
+            "recall_at_100": round(float(recall_at_k(y_true, df, score_column, TOP_K_LARGE)), FLOAT_ROUND),
         }
         log(f"  {name}: AUC={results[name]['auc']}, AP={results[name]['average_precision']}, "
             f"recall@50={results[name]['recall_at_50']}, recall@100={results[name]['recall_at_100']}")
@@ -437,7 +466,7 @@ def compute_arr_translation(df):
     for approach_name, score_column in [("ml_only", "ml_risk_score"),
                                          ("text_only", "text_risk_score"),
                                          ("combined", "combined_score")]:
-        flags_top50 = top_k_flags(df[score_column].values, TOP_K_SMALL)
+        flags_top50 = top_k_flags(df, score_column, TOP_K_SMALL)
         caught_mask = flags_top50 & (y_true == 1)
         review_budget[approach_name] = {
             "n_accounts_caught": int(caught_mask.sum()),
@@ -578,6 +607,20 @@ def run_validation(df, two_by_two, arr_translation):
         accounts_ids == combined_ids
     ))
 
+    # 6. Every top-100 cut is exactly 100 accounts, and the cut is reproducible by rule:
+    #    shuffling the row order must not change which accounts are flagged.
+    rng = np.random.default_rng(RANDOM_SEED)
+    shuffled = df.iloc[rng.permutation(len(df))].reset_index(drop=True)
+    for score_column, flag_column in [("ml_risk_score", "ml_flag"), ("text_risk_score", "text_flag"),
+                                      ("combined_score", "combined_flag")]:
+        flagged_ids = set(df.loc[df[flag_column] == 1, "account_id"])
+        shuffled_flags = top_k_flags(shuffled, score_column, TOP_K_LARGE)
+        shuffled_ids = set(shuffled.loc[shuffled_flags, "account_id"])
+        checks.append((
+            f"{flag_column}: exactly {TOP_K_LARGE} accounts flagged, identical under a shuffled row order",
+            len(flagged_ids) == TOP_K_LARGE and flagged_ids == shuffled_ids
+        ))
+
     # Print every check's result, then raise if anything failed.
     all_passed = True
     for description, passed in checks:
@@ -663,6 +706,9 @@ def write_evaluation_report(head_to_head, per_archetype, two_by_two, a7_verdict,
     lines.append("## 3. The 2x2 centrepiece")
     lines.append("")
     lines.append("`ml_flag` = 1 if in ML top-100 by `ml_risk_score`; `text_flag` = 1 if in text top-100 by `text_risk_score`.")
+    lines.append("")
+    lines.append(f"Every top-N cut uses an explicit tie-break rule (`code/ranking.py`): {ranking.RULE_TEXT}. "
+                 "The text score has only 33 distinct values, so its top-100 cut falls inside a tie.")
     lines.append("")
     rows = []
     for cell_name, label in [("both", "Both (ml_flag=1, text_flag=1)"), ("ml_only", "ML only (1,0)"),
@@ -817,6 +863,7 @@ def write_results_summary(head_to_head, per_archetype, two_by_two, a7_verdict, a
         "a4_table": a4_table,
         "arr_business_translation": arr_translation,
         "segmentation": segmentation,
+        "ranking_rule": ranking.RULE_TEXT,
     }
 
     with open(RESULTS_SUMMARY_PATH, "w", encoding="utf-8") as f:
@@ -842,14 +889,25 @@ def main():
 
         # Write combined_scores.csv (account_id, ml_risk_score, text_risk_score, combined_score).
         combined_scores_output = df[["account_id", "ml_risk_score", "text_risk_score", "combined_score"]].copy()
+        # Explicit 1-based ranks per arm under the tie-break rule (code/ranking.py), so
+        # downstream consumers (the explorer) never re-sort scores and re-introduce
+        # row-order tie-breaking.
+        for score_column, rank_column in [("ml_risk_score", "ml_rank"),
+                                           ("text_risk_score", "text_rank"),
+                                           ("combined_score", "combined_rank")]:
+            combined_scores_output[rank_column] = ranking.rank_numbers(
+                df["account_id"].values, df[score_column].values,
+                last_ticket_dates=df["last_ticket_date"].values,
+                arm=ARM_BY_SCORE_COLUMN[score_column],
+            )
         combined_scores_output["combined_score"] = combined_scores_output["combined_score"].round(FLOAT_ROUND)
         combined_scores_output.to_csv(COMBINED_SCORES_PATH, index=False)
         log(f"Wrote {COMBINED_SCORES_PATH} ({len(combined_scores_output)} rows).")
 
         # Compute top-100 flags once, reused throughout.
-        df["ml_flag"] = top_k_flags(df["ml_risk_score"].values, TOP_K_LARGE).astype(int)
-        df["text_flag"] = top_k_flags(df["text_risk_score"].values, TOP_K_LARGE).astype(int)
-        df["combined_flag"] = top_k_flags(df["combined_score"].values, TOP_K_LARGE).astype(int)
+        df["ml_flag"] = top_k_flags(df, "ml_risk_score", TOP_K_LARGE).astype(int)
+        df["text_flag"] = top_k_flags(df, "text_risk_score", TOP_K_LARGE).astype(int)
+        df["combined_flag"] = top_k_flags(df, "combined_score", TOP_K_LARGE).astype(int)
 
         head_to_head = compute_head_to_head(df)
         per_archetype = compute_per_archetype_top100_share(df)
