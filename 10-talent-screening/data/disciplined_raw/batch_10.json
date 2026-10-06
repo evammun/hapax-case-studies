@@ -139,7 +139,7 @@
         "status": "evidence_found",
         "lines": [
           {
-            "quote": "Led the migration of Arctic's internal calibration-data pipeline from a collection of shell scripts and ad-hoc MATLAB routines to a structured Python package. Wrote the core processing modules (NumPy/SciPy), implemented unit and integration tests with pytest, built CI via GitLab CI/CD, and documented the API for the calibration team. The package is still in daily production use by three teams.",
+            "quote": "Led the migration of Hallaharju's internal calibration-data pipeline from a collection of shell scripts and ad-hoc MATLAB routines to a structured Python package. Wrote the core processing modules (NumPy/SciPy), implemented unit and integration tests with pytest, built CI via GitLab CI/CD, and documented the API for the calibration team. The package is still in daily production use by three teams.",
             "source": "cv"
           }
         ],
@@ -371,7 +371,7 @@
         "status": "evidence_found",
         "lines": [
           {
-            "quote": "Designed the digital beamforming architecture for Arctic's X-band ground receiver: a 32-element array with sum/difference beamforming and adaptive sidelobe cancellation",
+            "quote": "Designed the digital beamforming architecture for Hallaharju's X-band ground receiver: a 32-element array with sum/difference beamforming and adaptive sidelobe cancellation",
             "source": "cv"
           }
         ],
@@ -382,7 +382,7 @@
         "status": "evidence_found",
         "lines": [
           {
-            "quote": "Wrote production embedded firmware in C++ for Arctic's real-time signal-processing modules on a Xilinx Zynq SoC. Sample-rate loop at 200 MHz clock, interrupt-driven, full regression test coverage.",
+            "quote": "Wrote production embedded firmware in C++ for Hallaharju's real-time signal-processing modules on a Xilinx Zynq SoC. Sample-rate loop at 200 MHz clock, interrupt-driven, full regression test coverage.",
             "source": "cv"
           }
         ],
@@ -404,7 +404,7 @@
         "status": "evidence_found",
         "lines": [
           {
-            "quote": "Designed and executed the RF calibration campaign for Arctic's X-band ground receiver: element-level gain/phase measurements using an Agilent PNA-X network analyser in the company's anechoic chamber, followed by near-field antenna pattern verification.",
+            "quote": "Designed and executed the RF calibration campaign for Hallaharju's X-band ground receiver: element-level gain/phase measurements using an Agilent PNA-X network analyser in the company's anechoic chamber, followed by near-field antenna pattern verification.",
             "source": "cv"
           }
         ],
@@ -426,7 +426,7 @@
         "status": "evidence_found",
         "lines": [
           {
-            "quote": "Developed and maintained the extended Kalman filter used in Arctic's angle-of-arrival estimator for the ground-based direction-finding product",
+            "quote": "Developed and maintained the extended Kalman filter used in Hallaharju's angle-of-arrival estimator for the ground-based direction-finding product",
             "source": "cv"
           }
         ],

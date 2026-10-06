@@ -4,7 +4,7 @@ Mittarikatu 3
 Laskun päivä 03.01.2025
 15230 Lahti
 Eräpäivä 02.02.2025
-Y-tunnus: 2311220-8
+Y-tunnus: 9811221-0
 OSTAJA
 Pyökkipaja Oy
 Sorvaajankatu 11
@@ -16,6 +16,6 @@ Kalibrointitodistus 1 kpl 214,78 25,5 214,78
 Veroton yhteensä 365,04 €
 ALV 25,5 % 93,09 €
 Maksettava 458,13 €
-Y-tunnus 2311220-8 -- ALV-tunnus FI23112208
+Y-tunnus 9811221-0 -- ALV-tunnus FI98112210
 Maksuehto: 30 pv netto
 Pankkiyhteys: FI2410403500318264 BIC: NDEAFIHH

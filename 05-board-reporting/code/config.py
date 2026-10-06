@@ -350,7 +350,7 @@ CUSTOMER_ROSTER = {
         {"name": "Berghav AS",           "share": 0.080, "channel": "Grocery retail",    "contractual_terms_days": 30},
         {"name": "Björkgrossisten AB",   "share": 0.070, "channel": "Grocery wholesale", "contractual_terms_days": 30},
         {"name": "Havneby Detalj A/S",   "share": 0.060, "channel": "Grocery retail",    "contractual_terms_days": 30},
-        {"name": "Metsätori Oy",         "share": 0.050, "channel": "Grocery retail",    "contractual_terms_days": 30},
+        {"name": "Puolukkatori Oy",         "share": 0.050, "channel": "Grocery retail",    "contractual_terms_days": 30},
         {"name": "Solvik Dagligvaror AB","share": 0.045, "channel": "Grocery retail",    "contractual_terms_days": 30},
         {"name": "Kystvare AS",          "share": 0.040, "channel": "Grocery retail",    "contractual_terms_days": 30},
         {"name": "Nordkedjan AB",        "share": 0.035, "channel": "Grocery retail",    "contractual_terms_days": 30},

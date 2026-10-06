@@ -46,7 +46,7 @@ Visakoivu Oy on jyvaskylalainen n. 180 hengen tekninen ja kiinteistopalveluyrity
 
 | ID | Client | Type | Value (EUR) | Period | Description |
 |---|---|---|---|---|---|
-| REF01 | Kuusiranta Oy | private | 640,000 | 2021-03-01 to 2022-02-28 | LVI- ja sahkoylapidon ulkoistus, tuotantokiinteisto |
+| REF01 | Haavikkoranta Oy | private | 640,000 | 2021-03-01 to 2022-02-28 | LVI- ja sahkoylapidon ulkoistus, tuotantokiinteisto |
 | REF02 | Jarviseudun hyvinvointialue | public | 1,650,000 | 2021-08-01 to 2024-07-31 | Kiinteistonhoidon ja LVI-ylapidon puitesopimus, viisi terveysasemaa |
 | REF03 | Petajalahti Oy | private | 310,000 | 2022-01-15 to 2022-09-30 | Rakennusautomaation uusinta, logistiikkakeskus |
 | REF04 | Vaahterakoski Oy | private | 890,000 | 2022-05-01 to 2023-10-31 | Sahkoasennukset, uudisrakennushanke |

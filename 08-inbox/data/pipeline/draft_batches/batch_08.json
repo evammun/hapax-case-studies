@@ -1460,7 +1460,7 @@
       "trigger_email": {
         "date": "2026-09-14",
         "subject": "Re: Invoice question - cement mixer trailer",
-        "body": "We're finished with the 20kVA generator. Can we arrange the return? Happy to bring it to the Rovaniemi depot or you can collect from site, whichever suits.\n\nNapapiirin Infra Oy"
+        "body": "We're finished with the 20kVA generator. Can we arrange the return? Happy to bring it to the Rovaniemi depot or you can collect from site, whichever suits.\n\nRoutakallion Infra Oy"
       },
       "thread_history": [
         {
@@ -1468,7 +1468,7 @@
           "sender": "customer",
           "date": "2026-09-02",
           "subject": "Invoice question - cement mixer trailer",
-          "body": "Hello,\n\nWe received the invoice for the cement mixer trailer rental and wanted to check a couple of things. Could you send us a detailed breakdown?\n\nBest regards,\nNapapiirin Infra Oy"
+          "body": "Hello,\n\nWe received the invoice for the cement mixer trailer rental and wanted to check a couple of things. Could you send us a detailed breakdown?\n\nBest regards,\nRoutakallion Infra Oy"
         },
         {
           "index": 2,
@@ -1488,7 +1488,7 @@
         }
       ],
       "customer_record": {
-        "name": "Napapiirin Infra Oy",
+        "name": "Routakallion Infra Oy",
         "type": "business",
         "city": "Rovaniemi",
         "repeat_customer": true,

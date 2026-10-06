@@ -359,7 +359,7 @@
           "sender": "customer",
           "date": "2026-09-02",
           "subject": "Invoice question - cement mixer trailer",
-          "body": "Hello,\n\nWe received the invoice for the cement mixer trailer rental and wanted to check a couple of things. Could you send us a detailed breakdown?\n\nBest regards,\nNapapiirin Infra Oy"
+          "body": "Hello,\n\nWe received the invoice for the cement mixer trailer rental and wanted to check a couple of things. Could you send us a detailed breakdown?\n\nBest regards,\nRoutakallion Infra Oy"
         },
         {
           "index": 2,
@@ -372,7 +372,7 @@
         }
       ],
       "customer_record": {
-        "name": "Napapiirin Infra Oy",
+        "name": "Routakallion Infra Oy",
         "type": "business",
         "city": "Rovaniemi",
         "repeat_customer": true,
@@ -1204,11 +1204,11 @@
       "trigger_email": {
         "date": "2026-09-08",
         "subject": "Date change on plate compactor booking",
-        "body": "Hi,\n\nWe need to change the dates on our plate compactor booking. Site schedule got pushed back so we won't need it when originally planned. Can you move it?\n\nRegards,\nPohjolan Maanrakennus Oy"
+        "body": "Hi,\n\nWe need to change the dates on our plate compactor booking. Site schedule got pushed back so we won't need it when originally planned. Can you move it?\n\nRegards,\nKurujärven Maanrakennus Oy"
       },
       "thread_history": [],
       "customer_record": {
-        "name": "Pohjolan Maanrakennus Oy",
+        "name": "Kurujärven Maanrakennus Oy",
         "type": "business",
         "city": "Kempele",
         "repeat_customer": true,
@@ -2023,11 +2023,11 @@
       "trigger_email": {
         "date": "2026-09-09",
         "subject": "Cancelled booking - refund outstanding",
-        "body": "We need to raise a serious issue. You cancelled our confirmed booking because of a unit breakdown on your end and we still have not received the refund. Under our agreement the customer is entitled to a full refund when a confirmed booking is cancelled by the supplier. We have been renting from Tammilehto since 2019 and this kind of handling is not acceptable.\n\nProcess the refund without further delay.\n\nPohjolan Maanrakennus Oy"
+        "body": "We need to raise a serious issue. You cancelled our confirmed booking because of a unit breakdown on your end and we still have not received the refund. Under our agreement the customer is entitled to a full refund when a confirmed booking is cancelled by the supplier. We have been renting from Tammilehto since 2019 and this kind of handling is not acceptable.\n\nProcess the refund without further delay.\n\nKurujärven Maanrakennus Oy"
       },
       "thread_history": [],
       "customer_record": {
-        "name": "Pohjolan Maanrakennus Oy",
+        "name": "Kurujärven Maanrakennus Oy",
         "type": "business",
         "city": "Kempele",
         "repeat_customer": true,
@@ -2876,7 +2876,7 @@
       "trigger_email": {
         "date": "2026-09-09",
         "subject": "Re: Pressure washer booking dates",
-        "body": "Thanks Petri.\n\nSeparate question while I have you. We got the invoice for the diamond floor saw and something on it looks off. Could someone take a look? I can forward it if you need.\n\nNapapiirin Infra Oy"
+        "body": "Thanks Petri.\n\nSeparate question while I have you. We got the invoice for the diamond floor saw and something on it looks off. Could someone take a look? I can forward it if you need.\n\nRoutakallion Infra Oy"
       },
       "thread_history": [
         {
@@ -2884,7 +2884,7 @@
           "sender": "customer",
           "date": "2026-09-08",
           "subject": "Pressure washer booking dates",
-          "body": "Hi,\n\nOur site schedule shifted and the dates on the petrol pressure washer booking won't work anymore. Can we push it back? Let me know what you have available.\n\nRegards,\nNapapiirin Infra Oy"
+          "body": "Hi,\n\nOur site schedule shifted and the dates on the petrol pressure washer booking won't work anymore. Can we push it back? Let me know what you have available.\n\nRegards,\nRoutakallion Infra Oy"
         },
         {
           "index": 2,
@@ -2897,7 +2897,7 @@
         }
       ],
       "customer_record": {
-        "name": "Napapiirin Infra Oy",
+        "name": "Routakallion Infra Oy",
         "type": "business",
         "city": "Rovaniemi",
         "repeat_customer": true,
@@ -3166,7 +3166,7 @@
       "trigger_email": {
         "date": "2026-09-09",
         "subject": "Re: Date change on plate compactor booking",
-        "body": "The plate compactor is not working properly. Can you send someone to look at it or swap it out?\n\nPohjolan Maanrakennus Oy"
+        "body": "The plate compactor is not working properly. Can you send someone to look at it or swap it out?\n\nKurujärven Maanrakennus Oy"
       },
       "thread_history": [
         {
@@ -3174,7 +3174,7 @@
           "sender": "customer",
           "date": "2026-09-08",
           "subject": "Date change on plate compactor booking",
-          "body": "Hi,\n\nWe need to change the dates on our plate compactor booking. Site schedule got pushed back so we won't need it when originally planned. Can you move it?\n\nRegards,\nPohjolan Maanrakennus Oy"
+          "body": "Hi,\n\nWe need to change the dates on our plate compactor booking. Site schedule got pushed back so we won't need it when originally planned. Can you move it?\n\nRegards,\nKurujärven Maanrakennus Oy"
         },
         {
           "index": 2,
@@ -3187,7 +3187,7 @@
         }
       ],
       "customer_record": {
-        "name": "Pohjolan Maanrakennus Oy",
+        "name": "Kurujärven Maanrakennus Oy",
         "type": "business",
         "city": "Kempele",
         "repeat_customer": true,

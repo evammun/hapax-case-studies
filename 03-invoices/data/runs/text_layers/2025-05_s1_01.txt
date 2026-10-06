@@ -2,7 +2,7 @@ Salpausselän Puutavara Oy
 Laskun numero Lasku 2025-1953
 Karjalankatu 4 Laskun päivä 06.05.2025
 15150 Lahti Eräpäivä 05.06.2025
-Y-tunnus: 2233445-8 Viitenumero 12354702
+Y-tunnus: 9811228-8 Viitenumero 12354702
 Tilausnumero PO-2025-054
 OSTAJA
 Pyökkipaja Oy
@@ -24,6 +24,6 @@ Havuvaneri 12 mm, 1250x2500 20 kpl 28,35 25,5 567,00
 Veroton yhteensä 5 744,42 €
 ALV 25,5 % 1 464,83 €
 Maksettava 7 209,25 €
-Y-tunnus 2233445-8 Pankkiyhteys: FI6215783022011184
-ALV-tunnus FI22334458 BIC: NDEAFIHH
+Y-tunnus 9811228-8 Pankkiyhteys: FI6215783022011184
+ALV-tunnus FI98112288 BIC: NDEAFIHH
 Maksuehto: 30 pv netto Viitenumero: 12354702

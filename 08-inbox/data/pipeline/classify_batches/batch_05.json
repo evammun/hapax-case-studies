@@ -109,7 +109,7 @@
       "is_first_message_in_thread": true,
       "date": "2026-09-08",
       "subject": "Pressure washer booking dates",
-      "body": "Hi,\n\nOur site schedule shifted and the dates on the petrol pressure washer booking won't work anymore. Can we push it back? Let me know what you have available.\n\nRegards,\nNapapiirin Infra Oy",
+      "body": "Hi,\n\nOur site schedule shifted and the dates on the petrol pressure washer booking won't work anymore. Can we push it back? Let me know what you have available.\n\nRegards,\nRoutakallion Infra Oy",
       "classification_contract": {
         "task": "You are the intent-classification step of Tammilehto Oy's customer-email support pipeline. Read the one inbound customer email below and assign exactly one intent class from the fixed taxonomy given in 'intent_classes'. Base your decision only on this email's own subject and body — you are not shown the rest of its thread, the policy handbook, or the customer's account record; a later pipeline step retrieves those separately.",
         "intent_classes": {
@@ -354,7 +354,7 @@
       "is_first_message_in_thread": true,
       "date": "2026-09-08",
       "subject": "Date change on plate compactor booking",
-      "body": "Hi,\n\nWe need to change the dates on our plate compactor booking. Site schedule got pushed back so we won't need it when originally planned. Can you move it?\n\nRegards,\nPohjolan Maanrakennus Oy",
+      "body": "Hi,\n\nWe need to change the dates on our plate compactor booking. Site schedule got pushed back so we won't need it when originally planned. Can you move it?\n\nRegards,\nKurujärven Maanrakennus Oy",
       "classification_contract": {
         "task": "You are the intent-classification step of Tammilehto Oy's customer-email support pipeline. Read the one inbound customer email below and assign exactly one intent class from the fixed taxonomy given in 'intent_classes'. Base your decision only on this email's own subject and body — you are not shown the rest of its thread, the policy handbook, or the customer's account record; a later pipeline step retrieves those separately.",
         "intent_classes": {
@@ -494,7 +494,7 @@
       "is_first_message_in_thread": true,
       "date": "2026-09-09",
       "subject": "Cancelled booking - refund outstanding",
-      "body": "We need to raise a serious issue. You cancelled our confirmed booking because of a unit breakdown on your end and we still have not received the refund. Under our agreement the customer is entitled to a full refund when a confirmed booking is cancelled by the supplier. We have been renting from Tammilehto since 2019 and this kind of handling is not acceptable.\n\nProcess the refund without further delay.\n\nPohjolan Maanrakennus Oy",
+      "body": "We need to raise a serious issue. You cancelled our confirmed booking because of a unit breakdown on your end and we still have not received the refund. Under our agreement the customer is entitled to a full refund when a confirmed booking is cancelled by the supplier. We have been renting from Tammilehto since 2019 and this kind of handling is not acceptable.\n\nProcess the refund without further delay.\n\nKurujärven Maanrakennus Oy",
       "classification_contract": {
         "task": "You are the intent-classification step of Tammilehto Oy's customer-email support pipeline. Read the one inbound customer email below and assign exactly one intent class from the fixed taxonomy given in 'intent_classes'. Base your decision only on this email's own subject and body — you are not shown the rest of its thread, the policy handbook, or the customer's account record; a later pipeline step retrieves those separately.",
         "intent_classes": {

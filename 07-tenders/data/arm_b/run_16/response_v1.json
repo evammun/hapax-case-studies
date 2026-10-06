@@ -30,7 +30,7 @@
     },
     {
       "matrix_id": "M005",
-      "answer_text": "Visakoivu Oy holds a qualifying reference project above this value: REF01 (Kuusiranta Oy, LVI- ja sahkoylapidon ulkoistus, tuotantokiinteisto, 2021-2022) at EUR 640,000.",
+      "answer_text": "Visakoivu Oy holds a qualifying reference project above this value: REF01 (Haavikkoranta Oy, LVI- ja sahkoylapidon ulkoistus, tuotantokiinteisto, 2021-2022) at EUR 640,000.",
       "citations": [
         "reference_projects.REF01.value_eur"
       ]
@@ -170,7 +170,7 @@
     },
     {
       "matrix_id": "M031",
-      "answer_text": "The completed reference form (Liite 2) is enclosed with this quotation, listing REF01 (Kuusiranta Oy, EUR 640,000), REF05 (Keski-Vaaran kaupunki, EUR 1,120,000), and REF09 (Nareikko Teollisuus Oy, EUR 980,000) as the reference projects relied upon to satisfy Section 2.",
+      "answer_text": "The completed reference form (Liite 2) is enclosed with this quotation, listing REF01 (Haavikkoranta Oy, EUR 640,000), REF05 (Keski-Vaaran kaupunki, EUR 1,120,000), and REF09 (Nareikko Teollisuus Oy, EUR 980,000) as the reference projects relied upon to satisfy Section 2.",
       "citations": [
         "reference_projects.REF01.value_eur",
         "reference_projects.REF05.value_eur",

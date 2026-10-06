@@ -4,7 +4,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2024-01,Nordics,Berghav AS,521829.43,31875.17,489954.26
 2024-01,Nordics,Björkgrossisten AB,456600.75,27890.78,428709.97
 2024-01,Nordics,Havneby Detalj A/S,391372.07,23906.38,367465.69
-2024-01,Nordics,Metsätori Oy,326143.39,19921.98,306221.41
+2024-01,Nordics,Puolukkatori Oy,326143.39,19921.98,306221.41
 2024-01,Nordics,Solvik Dagligvaror AB,293529.05,17929.79,275599.26
 2024-01,Nordics,Kystvare AS,260914.71,15937.59,244977.12
 2024-01,Nordics,Nordkedjan AB,228300.38,13945.39,214354.99
@@ -37,7 +37,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2024-02,Nordics,Berghav AS,552562.75,33068.11,519494.64
 2024-02,Nordics,Björkgrossisten AB,483492.41,28934.59,454557.82
 2024-02,Nordics,Havneby Detalj A/S,414422.06,24801.08,389620.98
-2024-02,Nordics,Metsätori Oy,345351.72,20667.57,324684.15
+2024-02,Nordics,Puolukkatori Oy,345351.72,20667.57,324684.15
 2024-02,Nordics,Solvik Dagligvaror AB,310816.55,18600.81,292215.74
 2024-02,Nordics,Kystvare AS,276281.38,16534.05,259747.33
 2024-02,Nordics,Nordkedjan AB,241746.20,14467.30,227278.90
@@ -70,7 +70,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2024-03,Nordics,Berghav AS,571698.15,33034.64,538663.51
 2024-03,Nordics,Björkgrossisten AB,500235.88,28905.31,471330.57
 2024-03,Nordics,Havneby Detalj A/S,428773.61,24775.98,403997.63
-2024-03,Nordics,Metsätori Oy,357311.34,20646.65,336664.69
+2024-03,Nordics,Puolukkatori Oy,357311.34,20646.65,336664.69
 2024-03,Nordics,Solvik Dagligvaror AB,321580.21,18581.99,302998.22
 2024-03,Nordics,Kystvare AS,285849.07,16517.32,269331.75
 2024-03,Nordics,Nordkedjan AB,250117.94,14452.66,235665.28
@@ -103,7 +103,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2024-04,Nordics,Berghav AS,580501.81,33008.55,547493.26
 2024-04,Nordics,Björkgrossisten AB,507939.09,28882.48,479056.61
 2024-04,Nordics,Havneby Detalj A/S,435376.36,24756.42,410619.94
-2024-04,Nordics,Metsätori Oy,362813.63,20630.35,342183.28
+2024-04,Nordics,Puolukkatori Oy,362813.63,20630.35,342183.28
 2024-04,Nordics,Solvik Dagligvaror AB,326532.27,18567.31,307964.96
 2024-04,Nordics,Kystvare AS,290250.91,16504.28,273746.63
 2024-04,Nordics,Nordkedjan AB,253969.54,14441.24,239528.30
@@ -136,7 +136,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2024-05,Nordics,Berghav AS,595820.61,36516.31,559304.30
 2024-05,Nordics,Björkgrossisten AB,521343.03,31951.77,489391.26
 2024-05,Nordics,Havneby Detalj A/S,446865.46,27387.23,419478.23
-2024-05,Nordics,Metsätori Oy,372387.88,22822.69,349565.19
+2024-05,Nordics,Puolukkatori Oy,372387.88,22822.69,349565.19
 2024-05,Nordics,Solvik Dagligvaror AB,335149.09,20540.42,314608.67
 2024-05,Nordics,Kystvare AS,297910.30,18258.15,279652.15
 2024-05,Nordics,Nordkedjan AB,260671.52,15975.88,244695.64
@@ -169,7 +169,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2024-06,Nordics,Berghav AS,609213.54,37770.55,571442.99
 2024-06,Nordics,Björkgrossisten AB,533061.85,33049.23,500012.62
 2024-06,Nordics,Havneby Detalj A/S,456910.16,28327.91,428582.25
-2024-06,Nordics,Metsätori Oy,380758.46,23606.59,357151.87
+2024-06,Nordics,Puolukkatori Oy,380758.46,23606.59,357151.87
 2024-06,Nordics,Solvik Dagligvaror AB,342682.62,21245.93,321436.69
 2024-06,Nordics,Kystvare AS,304606.77,18885.28,285721.49
 2024-06,Nordics,Nordkedjan AB,266530.93,16524.62,250006.31
@@ -202,7 +202,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2024-07,Nordics,Berghav AS,591839.60,37543.26,554296.34
 2024-07,Nordics,Björkgrossisten AB,517859.65,32850.36,485009.29
 2024-07,Nordics,Havneby Detalj A/S,443879.70,28157.45,415722.25
-2024-07,Nordics,Metsätori Oy,369899.75,23464.54,346435.21
+2024-07,Nordics,Puolukkatori Oy,369899.75,23464.54,346435.21
 2024-07,Nordics,Solvik Dagligvaror AB,332909.77,21118.09,311791.68
 2024-07,Nordics,Kystvare AS,295919.80,18771.63,277148.17
 2024-07,Nordics,Nordkedjan AB,258929.82,16425.18,242504.64
@@ -235,7 +235,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2024-08,Nordics,Berghav AS,576826.69,37422.91,539403.78
 2024-08,Nordics,Björkgrossisten AB,504723.35,32745.05,471978.30
 2024-08,Nordics,Havneby Detalj A/S,432620.02,28067.18,404552.84
-2024-08,Nordics,Metsätori Oy,360516.68,23389.32,337127.36
+2024-08,Nordics,Puolukkatori Oy,360516.68,23389.32,337127.36
 2024-08,Nordics,Solvik Dagligvaror AB,324465.01,21050.39,303414.62
 2024-08,Nordics,Kystvare AS,288413.34,18711.46,269701.88
 2024-08,Nordics,Nordkedjan AB,252361.68,16372.52,235989.16
@@ -268,7 +268,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2024-09,Nordics,Berghav AS,609486.28,35956.17,573530.11
 2024-09,Nordics,Björkgrossisten AB,533300.50,31461.64,501838.86
 2024-09,Nordics,Havneby Detalj A/S,457114.71,26967.12,430147.59
-2024-09,Nordics,Metsätori Oy,380928.93,22472.60,358456.33
+2024-09,Nordics,Puolukkatori Oy,380928.93,22472.60,358456.33
 2024-09,Nordics,Solvik Dagligvaror AB,342836.04,20225.34,322610.70
 2024-09,Nordics,Kystvare AS,304743.14,17978.08,286765.06
 2024-09,Nordics,Nordkedjan AB,266650.25,15730.82,250919.43
@@ -301,7 +301,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2024-10,Nordics,Berghav AS,621311.01,37354.05,583956.96
 2024-10,Nordics,Björkgrossisten AB,543647.13,32684.80,510962.33
 2024-10,Nordics,Havneby Detalj A/S,465983.26,28015.54,437967.72
-2024-10,Nordics,Metsätori Oy,388319.38,23346.28,364973.10
+2024-10,Nordics,Puolukkatori Oy,388319.38,23346.28,364973.10
 2024-10,Nordics,Solvik Dagligvaror AB,349487.44,21011.66,328475.78
 2024-10,Nordics,Kystvare AS,310655.50,18677.03,291978.47
 2024-10,Nordics,Nordkedjan AB,271823.57,16342.40,255481.17
@@ -334,7 +334,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2024-11,Nordics,Berghav AS,662676.98,37548.82,625128.16
 2024-11,Nordics,Björkgrossisten AB,579842.36,32855.22,546987.14
 2024-11,Nordics,Havneby Detalj A/S,497007.74,28161.62,468846.12
-2024-11,Nordics,Metsätori Oy,414173.11,23468.01,390705.10
+2024-11,Nordics,Puolukkatori Oy,414173.11,23468.01,390705.10
 2024-11,Nordics,Solvik Dagligvaror AB,372755.80,21121.21,351634.59
 2024-11,Nordics,Kystvare AS,331338.49,18774.41,312564.08
 2024-11,Nordics,Nordkedjan AB,289921.18,16427.61,273493.57
@@ -367,7 +367,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2024-12,Nordics,Berghav AS,748590.63,42369.55,706221.08
 2024-12,Nordics,Björkgrossisten AB,655016.80,37073.36,617943.44
 2024-12,Nordics,Havneby Detalj A/S,561442.97,31777.16,529665.81
-2024-12,Nordics,Metsätori Oy,467869.14,26480.97,441388.17
+2024-12,Nordics,Puolukkatori Oy,467869.14,26480.97,441388.17
 2024-12,Nordics,Solvik Dagligvaror AB,421082.23,23832.87,397249.36
 2024-12,Nordics,Kystvare AS,374295.31,21184.78,353110.53
 2024-12,Nordics,Nordkedjan AB,327508.40,18536.68,308971.72
@@ -400,7 +400,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2025-01,Nordics,Berghav AS,531294.52,30922.03,500372.49
 2025-01,Nordics,Björkgrossisten AB,464882.70,27056.78,437825.92
 2025-01,Nordics,Havneby Detalj A/S,398470.89,23191.52,375279.37
-2025-01,Nordics,Metsätori Oy,332059.07,19326.27,312732.80
+2025-01,Nordics,Puolukkatori Oy,332059.07,19326.27,312732.80
 2025-01,Nordics,Solvik Dagligvaror AB,298853.16,17393.64,281459.52
 2025-01,Nordics,Kystvare AS,265647.26,15461.02,250186.24
 2025-01,Nordics,Nordkedjan AB,232441.35,13528.39,218912.96
@@ -433,7 +433,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2025-02,Nordics,Berghav AS,605147.85,61476.71,543671.14
 2025-02,Nordics,Björkgrossisten AB,529504.37,53792.12,475712.25
 2025-02,Nordics,Havneby Detalj A/S,453860.89,46107.53,407753.36
-2025-02,Nordics,Metsätori Oy,378217.40,38422.95,339794.45
+2025-02,Nordics,Puolukkatori Oy,378217.40,38422.95,339794.45
 2025-02,Nordics,Solvik Dagligvaror AB,340395.66,34580.65,305815.01
 2025-02,Nordics,Kystvare AS,302573.92,30738.36,271835.56
 2025-02,Nordics,Nordkedjan AB,264752.18,26896.06,237856.12
@@ -466,7 +466,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2025-03,Nordics,Berghav AS,620121.38,63182.88,556938.50
 2025-03,Nordics,Björkgrossisten AB,542606.21,55285.02,487321.19
 2025-03,Nordics,Havneby Detalj A/S,465091.04,47387.16,417703.88
-2025-03,Nordics,Metsätori Oy,387575.86,39489.30,348086.56
+2025-03,Nordics,Puolukkatori Oy,387575.86,39489.30,348086.56
 2025-03,Nordics,Solvik Dagligvaror AB,348818.28,35540.37,313277.91
 2025-03,Nordics,Kystvare AS,310060.69,31591.44,278469.25
 2025-03,Nordics,Nordkedjan AB,271303.11,27642.51,243660.60
@@ -499,7 +499,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2025-04,Nordics,Berghav AS,638555.75,65788.02,572767.73
 2025-04,Nordics,Björkgrossisten AB,558736.28,57564.52,501171.76
 2025-04,Nordics,Havneby Detalj A/S,478916.81,49341.02,429575.79
-2025-04,Nordics,Metsätori Oy,399097.34,41117.51,357979.83
+2025-04,Nordics,Puolukkatori Oy,399097.34,41117.51,357979.83
 2025-04,Nordics,Solvik Dagligvaror AB,359187.61,37005.76,322181.85
 2025-04,Nordics,Kystvare AS,319277.87,32894.01,286383.86
 2025-04,Nordics,Nordkedjan AB,279368.14,28782.26,250585.88
@@ -532,7 +532,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2025-05,Nordics,Berghav AS,632377.02,65378.54,566998.48
 2025-05,Nordics,Björkgrossisten AB,553329.89,57206.23,496123.66
 2025-05,Nordics,Havneby Detalj A/S,474282.76,49033.91,425248.85
-2025-05,Nordics,Metsätori Oy,395235.63,40861.59,354374.04
+2025-05,Nordics,Puolukkatori Oy,395235.63,40861.59,354374.04
 2025-05,Nordics,Solvik Dagligvaror AB,355712.07,36775.43,318936.64
 2025-05,Nordics,Kystvare AS,316188.51,32689.27,283499.24
 2025-05,Nordics,Nordkedjan AB,276664.94,28603.11,248061.83
@@ -565,7 +565,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2025-06,Nordics,Berghav AS,658857.66,66917.35,591940.31
 2025-06,Nordics,Björkgrossisten AB,576500.45,58552.68,517947.77
 2025-06,Nordics,Havneby Detalj A/S,494143.25,50188.01,443955.24
-2025-06,Nordics,Metsätori Oy,411786.04,41823.34,369962.70
+2025-06,Nordics,Puolukkatori Oy,411786.04,41823.34,369962.70
 2025-06,Nordics,Solvik Dagligvaror AB,370607.44,37641.01,332966.43
 2025-06,Nordics,Kystvare AS,329428.83,33458.68,295970.15
 2025-06,Nordics,Nordkedjan AB,288250.23,29276.34,258973.89
@@ -598,7 +598,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2025-07,Nordics,Berghav AS,637963.42,61300.10,576663.32
 2025-07,Nordics,Björkgrossisten AB,558217.99,53637.58,504580.41
 2025-07,Nordics,Havneby Detalj A/S,478472.56,45975.07,432497.49
-2025-07,Nordics,Metsätori Oy,398727.14,38312.56,360414.58
+2025-07,Nordics,Puolukkatori Oy,398727.14,38312.56,360414.58
 2025-07,Nordics,Solvik Dagligvaror AB,358854.42,34481.30,324373.12
 2025-07,Nordics,Kystvare AS,318981.71,30650.05,288331.66
 2025-07,Nordics,Nordkedjan AB,279108.99,26818.79,252290.20
@@ -631,7 +631,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2025-08,Nordics,Berghav AS,653166.82,65230.67,587936.15
 2025-08,Nordics,Björkgrossisten AB,571520.97,57076.84,514444.13
 2025-08,Nordics,Havneby Detalj A/S,489875.11,48923.00,440952.11
-2025-08,Nordics,Metsätori Oy,408229.26,40769.17,367460.09
+2025-08,Nordics,Puolukkatori Oy,408229.26,40769.17,367460.09
 2025-08,Nordics,Solvik Dagligvaror AB,367406.34,36692.25,330714.09
 2025-08,Nordics,Kystvare AS,326583.41,32615.34,293968.07
 2025-08,Nordics,Nordkedjan AB,285760.48,28538.42,257222.06
@@ -664,7 +664,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2025-09,Nordics,Berghav AS,671126.33,67242.42,603883.91
 2025-09,Nordics,Björkgrossisten AB,587235.54,58837.11,528398.43
 2025-09,Nordics,Havneby Detalj A/S,503344.75,50431.81,452912.94
-2025-09,Nordics,Metsätori Oy,419453.96,42026.51,377427.45
+2025-09,Nordics,Puolukkatori Oy,419453.96,42026.51,377427.45
 2025-09,Nordics,Solvik Dagligvaror AB,377508.56,37823.86,339684.70
 2025-09,Nordics,Kystvare AS,335563.17,33621.21,301941.96
 2025-09,Nordics,Nordkedjan AB,293617.77,29418.56,264199.21
@@ -697,7 +697,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2025-10,Nordics,Berghav AS,680955.21,66773.43,614181.78
 2025-10,Nordics,Björkgrossisten AB,595835.80,58426.75,537409.05
 2025-10,Nordics,Havneby Detalj A/S,510716.40,50080.07,460636.33
-2025-10,Nordics,Metsätori Oy,425597.00,41733.39,383863.61
+2025-10,Nordics,Puolukkatori Oy,425597.00,41733.39,383863.61
 2025-10,Nordics,Solvik Dagligvaror AB,383037.30,37560.06,345477.24
 2025-10,Nordics,Kystvare AS,340477.60,33386.72,307090.88
 2025-10,Nordics,Nordkedjan AB,297917.90,29213.38,268704.52
@@ -730,7 +730,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2025-11,Nordics,Berghav AS,712222.96,68626.39,643596.57
 2025-11,Nordics,Björkgrossisten AB,623195.09,60048.09,563147.00
 2025-11,Nordics,Havneby Detalj A/S,534167.22,51469.79,482697.43
-2025-11,Nordics,Metsätori Oy,445139.35,42891.49,402247.86
+2025-11,Nordics,Puolukkatori Oy,445139.35,42891.49,402247.86
 2025-11,Nordics,Solvik Dagligvaror AB,400625.42,38602.34,362023.08
 2025-11,Nordics,Kystvare AS,356111.48,34313.19,321798.29
 2025-11,Nordics,Nordkedjan AB,311597.55,30024.05,281573.50
@@ -763,7 +763,7 @@ month,bu,customer,gross_revenue,promo_discounts,net_revenue
 2025-12,Nordics,Berghav AS,786716.26,76326.47,710389.79
 2025-12,Nordics,Björkgrossisten AB,688376.73,66785.67,621591.06
 2025-12,Nordics,Havneby Detalj A/S,590037.20,57244.86,532792.34
-2025-12,Nordics,Metsätori Oy,491697.66,47704.05,443993.61
+2025-12,Nordics,Puolukkatori Oy,491697.66,47704.05,443993.61
 2025-12,Nordics,Solvik Dagligvaror AB,442527.90,42933.64,399594.26
 2025-12,Nordics,Kystvare AS,393358.13,38163.24,355194.89
 2025-12,Nordics,Nordkedjan AB,344188.36,33392.83,310795.53

@@ -11,22 +11,22 @@ Method: per-vendor, per-month volume-weighted unit price (falling back to invoic
 | Rank | Vendor ID | Vendor name | Peak CUSUM | Peak month | Flagged | First crossing month |
 |---|---|---|---|---|---|---|
 | 1 | V-0080 | Porttilogistiikka Oy | 30.36 | May | **YES** | May |
-| 2 | V-0065 | Malmteknik | 19.70 | Jun | **YES** | Apr |
-| 3 | V-0068 | VaruGrupp | 13.70 | Apr | **YES** | Apr |
+| 2 | V-0065 | Myrkvarn Malmteknik | 19.70 | Jun | **YES** | Apr |
+| 3 | V-0068 | Kuuseoru VaruGrupp | 13.70 | Apr | **YES** | Apr |
 | 4 | V-0072 | Nostotukku Tmi | 12.64 | Dec | **YES** | May |
 | 5 | V-0132 | Kulmatekniikka Tmi | 12.00 | Aug | **YES** | May |
 | 6 | V-0103 | Ruuvimateriaali Oy | 10.93 | Nov | **YES** | Apr |
 | 7 | V-0155 | Pistetukku Oy Ab | 10.75 | Dec | **YES** | Apr |
-| 8 | V-0195 | Nordhandel AS | 10.19 | Dec | **YES** | Apr |
+| 8 | V-0195 | Fjellskor Nordhandel AS | 10.19 | Dec | **YES** | Apr |
 | 9 | V-0165 | Kiskohuolto Tmi | 9.94 | Oct | **YES** | Apr |
 | 10 | V-0084 | Kotelopalvelu Oy | 9.43 | Jul | **YES** | Jun |
-| 11 | V-0142 | Technikhandel GmbH | 9.26 | Jun | **YES** | Jun |
+| 11 | V-0142 | Felsmark Technikhandel GmbH | 9.26 | Jun | **YES** | Jun |
 | 12 | V-0110 | Levykomponentti Oy Ab | 9.14 | May | **YES** | Apr |
 | 13 | V-0061 | Turvavaraosa Oy | 8.52 | May | **YES** | Apr |
 | 14 | V-0159 | Palkkitukku Oy | 7.93 | Jun | **YES** | May |
-| 15 | V-0160 | Stalteknikk AS | 7.79 | May | **YES** | May |
+| 15 | V-0160 | Fjellskor Stalteknikk AS | 7.79 | May | **YES** | May |
 | 16 | V-0069 | Porttijärjestelmä Tmi | 7.24 | Aug | **YES** | Jun |
-| 17 | V-0176 | Nordgrossist | 7.20 | Jun | **YES** | Jun |
+| 17 | V-0176 | Hällsvik Nordgrossist | 7.20 | Jun | **YES** | Jun |
 | 18 | V-0180 | Akselitarvike Oy Ab | 7.02 | Jun | **YES** | May |
 | 19 | V-0182 | Varaosahuolto Ky | 6.98 | Aug | **YES** | Aug |
 | 20 | V-0029 | Poratekniikka Tmi | 6.96 | Jun | **YES** | Apr |
@@ -34,7 +34,7 @@ Method: per-vendor, per-month volume-weighted unit price (falling back to invoic
 | 22 | V-0088 | Siltamateriaali Ky | 6.87 | Sep | **YES** | Aug |
 | 23 | V-0094 | Levylogistiikka Oy | 6.80 | Dec | **YES** | Jun |
 | 24 | V-0034 | Metallimateriaali Oy Ab | 6.65 | Jul | **YES** | Jul |
-| 25 | V-0181 | Nordteknikk AS | 6.35 | Dec | **YES** | Dec |
+| 25 | V-0181 | Skavlund Nordteknikk AS | 6.35 | Dec | **YES** | Dec |
 
 ## Flagged vendors (48) -- trajectory detail
 
@@ -57,7 +57,7 @@ Peak CUSUM 30.36 in May; first crossed h = 4.0 in May.
 | Nov | scored | 667.61 | 712.22 | 214.472 | -0.21 | 27.46 |
 | Dec | scored | 737.67 | 708.17 | 204.893 | 0.14 | 27.10 |
 
-### Malmteknik (V-0065)
+### Myrkvarn Malmteknik (V-0065)
 
 Peak CUSUM 19.70 in Jun; first crossed h = 4.0 in Apr.
 
@@ -76,7 +76,7 @@ Peak CUSUM 19.70 in Jun; first crossed h = 4.0 in Apr.
 | Nov | scored | 628.97 | 646.32 | 68.606 | -0.25 | 17.20 |
 | Dec | scored | 661.48 | 644.75 | 65.603 | 0.26 | 16.95 |
 
-### VaruGrupp (V-0068)
+### Kuuseoru VaruGrupp (V-0068)
 
 Peak CUSUM 13.70 in Apr; first crossed h = 4.0 in Apr.
 
@@ -167,7 +167,7 @@ Peak CUSUM 10.75 in Dec; first crossed h = 4.0 in Apr.
 | Nov | scored | 894.54 | 925.42 | 93.197 | -0.33 | 9.40 |
 | Dec | scored | 1088.00 | 922.61 | 89.302 | 1.85 | 10.75 |
 
-### Nordhandel AS (V-0195)
+### Fjellskor Nordhandel AS (V-0195)
 
 Peak CUSUM 10.19 in Dec; first crossed h = 4.0 in Apr.
 
@@ -220,7 +220,7 @@ Peak CUSUM 9.43 in Jul; first crossed h = 4.0 in Jun.
 | Nov | scored | 2567.82 | 2645.43 | 386.577 | -0.20 | 3.59 |
 | Dec | scored | 3172.89 | 2638.38 | 369.261 | 1.45 | 4.54 |
 
-### Technikhandel GmbH (V-0142)
+### Felsmark Technikhandel GmbH (V-0142)
 
 Peak CUSUM 9.26 in Jun; first crossed h = 4.0 in Jun.
 
@@ -292,7 +292,7 @@ Peak CUSUM 7.93 in Jun; first crossed h = 4.0 in May.
 | Nov | scored | 1768.79 | 1850.66 | 189.658 | -0.43 | 1.13 |
 | Dec | scored | 1907.80 | 1843.21 | 182.357 | 0.35 | 0.98 |
 
-### Stalteknikk AS (V-0160)
+### Fjellskor Stalteknikk AS (V-0160)
 
 Peak CUSUM 7.79 in May; first crossed h = 4.0 in May.
 
@@ -330,7 +330,7 @@ Peak CUSUM 7.24 in Aug; first crossed h = 4.0 in Jun.
 | Nov | scored | 833.69 | 951.16 | 234.475 | -0.50 | 4.59 |
 | Dec | scored | 919.49 | 940.48 | 226.099 | -0.09 | 4.00 |
 
-### Nordgrossist (V-0176)
+### Hällsvik Nordgrossist (V-0176)
 
 Peak CUSUM 7.20 in Jun; first crossed h = 4.0 in Jun.
 
@@ -476,7 +476,7 @@ Peak CUSUM 6.65 in Jul; first crossed h = 4.0 in Jul.
 | Jul | scored | 4765.10 | 2025.55 | 576.616 | 4.75 | 6.65 |
 | Nov | scored | 1823.60 | 2573.46 | 1211.118 | -0.62 | 5.53 |
 
-### Nordteknikk AS (V-0181)
+### Skavlund Nordteknikk AS (V-0181)
 
 Peak CUSUM 6.35 in Dec; first crossed h = 4.0 in Dec.
 
@@ -495,7 +495,7 @@ Peak CUSUM 6.35 in Dec; first crossed h = 4.0 in Dec.
 | Nov | scored | 716.16 | 593.21 | 62.539 | 1.97 | 3.76 |
 | Dec | scored | 818.24 | 604.38 | 69.318 | 3.09 | 6.35 |
 
-### Nordhandel 18 (V-0197)
+### Hällsvik Nordhandel 18 (V-0197)
 
 Peak CUSUM 6.13 in Aug; first crossed h = 4.0 in Jul.
 
@@ -608,7 +608,7 @@ Peak CUSUM 5.10 in Dec; first crossed h = 4.0 in Dec.
 | Nov | scored | 2146.42 | 2680.22 | 575.038 | -0.93 | 1.30 |
 | Dec | scored | 5071.44 | 2626.84 | 568.547 | 4.30 | 5.10 |
 
-### Bergsgrossist (V-0153)
+### Myrkvarn Bergsgrossist (V-0153)
 
 Peak CUSUM 4.98 in Jul; first crossed h = 4.0 in Jul.
 
@@ -741,7 +741,7 @@ Peak CUSUM 4.47 in Oct; first crossed h = 4.0 in Oct.
 | Nov | scored | 737.47 | 1003.20 | 204.999 | -1.30 | 2.67 |
 | Dec | scored | 1106.17 | 979.04 | 209.857 | 0.61 | 2.78 |
 
-### Malmgrossist (V-0066)
+### Hällsvik Malmgrossist (V-0066)
 
 Peak CUSUM 4.41 in Jun; first crossed h = 4.0 in Jun.
 
@@ -939,7 +939,7 @@ These vendors never reached 3 invoices in enough calendar months to build a base
 | V-0001 | Teräskontio Oy | 24 | 0 |
 | V-0002 | Kuormaraitti Oy | 24 | 0 |
 | V-0077 | Siltavaraosa Tmi | 17 | 0 |
-| V-0128 | Sjoteknik | 15 | 0 |
+| V-0128 | Myrkvarn Sjoteknik | 15 | 0 |
 | V-0007 | Neuvantila Oy | 12 | 0 |
 | V-0016 | Kiinteistö Oy Vantaan Teollisuustalo | 12 | 0 |
 | V-0003 | Kärrenbach Dichtungstechnik GmbH | 7 | 0 |

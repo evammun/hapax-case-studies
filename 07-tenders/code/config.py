@@ -130,7 +130,7 @@ FINANCIALS = [
 # reference here is 1,650,000 EUR, deliberately short of the 2,000,000 EUR
 # threshold that trap asks for.
 REFERENCE_PROJECTS = [
-    {"id": "REF01", "client": "Kuusiranta Oy", "client_type": "private",
+    {"id": "REF01", "client": "Haavikkoranta Oy", "client_type": "private",
      "value_eur": 640_000, "start": "2021-03-01", "end": "2022-02-28",
      "description": "LVI- ja sahkoylapidon ulkoistus, tuotantokiinteisto"},
     {"id": "REF02", "client": "Jarviseudun hyvinvointialue",

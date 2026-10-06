@@ -6,11 +6,11 @@
   "trigger_email": {
     "date": "2026-09-04",
     "subject": "Tower light - end of rental",
-    "body": "The LED tower light (towable) is ready to come back. Can you arrange collection from our site or should we bring it to the Kempele depot?\n\nPohjolan Maanrakennus Oy"
+    "body": "The LED tower light (towable) is ready to come back. Can you arrange collection from our site or should we bring it to the Kempele depot?\n\nKurujärven Maanrakennus Oy"
   },
   "thread_history": [],
   "customer_record": {
-    "name": "Pohjolan Maanrakennus Oy",
+    "name": "Kurujärven Maanrakennus Oy",
     "type": "business",
     "city": "Kempele",
     "repeat_customer": true,

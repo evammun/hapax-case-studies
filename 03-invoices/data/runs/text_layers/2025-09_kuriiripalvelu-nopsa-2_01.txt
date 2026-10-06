@@ -1,5 +1,5 @@
 Kuriiripalvelu Nopsa Oy
-Rahtikuja 2, 00880 Helsinki · Y-tunnus 2311222-4
+Rahtikuja 2, 00880 Helsinki · Y-tunnus 9811233-3
 LASKU LASKUN PÄIVÄ ERÄPÄIVÄ
 0579 09.09.2025 09.10.2025
 OSTAJA
@@ -10,4 +10,4 @@ Nouto ja toimitus 1 kpl 179,37 25,5 179,37
 Veroton yhteensä 252,23 €
 ALV 25,5 % 64,32 €
 Maksettava 316,55 €
-ALV-tunnus FI23112224 · Maksuehto: 30 pv netto · Pankkiyhteys FI8481463900217859 · BIC DABAFIHH
+ALV-tunnus FI98112333 · Maksuehto: 30 pv netto · Pankkiyhteys FI8481463900217859 · BIC DABAFIHH

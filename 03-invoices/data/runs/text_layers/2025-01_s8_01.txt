@@ -3,7 +3,7 @@ Lasku T-0118
 Teollisuuskatu 19 Laskun päivä 22.01.2025
 15170 Lahti
 Eräpäivä 21.02.2025
-Y-tunnus: 2277889-2
+Y-tunnus: 9811231-7
 Viitenumero 26929741
 Tilausnumero PO-2025-013
 OSTAJA
@@ -21,6 +21,6 @@ Kuulokesuojain 11 kpl 15,00 25,5 165,00
 Veroton yhteensä 1 699,46 €
 ALV 25,5 % 433,36 €
 Maksettava 2 132,82 €
-Y-tunnus 2277889-2 -- ALV-tunnus FI22778892
+Y-tunnus 9811231-7 -- ALV-tunnus FI98112317
 Maksuehto: 30 pv netto -- Viitenumero: 26929741
 Pankkiyhteys: FI5822791800130472 BIC: NDEAFIHH

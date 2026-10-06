@@ -1079,7 +1079,7 @@
         {"requirement_id": "R11", "believed_status": "evidenced", "note": null},
         {"requirement_id": "R12", "believed_status": "evidenced", "note": "Oulu since 2018."}
       ],
-      "flags": {"vocabulary_notes": [{"requirement_id": "R07", "note": "'Arctic Space Systems' sounds like a satellite company but her actual work is ground-based monitoring arrays."}], "claims_questioned": [], "inconsistencies_noted": [], "borderline_calls": []},
+      "flags": {"vocabulary_notes": [{"requirement_id": "R07", "note": "'Hallaharju Space Systems' sounds like a satellite company but her actual work is ground-based monitoring arrays."}], "claims_questioned": [], "inconsistencies_noted": [], "borderline_calls": []},
       "screening_decision": "advance - all five must-haves solid with real detail; worth noting the employer's name is a bit of a red herring on the satellite/airborne front",
       "time_budget_seconds": 240
     },

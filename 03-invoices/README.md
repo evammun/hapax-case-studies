@@ -61,6 +61,10 @@ The notebook re-executes with
 `python -m nbconvert --to notebook --execute --inplace notebooks/invoice_processing_analysis.ipynb`;
 it reads all numbers from `data/runs/` at run time and never opens the answer key.
 
+## Identity numbers and names (6 Oct 2026)
+
+Every supplier name, Y-tunnus and VAT number in this corpus is invented. After a check against the registers, the Finnish Y-tunnukset were moved into an unassigned range (98xxxxx, valid check digits) and one supplier name was changed (see `design/DECISIONS.md`). The IBANs are checksum-valid fabrications; they cannot be checked publicly, so treat none of them as real accounts.
+
 ## Environment
 
 Python 3.12 with `pandas`/`numpy` (pipeline), `pdfplumber` + `pypdf` (PDF layer), `jinja2`

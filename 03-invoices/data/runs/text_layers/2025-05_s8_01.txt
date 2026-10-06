@@ -3,7 +3,7 @@ Lasku T-0183
 Teollisuuskatu 19 Laskun päivä 13.05.2025
 15170 Lahti
 Eräpäivä 12.06.2025
-Y-tunnus: 2277889-2
+Y-tunnus: 9811231-7
 Viitenumero 98868908
 Tilausnumero PO-2025-063
 OSTAJA
@@ -18,6 +18,6 @@ Suojalasit 39 kpl 4,86 25,5 189,54
 Veroton yhteensä 736,22 €
 ALV 25,5 % 187,74 €
 Maksettava 923,96 €
-Y-tunnus 2277889-2 -- ALV-tunnus FI22778892
+Y-tunnus 9811231-7 -- ALV-tunnus FI98112317
 Maksuehto: 30 pv netto -- Viitenumero: 98868908
 Pankkiyhteys: FI5822791800130472 BIC: NDEAFIHH

@@ -13,7 +13,7 @@
       "status": "evidence_found",
       "lines": [
         {
-          "quote": "Designed the beamforming processing architecture for Arctic Space Systems' current-generation wideband digital receiver: 32-channel frequency-domain beamforming with sub-sample time-delay compensation, implemented across four SHARC DSPs with inter-processor communication via SRIO.",
+          "quote": "Designed the beamforming processing architecture for Hallaharju Space Systems' current-generation wideband digital receiver: 32-channel frequency-domain beamforming with sub-sample time-delay compensation, implemented across four SHARC DSPs with inter-processor communication via SRIO.",
           "source": "cv",
           "citation_verified": true
         }
@@ -135,7 +135,7 @@
       "status": "evidence_found",
       "lines": [
         {
-          "quote": "English (fluent -- sole working language at Arctic Space Systems for all technical documentation, client deliverables, and internal engineering communication).",
+          "quote": "English (fluent -- sole working language at Hallaharju Space Systems for all technical documentation, client deliverables, and internal engineering communication).",
           "source": "cv",
           "citation_verified": true
         }

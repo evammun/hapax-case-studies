@@ -13,7 +13,7 @@
       "status": "evidence_found",
       "lines": [
         {
-          "quote": "Designed the digital beamforming architecture for Arctic's X-band ground receiver: a 32-element array with sum/difference beamforming and adaptive sidelobe cancellation.",
+          "quote": "Designed the digital beamforming architecture for Hallaharju's X-band ground receiver: a 32-element array with sum/difference beamforming and adaptive sidelobe cancellation.",
           "source": "cv",
           "citation_verified": true
         },
@@ -32,7 +32,7 @@
       "status": "evidence_found",
       "lines": [
         {
-          "quote": "Wrote production embedded firmware in C++ for Arctic's real-time signal-processing modules on a Xilinx Zynq SoC.",
+          "quote": "Wrote production embedded firmware in C++ for Hallaharju's real-time signal-processing modules on a Xilinx Zynq SoC.",
           "source": "cv",
           "citation_verified": true
         },
@@ -65,7 +65,7 @@
       "status": "evidence_found",
       "lines": [
         {
-          "quote": "Designed and executed the RF calibration campaign for Arctic's X-band ground receiver: element-level gain/phase measurements using an Agilent PNA-X network analyser in the company's anechoic chamber, followed by near-field antenna pattern verification.",
+          "quote": "Designed and executed the RF calibration campaign for Hallaharju's X-band ground receiver: element-level gain/phase measurements using an Agilent PNA-X network analyser in the company's anechoic chamber, followed by near-field antenna pattern verification.",
           "source": "cv",
           "citation_verified": true
         }
@@ -98,7 +98,7 @@
       "status": "evidence_found",
       "lines": [
         {
-          "quote": "Developed and maintained the extended Kalman filter used in Arctic's angle-of-arrival estimator for the ground-based direction-finding product.",
+          "quote": "Developed and maintained the extended Kalman filter used in Hallaharju's angle-of-arrival estimator for the ground-based direction-finding product.",
           "source": "cv",
           "citation_verified": true
         },
@@ -130,7 +130,7 @@
           "citation_verified": true
         },
         {
-          "quote": "Long-tenure individual-contributor role spanning algorithm R&D, embedded firmware delivery, and RF measurement support for Arctic's radar and communications instrument products.",
+          "quote": "Long-tenure individual-contributor role spanning algorithm R&D, embedded firmware delivery, and RF measurement support for Hallaharju's radar and communications instrument products.",
           "source": "cv",
           "citation_verified": true
         }
@@ -185,7 +185,7 @@
       "status": "evidence_found",
       "lines": [
         {
-          "quote": "I have spent my entire career at Arctic Space Systems here in Oulu, and I am looking for a new challenge within the same city and the same engineering community that I have been part of for twenty years.",
+          "quote": "I have spent my entire career at Hallaharju Space Systems here in Oulu, and I am looking for a new challenge within the same city and the same engineering community that I have been part of for twenty years.",
           "source": "cover_letter",
           "citation_verified": true
         }

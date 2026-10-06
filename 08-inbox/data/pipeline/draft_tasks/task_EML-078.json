@@ -6,7 +6,7 @@
   "trigger_email": {
     "date": "2026-09-09",
     "subject": "Re: Date change on plate compactor booking",
-    "body": "The plate compactor is not working properly. Can you send someone to look at it or swap it out?\n\nPohjolan Maanrakennus Oy"
+    "body": "The plate compactor is not working properly. Can you send someone to look at it or swap it out?\n\nKurujärven Maanrakennus Oy"
   },
   "thread_history": [
     {
@@ -14,7 +14,7 @@
       "sender": "customer",
       "date": "2026-09-08",
       "subject": "Date change on plate compactor booking",
-      "body": "Hi,\n\nWe need to change the dates on our plate compactor booking. Site schedule got pushed back so we won't need it when originally planned. Can you move it?\n\nRegards,\nPohjolan Maanrakennus Oy"
+      "body": "Hi,\n\nWe need to change the dates on our plate compactor booking. Site schedule got pushed back so we won't need it when originally planned. Can you move it?\n\nRegards,\nKurujärven Maanrakennus Oy"
     },
     {
       "index": 2,
@@ -27,7 +27,7 @@
     }
   ],
   "customer_record": {
-    "name": "Pohjolan Maanrakennus Oy",
+    "name": "Kurujärven Maanrakennus Oy",
     "type": "business",
     "city": "Kempele",
     "repeat_customer": true,

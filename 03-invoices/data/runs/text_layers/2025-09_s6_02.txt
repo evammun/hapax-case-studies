@@ -4,7 +4,7 @@ Satamakatu 6
 Laskun päivä 30.09.2025
 15140 Lahti
 Eräpäivä 14.10.2025
-Y-tunnus: 2255667-5
+Y-tunnus: 9811220-2
 Viitenumero 16431456
 OSTAJA
 Pyökkipaja Oy
@@ -18,6 +18,6 @@ Polttoainelisä 1 erä 42,72 25,5 42,72
 Veroton yhteensä 874,38 €
 ALV 25,5 % 222,97 €
 Maksettava 1 097,35 €
-Y-tunnus 2255667-5 -- ALV-tunnus FI22556675
+Y-tunnus 9811220-2 -- ALV-tunnus FI98112202
 Maksuehto: 14 pv netto -- Viitenumero: 16431456
 Pankkiyhteys: FI4480001470683126 BIC: DABAFIHH

@@ -168,7 +168,7 @@ UNIT RU-13 type=rule_user key=U-117 stats={'n_flags': 8, 'months_touched': [2, 3
     terms_days=21 allowed_accounts=7200;7400 active_from=2025-01-01 addr=Tehtaankatu 30, 69635 Vantaa
     total_txns=228 total_eur=209878.35 accounts_used=['7200', '7400']
     amt_stats: min=203.02 med=775.38 mean=920.52 max=4091.51
-  VENDOR V-0145 Verktygshandel country=SE vat=SE688049670101 iban=SE7219324086805259602718
+  VENDOR V-0145 Hällsvik Verktygshandel country=SE vat=SE688049670101 iban=SE7219324086805259602718
     terms_days=21 allowed_accounts=4000 active_from=2025-01-01 addr=Industrigatan 15, 46247 Malmö
     total_txns=45 total_eur=142281.80 accounts_used=['4000']
     amt_stats: min=850.85 med=2653.48 mean=3161.82 max=12002.60
@@ -176,7 +176,7 @@ UNIT RU-13 type=rule_user key=U-117 stats={'n_flags': 8, 'months_touched': [2, 3
     terms_days=14 allowed_accounts=7850 active_from=2025-01-01 addr=Konepajankatu 28, 88069 Helsinki
     total_txns=416 total_eur=395259.84 accounts_used=['7850']
     amt_stats: min=133.65 med=811.23 mean=950.14 max=7830.91
-  VENDOR V-0168 Stalhandel AS country=NO vat=NO186846361MVA iban=NO8176910877437
+  VENDOR V-0168 Fjellskor Stalhandel AS country=NO vat=NO186846361MVA iban=NO8176910877437
     terms_days=30 allowed_accounts=4200 active_from=2025-01-01 addr=Havnegata 27, 75353 Bergen
     total_txns=1533 total_eur=1005050.92 accounts_used=['4200']
     amt_stats: min=106.79 med=589.08 mean=655.61 max=3593.44
@@ -242,7 +242,7 @@ UNIT DU-03 type=detector_vendor key=V-0041 stats={'n_flags': 5, 'months_touched'
 
 ##########################################################################################
 UNIT DU-04 type=detector_vendor key=V-0062 stats={'n_flags': 3, 'months_touched': [1, 3, 8], 'total_eur': 5118.21, 'score_range': [0.01584, 0.017099]}
-  VENDOR V-0062 Metalltechnik GmbH country=DE vat=DE288778565 iban=DE03587185539168259996
+  VENDOR V-0062 Felsmark Metalltechnik GmbH country=DE vat=DE288778565 iban=DE03587185539168259996
     terms_days=14 allowed_accounts=7900;7100 active_from=2025-01-01 addr=Industriestraße 7, 86807 Hamburg
     total_txns=132 total_eur=139391.78 accounts_used=['7100', '7900']
     amt_stats: min=205.50 med=909.90 mean=1056.00 max=3994.29
@@ -253,7 +253,7 @@ UNIT DU-04 type=detector_vendor key=V-0062 stats={'n_flags': 3, 'months_touched'
 
 ##########################################################################################
 UNIT DU-05 type=detector_vendor key=V-0067 stats={'n_flags': 7, 'months_touched': [1, 2, 6, 10, 12], 'total_eur': 11929.72, 'score_range': [0.001754, 0.029821]}
-  VENDOR V-0067 Stahltechnik GmbH country=DE vat=DE929457643 iban=DE10428299491330285578
+  VENDOR V-0067 Erlengrund Stahltechnik GmbH country=DE vat=DE929457643 iban=DE10428299491330285578
     terms_days=30 allowed_accounts=7850;7990 active_from=2025-01-01 addr=Bahnhofstraße 21, 69300 Bremen
     total_txns=345 total_eur=310982.90 accounts_used=['7850', '7990']
     amt_stats: min=186.83 med=797.40 mean=901.40 max=3373.29
@@ -313,7 +313,7 @@ UNIT DU-08 type=detector_vendor key=V-0078 stats={'n_flags': 14, 'months_touched
 
 ##########################################################################################
 UNIT DU-09 type=detector_vendor key=V-0090 stats={'n_flags': 9, 'months_touched': [1, 2, 3, 4, 5, 7, 8, 9, 10], 'total_eur': 6269.47, 'score_range': [0.001507, 0.022181]}
-  VENDOR V-0090 Industriehandel GmbH country=DE vat=DE567873804 iban=DE63574954124672030363
+  VENDOR V-0090 Felsmark Industriehandel GmbH country=DE vat=DE567873804 iban=DE63574954124672030363
     terms_days=30 allowed_accounts=4300;4200 active_from=2025-01-01 addr=Bahnhofstraße 21, 37930 Dortmund
     total_txns=365 total_eur=239402.65 accounts_used=['4200', '4300']
     amt_stats: min=113.60 med=580.78 mean=655.90 max=3757.68
@@ -330,7 +330,7 @@ UNIT DU-09 type=detector_vendor key=V-0090 stats={'n_flags': 9, 'months_touched'
 
 ##########################################################################################
 UNIT DU-10 type=detector_vendor key=V-0098 stats={'n_flags': 4, 'months_touched': [1, 2, 3, 5], 'total_eur': 3672.62, 'score_range': [0.002932, 0.027171]}
-  VENDOR V-0098 Bergsteknik country=SE vat=SE565792464101 iban=SE0310362195389425216108
+  VENDOR V-0098 Hällsvik Bergsteknik country=SE vat=SE565792464101 iban=SE0310362195389425216108
     terms_days=21 allowed_accounts=4300;4020 active_from=2025-01-01 addr=Hamngatan 4, 25727 Norrköping
     total_txns=143 total_eur=92758.03 accounts_used=['4020', '4300']
     amt_stats: min=109.53 med=601.52 mean=648.66 max=2098.26
@@ -342,7 +342,7 @@ UNIT DU-10 type=detector_vendor key=V-0098 stats={'n_flags': 4, 'months_touched'
 
 ##########################################################################################
 UNIT DU-11 type=detector_vendor key=V-0099 stats={'n_flags': 11, 'months_touched': [1, 2, 3, 6, 9, 10, 11], 'total_eur': 40030.42, 'score_range': [0.001029, 0.045739]}
-  VENDOR V-0099 Malmhandel country=SE vat=SE086005240101 iban=SE3816550708249266966215
+  VENDOR V-0099 Hällsvik Malmhandel country=SE vat=SE086005240101 iban=SE3816550708249266966215
     terms_days=14 allowed_accounts=4440;4410 active_from=2025-01-01 addr=Hamngatan 10, 49409 Göteborg
     total_txns=224 total_eur=450085.38 accounts_used=['4410', '4440']
     amt_stats: min=558.68 med=1862.69 mean=2009.31 max=11281.91
@@ -508,7 +508,7 @@ UNIT DU-21 type=detector_vendor key=V-0156 stats={'n_flags': 8, 'months_touched'
 
 ##########################################################################################
 UNIT DU-22 type=detector_vendor key=V-0157 stats={'n_flags': 7, 'months_touched': [2, 5, 6, 7, 9, 11], 'total_eur': 30021.51, 'score_range': [0.001609, 0.046047]}
-  VENDOR V-0157 Kumitukku Oy Ab country=FI vat=FI96283869 iban=FI3934381227194182
+  VENDOR V-0157 Kumivaraosa Oy Ab country=FI vat=FI96283869 iban=FI3934381227194182
     terms_days=14 allowed_accounts=4310;4100 active_from=2025-01-01 addr=Tehtaankatu 46, 71806 Tampere
     total_txns=170 total_eur=546429.48 accounts_used=['4100', '4310']
     amt_stats: min=1361.62 med=2962.12 mean=3214.29 max=7832.79
@@ -523,7 +523,7 @@ UNIT DU-22 type=detector_vendor key=V-0157 stats={'n_flags': 7, 'months_touched'
 
 ##########################################################################################
 UNIT DU-23 type=detector_vendor key=V-0176 stats={'n_flags': 3, 'months_touched': [3, 7, 10], 'total_eur': 2161.5, 'score_range': [0.006663, 0.037382]}
-  VENDOR V-0176 Nordgrossist country=SE vat=SE580558381001 iban=SE6019759420421262210995
+  VENDOR V-0176 Hällsvik Nordgrossist country=SE vat=SE580558381001 iban=SE6019759420421262210995
     terms_days=14 allowed_accounts=4300;4020 active_from=2025-01-01 addr=Hamngatan 57, 99912 Norrköping
     total_txns=203 total_eur=132980.39 accounts_used=['4020', '4300']
     amt_stats: min=159.81 med=552.90 mean=655.08 max=3276.52
@@ -556,7 +556,7 @@ UNIT SINGLES type=detector_singles key=None stats={'n_flags': 10, 'months_touche
     terms_days=21 allowed_accounts=4010;4310 active_from=2025-01-01 addr=Kauppakatu 58, 30528 Tampere
     total_txns=18 total_eur=59356.39 accounts_used=['4010', '4310']
     amt_stats: min=1685.58 med=3202.16 mean=3297.58 max=4974.31
-  VENDOR V-0071 Verktygsteknik country=SE vat=SE784526242601 iban=SE9848213517700730014297
+  VENDOR V-0071 Myrkvarn Verktygsteknik country=SE vat=SE784526242601 iban=SE9848213517700730014297
     terms_days=30 allowed_accounts=7400;4430 active_from=2025-01-01 addr=Lagervägen 35, 36975 Malmö
     total_txns=36 total_eur=99344.67 accounts_used=['4430', '7400']
     amt_stats: min=624.41 med=2325.82 mean=2759.57 max=8464.74
@@ -572,7 +572,7 @@ UNIT SINGLES type=detector_singles key=None stats={'n_flags': 10, 'months_touche
     terms_days=30 allowed_accounts=4430 active_from=2025-01-01 addr=Kauppakatu 30, 04122 Vantaa
     total_txns=326 total_eur=635053.35 accounts_used=['4430']
     amt_stats: min=444.08 med=1701.39 mean=1948.02 max=6268.10
-  VENDOR V-0142 Technikhandel GmbH country=DE vat=DE739480438 iban=DE02668796623655069808
+  VENDOR V-0142 Felsmark Technikhandel GmbH country=DE vat=DE739480438 iban=DE02668796623655069808
     terms_days=14 allowed_accounts=4010;4110 active_from=2025-01-01 addr=Industriestraße 50, 39316 Dortmund
     total_txns=47 total_eur=160699.78 accounts_used=['4010', '4110']
     amt_stats: min=1108.21 med=3262.03 mean=3419.14 max=7214.84
@@ -584,7 +584,7 @@ UNIT SINGLES type=detector_singles key=None stats={'n_flags': 10, 'months_touche
     terms_days=14 allowed_accounts=4200;4020 active_from=2025-01-01 addr=Ratakatu 42, 87174 Tampere
     total_txns=60 total_eur=166246.62 accounts_used=['4020', '4200']
     amt_stats: min=730.57 med=2141.40 mean=2770.78 max=7267.65
-  VENDOR V-0195 Nordhandel AS country=NO vat=NO851035849MVA iban=NO8212047615723
+  VENDOR V-0195 Fjellskor Nordhandel AS country=NO vat=NO851035849MVA iban=NO8212047615723
     terms_days=21 allowed_accounts=7700;4430 active_from=2025-01-01 addr=Industriveien 51, 48393 Drammen
     total_txns=57 total_eur=131185.31 accounts_used=['4430', '7700']
     amt_stats: min=435.95 med=2002.51 mean=2301.50 max=7575.97
@@ -602,7 +602,7 @@ UNIT SINGLES type=detector_singles key=None stats={'n_flags': 10, 'months_touche
 
 ##########################################################################################
 UNIT RESIDUAL type=detector_residual key=None stats={'n_flags': 30, 'months_touched': [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12], 'total_eur': 105890.93, 'score_range': [0.000505, 0.016032]}
-  VENDOR V-0027 Sjogrossist country=SE vat=SE741233977801 iban=SE8093310499809493028998
+  VENDOR V-0027 Myrkvarn Sjogrossist country=SE vat=SE741233977801 iban=SE8093310499809493028998
     terms_days=21 allowed_accounts=7000;7800 active_from=2025-01-01 addr=Lagervägen 51, 59126 Göteborg
     total_txns=130 total_eur=128597.73 accounts_used=['7000', '7800']
     amt_stats: min=198.79 med=844.83 mean=989.21 max=3645.34
@@ -618,7 +618,7 @@ UNIT RESIDUAL type=detector_residual key=None stats={'n_flags': 30, 'months_touc
     terms_days=14 allowed_accounts=4020 active_from=2025-01-01 addr=Varikkokatu 6, 46989 Vantaa
     total_txns=303 total_eur=193743.84 accounts_used=['4020']
     amt_stats: min=128.33 med=562.43 mean=639.42 max=1771.12
-  VENDOR V-0068 VaruGrupp country=EE vat=EE809830672 iban=EE701221802090048198
+  VENDOR V-0068 Kuuseoru VaruGrupp country=EE vat=EE809830672 iban=EE701221802090048198
     terms_days=21 allowed_accounts=4310 active_from=2025-01-01 addr=Laoplats 44, 39788 Tartu
     total_txns=198 total_eur=644810.59 accounts_used=['4310']
     amt_stats: min=478.88 med=2955.75 mean=3256.62 max=9491.43
@@ -638,7 +638,7 @@ UNIT RESIDUAL type=detector_residual key=None stats={'n_flags': 30, 'months_touc
     terms_days=21 allowed_accounts=7700 active_from=2025-01-01 addr=Terästie 29, 60119 Kuopio
     total_txns=180 total_eur=162603.27 accounts_used=['7700']
     amt_stats: min=239.94 med=754.74 mean=903.35 max=4276.62
-  VENDOR V-0093 Verktoyteknikk AS country=NO vat=NO568633483MVA iban=NO8987201040418
+  VENDOR V-0093 Fjellskor Verktoyteknikk AS country=NO vat=NO568633483MVA iban=NO8987201040418
     terms_days=14 allowed_accounts=4000 active_from=2025-01-01 addr=Havnegata 16, 85532 Bergen
     total_txns=259 total_eur=156340.29 accounts_used=['4000']
     amt_stats: min=126.47 med=558.55 mean=603.63 max=4060.34
@@ -658,7 +658,7 @@ UNIT RESIDUAL type=detector_residual key=None stats={'n_flags': 30, 'months_touc
     terms_days=30 allowed_accounts=4000;4300 active_from=2025-01-01 addr=Kauppakatu 36, 88356 Helsinki
     total_txns=103 total_eur=68590.84 accounts_used=['4000', '4300']
     amt_stats: min=152.43 med=550.82 mean=665.93 max=2223.29
-  VENDOR V-0153 Bergsgrossist country=SE vat=SE407475365301 iban=SE7752667992108863041883
+  VENDOR V-0153 Myrkvarn Bergsgrossist country=SE vat=SE407475365301 iban=SE7752667992108863041883
     terms_days=21 allowed_accounts=4310 active_from=2025-01-01 addr=Hamngatan 26, 46919 Göteborg
     total_txns=245 total_eur=772336.78 accounts_used=['4310']
     amt_stats: min=524.12 med=2967.24 mean=3152.40 max=7737.10
@@ -686,11 +686,11 @@ UNIT RESIDUAL type=detector_residual key=None stats={'n_flags': 30, 'months_touc
     terms_days=14 allowed_accounts=4000 active_from=2025-01-01 addr=Varikkokatu 17, 39085 Oulu
     total_txns=285 total_eur=194517.59 accounts_used=['4000']
     amt_stats: min=123.26 med=597.54 mean=682.52 max=2180.64
-  VENDOR V-0195 Nordhandel AS country=NO vat=NO851035849MVA iban=NO8212047615723
+  VENDOR V-0195 Fjellskor Nordhandel AS country=NO vat=NO851035849MVA iban=NO8212047615723
     terms_days=21 allowed_accounts=7700;4430 active_from=2025-01-01 addr=Industriveien 51, 48393 Drammen
     total_txns=57 total_eur=131185.31 accounts_used=['4430', '7700']
     amt_stats: min=435.95 med=2002.51 mean=2301.50 max=7575.97
-  VENDOR V-0197 Nordhandel 18 country=SE vat=SE589761217401 iban=SE6608104094787891753406
+  VENDOR V-0197 Hällsvik Nordhandel 18 country=SE vat=SE589761217401 iban=SE6608104094787891753406
     terms_days=21 allowed_accounts=4100 active_from=2025-01-01 addr=Lagervägen 59, 66286 Norrköping
     total_txns=1624 total_eur=4668633.30 accounts_used=['4100']
     amt_stats: min=405.21 med=2823.19 mean=2874.77 max=8587.24

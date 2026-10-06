@@ -1056,7 +1056,7 @@
         {"requirement_id": "R04", "believed_status": "evidenced", "note": "Element-level S-parameter characterisation, mutual coupling, far-field pattern verification."},
         {"requirement_id": "R05", "believed_status": "evidenced", "note": "MSc EE, RWTH Aachen, thesis on mutual coupling compensation."},
         {"requirement_id": "R06", "believed_status": "absent", "note": null},
-        {"requirement_id": "R07", "believed_status": "absent", "note": "\"Arctic Space Systems\" as a company name implies space heritage, but her own described work is a ground-based monitoring array -- worth not over-crediting on the company name alone."},
+        {"requirement_id": "R07", "believed_status": "absent", "note": "\"Hallaharju Space Systems\" as a company name implies space heritage, but her own described work is a ground-based monitoring array -- worth not over-crediting on the company name alone."},
         {"requirement_id": "R08", "believed_status": "absent", "note": null},
         {"requirement_id": "R09", "believed_status": "absent", "note": null},
         {"requirement_id": "R10", "believed_status": "evidenced", "note": "German, EU citizen."},

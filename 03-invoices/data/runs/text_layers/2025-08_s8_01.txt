@@ -1,7 +1,7 @@
 Lasku 2025-0001
 Työkalu-Tiira Oy Laskun päivä 05.08.2025
 Eräpäivä 04.09.2025
-Teollisuuskatu 19, 15170 Lahti · Y-tunnus 2277889-2 Viitenumero 23263332
+Teollisuuskatu 19, 15170 Lahti · Y-tunnus 9811231-7 Viitenumero 23263332
 Tilausnumero PO-2025-097
 OSTAJA
 Pyökkipaja Oy
@@ -23,6 +23,6 @@ TK-0012 Työvalo, LED 5 kpl 25,5 23,74 118,70
 Veroton yhteensä 1 114,03 €
 ALV 25,5 % 284,08 €
 Maksettava 1 398,11 €
-Y-tunnus 2277889-2 -- ALV-tunnus FI22778892
+Y-tunnus 9811231-7 -- ALV-tunnus FI98112317
 Maksuehto: 30 pv netto -- Viitenumero: 23263332
 Pankkiyhteys: FI5822791800130472 BIC: NDEAFIHH

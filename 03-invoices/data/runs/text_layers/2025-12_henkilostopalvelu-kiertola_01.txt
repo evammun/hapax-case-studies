@@ -4,7 +4,7 @@ Työvoimankatu 2
 Laskun päivä 03.12.2025
 15140 Lahti
 Eräpäivä 02.01.2026
-Y-tunnus: 2311232-0
+Y-tunnus: 9811226-1
 OSTAJA
 Pyökkipaja Oy
 Sorvaajankatu 11
@@ -16,6 +16,6 @@ Rekrytointi- ja välityspalkkio 1 erä 1 426,49 25,5 1 426,49
 Veroton yhteensä 2 726,65 €
 ALV 25,5 % 695,30 €
 Maksettava 3 421,95 €
-Y-tunnus 2311232-0 -- ALV-tunnus FI23112320
+Y-tunnus 9811226-1 -- ALV-tunnus FI98112261
 Maksuehto: 30 pv netto
 Pankkiyhteys: FI2654096300872641 BIC: OKOYFIHH

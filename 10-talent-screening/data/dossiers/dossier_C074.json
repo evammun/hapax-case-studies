@@ -29,7 +29,7 @@
       "status": "evidence_found",
       "lines": [
         {
-          "quote": "Led the migration of Arctic's internal calibration-data pipeline from a collection of shell scripts and ad-hoc MATLAB routines to a structured Python package.",
+          "quote": "Led the migration of Hallaharju's internal calibration-data pipeline from a collection of shell scripts and ad-hoc MATLAB routines to a structured Python package.",
           "source": "cv",
           "citation_verified": true
         },
@@ -88,7 +88,7 @@
           "citation_verified": true
         },
         {
-          "quote": "Designed the lossy compression pipeline (wavelet-based, CCSDS 122.0 compliant) for Arctic's multispectral imager payload, now in qualification testing.",
+          "quote": "Designed the lossy compression pipeline (wavelet-based, CCSDS 122.0 compliant) for Hallaharju's multispectral imager payload, now in qualification testing.",
           "source": "cv",
           "citation_verified": true
         }
@@ -107,7 +107,7 @@
           "citation_verified": true
         },
         {
-          "quote": "Led the migration of Arctic's internal calibration-data pipeline from a collection of shell scripts and ad-hoc MATLAB routines to a structured Python package.",
+          "quote": "Led the migration of Hallaharju's internal calibration-data pipeline from a collection of shell scripts and ad-hoc MATLAB routines to a structured Python package.",
           "source": "cv",
           "citation_verified": true
         }

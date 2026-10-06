@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "doc_id": "2025-02_s8_02",
-  "supplier": {"name": "Työkalu-Tiira Oy", "street": "Teollisuuskatu 19", "postcode": "15170", "city": "Lahti", "country": "FI", "vat_id": "FI22778892", "business_id": "2277889-2"},
+  "supplier": {"name": "Työkalu-Tiira Oy", "street": "Teollisuuskatu 19", "postcode": "15170", "city": "Lahti", "country": "FI", "vat_id": "FI98112317", "business_id": "9811231-7"},
   "buyer": {"name": "Pyökkipaja Oy", "street": "Sorvaajankatu 11", "postcode": "15520", "city": "Lahti", "country": "FI", "vat_id": null, "business_id": "2417551-8"},
   "invoice": {"number": "T-0138", "type": "invoice", "issue_date": "2025-02-27", "supply_date": null, "due_date": "2025-03-29", "payment_terms": "30 pv netto", "currency": "EUR", "po_number": "PO-2025-027", "reference_type": "viitenumero", "reference_value": "27349809", "original_invoice_number": null, "reverse_charge_mention": null},
   "bank": {"iban": "FI5822791800130472", "bic": "NDEAFIHH", "bankgiro": null},

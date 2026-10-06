@@ -26,7 +26,7 @@ free-text "Verwendungszweck" convention is layout text only.
 | s2 | Päijät-Pakkaus Oy | FI | Hollola | 25.5% | EUR | 21 | viitenumero | fi |
 | s3 | Falkenrath Beschläge GmbH | DE | Wuppertal | 0% ICS, "Steuerfreie innergemeinschaftliche Lieferung" | EUR | 30 | null | de |
 | s4 | Möbeltyg Viskan AB | SE | Borås | 0% ICS, "Undantag från skatteplikt – unionsintern leverans (Intra-EU supply, Art. 138)" | SEK | 30 | ocr (+ bankgiro, giro band) | sv |
-| s5 | Terasleht OÜ | EE | Tallinn | 0% RC, "Reverse charge (Article 196, Council Directive 2006/112/EC)" | EUR | 14 | rf | en |
+| s5 | Plekivalu OÜ | EE | Tallinn | 0% RC, "Reverse charge (Article 196, Council Directive 2006/112/EC)" | EUR | 14 | rf | en |
 | s6 | Vesijärven Rahtilinja Oy | FI | Lahti | 25.5% | EUR | 14 | viitenumero | fi |
 | s7 | Lounastupa Helmi Oy | FI | Lahti | 14% | EUR | 14 | viitenumero | fi |
 | s8 | Työkalu-Tiira Oy | FI | Lahti | 25.5% | EUR | 30 | viitenumero | fi |

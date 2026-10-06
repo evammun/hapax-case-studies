@@ -2916,7 +2916,7 @@
       "trigger_email": {
         "date": "2026-09-16",
         "subject": "Re: Tower light - end of rental",
-        "body": "Hanna-Kaisa,\n\nAny news on the site fencing? We need the 50m run sorted fairly soon, same setup as before.\n\nPohjolan Maanrakennus Oy"
+        "body": "Hanna-Kaisa,\n\nAny news on the site fencing? We need the 50m run sorted fairly soon, same setup as before.\n\nKurujärven Maanrakennus Oy"
       },
       "thread_history": [
         {
@@ -2924,7 +2924,7 @@
           "sender": "customer",
           "date": "2026-09-04",
           "subject": "Tower light - end of rental",
-          "body": "The LED tower light (towable) is ready to come back. Can you arrange collection from our site or should we bring it to the Kempele depot?\n\nPohjolan Maanrakennus Oy"
+          "body": "The LED tower light (towable) is ready to come back. Can you arrange collection from our site or should we bring it to the Kempele depot?\n\nKurujärven Maanrakennus Oy"
         },
         {
           "index": 2,
@@ -2940,7 +2940,7 @@
           "sender": "customer",
           "date": "2026-09-10",
           "subject": "Re: Tower light - end of rental",
-          "body": "While we're at it, we'd like to book site fencing again, same as last time. Per 50m run. Can you set that up?\n\nPohjolan Maanrakennus Oy"
+          "body": "While we're at it, we'd like to book site fencing again, same as last time. Per 50m run. Can you set that up?\n\nKurujärven Maanrakennus Oy"
         },
         {
           "index": 4,
@@ -2953,7 +2953,7 @@
         }
       ],
       "customer_record": {
-        "name": "Pohjolan Maanrakennus Oy",
+        "name": "Kurujärven Maanrakennus Oy",
         "type": "business",
         "city": "Kempele",
         "repeat_customer": true,
@@ -3802,7 +3802,7 @@
       "trigger_email": {
         "date": "2026-09-16",
         "subject": "Re: Core drill rig - delivery?",
-        "body": "Thanks for getting back to us.\n\nAlso need to ask about a cement mixer trailer - same question, what delivery options do you have for that one?\n\nPohjolan Maanrakennus Oy"
+        "body": "Thanks for getting back to us.\n\nAlso need to ask about a cement mixer trailer - same question, what delivery options do you have for that one?\n\nKurujärven Maanrakennus Oy"
       },
       "thread_history": [
         {
@@ -3810,11 +3810,11 @@
           "sender": "customer",
           "date": "2026-09-10",
           "subject": "Core drill rig - delivery?",
-          "body": "We need to book a core drill rig. What are the delivery options to Kempele? Can you bring it directly to site or is it depot pickup only?\n\nPohjolan Maanrakennus Oy"
+          "body": "We need to book a core drill rig. What are the delivery options to Kempele? Can you bring it directly to site or is it depot pickup only?\n\nKurujärven Maanrakennus Oy"
         }
       ],
       "customer_record": {
-        "name": "Pohjolan Maanrakennus Oy",
+        "name": "Kurujärven Maanrakennus Oy",
         "type": "business",
         "city": "Kempele",
         "repeat_customer": true,

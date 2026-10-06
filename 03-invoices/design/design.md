@@ -44,7 +44,7 @@ The eight repeat suppliers span the layout families, locales, tax treatments and
 | S2 | Päijät-Pakkaus Oy | FI · Finnish | Packaging | 25.5% | EUR | 26 | Compact table, unspaced numbers (H2) | Low |
 | S3 | Falkenrath Beschläge GmbH | DE · German | Fittings, slides, hinges | 0% reverse charge, "Steuerfreie innergemeinschaftliche Lieferung" | EUR | 24 | German Rechnung, Leistungsdatum, 1.234,56 | Medium |
 | S4 | Möbeltyg Viskan AB | SE · Swedish | Upholstery fabric | 0% intra-EU supply | **SEK** | 20 | Swedish faktura, giro band with OCR (L7), YYYY-MM-DD | High |
-| S5 | Terasleht OÜ | EE · English | Steel legs, frames | 0% reverse charge | EUR | 20 | English-language arve, RF reference | Medium |
+| S5 | Plekivalu OÜ | EE · English | Steel legs, frames | 0% reverse charge | EUR | 20 | English-language arve, RF reference | Medium |
 | S6 | Vesijärven Rahtilinja Oy | FI · Finnish | Freight | 25.5% | EUR | 24 | Service invoice, no PO, shipment list lines | Medium |
 | S7 | Lounastupa Helmi Oy | FI · Finnish | Staff canteen | **14%** | EUR | 12 | Monthly single-line invoice, minimal layout | Low |
 | S8 | Työkalu-Tiira Oy | FI · Finnish | Tools, consumables (MRO) | 25.5% | EUR | 20 | **Redesigns its template 1 Aug 2025** (new invoicing software; same legal identity) | Medium |

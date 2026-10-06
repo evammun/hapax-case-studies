@@ -3,7 +3,7 @@ Lasku T-0189
 Teollisuuskatu 19 Laskun päivä 13.06.2025
 15170 Lahti
 Eräpäivä 13.07.2025
-Y-tunnus: 2277889-2
+Y-tunnus: 9811231-7
 Viitenumero 91249388
 Tilausnumero PO-2025-076
 OSTAJA
@@ -21,6 +21,6 @@ Hiomapaperi P120, arkki 490 kpl 0,53 25,5 259,70
 Veroton yhteensä 920,58 €
 ALV 25,5 % 234,75 €
 Maksettava 1 155,33 €
-Y-tunnus 2277889-2 -- ALV-tunnus FI22778892
+Y-tunnus 9811231-7 -- ALV-tunnus FI98112317
 Maksuehto: 30 pv netto -- Viitenumero: 91249388
 Pankkiyhteys: FI5822791800130472 BIC: NDEAFIHH

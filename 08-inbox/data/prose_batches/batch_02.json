@@ -134,7 +134,7 @@
       "thread_id": "THR-009",
       "customer": {
         "customer_id": "CUST-009",
-        "name": "Napapiirin Infra Oy",
+        "name": "Routakallion Infra Oy",
         "type": "business",
         "city": "Rovaniemi",
         "repeat_customer": true,
@@ -267,7 +267,7 @@
       "thread_id": "THR-012",
       "customer": {
         "customer_id": "CUST-003",
-        "name": "Pohjolan Maanrakennus Oy",
+        "name": "Kurujärven Maanrakennus Oy",
         "type": "business",
         "city": "Kempele",
         "repeat_customer": true,

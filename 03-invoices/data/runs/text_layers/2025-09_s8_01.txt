@@ -1,7 +1,7 @@
 Lasku 2025-0013
 Työkalu-Tiira Oy Laskun päivä 08.09.2025
 Eräpäivä 08.10.2025
-Teollisuuskatu 19, 15170 Lahti · Y-tunnus 2277889-2 Viitenumero 32398748
+Teollisuuskatu 19, 15170 Lahti · Y-tunnus 9811231-7 Viitenumero 32398748
 Tilausnumero PO-2025-108
 OSTAJA
 Pyökkipaja Oy
@@ -22,6 +22,6 @@ TK-0011 Teollisuusliima, tuubi 10 kpl 25,5 5,56 55,60
 Veroton yhteensä 599,30 €
 ALV 25,5 % 152,82 €
 Maksettava 752,12 €
-Y-tunnus 2277889-2 -- ALV-tunnus FI22778892
+Y-tunnus 9811231-7 -- ALV-tunnus FI98112317
 Maksuehto: 30 pv netto -- Viitenumero: 32398748
 Pankkiyhteys: FI5822791800130472 BIC: NDEAFIHH

@@ -1,5 +1,5 @@
 Kustannus Höylä Oy
-Kustantajankatu 9, 00100 Helsinki · Y-tunnus 2311225-9
+Kustantajankatu 9, 00100 Helsinki · Y-tunnus 9811223-7
 LASKU LASKUN PÄIVÄ ERÄPÄIVÄ
 0985 19.03.2025 18.04.2025
 OSTAJA
@@ -9,4 +9,4 @@ Puuteollisuus-ammattilehti, vuosikerta 1 kk 249,14 10 249,14
 Veroton yhteensä 249,14 €
 ALV 10 % 24,91 €
 Maksettava 274,05 €
-ALV-tunnus FI23112259 · Maksuehto: 30 pv netto · Pankkiyhteys FI1413723100850647 · BIC NDEAFIHH
+ALV-tunnus FI98112237 · Maksuehto: 30 pv netto · Pankkiyhteys FI1413723100850647 · BIC NDEAFIHH

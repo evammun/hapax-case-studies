@@ -85,7 +85,7 @@ class ParserLayoutError(Exception):
 # ---------------------------------------------------------------------------
 
 SUPPLIER_NAME = "Työkalu-Tiira Oy"
-SUPPLIER_BUSINESS_ID = "2277889-2"
+SUPPLIER_BUSINESS_ID = "9811231-7"
 SUPPLIER_COUNTRY = "FI"
 BUYER_COUNTRY = "FI"
 HEADER_ROW = "NIMIKE MÄÄRÄ YKSIKKÖ A-HINTA ALV % YHTEENSÄ"

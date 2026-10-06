@@ -4,7 +4,7 @@ Rahtikuja 2
 Laskun päivä 19.02.2025
 00880 Helsinki
 Eräpäivä 21.03.2025
-Y-tunnus: 2311222-4
+Y-tunnus: 9811233-3
 OSTAJA
 Pyökkipaja Oy
 Sorvaajankatu 11
@@ -16,6 +16,6 @@ Nouto ja toimitus 1 kpl 215,43 25,5 215,43
 Veroton yhteensä 432,80 €
 ALV 25,5 % 110,36 €
 Maksettava 543,16 €
-Y-tunnus 2311222-4 -- ALV-tunnus FI23112224
+Y-tunnus 9811233-3 -- ALV-tunnus FI98112333
 Maksuehto: 30 pv netto
 Pankkiyhteys: FI8481463900217859 BIC: DABAFIHH

@@ -2,7 +2,7 @@ Salpausselän Puutavara Oy
 Laskun numero Lasku 2025-1851
 Karjalankatu 4 Laskun päivä 31.01.2025
 15150 Lahti Eräpäivä 02.03.2025
-Y-tunnus: 2233445-8 Viitenumero 17945226
+Y-tunnus: 9811228-8 Viitenumero 17945226
 Tilausnumero PO-2025-003
 OSTAJA
 Pyökkipaja Oy
@@ -23,6 +23,6 @@ Koivuvaneri 15 mm, 1250x2500 7 kpl 47,18 25,5 330,26
 Veroton yhteensä 2 590,15 €
 ALV 25,5 % 660,49 €
 Maksettava 3 250,64 €
-Y-tunnus 2233445-8 Pankkiyhteys: FI6215783022011184
-ALV-tunnus FI22334458 BIC: NDEAFIHH
+Y-tunnus 9811228-8 Pankkiyhteys: FI6215783022011184
+ALV-tunnus FI98112288 BIC: NDEAFIHH
 Maksuehto: 30 pv netto Viitenumero: 17945226

@@ -6,7 +6,7 @@
   "is_first_message_in_thread": true,
   "date": "2026-09-08",
   "subject": "Pressure washer booking dates",
-  "body": "Hi,\n\nOur site schedule shifted and the dates on the petrol pressure washer booking won't work anymore. Can we push it back? Let me know what you have available.\n\nRegards,\nNapapiirin Infra Oy",
+  "body": "Hi,\n\nOur site schedule shifted and the dates on the petrol pressure washer booking won't work anymore. Can we push it back? Let me know what you have available.\n\nRegards,\nRoutakallion Infra Oy",
   "classification_contract": {
     "task": "You are the intent-classification step of Tammilehto Oy's customer-email support pipeline. Read the one inbound customer email below and assign exactly one intent class from the fixed taxonomy given in 'intent_classes'. Base your decision only on this email's own subject and body — you are not shown the rest of its thread, the policy handbook, or the customer's account record; a later pipeline step retrieves those separately.",
     "intent_classes": {

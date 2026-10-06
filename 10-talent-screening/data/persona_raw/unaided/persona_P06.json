@@ -1126,7 +1126,7 @@
         {"requirement_id": "R11", "believed_status": "evidenced", "note": "All technical discussions and client presentations conducted in English."},
         {"requirement_id": "R12", "believed_status": "evidenced", "note": "Based in Oulu since 2018, staying."}
       ],
-      "flags": {"vocabulary_notes": [{"requirement_id": "R07", "note": "\"Arctic Space Systems\" name is suggestive but the work described is ground-based monitoring, not a flown instrument."}], "claims_questioned": [], "inconsistencies_noted": [], "borderline_calls": [{"requirement_id": "R10", "note": "Not stated outright, low risk."}]},
+      "flags": {"vocabulary_notes": [{"requirement_id": "R07", "note": "\"Hallaharju Space Systems\" name is suggestive but the work described is ground-based monitoring, not a flown instrument."}], "claims_questioned": [], "inconsistencies_noted": [], "borderline_calls": [{"requirement_id": "R10", "note": "Not stated outright, low risk."}]},
       "screening_decision": "advance - all five must-haves cleanly evidenced with concrete hardware and measurement detail.",
       "time_budget_seconds": 240
     },

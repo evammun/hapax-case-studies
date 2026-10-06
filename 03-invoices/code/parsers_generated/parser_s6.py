@@ -56,8 +56,8 @@ _SUPPLIER = {
     "postcode": "15140",
     "city": "Lahti",
     "country": "FI",
-    "vat_id": "FI22556675",
-    "business_id": "2255667-5",
+    "vat_id": "FI98112202",
+    "business_id": "9811220-2",
 }
 
 _BUYER = {

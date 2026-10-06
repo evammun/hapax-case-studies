@@ -6,7 +6,7 @@
   "is_first_message_in_thread": true,
   "date": "2026-09-03",
   "subject": "Excavator - long-term hire pricing",
-  "body": "Hello,\n\nWe are looking at a three-month standing hire of an excavator and would like to agree on pricing before we commit. Given the duration and our track record with Tammilehto, we'd expect a 25% discount on the list rate.\n\nLet us know.\n\nPohjolan Maanrakennus Oy",
+  "body": "Hello,\n\nWe are looking at a three-month standing hire of an excavator and would like to agree on pricing before we commit. Given the duration and our track record with Tammilehto, we'd expect a 25% discount on the list rate.\n\nLet us know.\n\nKurujärven Maanrakennus Oy",
   "classification_contract": {
     "task": "You are the intent-classification step of Tammilehto Oy's customer-email support pipeline. Read the one inbound customer email below and assign exactly one intent class from the fixed taxonomy given in 'intent_classes'. Base your decision only on this email's own subject and body — you are not shown the rest of its thread, the policy handbook, or the customer's account record; a later pipeline step retrieves those separately.",
     "intent_classes": {

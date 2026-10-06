@@ -310,7 +310,7 @@
       "target_area": "REF01",
       "claimed_value": 820000,
       "true_value": 640000,
-      "instruction": "The chatbot draft plausibly inflates the contract value of reference project REF01 (Kuusiranta Oy) to 820,000 EUR when summarising Visakoivu's track record; Elina Vainio pastes this into the response without checking it against the facts library. The actual contract value on file is 640,000 EUR (see company_facts.yaml, reference_projects, REF01)."
+      "instruction": "The chatbot draft plausibly inflates the contract value of reference project REF01 (Haavikkoranta Oy) to 820,000 EUR when summarising Visakoivu's track record; Elina Vainio pastes this into the response without checking it against the facts library. The actual contract value on file is 640,000 EUR (see company_facts.yaml, reference_projects, REF01)."
     }
   ]
 }

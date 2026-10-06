@@ -4,7 +4,7 @@ Satamakatu 6
 Laskun päivä 30.10.2025
 15140 Lahti
 Eräpäivä 13.11.2025
-Y-tunnus: 2255667-5
+Y-tunnus: 9811220-2
 Viitenumero 38542381
 OSTAJA
 Pyökkipaja Oy
@@ -17,6 +17,6 @@ Runkokuljetus, Lahti-Turku 1 kpl 174,28 25,5 174,28
 Veroton yhteensä 361,72 €
 ALV 25,5 % 92,24 €
 Maksettava 453,96 €
-Y-tunnus 2255667-5 -- ALV-tunnus FI22556675
+Y-tunnus 9811220-2 -- ALV-tunnus FI98112202
 Maksuehto: 14 pv netto -- Viitenumero: 38542381
 Pankkiyhteys: FI4480001470683126 BIC: DABAFIHH

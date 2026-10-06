@@ -1,7 +1,7 @@
 Lasku 2025-0006
 Työkalu-Tiira Oy Laskun päivä 22.08.2025
 Eräpäivä 21.09.2025
-Teollisuuskatu 19, 15170 Lahti · Y-tunnus 2277889-2 Viitenumero 21662359
+Teollisuuskatu 19, 15170 Lahti · Y-tunnus 9811231-7 Viitenumero 21662359
 Tilausnumero PO-2025-098
 OSTAJA
 Pyökkipaja Oy
@@ -21,6 +21,6 @@ TK-0002 Poranterä, HSS 10mm 20 kpl 25,5 5,50 110,00
 Veroton yhteensä 1 121,02 €
 ALV 25,5 % 285,86 €
 Maksettava 1 406,88 €
-Y-tunnus 2277889-2 -- ALV-tunnus FI22778892
+Y-tunnus 9811231-7 -- ALV-tunnus FI98112317
 Maksuehto: 30 pv netto -- Viitenumero: 21662359
 Pankkiyhteys: FI5822791800130472 BIC: NDEAFIHH

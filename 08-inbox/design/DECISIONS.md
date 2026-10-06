@@ -188,3 +188,11 @@ All five draft verdicts accepted as drafted: EML-002 published as a corpus defec
 ## 20 Sep 2026 — Phase 6 complete: writeup, explorer, site integration
 
 writeup/inbox_automation_case_study.md (1,957 words) written by the writer from the frozen scorecard and verified in main-loop review against every marked number. interactive/ built on the 09/10 pattern (build_data.py -> _data.json 460 KB -> inbox.html 512 KB; river Sankey cross-asserted against marks.json at build time; headless-Chrome verified, zero exceptions). Writer strings pass done in the template and rebuilt. Site: case-inbox.html + explorer-inbox.html (three logged divergences + noindex), work.html gains a Customer operations group with the tenth entry, nine -> ten count sweep across work/notes/shapes/index/answer-key/training, sitemap and _verify.py updated, ALL CHECKS PASSED. README.md and PLAN status complete. Open items for Eva: writeup read-through, interactive look-and-feel pass.
+
+## 6 Oct 2026 – Invented names renamed after the legal check
+
+Spec: `Set Up/Legal/invented-names-check-2026-10-06.md` section 3; replacements were cleared against the registers and approved by Eva ("happy for things to get renamed without me, they're all fictional names"). Mapping and tooling: `Set Up/Legal/rename_mapping.py`, `apply_renames.py`, `rename_sweep.py`. 
+- Two customers in the register (Rovaniemi and Vehmaa road and earthworks firms) shared their names with real registered companies: Napapiirin Infra Oy is now Routakallion Infra Oy, and Pohjolan Maanrakennus Oy is now Kurujärven Maanrakennus Oy. Only the nominative forms occur.
+- Patched by literal swap in `code/config.py`, `data/customers`, `email_briefs`, `emails`, `emails_raw`, `pipeline`, `prose_batches`, `threads`, `threads_prose` and the interactive files. The email-writer, classification and draft outputs were not re-run.
+- `data/emails/prose_manifest.csv` holds body character counts; `assemble_emails.py` was re-run and the manifest regenerated, so the counts follow the longer names (counts changed on affected rows only).
+- **Checks.** `generate_structure.py` in a scratch copy reproduces the structure byte for byte against the patched files. `validate_structure.py`, `validate_emails.py`, `run_gates_and_router.py` and `mark.py` re-run with every output byte-identical to the patched files. No published figure moved.
