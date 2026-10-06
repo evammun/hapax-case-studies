@@ -42,6 +42,9 @@ from sklearn.model_selection import StratifiedKFold, train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
+# Explicit, deterministic tie-break for every ranked cut (see code/ranking.py).
+import ranking
+
 warnings.filterwarnings("ignore", category=UserWarning)
 
 # ---------------------------------------------------------------------------
@@ -216,6 +219,8 @@ def load_features():
     X = features_df[feature_columns].copy()
     y = features_df["churned"].astype(int).to_numpy()
     account_ids = features_df["account_id"].to_numpy()
+    # The tie-break in recall_at_k relies on features.csv rows being in ascending account_id order.
+    assert features_df["account_id"].is_monotonic_increasing, "features.csv must be sorted by account_id"
 
     print(f"  {len(features_df)} accounts, {len(feature_columns)} feature columns, churn rate {y.mean():.1%}")
     print(f"  Excluded from model (see comment above FEATURES_EXCLUDED_FROM_MODEL): {FEATURES_EXCLUDED_FROM_MODEL}")
@@ -239,21 +244,29 @@ def make_logistic_pipeline():
 # Evaluation helpers
 # ---------------------------------------------------------------------------
 
-def recall_at_k(y_true: np.ndarray, scores: np.ndarray, k: int) -> float:
-    """Fraction of all positives captured in the top-k ranked-by-score accounts."""
+def recall_at_k(y_true: np.ndarray, scores: np.ndarray, k: int, tie_break_keys: np.ndarray) -> float:
+    """
+    Fraction of all positives captured in the top-k ranked-by-score accounts.
+
+    Usage-arm rule (code/ranking.py): score descending, then account order ascending.
+    tie_break_keys are the accounts' row positions in features.csv, which is sorted by
+    account_id, so ascending key == ascending account_id. Scores here are continuous
+    model probabilities, so the clause rarely fires; it is stated so the cut is
+    reproducible by rule rather than by whatever order numpy's quicksort leaves.
+    """
     k = min(k, len(scores))
-    top_k_idx = np.argsort(-scores)[:k]
+    top_k_idx = ranking.ranked_order(tie_break_keys, scores, arm=ranking.ARM_USAGE)[:k]
     total_positives = y_true.sum()
     if total_positives == 0:
         return np.nan
     return y_true[top_k_idx].sum() / total_positives
 
 
-def evaluate_model(name: str, y_test: np.ndarray, scores_test: np.ndarray) -> dict:
+def evaluate_model(name: str, y_test: np.ndarray, scores_test: np.ndarray, tie_break_keys: np.ndarray) -> dict:
     """Computes AUC, average precision, and recall@K for one model's test-set scores."""
     auc = roc_auc_score(y_test, scores_test)
     ap = average_precision_score(y_test, scores_test)
-    recall_k = recall_at_k(y_test, scores_test, TOP_K_RECALL)
+    recall_k = recall_at_k(y_test, scores_test, TOP_K_RECALL, tie_break_keys)
     print(f"  {name}: AUC={auc:.3f}  AP={ap:.3f}  recall@top{TOP_K_RECALL}={recall_k:.3f}")
     return {"model": name, "auc": auc, "average_precision": ap, f"recall_at_top_{TOP_K_RECALL}": recall_k}
 
@@ -276,13 +289,13 @@ def run_holdout_evaluation(X: pd.DataFrame, y: np.ndarray, feature_columns: list
     lr_pipeline = make_logistic_pipeline()
     lr_pipeline.fit(X_train, y_train)
     lr_scores = lr_pipeline.predict_proba(X_test)[:, 1]
-    results.append(evaluate_model("Logistic regression", y_test, lr_scores))
+    results.append(evaluate_model("Logistic regression", y_test, lr_scores, X_test.index.to_numpy()))
 
     # Gradient boosting candidate
     gb_model = make_gb_model()
     gb_model.fit(X_train, y_train)
     gb_scores = gb_model.predict_proba(X_test)[:, 1]
-    results.append(evaluate_model(f"Gradient boosting ({GB_BACKEND})", y_test, gb_scores))
+    results.append(evaluate_model(f"Gradient boosting ({GB_BACKEND})", y_test, gb_scores, X_test.index.to_numpy()))
 
     return results
 
@@ -362,7 +375,7 @@ def run_tenure_ablation(features_df: pd.DataFrame, feature_columns_without_tenur
     gb_model = make_gb_model()
     gb_model.fit(X_train, y_train)
     scores = gb_model.predict_proba(X_test)[:, 1]
-    result = evaluate_model("Gradient boosting WITH tenure_months (ablation, not the official model)", y_test, scores)
+    result = evaluate_model("Gradient boosting WITH tenure_months (ablation, not the official model)", y_test, scores, X_test.index.to_numpy())
     return result
 
 
@@ -435,7 +448,10 @@ def evaluate_against_answer_key(scores_df: pd.DataFrame) -> pd.DataFrame:
     merged = scores_df.merge(answer_key[["account_id", "archetype"]], on="account_id", how="left")
     assert merged["archetype"].notna().all(), "Every scored account must have an archetype in the answer key"
 
-    merged = merged.sort_values("ml_risk_score", ascending=False).reset_index(drop=True)
+    # Usage-arm cut rule (code/ranking.py): score descending, then account_id ascending.
+    # (Previously default sort order; no tie existed at rank 100, so no figure moves.)
+    merged = merged.sort_values(["ml_risk_score", "account_id"], ascending=[False, True],
+                                kind="mergesort").reset_index(drop=True)
     merged["in_top_100"] = merged.index < TOP_K_ANSWER_KEY
 
     archetype_table = (

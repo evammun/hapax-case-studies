@@ -126,3 +126,38 @@ Spec: `Set Up/Legal/invented-names-check-2026-10-06.md` section 3; replacements 
 - **Checks.** `generate_structured.py` run in a scratch copy reproduces `accounts.csv` and `answer_key.csv` byte for byte against the patched files. (`usage_monthly.csv` does not reproduce in the current Python environment, as before this change; the file in the tree is untouched.) `validate_data.py` passes all rules. `fuse_and_evaluate.py`, `tiebreak_before_after.py` and `build_data.py --staging` were re-run in the scratch copy and every output (`data/fusion/*`, `interactive/staging/*`) is byte-identical to the patched files, so every figure in the "after" column of `tiebreak_before_after.md` is unchanged. `verify_interactive.py` passes.
 - **For the writer.** `writeup/case_study.md` and `case_study_draft.md` name two accounts beyond Bergvik, which changed with the roster (Nieminen Oy is now Lumikarpalo Oy; Willems Group B.V. is now Zeggeveld Group B.V.). The site's case page does not mention them. The pending site splice of the tie-break data carries the new names through `interactive/staging/_data.json`.
 - **Open.** Danish stems were checked on the web only (the CVR register refused automated access); a manual look on virk.dk is still advisable.
+## Explicit tie-break for every top-N cut (6 Oct 2026)
+
+**A method clarification recorded after publication, not a retune.** No data, model, score, seed or agent output changed. The only thing that changed is how an existing tie is resolved when a ranked list is cut.
+
+**The defect.** The ticket-text agent's account score has only 33 distinct values. The text layer's top-100 cut falls inside a tie: 23 accounts score 0.55 and occupy ranks 95 to 117, so six of them make the list. The pipeline used a stable sort, which broke ties by the row order of `accounts.csv`. Which six made the list therefore depended on nothing but how the data was laid out. The webpage-editor found it on 6 Oct 2026 while fixing the explorer's quadrant chart. The usage and combined scores are continuous and have no tie at rank 100 (the top-50 text cut also sits in a tie, of 19 accounts, but resolves to the same set under either rule).
+
+**The rule.** Implemented once, in `code/ranking.py`, and used by `code/fuse_and_evaluate.py`, `code/train_models.py` and `interactive/build_data.py` (and mirrored in the explorer's JavaScript for the live mixer).
+
+- Text arm: score descending, then most recent ticket date descending (a more recent concern ranks above an older one at equal score), then account id ascending. Recency stays inside the text layer, so the usage and text arms remain independent.
+- Combined arm: the same rule, since that arm already reads ticket data.
+- Usage arm: score descending, then account id ascending. Recency is left out so the usage arm never reads a ticket field. This is a small reading of "the same explicit rule" and it changes no figure, because the usage score has no tie at the cut.
+
+`fuse_and_evaluate.py` now also validates that each top-100 flags exactly 100 accounts and that the flagged set is identical under a shuffled row order. `combined_scores.csv` gains `ml_rank`, `text_rank` and `combined_rank` columns so the explorer reads ranks from the pipeline and never re-sorts scores itself.
+
+**Before and after** (`data/fusion/tiebreak_before_after.md`, produced by `code/tiebreak_before_after.py`, which reproduces the old behaviour exactly before comparing). Three accounts swap on the text top-100.
+
+| Figure | Before | After |
+|---|---|---|
+| Recall@100, text layer | 59.4% (79 of 133) | 58.6% (78 of 133) |
+| Recall@100, usage | 59.4% | 59.4% (unchanged) |
+| Recall@100, combined | 66.2% | 66.2% (unchanged) |
+| Regions: both / usage only / tickets only / neither | 58 / 42 / 42 / 358 | 59 / 41 / 41 / 359 |
+| Churned ARR caught by text top-100 | EUR 4,349,027 | EUR 4,137,013 |
+| Churned ARR the text layer surfaces that usage does not | EUR 1,340,728 | EUR 1,140,868 |
+| Churned ARR usage surfaces that text does not | EUR 703,350 | EUR 715,504 |
+| A4 accounts in the text top-100 | 35 | 34 |
+| A7 accounts in the text top-100 / rescued from the combined list | 20 / 19 | 19 / 18 |
+
+Unchanged: AUC and average precision for every arm, every top-50 figure, usage and combined recall and ARR at top-100, the combined top-100 and its worth-saving split, and the headline 0.867 to 0.890 AUC and 59% to 66% recall@100 lift.
+
+**What the old figure was.** One arbitrary draw from a spread. Any six of the 23 tied accounts could have filled the slots; across 20,000 seeded random draws, text recall@100 ranged from 57.9% to 62.4% and the text-only ARR figure from EUR 1.14M to EUR 1.54M. The rule lands at the low end of both ranges. It drops ACC0045, ACC0062 and ACC0130 (the last an A4 churner worth EUR 199,860) in favour of ACC0183, ACC0283 and ACC0382, whose last tickets are more recent (Aug to Sep 2025, against Oct 2024 to Apr 2025). The rule was fixed before its outcome was computed. The old "text and usage each catch 59.4%" coincidence was an artefact of the tie and no longer holds.
+
+**Not regenerated.** `data/tickets_raw/`, `data/agent/assessments_raw/`, `text_scores.csv` and `narratives.json` are untouched. `train_models.py` was re-run to confirm the rule is a no-op there (`ml_scores.csv`, `shap_values.csv` and `features.csv` came out byte-identical); the hand-edited `data/model/ml_report.md` was restored afterwards and should not be regenerated, since the script's text for three paragraphs is older than the hand edits.
+
+**Published surfaces still carrying the old figures** (flagged here, not edited): the website explorer and case page, `work.html`, `writeup/case_study.md` and `case_study_draft.md`, and the executed notebook. The regenerated explorer is staged at `interactive/staging/churn_explorer.staging.html`; the standing `interactive/churn_explorer.html` and `_data.json` are the pre-fix build.

@@ -31,8 +31,10 @@ and are well represented already by A1/A3 in the drill-down.
 Total curated: 46 + 5*7 = 81 accounts.
 """
 
+import argparse
 import json
 import math
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -41,9 +43,13 @@ import pandas as pd
 HERE = Path(__file__).resolve().parent
 DATA = HERE.parent / "data"
 
+# Default outputs. `--staging` redirects them to interactive/staging/ so a regenerated
+# page can be inspected without overwriting the standing files (used for the
+# 6 Oct 2026 tie-break fix; see design/DECISIONS.md).
 OUT_JSON = HERE / "_data.json"
 TEMPLATE_HTML = HERE / "_template.html"
 OUT_HTML = HERE / "churn_explorer.html"
+STAGING_DIR = HERE / "staging"
 DATA_MARKER = "/*__HPX_DATA_JSON__*/"
 
 RANDOM_SEED = 42  # unused directly here (no new randomness is introduced), kept for the record.
@@ -102,13 +108,14 @@ def load_all():
 # Join into one per-account frame
 # ---------------------------------------------------------------------------
 
-def build_master(accounts, answer_key, text_scores, combined):
+def build_master(accounts, answer_key, text_scores, combined, tickets):
     df = (
         accounts
         .merge(answer_key[["account_id", "archetype", "planted_signals", "churn_driver"]],
                on="account_id", how="inner", validate="one_to_one")
         .merge(text_scores, on="account_id", how="inner", validate="one_to_one")
-        .merge(combined[["account_id", "ml_risk_score", "combined_score"]],
+        .merge(combined[["account_id", "ml_risk_score", "combined_score",
+                         "ml_rank", "text_rank", "combined_rank"]],
                on="account_id", how="inner", validate="one_to_one")
     )
     if len(df) != 500:
@@ -119,7 +126,12 @@ def build_master(accounts, answer_key, text_scores, combined):
         raise ValueError("Unmapped frustration_trajectory values found.")
     df["escalation_pattern"] = df["escalation_pattern"].astype(bool)
 
-    ticket_counts = None
+    # Most recent ticket date per account: the recency tie-break for ranking ties in the
+    # live mixer (the static per-arm ranks come precomputed from code/fuse_and_evaluate.py).
+    last_ticket = tickets.groupby("account_id")["created_at"].max()
+    df["last_ticket"] = df["account_id"].map(last_ticket)
+    if df["last_ticket"].isna().any():
+        raise ValueError("An account has no tickets -- the recency tie-break is undefined for it.")
     return df
 
 
@@ -180,6 +192,12 @@ def build_light_records(df, curated_ids):
             "ml": round(float(r.ml_risk_score), 4),
             "text": round(float(r.text_risk_score), 4),
             "combined": round(float(r.combined_score), 4),
+            # Pipeline ranks under the explicit tie-break rule (code/ranking.py). The page
+            # reads these; it never re-sorts scores for the 2x2, so row order cannot decide a cut.
+            "ml_rank": int(r.ml_rank),
+            "text_rank": int(r.text_rank),
+            "combined_rank": int(r.combined_rank),
+            "last_ticket": str(r.last_ticket),
             "traj": r.frustration_trajectory,
             "traj_ord": int(r.trajectory_ordinal),
             "unresolved": int(r.unresolved_issue_count),
@@ -337,6 +355,26 @@ def sanity_check_mixer(light_records, combined_df, coefs):
     log("  All mixer sanity checks passed.")
 
 
+def check_published_ranks(light_records, results_summary):
+    """
+    The 2x2 region counts the page draws from the precomputed ranks must equal the
+    pipeline's two_by_two block exactly -- same rule, same cut, same counts.
+    """
+    ml_top = {r["id"] for r in light_records if r["ml_rank"] <= 100}
+    text_top = {r["id"] for r in light_records if r["text_rank"] <= 100}
+    counts = {
+        "both": len(ml_top & text_top),
+        "ml_only": len(ml_top - text_top),
+        "text_only": len(text_top - ml_top),
+    }
+    counts["neither"] = len(light_records) - sum(counts.values())
+    for region, expected in ((k, v["total_accounts"]) for k, v in results_summary["two_by_two"].items()):
+        assert counts[region] == expected, f"2x2 region {region}: page ranks give {counts[region]}, pipeline {expected}"
+    assert len({r["ml_rank"] for r in light_records}) == len(light_records), "ml_rank has ties"
+    assert len({r["text_rank"] for r in light_records}) == len(light_records), "text_rank has ties"
+    log(f"  2x2 region counts from precomputed ranks match the pipeline: {counts}")
+
+
 # ---------------------------------------------------------------------------
 # Preset weight percentages shown on the sliders (standardized-coefficient shares)
 # ---------------------------------------------------------------------------
@@ -369,10 +407,24 @@ def compute_fitted_slider_percentages(coefs):
 # ---------------------------------------------------------------------------
 
 def main():
+    global OUT_JSON, OUT_HTML
+    parser = argparse.ArgumentParser(description="Build the explorer data payload and page.")
+    parser.add_argument("--staging", action="store_true",
+                        help="write to interactive/staging/ instead of overwriting the standing outputs")
+    args = parser.parse_args()
+    if args.staging:
+        STAGING_DIR.mkdir(exist_ok=True)
+        OUT_JSON = STAGING_DIR / "_data.json"
+        OUT_HTML = STAGING_DIR / "churn_explorer.staging.html"
+        log(f"STAGING mode: writing to {STAGING_DIR}")
+    # Never write over an input.
+    for output_path in (OUT_JSON, OUT_HTML):
+        assert output_path.resolve() != TEMPLATE_HTML.resolve(), "output path must not equal the template"
+
     accounts, usage, tickets, answer_key, text_scores, narratives, combined, results_summary = load_all()
 
     log("Joining into master per-account frame...")
-    df = build_master(accounts, answer_key, text_scores, combined)
+    df = build_master(accounts, answer_key, text_scores, combined, tickets)
 
     log("Selecting curated drill-down subset...")
     curated_ids = select_curated(df, tickets)
@@ -385,6 +437,7 @@ def main():
 
     coefs = results_summary["fusion_coefficients"]
     sanity_check_mixer(light_records, combined, coefs)
+    check_published_ranks(light_records, results_summary)
 
     fitted_pct = compute_fitted_slider_percentages(coefs)
     log(f"Fitted preset slider percentages: {fitted_pct}")
@@ -414,6 +467,7 @@ def main():
         "a7_verdict": results_summary["a7_verdict"],
         "a5_honesty_check": results_summary["a5_honesty_check"],
         "arr_business_translation": results_summary["arr_business_translation"],
+        "ranking_rule": results_summary["ranking_rule"],
         "accounts": light_records,
         "detail": heavy_records,
     }

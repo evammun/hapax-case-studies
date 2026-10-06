@@ -413,8 +413,17 @@
     }
   }
 
+  // Ranking rule (same as the pipeline, code/ranking.py): blended score descending, then
+  // most recent ticket date descending, then account id ascending. Never row order. As in the
+  // pipeline's usage arm, recency is skipped when the ticket channels are switched off
+  // (usage-only blend), so a usage ranking never reads a ticket field.
   function sortedByBlended() {
-    return accounts.slice().sort(function(a, b) { return b.blended - a.blended; });
+    var useRecency = state.wSentiment > 0 || state.wCompetitor > 0;
+    return accounts.slice().sort(function(a, b) {
+      if (b.blended !== a.blended) return b.blended - a.blended;
+      if (useRecency && a.last_ticket !== b.last_ticket) return a.last_ticket < b.last_ticket ? 1 : -1;
+      return a.id < b.id ? -1 : (a.id > b.id ? 1 : 0);
+    });
   }
 
   // ---------------------------------------------------------------------
@@ -560,10 +569,9 @@
     if (quadrantBuilt) return;
     quadrantBuilt = true;
 
-    var byMl = accounts.slice().sort(function(a, b) { return b.ml - a.ml; });
-    byMl.forEach(function(a, i) { a.mlRank = i + 1; });
-    var byText = accounts.slice().sort(function(a, b) { return b.text - a.text; });
-    byText.forEach(function(a, i) { a.textRank = i + 1; });
+    // Ranks come precomputed from the pipeline (code/ranking.py): the ticket agent's score has
+    // only 33 distinct values, so re-sorting here would let row order decide the top-100 cut.
+    accounts.forEach(function(a) { a.mlRank = a.ml_rank; a.textRank = a.text_rank; });
 
     var n = accounts.length;
     var W = 560, H = 560, M = 34;

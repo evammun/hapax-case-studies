@@ -35,7 +35,7 @@
       "auc": 0.7952,
       "average_precision": 0.7051,
       "recall_at_50": 0.3308,
-      "recall_at_100": 0.594
+      "recall_at_100": 0.5865
     },
     "combined": {
       "auc": 0.8902,
@@ -48,7 +48,7 @@
     "A1": {
       "n_accounts": 176,
       "ml_top100_share": 0.0568,
-      "text_top100_share": 0.0057,
+      "text_top100_share": 0.0114,
       "combined_top100_share": 0.0341
     },
     "A2": {
@@ -66,7 +66,7 @@
     "A4": {
       "n_accounts": 46,
       "ml_top100_share": 0.5,
-      "text_top100_share": 0.7609,
+      "text_top100_share": 0.7391,
       "combined_top100_share": 0.8043
     },
     "A5": {
@@ -84,19 +84,19 @@
     "A7": {
       "n_accounts": 55,
       "ml_top100_share": 0.0364,
-      "text_top100_share": 0.3636,
+      "text_top100_share": 0.3455,
       "combined_top100_share": 0.0545
     },
     "A8": {
       "n_accounts": 38,
       "ml_top100_share": 0.1053,
-      "text_top100_share": 0.0,
+      "text_top100_share": 0.0263,
       "combined_top100_share": 0.0789
     }
   },
   "two_by_two": {
     "both": {
-      "total_accounts": 58,
+      "total_accounts": 59,
       "true_churners": 57,
       "archetype_breakdown": {
         "A1": 0,
@@ -106,11 +106,11 @@
         "A5": 0,
         "A6": 0,
         "A7": 1,
-        "A8": 0
+        "A8": 1
       }
     },
     "ml_only": {
-      "total_accounts": 42,
+      "total_accounts": 41,
       "true_churners": 22,
       "archetype_breakdown": {
         "A1": 10,
@@ -120,43 +120,43 @@
         "A5": 5,
         "A6": 0,
         "A7": 1,
-        "A8": 4
+        "A8": 3
       }
     },
     "text_only": {
-      "total_accounts": 42,
-      "true_churners": 22,
+      "total_accounts": 41,
+      "true_churners": 21,
       "archetype_breakdown": {
-        "A1": 1,
+        "A1": 2,
         "A2": 0,
         "A3": 4,
-        "A4": 18,
+        "A4": 17,
         "A5": 0,
         "A6": 0,
-        "A7": 19,
+        "A7": 18,
         "A8": 0
       }
     },
     "neither": {
-      "total_accounts": 358,
-      "true_churners": 32,
+      "total_accounts": 359,
+      "true_churners": 33,
       "archetype_breakdown": {
-        "A1": 165,
+        "A1": 164,
         "A2": 41,
         "A3": 2,
-        "A4": 5,
+        "A4": 6,
         "A5": 25,
         "A6": 52,
-        "A7": 34,
+        "A7": 35,
         "A8": 34
       }
     }
   },
   "a7_verdict": {
     "n_a7_total": 55,
-    "n_a7_in_text_top100": 20,
-    "pct_a7_polluting_text_top100": 0.3636,
-    "n_rescued_out_of_combined_top100": 19,
+    "n_a7_in_text_top100": 19,
+    "pct_a7_polluting_text_top100": 0.3455,
+    "n_rescued_out_of_combined_top100": 18,
     "n_still_flagged_in_combined_top100": 1,
     "mean_text_risk_score_a7": 0.4895
   },
@@ -169,20 +169,20 @@
   "a4_table": {
     "n_a4_total": 46,
     "n_in_ml_top100": 23,
-    "n_in_text_top100": 35,
+    "n_in_text_top100": 34,
     "n_in_combined_top100": 37,
-    "headline_delta_text_minus_ml": 12,
+    "headline_delta_text_minus_ml": 11,
     "headline_delta_combined_minus_ml": 14
   },
   "arr_business_translation": {
     "total_churned_arr": 6529635,
     "arr_caught_top100": {
       "ml_only": 3711649,
-      "text_only": 4349027,
+      "text_only": 4137013,
       "combined": 4571080
     },
-    "incremental_arr_text_uniquely_surfaces": 1340728,
-    "incremental_arr_ml_uniquely_surfaces": 703350,
+    "incremental_arr_text_uniquely_surfaces": 1140868,
+    "incremental_arr_ml_uniquely_surfaces": 715504,
     "review_budget_top50": {
       "ml_only": {
         "n_accounts_caught": 47,
@@ -209,5 +209,6 @@
       "n_accounts": 54,
       "total_arr": 1296425
     }
-  }
+  },
+  "ranking_rule": "score descending; ties broken by most recent ticket date descending (usage arm: omitted, to keep it free of ticket data), then account_id ascending"
 }
