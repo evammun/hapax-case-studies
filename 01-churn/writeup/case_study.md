@@ -14,7 +14,7 @@ Kataja Analytics is a Helsinki-based B2B SaaS company selling a dashboards-and-r
 
 It did not catch Bergvik Systems AB.
 
-Bergvik, a Swedish construction firm with 31 seats on the Standard plan at €12,426 a year, used the product normally right up until it left in November 2025. Its usage numbers never moved. What moved was the tone of 4 support tickets over 13 months, each longer and more careful than the last, each ending with some version of "no need to treat this as urgent." A dashboard reconciliation problem that made 2 colleagues quietly start doing the board pack in Excel again. A report template that kept reverting to default, so the team stopped asking after the fourth time. Nobody escalated, nobody used a harsh word, and the account cancelled anyway.
+Bergvik, a Swedish construction firm with 31 seats on the Standard plan at €12,426 a year, used the product normally right up until it left in November 2025. Its usage numbers never moved. What moved was the tone of 4 support tickets over 9 months, the last closing with "no need to treat this as urgent." A dashboard reconciliation problem that made 2 colleagues quietly start doing the board pack in Excel again. A report template that kept reverting to default, so the team stopped asking after the fourth time. Nobody escalated, nobody used a harsh word, and the account cancelled anyway.
 
 That is the shape of churn a usage dashboard cannot see. The account behaves normally while trust erodes somewhere a spreadsheet does not reach. The support inbox had the story. Nobody had time to sit down and read months of ticket history for every one of 500 accounts, looking for a pattern like this.
 
