@@ -393,7 +393,7 @@
         "status": "evidence_found",
         "lines": [
           {
-            "quote": "Python — production calibration pipeline at Arctic (instrument control, data processing, automated reporting; ~6,000 lines, maintained and tested, used by the RF test team)",
+            "quote": "Python — production calibration pipeline at Hallaharju (instrument control, data processing, automated reporting; ~6,000 lines, maintained and tested, used by the RF test team)",
             "source": "cv"
           }
         ],
