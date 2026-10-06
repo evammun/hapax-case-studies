@@ -3,7 +3,7 @@ Lasku T-0166
 Teollisuuskatu 19 Laskun päivä 03.04.2025
 15170 Lahti
 Eräpäivä 03.05.2025
-Y-tunnus: 2277889-2
+Y-tunnus: 9811231-7
 Viitenumero 46766780
 Tilausnumero PO-2025-052
 OSTAJA
@@ -26,6 +26,6 @@ Teollisuusliima, tuubi 17 kpl 6,56 25,5 111,52
 Veroton yhteensä 888,47 €
 ALV 25,5 % 226,56 €
 Maksettava 1 115,03 €
-Y-tunnus 2277889-2 -- ALV-tunnus FI22778892
+Y-tunnus 9811231-7 -- ALV-tunnus FI98112317
 Maksuehto: 30 pv netto -- Viitenumero: 46766780
 Pankkiyhteys: FI5822791800130472 BIC: NDEAFIHH

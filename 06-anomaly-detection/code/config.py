@@ -210,6 +210,45 @@ GENERIC_NAME_MID_INTL = {
 }
 COUNTRY_SUFFIXES = {"SE": "AB", "DE": "GmbH", "NO": "AS", "EE": "OU"}
 
+# Name policy added 6 Oct 2026 (invented-names check, Set Up/Legal/invented-names-check-2026-10-06.md).
+# The bare generic names above ("Felsmark Metalltechnik GmbH", "Skavlund Fjordhandel AS") are the kind of name the
+# national registers routinely hold, so every international generic vendor gets a coined stem in
+# front. The stem is applied AFTER the pool draw, so the random stream and every draw order are
+# unchanged: the dataset is the same dataset with different names.
+GENERIC_NAME_STEMS_INTL = {
+    "DE": ["Felsmark", "Erlengrund"],
+    "NO": ["Skavlund", "Fjellskor"],
+    "SE": ["Myrkvarn", "Hällsvik"],
+    "EE": ["Kuuseoru", "Pihlakoru"],
+}
+# Stems pinned by name (the three that appear on the website explorer), set by the legal check.
+GENERIC_NAME_STEM_PINS_INTL = {
+    "Felsmark Metalltechnik GmbH": "Felsmark",
+    "Erlengrund Stahltechnik GmbH": "Erlengrund",
+    "Felsmark Industriehandel GmbH": "Felsmark",
+}
+# Finnish generic names pinned to a different name after the draw (same prefix + mid scheme).
+GENERIC_NAME_PINS_FI = {
+    "Kumivaraosa Oy Ab": "Kumivaraosa Oy Ab",
+    "Kumivaraosa Tmi": "Kumivaraosa Tmi",
+}
+
+
+def apply_generic_name_policy(name: str, country: str) -> str:
+    """Return the published name for a drawn generic-scheme name (see the block above).
+
+    International names get a coined stem in front; the stem is the pinned one if the name is
+    pinned, otherwise chosen by a stable checksum of the drawn name. Finnish names change only
+    if pinned."""
+    import zlib
+    if country == "FI":
+        return GENERIC_NAME_PINS_FI.get(name, name)
+    stems = GENERIC_NAME_STEMS_INTL[country]
+    stem = GENERIC_NAME_STEM_PINS_INTL.get(name)
+    if stem is None:
+        stem = stems[zlib.crc32(name.encode("utf-8")) % len(stems)]
+    return f"{stem} {name}"
+
 # Street/city components for deterministic address generation
 ADDRESS_STREETS_FI = [
     "Teollisuuskatu", "Kauppakatu", "Satamakatu", "Varastotie", "Konepajankatu",
@@ -518,7 +557,7 @@ B4_POSTED_BY = "U-058"
 
 # Benign B5 -- annual insurance premium.
 B5_VENDOR_ID = "V-0020"
-B5_VENDOR_NAME = "Pohjolan Vakuutuspalvelut Oy"
+B5_VENDOR_NAME = "Varpuniemen Vakuutuspalvelu Oy"
 B5_AMOUNT_EUR = 24_600.00
 B5_MONTH = 1
 B5_DAY_OF_MONTH = 15  # snapped to the nearest working day

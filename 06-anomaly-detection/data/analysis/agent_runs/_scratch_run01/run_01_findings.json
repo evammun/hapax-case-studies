@@ -638,10 +638,10 @@
   },
   {
     "finding_id": "F-17",
-    "headline": "Detector cluster on Metalltechnik GmbH (V-0062) is its own rare-account and top-amount tail - benign.",
+    "headline": "Detector cluster on Felsmark Metalltechnik GmbH (V-0062) is its own rare-account and top-amount tail - benign.",
     "unit_id": "DU-04",
     "verdict": "stand_down",
-    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 2 of 3 flagged lines are on Metalltechnik GmbH's rarer-but-allowed account and 2 of 3 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
+    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 2 of 3 flagged lines are on Felsmark Metalltechnik GmbH's rarer-but-allowed account and 2 of 3 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
     "affected": {
       "vendor_ids": [
         "V-0062"
@@ -680,10 +680,10 @@
   },
   {
     "finding_id": "F-18",
-    "headline": "Detector cluster on Stahltechnik GmbH (V-0067) is its own rare-account and top-amount tail - benign.",
+    "headline": "Detector cluster on Erlengrund Stahltechnik GmbH (V-0067) is its own rare-account and top-amount tail - benign.",
     "unit_id": "DU-05",
     "verdict": "stand_down",
-    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 4 of 7 flagged lines are on Stahltechnik GmbH's rarer-but-allowed account and 6 of 7 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
+    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 4 of 7 flagged lines are on Erlengrund Stahltechnik GmbH's rarer-but-allowed account and 6 of 7 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
     "affected": {
       "vendor_ids": [
         "V-0067"
@@ -856,10 +856,10 @@
   },
   {
     "finding_id": "F-22",
-    "headline": "Detector cluster on Industriehandel GmbH (V-0090) is its own rare-account and top-amount tail - benign.",
+    "headline": "Detector cluster on Felsmark Industriehandel GmbH (V-0090) is its own rare-account and top-amount tail - benign.",
     "unit_id": "DU-09",
     "verdict": "stand_down",
-    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 6 of 9 flagged lines are on Industriehandel GmbH's rarer-but-allowed account and 3 of 9 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
+    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 6 of 9 flagged lines are on Felsmark Industriehandel GmbH's rarer-but-allowed account and 3 of 9 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
     "affected": {
       "vendor_ids": [
         "V-0090"
@@ -904,10 +904,10 @@
   },
   {
     "finding_id": "F-23",
-    "headline": "Detector cluster on Bergsteknik (V-0098) is its own rare-account and top-amount tail - benign.",
+    "headline": "Detector cluster on Hällsvik Bergsteknik (V-0098) is its own rare-account and top-amount tail - benign.",
     "unit_id": "DU-10",
     "verdict": "stand_down",
-    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 3 of 4 flagged lines are on Bergsteknik's rarer-but-allowed account and 1 of 4 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
+    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 3 of 4 flagged lines are on Hällsvik Bergsteknik's rarer-but-allowed account and 1 of 4 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
     "affected": {
       "vendor_ids": [
         "V-0098"
@@ -947,10 +947,10 @@
   },
   {
     "finding_id": "F-24",
-    "headline": "Detector cluster on Malmhandel (V-0099) is its own rare-account and top-amount tail - benign.",
+    "headline": "Detector cluster on Hällsvik Malmhandel (V-0099) is its own rare-account and top-amount tail - benign.",
     "unit_id": "DU-11",
     "verdict": "stand_down",
-    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 7 of 11 flagged lines are on Malmhandel's rarer-but-allowed account and 6 of 11 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
+    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 7 of 11 flagged lines are on Hällsvik Malmhandel's rarer-but-allowed account and 6 of 11 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
     "affected": {
       "vendor_ids": [
         "V-0099"
@@ -1431,10 +1431,10 @@
   },
   {
     "finding_id": "F-35",
-    "headline": "Detector cluster on Kumitukku Oy Ab (V-0157) is its own rare-account and top-amount tail - benign.",
+    "headline": "Detector cluster on Kumivaraosa Oy Ab (V-0157) is its own rare-account and top-amount tail - benign.",
     "unit_id": "DU-22",
     "verdict": "stand_down",
-    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 4 of 7 flagged lines are on Kumitukku Oy Ab's rarer-but-allowed account and 4 of 7 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
+    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 4 of 7 flagged lines are on Kumivaraosa Oy Ab's rarer-but-allowed account and 4 of 7 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
     "affected": {
       "vendor_ids": [
         "V-0157"
@@ -1476,10 +1476,10 @@
   },
   {
     "finding_id": "F-36",
-    "headline": "Detector cluster on Nordgrossist (V-0176) is its own rare-account and top-amount tail - benign.",
+    "headline": "Detector cluster on Hällsvik Nordgrossist (V-0176) is its own rare-account and top-amount tail - benign.",
     "unit_id": "DU-23",
     "verdict": "stand_down",
-    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 2 of 3 flagged lines are on Nordgrossist's rarer-but-allowed account and 1 of 3 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
+    "mechanism": "Isolation-Forest picks up statistical dispersion, not a control breach: 2 of 3 flagged lines are on Hällsvik Nordgrossist's rarer-but-allowed account and 1 of 3 are in the vendor's top amount quintile. No flagged line is on a disallowed account, none is duplicated by a rule, none breaches the 10,000 tier.",
     "affected": {
       "vendor_ids": [
         "V-0176"

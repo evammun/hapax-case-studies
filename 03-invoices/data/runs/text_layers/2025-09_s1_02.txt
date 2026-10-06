@@ -2,7 +2,7 @@ Salpausselän Puutavara Oy
 Laskun numero Lasku 2025-2046
 Karjalankatu 4 Laskun päivä 16.09.2025
 15150 Lahti Eräpäivä 16.10.2025
-Y-tunnus: 2233445-8 Viitenumero 42016890
+Y-tunnus: 9811228-8 Viitenumero 42016890
 Tilausnumero PO-2025-100
 OSTAJA
 Pyökkipaja Oy
@@ -22,6 +22,6 @@ Höylätty lauta 22x125 19 jm 2,67 25,5 50,73
 Veroton yhteensä 971,28 €
 ALV 25,5 % 247,68 €
 Maksettava 1 218,96 €
-Y-tunnus 2233445-8 Pankkiyhteys: FI6215783022011184
-ALV-tunnus FI22334458 BIC: NDEAFIHH
+Y-tunnus 9811228-8 Pankkiyhteys: FI6215783022011184
+ALV-tunnus FI98112288 BIC: NDEAFIHH
 Maksuehto: 30 pv netto Viitenumero: 42016890

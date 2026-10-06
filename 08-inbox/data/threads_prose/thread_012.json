@@ -1,7 +1,7 @@
 {
   "thread_id": "THR-012",
   "customer_id": "CUST-003",
-  "customer_name": "Pohjolan Maanrakennus Oy",
+  "customer_name": "Kurujärven Maanrakennus Oy",
   "is_promise_thread": false,
   "messages": [
     {
@@ -10,7 +10,7 @@
       "date": "2026-09-08",
       "timestamp": "2026-09-08T15:53",
       "subject": "Date change on plate compactor booking",
-      "body": "Hi,\n\nWe need to change the dates on our plate compactor booking. Site schedule got pushed back so we won't need it when originally planned. Can you move it?\n\nRegards,\nPohjolan Maanrakennus Oy",
+      "body": "Hi,\n\nWe need to change the dates on our plate compactor booking. Site schedule got pushed back so we won't need it when originally planned. Can you move it?\n\nRegards,\nKurujärven Maanrakennus Oy",
       "email_id": "EML-070"
     },
     {
@@ -30,7 +30,7 @@
       "date": "2026-09-09",
       "timestamp": "2026-09-09T10:41",
       "subject": "Re: Date change on plate compactor booking",
-      "body": "The plate compactor is not working properly. Can you send someone to look at it or swap it out?\n\nPohjolan Maanrakennus Oy",
+      "body": "The plate compactor is not working properly. Can you send someone to look at it or swap it out?\n\nKurujärven Maanrakennus Oy",
       "email_id": "EML-078"
     }
   ]

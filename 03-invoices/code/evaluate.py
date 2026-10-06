@@ -605,7 +605,7 @@ def _fixture_record(number: str, issue_date: str, iban: str, qty="10", price="5.
         "schema_version": "1.0", "doc_id": "fixture",
         "supplier": {"name": "Selftest Supplier Oy", "street": "Testikatu 1",
                       "postcode": "00100", "city": "Helsinki", "country": "FI",
-                      "vat_id": "FI22334455", "business_id": "2233445-8"},
+                      "vat_id": "FI22334455", "business_id": "9811228-8"},
         "buyer": {"name": "Pyökkipaja Oy", "street": "Sorvaajankatu 11",
                    "postcode": "15520", "city": "Lahti", "country": "FI",
                    "vat_id": None, "business_id": schemas.make_y_tunnus("2417551")},

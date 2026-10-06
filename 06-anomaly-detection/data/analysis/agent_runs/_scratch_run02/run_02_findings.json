@@ -335,7 +335,7 @@
   },
   {
     "finding_id": "F-23",
-    "headline": "V-0098 Bergsteknik (SE): four small flags, benign.",
+    "headline": "V-0098 Hällsvik Bergsteknik (SE): four small flags, benign.",
     "unit_id": "DU-10",
     "verdict": "stand_down",
     "mechanism": "Four low-value invoices on accounts 4020/4300 (both allowed); flagged as a low-frequency Swedish vendor. Inside range, no control issue.",
@@ -350,7 +350,7 @@
   },
   {
     "finding_id": "F-24",
-    "headline": "V-0099 Malmhandel (SE): eleven flags including the vendor's largest invoice (EUR 11,282), all within allowed accounts.",
+    "headline": "V-0099 Hällsvik Malmhandel (SE): eleven flags including the vendor's largest invoice (EUR 11,282), all within allowed accounts.",
     "unit_id": "DU-11",
     "verdict": "stand_down",
     "mechanism": "A freight/external-services supplier whose flags are its account switches (4410/4440, both allowed) and one EUR 11,282 service invoice - its single largest, above EUR 10,000 but a single genuine invoice, not a split. No mapping or duplicate issue.",
@@ -515,7 +515,7 @@
   },
   {
     "finding_id": "F-35",
-    "headline": "V-0157 Kumitukku: seven mid-value flags across two allowed accounts, benign.",
+    "headline": "V-0157 Kumivaraosa: seven mid-value flags across two allowed accounts, benign.",
     "unit_id": "DU-22",
     "verdict": "stand_down",
     "mechanism": "Steel and spare-parts invoices (accounts 4100/4310, both allowed) at mid values, flagged for the account switch. All inside the vendor's range; nothing wrong.",
@@ -530,7 +530,7 @@
   },
   {
     "finding_id": "F-36",
-    "headline": "V-0176 Nordgrossist (SE): three small flags within allowed accounts.",
+    "headline": "V-0176 Hällsvik Nordgrossist (SE): three small flags within allowed accounts.",
     "unit_id": "DU-23",
     "verdict": "stand_down",
     "mechanism": "Three low-value invoices on accounts 4300/4020 (both allowed), flagged as a low-frequency Swedish vendor. Inside range; no control issue.",

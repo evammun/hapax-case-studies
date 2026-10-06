@@ -2,7 +2,7 @@ Salpausselän Puutavara Oy
 Laskun numero Lasku 2025-1870
 Karjalankatu 4 Laskun päivä 13.02.2025
 15150 Lahti Eräpäivä 15.03.2025
-Y-tunnus: 2233445-8 Viitenumero 80387468
+Y-tunnus: 9811228-8 Viitenumero 80387468
 Tilausnumero PO-2025-016
 OSTAJA
 Pyökkipaja Oy
@@ -18,6 +18,6 @@ Liimapuupalkki 90x225 31 jm 18,25 25,5 565,75
 Veroton yhteensä 4 859,81 €
 ALV 25,5 % 1 239,25 €
 Maksettava 6 099,06 €
-Y-tunnus 2233445-8 Pankkiyhteys: FI6215783022011184
-ALV-tunnus FI22334458 BIC: NDEAFIHH
+Y-tunnus 9811228-8 Pankkiyhteys: FI6215783022011184
+ALV-tunnus FI98112288 BIC: NDEAFIHH
 Maksuehto: 30 pv netto Viitenumero: 80387468

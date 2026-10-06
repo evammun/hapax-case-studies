@@ -113,7 +113,7 @@
         "requirement_id": "R03",
         "status": "evidence_found",
         "lines": [
-          {"quote": "Led the migration of Arctic's internal calibration-data pipeline from a collection of shell scripts and ad-hoc MATLAB routines to a structured Python package.", "source": "cv"},
+          {"quote": "Led the migration of Hallaharju's internal calibration-data pipeline from a collection of shell scripts and ad-hoc MATLAB routines to a structured Python package.", "source": "cv"},
           {"quote": "Wrote the core processing modules (NumPy/SciPy), implemented unit and integration tests with pytest, built CI via GitLab CI/CD, and documented the API for the calibration team.", "source": "cv"}
         ],
         "note": null
@@ -144,7 +144,7 @@
         "status": "evidence_found",
         "lines": [
           {"quote": "Satellite and airborne platform experience.", "source": "cv"},
-          {"quote": "Designed the lossy compression pipeline (wavelet-based, CCSDS 122.0 compliant) for Arctic's multispectral imager payload, now in qualification testing.", "source": "cv"}
+          {"quote": "Designed the lossy compression pipeline (wavelet-based, CCSDS 122.0 compliant) for Hallaharju's multispectral imager payload, now in qualification testing.", "source": "cv"}
         ],
         "note": null
       },
@@ -153,7 +153,7 @@
         "status": "claim_only",
         "lines": [
           {"quote": "Team-lead experience.", "source": "cv"},
-          {"quote": "Led the migration of Arctic's internal calibration-data pipeline from a collection of shell scripts and ad-hoc MATLAB routines to a structured Python package.", "source": "cv"}
+          {"quote": "Led the migration of Hallaharju's internal calibration-data pipeline from a collection of shell scripts and ad-hoc MATLAB routines to a structured Python package.", "source": "cv"}
         ],
         "note": "The only detailed project associated with 'leading' (the pipeline migration) describes the candidate personally writing the modules, tests, CI and documentation, with no mention of directing other engineers; conservative claim_only chosen over evidence_found for the bare 'Team-lead experience' assertion."
       },
@@ -305,7 +305,7 @@
         "requirement_id": "R01",
         "status": "evidence_found",
         "lines": [
-          {"quote": "Designed the digital beamforming architecture for Arctic's X-band ground receiver: a 32-element array with sum/difference beamforming and adaptive sidelobe cancellation.", "source": "cv"},
+          {"quote": "Designed the digital beamforming architecture for Hallaharju's X-band ground receiver: a 32-element array with sum/difference beamforming and adaptive sidelobe cancellation.", "source": "cv"},
           {"quote": "Adaptive beamforming (MVDR, LCMV, STAP variants)", "source": "cv"}
         ],
         "note": null
@@ -314,7 +314,7 @@
         "requirement_id": "R02",
         "status": "evidence_found",
         "lines": [
-          {"quote": "Wrote production embedded firmware in C++ for Arctic's real-time signal-processing modules on a Xilinx Zynq SoC.", "source": "cv"},
+          {"quote": "Wrote production embedded firmware in C++ for Hallaharju's real-time signal-processing modules on a Xilinx Zynq SoC.", "source": "cv"},
           {"quote": "Sample-rate loop at 200 MHz clock, interrupt-driven, full regression test coverage.", "source": "cv"}
         ],
         "note": null
@@ -331,7 +331,7 @@
         "requirement_id": "R04",
         "status": "evidence_found",
         "lines": [
-          {"quote": "Designed and executed the RF calibration campaign for Arctic's X-band ground receiver: element-level gain/phase measurements using an Agilent PNA-X network analyser in the company's anechoic chamber, followed by near-field antenna pattern verification.", "source": "cv"}
+          {"quote": "Designed and executed the RF calibration campaign for Hallaharju's X-band ground receiver: element-level gain/phase measurements using an Agilent PNA-X network analyser in the company's anechoic chamber, followed by near-field antenna pattern verification.", "source": "cv"}
         ],
         "note": null
       },
@@ -348,7 +348,7 @@
         "requirement_id": "R06",
         "status": "evidence_found",
         "lines": [
-          {"quote": "Developed and maintained the extended Kalman filter used in Arctic's angle-of-arrival estimator for the ground-based direction-finding product.", "source": "cv"},
+          {"quote": "Developed and maintained the extended Kalman filter used in Hallaharju's angle-of-arrival estimator for the ground-based direction-finding product.", "source": "cv"},
           {"quote": "The filter fuses array-covariance snapshots with platform attitude data to track emitter bearing in real time.", "source": "cv"}
         ],
         "note": null
@@ -364,7 +364,7 @@
         "status": "contradiction",
         "lines": [
           {"quote": "Team-lead experience.", "source": "cv"},
-          {"quote": "Long-tenure individual-contributor role spanning algorithm R&D, embedded firmware delivery, and RF measurement support for Arctic's radar and communications instrument products.", "source": "cv"}
+          {"quote": "Long-tenure individual-contributor role spanning algorithm R&D, embedded firmware delivery, and RF measurement support for Hallaharju's radar and communications instrument products.", "source": "cv"}
         ],
         "note": "The profile line claims 'Team-lead experience' while the work-history entry for the same employer and period describes the role as an 'individual-contributor role'; both cannot straightforwardly be true, and this extraction does not resolve which is accurate."
       },
@@ -395,7 +395,7 @@
         "requirement_id": "R12",
         "status": "evidence_found",
         "lines": [
-          {"quote": "I have spent my entire career at Arctic Space Systems here in Oulu, and I am looking for a new challenge within the same city and the same engineering community that I have been part of for twenty years.", "source": "cover_letter"}
+          {"quote": "I have spent my entire career at Hallaharju Space Systems here in Oulu, and I am looking for a new challenge within the same city and the same engineering community that I have been part of for twenty years.", "source": "cover_letter"}
         ],
         "note": null
       }

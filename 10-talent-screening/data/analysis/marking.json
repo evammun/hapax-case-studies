@@ -2138,7 +2138,7 @@
         "dossier_note": "The profile line claims 'Team-lead experience' while the work-history entry for the same employer and period describes the role as an 'individual-contributor role'; both cannot straightforwardly be true, and this extraction does not resolve which is accurate.",
         "quotes": [
           "Team-lead experience.",
-          "Long-tenure individual-contributor role spanning algorithm R&D, embedded firmware delivery, and RF measurement support for Arctic's radar and communications instrument products."
+          "Long-tenure individual-contributor role spanning algorithm R&D, embedded firmware delivery, and RF measurement support for Hallaharju's radar and communications instrument products."
         ],
         "pre_logged_in_decisions": false
       },

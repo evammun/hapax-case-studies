@@ -3,7 +3,7 @@ Lasku T-0138
 Teollisuuskatu 19 Laskun päivä 27.02.2025
 15170 Lahti
 Eräpäivä 29.03.2025
-Y-tunnus: 2277889-2
+Y-tunnus: 9811231-7
 Viitenumero 27349809
 Tilausnumero PO-2025-027
 OSTAJA
@@ -26,6 +26,6 @@ Mittanauha 5m 4 kpl 7,67 25,5 30,68
 Veroton yhteensä 541,75 €
 ALV 25,5 % 138,15 €
 Maksettava 679,90 €
-Y-tunnus 2277889-2 -- ALV-tunnus FI22778892
+Y-tunnus 9811231-7 -- ALV-tunnus FI98112317
 Maksuehto: 30 pv netto -- Viitenumero: 27349809
 Pankkiyhteys: FI5822791800130472 BIC: NDEAFIHH

@@ -6,7 +6,7 @@
   "is_first_message_in_thread": false,
   "date": "2026-09-10",
   "subject": "Re: Tower light - end of rental",
-  "body": "While we're at it, we'd like to book site fencing again, same as last time. Per 50m run. Can you set that up?\n\nPohjolan Maanrakennus Oy",
+  "body": "While we're at it, we'd like to book site fencing again, same as last time. Per 50m run. Can you set that up?\n\nKurujärven Maanrakennus Oy",
   "classification_contract": {
     "task": "You are the intent-classification step of Tammilehto Oy's customer-email support pipeline. Read the one inbound customer email below and assign exactly one intent class from the fixed taxonomy given in 'intent_classes'. Base your decision only on this email's own subject and body — you are not shown the rest of its thread, the policy handbook, or the customer's account record; a later pipeline step retrieves those separately.",
     "intent_classes": {

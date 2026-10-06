@@ -4,7 +4,7 @@ Satamakatu 6
 Laskun päivä 25.02.2025
 15140 Lahti
 Eräpäivä 11.03.2025
-Y-tunnus: 2255667-5
+Y-tunnus: 9811220-2
 Viitenumero 50012394
 OSTAJA
 Pyökkipaja Oy
@@ -16,6 +16,6 @@ Lisäkuljetus, kiireellinen toimitus 1 kpl 682,14 25,5 682,14
 Veroton yhteensä 682,14 €
 ALV 25,5 % 173,95 €
 Maksettava 856,09 €
-Y-tunnus 2255667-5 -- ALV-tunnus FI22556675
+Y-tunnus 9811220-2 -- ALV-tunnus FI98112202
 Maksuehto: 14 pv netto -- Viitenumero: 50012394
 Pankkiyhteys: FI4480001470683126 BIC: DABAFIHH

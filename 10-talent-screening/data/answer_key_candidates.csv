@@ -27,7 +27,7 @@ C025,Zara Souza,A,Clear fit,non_european,female,2018.0,2014_2018,non_eu,False,,M
 C026,Mikko Heinonen,A,Clear fit,finnish,male,2000.0,1998_2006,finland,False,,University of Oulu,Aurinko Avionics,,5,True,0,3247.0,395.0
 C027,Greta Jensen,C,Near miss,non_finnish_european,female,2002.0,1998_2006,non_eu,False,,MIT,Tuulikallio Embedded Systems,,4,False,2,6607.0,422.0
 C028,Katarina Fischer,D,Keyword stuffer,non_finnish_european,female,2004.0,1998_2006,other_eu,True,extended illness recovery,RWTH Aachen University,Boreal Photonics,,0,False,1,6185.0,453.0
-C029,Ville Makela,C,Near miss,finnish,male,2014.0,2014_2018,finland,False,,LUT University,Arctic Space Systems,,4,False,1,1715.0,441.0
+C029,Ville Makela,C,Near miss,finnish,male,2014.0,2014_2018,finland,False,,LUT University,Hallaharju Space Systems,,4,False,1,1715.0,441.0
 C030,Marco Muller,C,Near miss,non_finnish_european,male,2013.0,2007_2013,finland,True,redundancy followed by a slow requalification period,University of Oulu,Baltic Sensor Networks,,4,False,0,8891.0,443.0
 C031,Rosa Adeyemi,B,Clear miss,non_european,female,2007.0,2007_2013,other_eu,False,,KTH Royal Institute of Technology,Kajanti Avionics,,2,False,1,2457.0,325.0
 C032,Sana Gupta,B,Clear miss,non_european,female,2024.0,2019_2024,finland,False,,Tampere University,Tuulikallio Embedded Systems,,0,False,0,6470.0,327.0
@@ -65,16 +65,16 @@ C063,Amir Tanaka,C,Near miss,non_european,male,2007.0,2007_2013,non_eu,True,care
 C064,Aleksandra Dubois,F,Hidden gem,non_finnish_european,female,2014.0,2014_2018,other_eu,False,,RWTH Aachen University,Tuulikallio Embedded Systems,,5,True,3,6781.0,379.0
 C065,Diego Nwosu,G,Nonlinear path,non_european,male,2010.0,2007_2013,finland,True,redundancy followed by a slow requalification period,Tampere University,Aurinko Avionics,,5,True,2,9504.0,326.0
 C066,Erik Berg,H,Genuine borderline,non_finnish_european,male,2018.0,2014_2018,finland,False,,Tampere University,Tuulikallio Embedded Systems,,5,False,1,3757.0,344.0
-C067,Pekka Nieminen,A,Clear fit,finnish,male,2004.0,1998_2006,finland,False,,LUT University,Arctic Space Systems,,5,True,0,2781.0,337.0
+C067,Pekka Nieminen,A,Clear fit,finnish,male,2004.0,1998_2006,finland,False,,LUT University,Hallaharju Space Systems,,5,True,0,2781.0,337.0
 C068,Kari Heinonen,D,Keyword stuffer,finnish,male,2020.0,2019_2024,finland,False,,University of Helsinki,Revontuli Satellite Systems,,0,False,0,7994.0,450.0
 C069,Zofia Fischer,D,Keyword stuffer,non_finnish_european,female,2013.0,2007_2013,finland,False,,University of Helsinki,Baltic Sensor Networks,,0,False,0,6100.0,368.0
-C070,Nadia Nowak,B,Clear miss,non_finnish_european,female,2015.0,2014_2018,finland,False,,Aalto University,Arctic Space Systems,,1,False,1,5272.0,476.0
+C070,Nadia Nowak,B,Clear miss,non_finnish_european,female,2015.0,2014_2018,finland,False,,Aalto University,Hallaharju Space Systems,,1,False,1,5272.0,476.0
 C071,Klara Petrov,B,Clear miss,non_finnish_european,female,2007.0,2007_2013,other_eu,True,redundancy followed by a slow requalification period,RWTH Aachen University,Kajanti Avionics,,2,False,0,3013.0,335.0
-C072,Stefan Horvath,B,Clear miss,non_finnish_european,male,2019.0,2019_2024,finland,False,,Aalto University,Arctic Space Systems,,2,False,0,9554.0,434.0
+C072,Stefan Horvath,B,Clear miss,non_finnish_european,male,2019.0,2019_2024,finland,False,,Aalto University,Hallaharju Space Systems,,2,False,0,9554.0,434.0
 C073,Matteo Bianchi,B,Clear miss,non_finnish_european,male,2002.0,1998_2006,finland,False,,LUT University,Helios Photonics,,2,False,1,8972.0,322.0
-C074,Kwame Wang,B,Clear miss,non_european,male,2007.0,2007_2013,finland,False,,Tampere University,Arctic Space Systems,,2,False,1,7317.0,362.0
+C074,Kwame Wang,B,Clear miss,non_european,male,2007.0,2007_2013,finland,False,,Tampere University,Hallaharju Space Systems,,2,False,1,7317.0,362.0
 C075,Marja Niemi,E,Credential inflation,finnish,female,2007.0,2007_2013,other_eu,False,,KTH Royal Institute of Technology,Polaris RF Labs,,4,False,0,3269.0,330.0
-C076,Katja Makinen,A,Clear fit,finnish,female,2004.0,1998_2006,finland,False,,University of Oulu,Arctic Space Systems,,5,True,0,7375.0,378.0
+C076,Katja Makinen,A,Clear fit,finnish,female,2004.0,1998_2006,finland,False,,University of Oulu,Hallaharju Space Systems,,5,True,0,7375.0,378.0
 C077,Sanne Rossi,B,Clear miss,non_finnish_european,female,2008.0,2007_2013,finland,False,,Aalto University,Helios Photonics,,2,False,1,8902.0,401.0
 C078,Sven Muller,E,Credential inflation,non_finnish_european,male,2000.0,1998_2006,other_eu,False,,KTH Royal Institute of Technology,Nordkom Radar Systems,,5,False,0,6218.0,357.0
 C079,Elena Novak,F,Hidden gem,non_finnish_european,female,2013.0,2007_2013,finland,False,,University of Oulu,Baltic Sensor Networks,,5,True,2,6751.0,472.0
@@ -108,7 +108,7 @@ C106,Jari Virtanen,F,Hidden gem,finnish,male,2001.0,1998_2006,finland,False,,Uni
 C107,Anne Laine,G,Nonlinear path,finnish,female,2014.0,2014_2018,finland,True,extended illness recovery,University of Oulu,Kajanti Avionics,,5,True,0,4992.0,349.0
 C108,Tomas Nowak,B,Clear miss,non_finnish_european,male,2005.0,1998_2006,finland,False,,LUT University,Revontuli Satellite Systems,,2,False,1,8992.0,376.0
 C109,Sofia Kovac,B,Clear miss,non_finnish_european,female,2021.0,2019_2024,other_eu,True,parental leave,ETH Zurich,Norlight Optics,,0,False,1,5983.0,449.0
-C110,Emilia Virtanen,D,Keyword stuffer,finnish,female,2022.0,2019_2024,finland,False,,LUT University,Arctic Space Systems,,0,False,0,3044.0,342.0
+C110,Emilia Virtanen,D,Keyword stuffer,finnish,female,2022.0,2019_2024,finland,False,,LUT University,Hallaharju Space Systems,,0,False,0,3044.0,342.0
 C111,Jussi Hamalainen,C,Near miss,finnish,male,2002.0,1998_2006,finland,False,,Aalto University,Meridian Defence Electronics,,4,False,0,1793.0,414.0
 C112,Elina Koskinen,B,Clear miss,finnish,female,2016.0,2014_2018,non_eu,True,parental leave,Indian Institute of Technology Bombay,Baltic Sensor Networks,,2,False,1,2047.0,329.0
 C113,Katarina Schneider,A,Clear fit,non_finnish_european,female,2000.0,1998_2006,finland,False,,University of Helsinki,Nordkom Radar Systems,,5,True,0,2828.0,439.0
@@ -137,7 +137,7 @@ C135,Ravi Gupta,B,Clear miss,non_european,male,2019.0,2019_2024,non_eu,True,care
 C136,Bartosz Popescu,G,Nonlinear path,non_finnish_european,male,2000.0,1998_2006,non_eu,True,redundancy followed by a slow requalification period,Indian Institute of Technology Bombay,Fenno Radar Technologies,,5,True,4,8981.0,420.0
 C137,Hanna Lehtonen,OFFROLE,Off-role applicant,finnish,female,2002.0,1998_2006,other_eu,False,,KTH Royal Institute of Technology,,sales,0,False,0,6964.0,452.0
 C138,Ahmed Abara,A,Clear fit,non_european,male,2010.0,2007_2013,non_eu,False,,University of Tokyo,Revontuli Satellite Systems,,5,True,0,5262.0,332.0
-C139,Anna Makinen,G,Nonlinear path,finnish,female,2015.0,2014_2018,finland,True,extended illness recovery,Tampere University,Arctic Space Systems,,5,True,3,1601.0,460.0
+C139,Anna Makinen,G,Nonlinear path,finnish,female,2015.0,2014_2018,finland,True,extended illness recovery,Tampere University,Hallaharju Space Systems,,5,True,3,1601.0,460.0
 C140,Ludvig Andersson,B,Clear miss,non_finnish_european,male,2018.0,2014_2018,non_eu,False,,MIT,Polaris RF Labs,,0,False,0,3148.0,336.0
 C141,Petri Niemi,H,Genuine borderline,finnish,male,2014.0,2014_2018,other_eu,False,,Chalmers University of Technology,Norlight Optics,,5,False,0,8428.0,335.0
 C142,Heikki Heinonen,E,Credential inflation,finnish,male,2006.0,1998_2006,other_eu,False,,Chalmers University of Technology,Fenno Radar Technologies,,4,False,0,8099.0,397.0
@@ -197,7 +197,7 @@ C195,Anja Jensen,C,Near miss,non_finnish_european,female,2007.0,2007_2013,other_
 C196,Marta Moreau,B,Clear miss,non_finnish_european,female,2020.0,2019_2024,other_eu,True,career break for further study / retraining,ETH Zurich,Meridian Defence Electronics,,0,False,0,2800.0,338.0
 C197,Pekka Turunen,B,Clear miss,finnish,male,2022.0,2019_2024,other_eu,False,,RWTH Aachen University,Tuulikallio Embedded Systems,,2,False,1,5023.0,452.0
 C198,Mikko Laine,D,Keyword stuffer,finnish,male,2019.0,2019_2024,finland,True,career break for further study / retraining,University of Oulu,Aurinko Avionics,,0,False,0,3396.0,476.0
-C199,Kenji Okafor,B,Clear miss,non_european,male,2011.0,2007_2013,non_eu,False,,Indian Institute of Technology Bombay,Arctic Space Systems,,2,False,0,2768.0,382.0
+C199,Kenji Okafor,B,Clear miss,non_european,male,2011.0,2007_2013,non_eu,False,,Indian Institute of Technology Bombay,Hallaharju Space Systems,,2,False,0,2768.0,382.0
 C200,Rosa Li,B,Clear miss,non_european,female,2005.0,1998_2006,finland,True,career break for further study / retraining,University of Oulu,Polaris RF Labs,,2,False,1,1910.0,392.0
 C201,Sven Kowalski,E,Credential inflation,non_finnish_european,male,2010.0,2007_2013,finland,True,redundancy followed by a slow requalification period,University of Oulu,Kaira Wireless,,5,False,1,7914.0,390.0
 C202,Kaisa Makela,B,Clear miss,finnish,female,2009.0,2007_2013,non_eu,False,,Seoul National University,Aurinko Avionics,,0,False,0,5592.0,358.0
@@ -215,7 +215,7 @@ C213,Henrik Nowak,F,Hidden gem,non_finnish_european,male,2018.0,2014_2018,finlan
 C214,Feng Reddy,OFFROLE,Off-role applicant,non_european,male,2012.0,2007_2013,other_eu,False,,RWTH Aachen University,,mechanical_engineering,0,False,0,1396.0,376.0
 C215,Ling Abara,B,Clear miss,non_european,female,1999.0,1998_2006,finland,False,,University of Oulu,Norlight Optics,,0,False,0,5267.0,335.0
 C216,Greta Larsen,C,Near miss,non_finnish_european,female,2019.0,2019_2024,other_eu,True,redundancy followed by a slow requalification period,TU Delft,Fenno Radar Technologies,,4,False,2,8083.0,391.0
-C217,Valentina Chen,C,Near miss,non_european,female,1999.0,1998_2006,finland,True,caregiving leave,Tampere University,Arctic Space Systems,,4,False,3,5004.0,397.0
+C217,Valentina Chen,C,Near miss,non_european,female,1999.0,1998_2006,finland,True,caregiving leave,Tampere University,Hallaharju Space Systems,,4,False,3,5004.0,397.0
 C218,Isabel Popescu,D,Keyword stuffer,non_finnish_european,female,2015.0,2014_2018,non_eu,True,career break for further study / retraining,University of Tokyo,Norlight Optics,,0,False,1,5289.0,416.0
 C219,Hannu Lehtonen,H,Genuine borderline,finnish,male,2024.0,2019_2024,finland,False,,Aalto University,Fenno Radar Technologies,,5,False,0,3587.0,386.0
 C220,Pawel Petrov,B,Clear miss,non_finnish_european,male,2020.0,2019_2024,finland,False,,Aalto University,Fenno Radar Technologies,,0,False,0,6833.0,417.0
@@ -229,7 +229,7 @@ C227,Omar Rahman,D,Keyword stuffer,non_european,male,2018.0,2014_2018,finland,Fa
 C228,Marja Makinen,D,Keyword stuffer,finnish,female,2015.0,2014_2018,non_eu,False,,University of Toronto,Norlight Optics,,0,False,0,8267.0,409.0
 C229,Antti Kinnunen,A,Clear fit,finnish,male,2021.0,2019_2024,other_eu,False,,ETH Zurich,Revontuli Satellite Systems,,5,True,0,9993.0,457.0
 C230,Juha Nieminen,F,Hidden gem,finnish,male,2011.0,2007_2013,non_eu,False,,University of Toronto,Vireo Sensor Systems,,5,True,1,9554.0,421.0
-C231,Ingrid Andersson,A,Clear fit,non_finnish_european,female,2017.0,2014_2018,other_eu,False,,RWTH Aachen University,Arctic Space Systems,,5,True,0,3599.0,449.0
+C231,Ingrid Andersson,A,Clear fit,non_finnish_european,female,2017.0,2014_2018,other_eu,False,,RWTH Aachen University,Hallaharju Space Systems,,5,True,0,3599.0,449.0
 C232,Marko Turunen,E,Credential inflation,finnish,male,2011.0,2007_2013,non_eu,False,,MIT,Helios Photonics,,5,False,2,5005.0,332.0
 C233,Camille Fischer,D,Keyword stuffer,non_finnish_european,female,2007.0,2007_2013,non_eu,True,extended illness recovery,Indian Institute of Technology Bombay,Norlight Optics,,0,False,0,1542.0,469.0
 C234,Marika Heinonen,D,Keyword stuffer,finnish,female,1998.0,1998_2006,non_eu,True,redundancy followed by a slow requalification period,MIT,Boreal Photonics,,0,False,0,5591.0,349.0

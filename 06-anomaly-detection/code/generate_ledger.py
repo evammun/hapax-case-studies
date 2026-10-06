@@ -430,6 +430,10 @@ def generate_generic_identities(rng: np.random.Generator, vendor_ids: list) -> d
         name = draw_unique_name(rng, pools, country, used_names)
         if vid in config.RESERVED_VENDOR_NAME_OVERRIDES:
             name = config.RESERVED_VENDOR_NAME_OVERRIDES[vid]
+        else:
+            # Published-name policy (6 Oct 2026): coined stems on international names, pinned
+            # Finnish names. Applied after the draw so no random draw changes.
+            name = config.apply_generic_name_policy(name, country)
         vat_id = make_vat_id(rng, country)
         iban = make_iban(rng, country, used_ibans)
         address = make_address(rng, country)

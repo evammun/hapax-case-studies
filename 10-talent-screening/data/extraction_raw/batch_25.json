@@ -578,7 +578,7 @@
         "requirement_id": "R02",
         "status": "evidence_found",
         "lines": [
-          { "quote": "Developing and maintaining embedded signal processing firmware in C++ for Arctic’s industrial monitoring product line, including real-time data acquisition on ARM Cortex-M7 microcontrollers and custom DSP pipeline implementations", "source": "cv" }
+          { "quote": "Developing and maintaining embedded signal processing firmware in C++ for Hallaharju’s industrial monitoring product line, including real-time data acquisition on ARM Cortex-M7 microcontrollers and custom DSP pipeline implementations", "source": "cv" }
         ],
         "note": null
       },
@@ -586,7 +586,7 @@
         "requirement_id": "R03",
         "status": "evidence_found",
         "lines": [
-          { "quote": "Designed and deployed a production Python system for automated fault detection and diagnostic reporting across Arctic’s deployed monitoring stations, running on-site Linux servers with systemd service management and PostgreSQL data storage; the system processes continuous sensor data streams and generates daily health reports for field operations", "source": "cv" }
+          { "quote": "Designed and deployed a production Python system for automated fault detection and diagnostic reporting across Hallaharju’s deployed monitoring stations, running on-site Linux servers with systemd service management and PostgreSQL data storage; the system processes continuous sensor data streams and generates daily health reports for field operations", "source": "cv" }
         ],
         "note": null
       },
@@ -615,7 +615,7 @@
         "requirement_id": "R07",
         "status": "not_stated",
         "lines": [],
-        "note": "Employer name is 'Arctic Space Systems', but the work described is for an 'industrial monitoring product line' at 'Nordic client sites'; the company name alone is not treated as evidence of satellite or airborne platform work."
+        "note": "Employer name is 'Hallaharju Space Systems', but the work described is for an 'industrial monitoring product line' at 'Nordic client sites'; the company name alone is not treated as evidence of satellite or airborne platform work."
       },
       {
         "requirement_id": "R08",

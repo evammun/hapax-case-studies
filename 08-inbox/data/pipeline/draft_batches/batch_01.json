@@ -3081,11 +3081,11 @@
       "trigger_email": {
         "date": "2026-09-02",
         "subject": "Invoice question - cement mixer trailer",
-        "body": "Hello,\n\nWe received the invoice for the cement mixer trailer rental and wanted to check a couple of things. Could you send us a detailed breakdown?\n\nBest regards,\nNapapiirin Infra Oy"
+        "body": "Hello,\n\nWe received the invoice for the cement mixer trailer rental and wanted to check a couple of things. Could you send us a detailed breakdown?\n\nBest regards,\nRoutakallion Infra Oy"
       },
       "thread_history": [],
       "customer_record": {
-        "name": "Napapiirin Infra Oy",
+        "name": "Routakallion Infra Oy",
         "type": "business",
         "city": "Rovaniemi",
         "repeat_customer": true,

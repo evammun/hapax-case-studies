@@ -761,7 +761,7 @@
         "status": "evidence_found",
         "lines": [
           {
-            "quote": "Developing and maintaining embedded signal processing firmware in C++ for Arctic's industrial monitoring product line, including real-time data acquisition on ARM Cortex-M7 microcontrollers and custom DSP pipeline implementations",
+            "quote": "Developing and maintaining embedded signal processing firmware in C++ for Hallaharju's industrial monitoring product line, including real-time data acquisition on ARM Cortex-M7 microcontrollers and custom DSP pipeline implementations",
             "source": "cv"
           }
         ],
@@ -772,7 +772,7 @@
         "status": "evidence_found",
         "lines": [
           {
-            "quote": "Designed and deployed a production Python system for automated fault detection and diagnostic reporting across Arctic's deployed monitoring stations, running on-site Linux servers with systemd service management and PostgreSQL data storage; the system processes continuous sensor data streams and generates daily health reports for field operations",
+            "quote": "Designed and deployed a production Python system for automated fault detection and diagnostic reporting across Hallaharju's deployed monitoring stations, running on-site Linux servers with systemd service management and PostgreSQL data storage; the system processes continuous sensor data streams and generates daily health reports for field operations",
             "source": "cv"
           }
         ],
@@ -809,7 +809,7 @@
         "requirement_id": "R07",
         "status": "not_stated",
         "lines": [],
-        "note": "Company is Arctic Space Systems, but work described is industrial monitoring on ground-based deployed systems, not satellite or aircraft platforms."
+        "note": "Company is Hallaharju Space Systems, but work described is industrial monitoring on ground-based deployed systems, not satellite or aircraft platforms."
       },
       {
         "requirement_id": "R08",

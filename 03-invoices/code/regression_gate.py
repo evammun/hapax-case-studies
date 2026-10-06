@@ -285,7 +285,7 @@ def _fixture_record(iban: str) -> dict:
         "schema_version": "1.0", "doc_id": "fixture",
         "supplier": {"name": "Selftest Supplier Oy", "street": "Testikatu 1",
                       "postcode": "00100", "city": "Helsinki", "country": "FI",
-                      "vat_id": "FI22334455", "business_id": "2233445-8"},
+                      "vat_id": "FI22334455", "business_id": "9811228-8"},
         "buyer": {"name": "Pyökkipaja Oy", "street": "Sorvaajankatu 11",
                    "postcode": "15520", "city": "Lahti", "country": "FI",
                    "vat_id": None, "business_id": schemas.make_y_tunnus("2417551")},
@@ -357,7 +357,7 @@ def run_selftest() -> int:
         master_data = {
             "suppliers": [{"id": "s1", "name": "Selftest Supplier Oy", "street": "Testikatu 1",
                             "postcode": "00100", "city": "Helsinki", "country": "FI",
-                            "vat_id": "FI22334455", "business_id": "2233445-8",
+                            "vat_id": "FI22334455", "business_id": "9811228-8",
                             "iban": iban, "bic": "NDEAFIHH", "bankgiro": None}],
             "po_register": [{"po_number": "PO-2025-001", "date": "2025-02-01", "supplier_id": "s1"}],
         }

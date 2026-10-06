@@ -109,7 +109,7 @@
       "is_first_message_in_thread": false,
       "date": "2026-09-16",
       "subject": "Re: Tower light - end of rental",
-      "body": "Hanna-Kaisa,\n\nAny news on the site fencing? We need the 50m run sorted fairly soon, same setup as before.\n\nPohjolan Maanrakennus Oy",
+      "body": "Hanna-Kaisa,\n\nAny news on the site fencing? We need the 50m run sorted fairly soon, same setup as before.\n\nKurujärven Maanrakennus Oy",
       "classification_contract": {
         "task": "You are the intent-classification step of Tammilehto Oy's customer-email support pipeline. Read the one inbound customer email below and assign exactly one intent class from the fixed taxonomy given in 'intent_classes'. Base your decision only on this email's own subject and body — you are not shown the rest of its thread, the policy handbook, or the customer's account record; a later pipeline step retrieves those separately.",
         "intent_classes": {
@@ -214,7 +214,7 @@
       "is_first_message_in_thread": false,
       "date": "2026-09-16",
       "subject": "Re: Core drill rig - delivery?",
-      "body": "Thanks for getting back to us.\n\nAlso need to ask about a cement mixer trailer - same question, what delivery options do you have for that one?\n\nPohjolan Maanrakennus Oy",
+      "body": "Thanks for getting back to us.\n\nAlso need to ask about a cement mixer trailer - same question, what delivery options do you have for that one?\n\nKurujärven Maanrakennus Oy",
       "classification_contract": {
         "task": "You are the intent-classification step of Tammilehto Oy's customer-email support pipeline. Read the one inbound customer email below and assign exactly one intent class from the fixed taxonomy given in 'intent_classes'. Base your decision only on this email's own subject and body — you are not shown the rest of its thread, the policy handbook, or the customer's account record; a later pipeline step retrieves those separately.",
         "intent_classes": {

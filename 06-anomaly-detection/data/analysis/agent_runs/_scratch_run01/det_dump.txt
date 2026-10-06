@@ -43,7 +43,7 @@ TXN041664   2025-11-15    V-0041    4300     1251.61         828833  INTEG-01   
 TXN041770   2025-11-16    V-0041    4300      636.32         828835  INTEG-01     89  NaN Tavarantoimitus, tilaus 688984
 ==================================================================================================================================
 UNIT DU-04  key=V-0062  n_flags=3  total=5118.21  score_range=[0.01584, 0.017099]
-  VENDOR V-0062: Metalltechnik GmbH [DE] terms=14 allowed=7900;7100
+  VENDOR V-0062: Felsmark Metalltechnik GmbH [DE] terms=14 allowed=7900;7100
     ALL-YEAR profile: n=132 total=139391.78 mean=1056.00 median=909.90 min=205.50 max=3994.29
     accounts(all yr)={'7900': 111, '7100': 21}
     posters(all yr)={'INTEG-01': 103, 'U-031': 9, 'U-058': 7, 'U-204': 4, 'U-142': 4, 'U-176': 3, 'U-117': 2}
@@ -54,7 +54,7 @@ TXN010186   2025-03-19    V-0062    7100      348.78         139638     U-058   
 TXN029775   2025-08-24    V-0062    7900     2865.74         139686  INTEG-01     80  NaN Ostolasku, 633035
 ==================================================================================================================================
 UNIT DU-05  key=V-0067  n_flags=7  total=11929.72  score_range=[0.001754, 0.029821]
-  VENDOR V-0067: Stahltechnik GmbH [DE] terms=30 allowed=7850;7990
+  VENDOR V-0067: Erlengrund Stahltechnik GmbH [DE] terms=30 allowed=7850;7990
     ALL-YEAR profile: n=345 total=310982.90 mean=901.40 median=797.40 min=186.83 max=3373.29
     accounts(all yr)={'7850': 279, '7990': 66}
     posters(all yr)={'INTEG-01': 281, 'U-058': 15, 'U-031': 12, 'U-142': 11, 'U-176': 11, 'U-117': 9, 'U-204': 6}
@@ -114,7 +114,7 @@ TXN044446   2025-11-30    V-0078    4310     4405.53         817678  INTEG-01   
 TXN049042   2025-12-28    V-0078    4310     1615.53         817690  INTEG-01     35  NaN Materiaalitoimitus, tilaus 068256
 ==================================================================================================================================
 UNIT DU-09  key=V-0090  n_flags=9  total=6269.47  score_range=[0.001507, 0.022181]
-  VENDOR V-0090: Industriehandel GmbH [DE] terms=30 allowed=4300;4200
+  VENDOR V-0090: Felsmark Industriehandel GmbH [DE] terms=30 allowed=4300;4200
     ALL-YEAR profile: n=365 total=239402.65 mean=655.90 median=580.78 min=113.60 max=3757.68
     accounts(all yr)={'4300': 308, '4200': 57}
     posters(all yr)={'INTEG-01': 313, 'U-176': 16, 'U-117': 12, 'U-204': 8, 'U-058': 8, 'U-142': 6, 'U-031': 2}
@@ -131,7 +131,7 @@ TXN031612   2025-09-07    V-0090    4200      580.78         160199  INTEG-01   
 TXN035396   2025-10-05    V-0090    4300      460.81         160231  INTEG-01    110  NaN Tavarantoimitus, tilaus 281214
 ==================================================================================================================================
 UNIT DU-10  key=V-0098  n_flags=4  total=3672.62  score_range=[0.002932, 0.027171]
-  VENDOR V-0098: Bergsteknik [SE] terms=21 allowed=4300;4020
+  VENDOR V-0098: Hällsvik Bergsteknik [SE] terms=21 allowed=4300;4020
     ALL-YEAR profile: n=143 total=92758.03 mean=648.66 median=601.52 min=109.53 max=2098.26
     accounts(all yr)={'4300': 122, '4020': 21}
     posters(all yr)={'INTEG-01': 121, 'U-058': 6, 'U-204': 5, 'U-176': 5, 'U-117': 3, 'U-142': 3}
@@ -143,7 +143,7 @@ TXN007876   2025-03-02    V-0098    4300      738.74         161375  INTEG-01   
 TXN019390   2025-05-26    V-0098    4020     2007.60         161407  INTEG-01     53  NaN Tavarantoimitus, tilaus 274790
 ==================================================================================================================================
 UNIT DU-11  key=V-0099  n_flags=11  total=40030.42  score_range=[0.001029, 0.045739]
-  VENDOR V-0099: Malmhandel [SE] terms=14 allowed=4440;4410
+  VENDOR V-0099: Hällsvik Malmhandel [SE] terms=14 allowed=4440;4410
     ALL-YEAR profile: n=224 total=450085.38 mean=2009.31 median=1862.69 min=558.68 max=11281.91
     accounts(all yr)={'4440': 180, '4410': 44}
     posters(all yr)={'INTEG-01': 177, 'U-031': 12, 'U-058': 12, 'U-117': 8, 'U-176': 8, 'U-204': 4, 'U-142': 3}
@@ -309,7 +309,7 @@ TXN025369   2025-07-14    V-0156    4200      290.69         780028  INTEG-01   
 TXN034555   2025-09-29    V-0156    4200      795.20         780055  INTEG-01     85  NaN Tavarantoimitus, tilaus 781207
 ==================================================================================================================================
 UNIT DU-22  key=V-0157  n_flags=7  total=30021.51  score_range=[0.001609, 0.046047]
-  VENDOR V-0157: Kumitukku Oy Ab [FI] terms=14 allowed=4310;4100
+  VENDOR V-0157: Kumivaraosa Oy Ab [FI] terms=14 allowed=4310;4100
     ALL-YEAR profile: n=170 total=546429.48 mean=3214.29 median=2962.12 min=1361.62 max=7832.79
     accounts(all yr)={'4310': 149, '4100': 21}
     posters(all yr)={'INTEG-01': 139, 'U-031': 9, 'U-142': 6, 'U-117': 5, 'U-058': 5, 'U-176': 4, 'U-204': 2}
@@ -324,7 +324,7 @@ TXN031867   2025-09-09    V-0157    4100     2404.24         161907  INTEG-01   
 TXN043168   2025-11-23    V-0157    4310     4685.31         161947  INTEG-01     13  NaN Materiaalitoimitus, tilaus 030298
 ==================================================================================================================================
 UNIT DU-23  key=V-0176  n_flags=3  total=2161.5  score_range=[0.006663, 0.037382]
-  VENDOR V-0176: Nordgrossist [SE] terms=14 allowed=4300;4020
+  VENDOR V-0176: Hällsvik Nordgrossist [SE] terms=14 allowed=4300;4020
     ALL-YEAR profile: n=203 total=132980.39 mean=655.08 median=552.90 min=159.81 max=3276.52
     accounts(all yr)={'4300': 165, '4020': 38}
     posters(all yr)={'INTEG-01': 163, 'U-204': 10, 'U-176': 8, 'U-058': 6, 'U-117': 6, 'U-142': 5, 'U-031': 5}
@@ -355,7 +355,7 @@ TXN045749   2025-12-06    V-0198    7850     1761.31         869767  INTEG-01   
 
 ########## SINGLES ##########
 
--- TXN010666 rank2 score=0.0750 vendor=V-0071 Verktygsteknik allowed=7400;4430
+-- TXN010666 rank2 score=0.0750 vendor=V-0071 Myrkvarn Verktygsteknik allowed=7400;4430
    acct=4430(Consulting services) amt=8464.74 poster=INTEG-01 date=2025-03-22 wd=False rule=nan
    memo='Kertatoimitus, tilaus 307323'
    vendor profile: n=36 mean=2759.57 median=2325.82 max=8464.74 accts={'7400': 28, '4430': 8}
@@ -365,7 +365,7 @@ TXN045749   2025-12-06    V-0198    7850     1761.31         869767  INTEG-01   
    memo='Materiaalitoimitus, tilaus 043072'
    vendor profile: n=18 mean=3297.58 median=3202.16 max=4974.31 accts={'4010': 15, '4310': 3}
 
--- TXN002870 rank18 score=0.0444 vendor=V-0142 Technikhandel GmbH allowed=4010;4110
+-- TXN002870 rank18 score=0.0444 vendor=V-0142 Felsmark Technikhandel GmbH allowed=4010;4110
    acct=4110(Seals and components) amt=3999.93 poster=INTEG-01 date=2025-01-25 wd=False rule=nan
    memo='Materiaalitoimitus, tilaus 095455'
    vendor profile: n=47 mean=3419.14 median=3262.03 max=7214.84 accts={'4010': 41, '4110': 6}
@@ -380,7 +380,7 @@ TXN045749   2025-12-06    V-0198    7850     1761.31         869767  INTEG-01   
    memo='Kertatoimitus, tilaus 743538'
    vendor profile: n=60 mean=2770.78 median=2141.40 max=7267.65 accts={'4200': 51, '4020': 9}
 
--- TXN045742 rank32 score=0.0323 vendor=V-0195 Nordhandel AS allowed=7700;4430
+-- TXN045742 rank32 score=0.0323 vendor=V-0195 Fjellskor Nordhandel AS allowed=7700;4430
    acct=7700(Representation costs) amt=7575.97 poster=INTEG-01 date=2025-12-06 wd=False rule=nan
    memo='Kertatoimitus, tilaus 739316'
    vendor profile: n=57 mean=2301.50 median=2002.51 max=7575.97 accts={'7700': 47, '4430': 10}

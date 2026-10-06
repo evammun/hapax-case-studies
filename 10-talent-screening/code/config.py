@@ -592,7 +592,7 @@ UNIVERSITIES_BY_DEGREE_COUNTRY = {
 
 SIGNAL_PROCESSING_EMPLOYERS = [
     "Nordkom Radar Systems", "Aurinko Avionics", "Baltic Sensor Networks",
-    "Helios Photonics", "Meridian Defence Electronics", "Arctic Space Systems",
+    "Helios Photonics", "Meridian Defence Electronics", "Hallaharju Space Systems",
     "Kaira Wireless", "Polaris RF Labs", "Tuulikallio Embedded Systems",
     "Revontuli Satellite Systems", "Norlight Optics", "Kajanti Avionics",
     "Fenno Radar Technologies", "Vireo Sensor Systems", "Boreal Photonics",

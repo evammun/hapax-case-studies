@@ -547,7 +547,7 @@
         "status": "evidence_found",
         "lines": [
           {
-            "quote": "Designed and implemented the digital beamforming subsystem for a ground-based 12-element phased-array receiver at Arctic Space Systems. Real-time beam steering with per-element gain/phase correction.",
+            "quote": "Designed and implemented the digital beamforming subsystem for a ground-based 12-element phased-array receiver at Hallaharju Space Systems. Real-time beam steering with per-element gain/phase correction.",
             "source": "cv"
           }
         ],
@@ -580,7 +580,7 @@
         "status": "evidence_found",
         "lines": [
           {
-            "quote": "Responsible for RF test and calibration on Arctic's ground-based receiver hardware: antenna-pattern characterisation using near-field probe measurements, and S-parameter verification of the RF front end using an Agilent PNA-L network analyser.",
+            "quote": "Responsible for RF test and calibration on Hallaharju's ground-based receiver hardware: antenna-pattern characterisation using near-field probe measurements, and S-parameter verification of the RF front end using an Agilent PNA-L network analyser.",
             "source": "cv"
           }
         ],
@@ -612,7 +612,7 @@
         "requirement_id": "R07",
         "status": "not_stated",
         "lines": [],
-        "note": "Employer name ('Arctic Space Systems') suggests space work, but every described project is explicitly 'ground-based'; no satellite or airborne platform work is stated."
+        "note": "Employer name ('Hallaharju Space Systems') suggests space work, but every described project is explicitly 'ground-based'; no satellite or airborne platform work is stated."
       },
       {
         "requirement_id": "R08",
@@ -647,7 +647,7 @@
         "status": "evidence_found",
         "lines": [
           {
-            "quote": "Working language English: all documentation at Arctic Space Systems written in English; daily coordination with partners in Sweden and Germany conducted in English",
+            "quote": "Working language English: all documentation at Hallaharju Space Systems written in English; daily coordination with partners in Sweden and Germany conducted in English",
             "source": "cv"
           }
         ],

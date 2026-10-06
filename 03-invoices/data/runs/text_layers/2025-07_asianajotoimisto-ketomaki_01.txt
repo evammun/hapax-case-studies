@@ -4,7 +4,7 @@ Oikeudenkatu 3
 Laskun päivä 29.07.2025
 00170 Helsinki
 Eräpäivä 28.08.2025
-Y-tunnus: 2311229-1
+Y-tunnus: 9811237-6
 OSTAJA
 Pyökkipaja Oy
 Sorvaajankatu 11
@@ -16,6 +16,6 @@ Neuvottelu, asiakastapaaminen 2 h 683,93 25,5 1 367,86
 Veroton yhteensä 2 354,47 €
 ALV 25,5 % 600,39 €
 Maksettava 2 954,86 €
-Y-tunnus 2311229-1 -- ALV-tunnus FI23112291
+Y-tunnus 9811237-6 -- ALV-tunnus FI98112376
 Maksuehto: 30 pv netto
 Pankkiyhteys: FI0357224800690153 BIC: OKOYFIHH

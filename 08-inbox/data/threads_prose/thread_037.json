@@ -1,7 +1,7 @@
 {
   "thread_id": "THR-037",
   "customer_id": "CUST-003",
-  "customer_name": "Pohjolan Maanrakennus Oy",
+  "customer_name": "Kurujärven Maanrakennus Oy",
   "is_promise_thread": false,
   "messages": [
     {
@@ -10,7 +10,7 @@
       "date": "2026-09-04",
       "timestamp": "2026-09-04T09:44",
       "subject": "Tower light - end of rental",
-      "body": "The LED tower light (towable) is ready to come back. Can you arrange collection from our site or should we bring it to the Kempele depot?\n\nPohjolan Maanrakennus Oy",
+      "body": "The LED tower light (towable) is ready to come back. Can you arrange collection from our site or should we bring it to the Kempele depot?\n\nKurujärven Maanrakennus Oy",
       "email_id": "EML-038"
     },
     {
@@ -30,7 +30,7 @@
       "date": "2026-09-10",
       "timestamp": "2026-09-10T10:01",
       "subject": "Re: Tower light - end of rental",
-      "body": "While we're at it, we'd like to book site fencing again, same as last time. Per 50m run. Can you set that up?\n\nPohjolan Maanrakennus Oy",
+      "body": "While we're at it, we'd like to book site fencing again, same as last time. Per 50m run. Can you set that up?\n\nKurujärven Maanrakennus Oy",
       "email_id": "EML-091"
     },
     {
@@ -50,7 +50,7 @@
       "date": "2026-09-16",
       "timestamp": "2026-09-16T13:08",
       "subject": "Re: Tower light - end of rental",
-      "body": "Hanna-Kaisa,\n\nAny news on the site fencing? We need the 50m run sorted fairly soon, same setup as before.\n\nPohjolan Maanrakennus Oy",
+      "body": "Hanna-Kaisa,\n\nAny news on the site fencing? We need the 50m run sorted fairly soon, same setup as before.\n\nKurujärven Maanrakennus Oy",
       "email_id": "EML-138"
     }
   ]

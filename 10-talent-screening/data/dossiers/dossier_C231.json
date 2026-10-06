@@ -95,7 +95,7 @@
       "name": "Satellite or airborne platform experience",
       "status": "not_stated",
       "lines": [],
-      "note": "Employer name is 'Arctic Space Systems' but the text explicitly describes the product line as 'ground-based monitoring'; no instrument or system is described as flown on a satellite or aircraft."
+      "note": "Employer name is 'Hallaharju Space Systems' but the text explicitly describes the product line as 'ground-based monitoring'; no instrument or system is described as flown on a satellite or aircraft."
     },
     {
       "requirement_id": "R08",
@@ -128,7 +128,7 @@
       "status": "evidence_found",
       "lines": [
         {
-          "quote": "Working language at Arctic Space Systems is English; I conduct all technical discussions, design reviews, and client presentations in English",
+          "quote": "Working language at Hallaharju Space Systems is English; I conduct all technical discussions, design reviews, and client presentations in English",
           "source": "cv",
           "citation_verified": true
         }

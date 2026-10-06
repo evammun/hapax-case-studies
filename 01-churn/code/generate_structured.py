@@ -254,6 +254,7 @@ def build_accounts_df(
         country  = rng.choice(countries, p=country_weights)
         industry = rng.choice(config.INDUSTRIES)
         name     = make_company_name(country, industry, rng)
+        name     = config.HEADLINE_NAME_OVERRIDES.get(account_id, name)   # headline account keeps its name
 
         # Plan tier (weighted)
         tiers        = list(config.PLAN_TIER_WEIGHTS.keys())

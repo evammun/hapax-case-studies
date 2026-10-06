@@ -2,7 +2,7 @@ Salpausselän Puutavara Oy
 Laskun numero Lasku 2025-2051
 Karjalankatu 4 Laskun päivä 16.10.2025
 15150 Lahti Eräpäivä 15.11.2025
-Y-tunnus: 2233445-8 Viitenumero 31548243
+Y-tunnus: 9811228-8 Viitenumero 31548243
 Tilausnumero PO-2025-111
 OSTAJA
 Pyökkipaja Oy
@@ -30,6 +30,6 @@ Lastulevy 22 mm, 2070x2800 6 kpl 27,21 25,5 163,26
 Veroton yhteensä 3 768,19 €
 ALV 25,5 % 960,89 €
 Maksettava 4 729,08 €
-Y-tunnus 2233445-8 Pankkiyhteys: FI6215783022011184
-ALV-tunnus FI22334458 BIC: NDEAFIHH
+Y-tunnus 9811228-8 Pankkiyhteys: FI6215783022011184
+ALV-tunnus FI98112288 BIC: NDEAFIHH
 Maksuehto: 30 pv netto Viitenumero: 31548243

@@ -1141,7 +1141,7 @@
         {"requirement_id": "R11", "believed_status": "evidenced", "note": "English working language."},
         {"requirement_id": "R12", "believed_status": "evidenced", "note": "Based in Oulu since 2018, staying."}
       ],
-      "flags": {"vocabulary_notes": [{"requirement_id": "R07", "note": "'Arctic Space Systems' name is tempting to read as satellite work, but the role itself is ground-based -- didn't give false credit."}], "claims_questioned": [], "inconsistencies_noted": [], "borderline_calls": []},
+      "flags": {"vocabulary_notes": [{"requirement_id": "R07", "note": "'Hallaharju Space Systems' name is tempting to read as satellite work, but the role itself is ground-based -- didn't give false credit."}], "claims_questioned": [], "inconsistencies_noted": [], "borderline_calls": []},
       "screening_decision": "advance -- all five must-haves solidly evidenced",
       "time_budget_seconds": 240
     },

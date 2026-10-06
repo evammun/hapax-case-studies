@@ -1,7 +1,7 @@
 Lasku 2025-0028
 Työkalu-Tiira Oy Laskun päivä 23.10.2025
 Eräpäivä 22.11.2025
-Teollisuuskatu 19, 15170 Lahti · Y-tunnus 2277889-2 Viitenumero 99060679
+Teollisuuskatu 19, 15170 Lahti · Y-tunnus 9811231-7 Viitenumero 99060679
 Tilausnumero PO-2025-120
 OSTAJA
 Pyökkipaja Oy
@@ -23,6 +23,6 @@ TK-0003 Katkaisulaikka 125mm 14 kpl 25,5 2,37 33,18
 Veroton yhteensä 322,41 €
 ALV 25,5 % 82,21 €
 Maksettava 404,62 €
-Y-tunnus 2277889-2 -- ALV-tunnus FI22778892
+Y-tunnus 9811231-7 -- ALV-tunnus FI98112317
 Maksuehto: 30 pv netto -- Viitenumero: 99060679
 Pankkiyhteys: FI5822791800130472 BIC: NDEAFIHH

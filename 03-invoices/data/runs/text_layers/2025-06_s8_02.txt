@@ -3,7 +3,7 @@ Lasku T-0191
 Teollisuuskatu 19 Laskun päivä 18.06.2025
 15170 Lahti
 Eräpäivä 18.07.2025
-Y-tunnus: 2277889-2
+Y-tunnus: 9811231-7
 Viitenumero 13211187
 Tilausnumero PO-2025-077
 OSTAJA
@@ -32,6 +32,6 @@ Ruuvipuristin 150mm 1 kpl 20,45 25,5 20,45
 Veroton yhteensä 457,63 €
 ALV 25,5 % 116,70 €
 Maksettava 574,33 €
-Y-tunnus 2277889-2 -- ALV-tunnus FI22778892
+Y-tunnus 9811231-7 -- ALV-tunnus FI98112317
 Maksuehto: 30 pv netto -- Viitenumero: 13211187
 Pankkiyhteys: FI5822791800130472 BIC: NDEAFIHH

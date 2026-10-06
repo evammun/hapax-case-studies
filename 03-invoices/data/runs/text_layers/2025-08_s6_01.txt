@@ -4,7 +4,7 @@ Satamakatu 6
 Laskun päivä 28.08.2025
 15140 Lahti
 Eräpäivä 11.09.2025
-Y-tunnus: 2255667-5
+Y-tunnus: 9811220-2
 Viitenumero 72772816
 OSTAJA
 Pyökkipaja Oy
@@ -18,6 +18,6 @@ Lisäkuljetus, kiireellinen toimitus 1 kpl 43,10 25,5 43,10
 Veroton yhteensä 325,67 €
 ALV 25,5 % 83,05 €
 Maksettava 408,72 €
-Y-tunnus 2255667-5 -- ALV-tunnus FI22556675
+Y-tunnus 9811220-2 -- ALV-tunnus FI98112202
 Maksuehto: 14 pv netto -- Viitenumero: 72772816
 Pankkiyhteys: FI4480001470683126 BIC: DABAFIHH

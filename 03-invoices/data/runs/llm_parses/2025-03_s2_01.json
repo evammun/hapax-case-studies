@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "doc_id": "2025-03_s2_01",
-  "supplier": {"name": "Päijät-Pakkaus Oy", "street": "Pakkaajankatu 8", "postcode": "15870", "city": "Hollola", "country": "FI", "vat_id": "FI22445561", "business_id": "2244556-1"},
+  "supplier": {"name": "Päijät-Pakkaus Oy", "street": "Pakkaajankatu 8", "postcode": "15870", "city": "Hollola", "country": "FI", "vat_id": "FI98112296", "business_id": "9811229-6"},
   "buyer": {"name": "Pyökkipaja Oy", "street": "Sorvaajankatu 11", "postcode": "15520", "city": "Lahti", "country": "FI", "vat_id": null, "business_id": "2417551-8"},
   "invoice": {"number": "30586", "type": "invoice", "issue_date": "2025-03-17", "supply_date": null, "due_date": "2025-04-07", "payment_terms": "21 pv netto", "currency": "EUR", "po_number": "PO-2025-031", "reference_type": "viitenumero", "reference_value": "92172438", "original_invoice_number": null, "reverse_charge_mention": null},
   "bank": {"iban": "FI4854487211170035", "bic": "OKOYFIHH", "bankgiro": null},

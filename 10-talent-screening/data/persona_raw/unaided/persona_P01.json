@@ -1157,7 +1157,7 @@
         {"requirement_id": "R12", "believed_status": "evidenced", "note": "In Oulu since 2018."}
       ],
       "flags": {
-        "vocabulary_notes": [{"requirement_id": "R07", "note": "\"Arctic Space Systems\" invites an assumption of satellite work that the actual job description doesn't support -- correctly not crediting it."}],
+        "vocabulary_notes": [{"requirement_id": "R07", "note": "\"Hallaharju Space Systems\" invites an assumption of satellite work that the actual job description doesn't support -- correctly not crediting it."}],
         "claims_questioned": [],
         "inconsistencies_noted": [],
         "borderline_calls": []

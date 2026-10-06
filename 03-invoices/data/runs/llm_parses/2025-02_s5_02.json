@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "doc_id": "2025-02_s5_02",
-  "supplier": {"name": "Terasleht OÜ", "street": "Tööstuse tn 9", "postcode": "11415", "city": "Tallinn", "country": "EE", "vat_id": "EE100786532", "business_id": "12457896"},
+  "supplier": {"name": "Plekivalu OÜ", "street": "Tööstuse tn 9", "postcode": "11415", "city": "Tallinn", "country": "EE", "vat_id": "EE100786532", "business_id": "12457896"},
   "buyer": {"name": "Pyökkipaja Oy", "street": "Sorvaajankatu 11", "postcode": "15520", "city": "Lahti", "country": "FI", "vat_id": "FI24175518", "business_id": "2417551-8"},
   "invoice": {"number": "A25-255", "type": "invoice", "issue_date": "2025-02-28", "supply_date": "2025-02-28", "due_date": "2025-03-14", "payment_terms": "14 days net", "currency": "EUR", "po_number": "PO-2025-025", "reference_type": "rf", "reference_value": "RF13355284454", "original_invoice_number": null, "reverse_charge_mention": "Reverse charge (Article 196, Council Directive 2006/112/EC)"},
   "bank": {"iban": "EE282200221054450012", "bic": "LHVBEE22", "bankgiro": null},

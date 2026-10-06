@@ -6,11 +6,11 @@
   "trigger_email": {
     "date": "2026-09-03",
     "subject": "Generator booking reschedule",
-    "body": "Our project schedule has shifted and we need different dates for the 20kVA diesel generator. Let us know what works.\n\nBR,\nPohjolan Maanrakennus Oy"
+    "body": "Our project schedule has shifted and we need different dates for the 20kVA diesel generator. Let us know what works.\n\nBR,\nKurujärven Maanrakennus Oy"
   },
   "thread_history": [],
   "customer_record": {
-    "name": "Pohjolan Maanrakennus Oy",
+    "name": "Kurujärven Maanrakennus Oy",
     "type": "business",
     "city": "Kempele",
     "repeat_customer": true,

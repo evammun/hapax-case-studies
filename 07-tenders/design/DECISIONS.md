@@ -840,3 +840,9 @@ deliverables) are not part of this brief and remain open; the gnarly tenders
 are not in the quick-play set (see above); Eva's look-and-feel pass on the
 interactive page itself is still owed, per the portfolio's standing pattern
 on every prior case's interactive page.
+
+## 6 Oct 2026 – Invented names renamed after the legal check
+
+Spec: `Set Up/Legal/invented-names-check-2026-10-06.md` section 3; replacements were cleared against the registers and approved by Eva ("happy for things to get renamed without me, they're all fictional names"). Mapping and tooling: `Set Up/Legal/rename_mapping.py`, `apply_renames.py`, `rename_sweep.py`. 
+- Kuusiranta Oy (reference client REF01, the EUR 640,000 contract) is now Haavikkoranta Oy in `code/config.py`, `data/arm_a`, `data/arm_b`, `data/attempt_briefs`, `data/facts` and the interactive files. Patched by literal swap; the session-produced arm outputs were not re-run.
+- `validate_structure.py`, `validate_corpus.py`, `validate_arm_a.py` and `mark.py` re-run on a scratch copy: all pass, and `data/analysis/marks.json` and `report.md` are byte-identical. No published figure moved. (Running `generate_structure.py` does not reproduce the tree byte for byte in the current environment, with or without this change, so it was not used as a check here.)

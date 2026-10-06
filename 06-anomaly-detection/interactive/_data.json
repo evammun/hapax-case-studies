@@ -488,7 +488,7 @@
     {
       "unit_id": "DU-04",
       "type": "detector_vendor",
-      "key": "Metalltechnik GmbH",
+      "key": "Felsmark Metalltechnik GmbH",
       "n_flags": 3,
       "eur_total": 5118.21,
       "verdicts": [
@@ -501,7 +501,7 @@
     {
       "unit_id": "DU-05",
       "type": "detector_vendor",
-      "key": "Stahltechnik GmbH",
+      "key": "Erlengrund Stahltechnik GmbH",
       "n_flags": 7,
       "eur_total": 11929.72,
       "verdicts": [
@@ -553,7 +553,7 @@
     {
       "unit_id": "DU-09",
       "type": "detector_vendor",
-      "key": "Industriehandel GmbH",
+      "key": "Felsmark Industriehandel GmbH",
       "n_flags": 9,
       "eur_total": 6269.47,
       "verdicts": [
@@ -566,7 +566,7 @@
     {
       "unit_id": "DU-10",
       "type": "detector_vendor",
-      "key": "Bergsteknik",
+      "key": "Hällsvik Bergsteknik",
       "n_flags": 4,
       "eur_total": 3672.62,
       "verdicts": [
@@ -579,7 +579,7 @@
     {
       "unit_id": "DU-11",
       "type": "detector_vendor",
-      "key": "Malmhandel",
+      "key": "Hällsvik Malmhandel",
       "n_flags": 11,
       "eur_total": 40030.42,
       "verdicts": [
@@ -722,7 +722,7 @@
     {
       "unit_id": "DU-22",
       "type": "detector_vendor",
-      "key": "Kumitukku Oy Ab",
+      "key": "Kumivaraosa Oy Ab",
       "n_flags": 7,
       "eur_total": 30021.51,
       "verdicts": [
@@ -735,7 +735,7 @@
     {
       "unit_id": "DU-23",
       "type": "detector_vendor",
-      "key": "Nordgrossist",
+      "key": "Hällsvik Nordgrossist",
       "n_flags": 3,
       "eur_total": 2161.5,
       "verdicts": [

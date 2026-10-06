@@ -4,7 +4,7 @@ Teräkatu 6
 Laskun päivä 05.08.2025
 15230 Lahti
 Eräpäivä 04.09.2025
-Y-tunnus: 2311230-4
+Y-tunnus: 9811238-4
 OSTAJA
 Pyökkipaja Oy
 Sorvaajankatu 11
@@ -15,6 +15,6 @@ Terien teroitus, sarja 1 erä 267,92 25,5 267,92
 Veroton yhteensä 267,92 €
 ALV 25,5 % 68,32 €
 Maksettava 336,24 €
-Y-tunnus 2311230-4 -- ALV-tunnus FI23112304
+Y-tunnus 9811238-4 -- ALV-tunnus FI98112384
 Maksuehto: 30 pv netto
 Pankkiyhteys: FI2080751400328596 BIC: DABAFIHH

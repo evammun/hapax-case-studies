@@ -4,7 +4,7 @@ Satamakatu 6
 Laskun päivä 28.04.2025
 15140 Lahti
 Eräpäivä 12.05.2025
-Y-tunnus: 2255667-5
+Y-tunnus: 9811220-2
 Viitenumero 74919978
 OSTAJA
 Pyökkipaja Oy
@@ -17,6 +17,6 @@ Nostopalvelu, purku 1 kpl 312,59 25,5 312,59
 Veroton yhteensä 512,41 €
 ALV 25,5 % 130,66 €
 Maksettava 643,07 €
-Y-tunnus 2255667-5 -- ALV-tunnus FI22556675
+Y-tunnus 9811220-2 -- ALV-tunnus FI98112202
 Maksuehto: 14 pv netto -- Viitenumero: 74919978
 Pankkiyhteys: FI4480001470683126 BIC: DABAFIHH

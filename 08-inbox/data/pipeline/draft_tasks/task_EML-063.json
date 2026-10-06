@@ -6,11 +6,11 @@
   "trigger_email": {
     "date": "2026-09-08",
     "subject": "Pressure washer booking dates",
-    "body": "Hi,\n\nOur site schedule shifted and the dates on the petrol pressure washer booking won't work anymore. Can we push it back? Let me know what you have available.\n\nRegards,\nNapapiirin Infra Oy"
+    "body": "Hi,\n\nOur site schedule shifted and the dates on the petrol pressure washer booking won't work anymore. Can we push it back? Let me know what you have available.\n\nRegards,\nRoutakallion Infra Oy"
   },
   "thread_history": [],
   "customer_record": {
-    "name": "Napapiirin Infra Oy",
+    "name": "Routakallion Infra Oy",
     "type": "business",
     "city": "Rovaniemi",
     "repeat_customer": true,

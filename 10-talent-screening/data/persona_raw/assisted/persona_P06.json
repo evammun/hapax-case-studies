@@ -3644,7 +3644,7 @@
         {
           "requirement_id": "R07",
           "believed_status": "not_stated",
-          "note": "Employer name is 'Arctic Space Systems' but the text explicitly describes the product line as 'ground-based monitoring'; no instrument or system is described as flown on a satellite or aircraft."
+          "note": "Employer name is 'Hallaharju Space Systems' but the text explicitly describes the product line as 'ground-based monitoring'; no instrument or system is described as flown on a satellite or aircraft."
         },
         {
           "requirement_id": "R08",

@@ -1,7 +1,7 @@
 Lasku 2025-0015
 Työkalu-Tiira Oy Laskun päivä 16.09.2025
 Eräpäivä 16.10.2025
-Teollisuuskatu 19, 15170 Lahti · Y-tunnus 2277889-2 Viitenumero 80135500
+Teollisuuskatu 19, 15170 Lahti · Y-tunnus 9811231-7 Viitenumero 80135500
 Tilausnumero PO-2025-109
 OSTAJA
 Pyökkipaja Oy
@@ -29,6 +29,6 @@ TK-0006 Kuulokesuojain 3 kpl 25,5 15,66 46,98
 Veroton yhteensä 1 034,52 €
 ALV 25,5 % 263,80 €
 Maksettava 1 298,32 €
-Y-tunnus 2277889-2 -- ALV-tunnus FI22778892
+Y-tunnus 9811231-7 -- ALV-tunnus FI98112317
 Maksuehto: 30 pv netto -- Viitenumero: 80135500
 Pankkiyhteys: FI5822791800130472 BIC: NDEAFIHH

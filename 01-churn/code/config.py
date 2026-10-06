@@ -96,22 +96,23 @@ COMPETITOR_NAMES = list(COMPETITORS.keys())
 # ---------------------------------------------------------------------------
 # Used by generate_structured.py to build plausible company names.
 
+# Roster swapped 6 Oct 2026 (invented-names check, Set Up/Legal/invented-names-check-2026-10-06.md):
+# the old stems were common surnames that national registers hold as bare company names. Each list
+# keeps its length and position, so rng.choice picks the same index and a regeneration gives the
+# same dataset with only the names changed. Many stems repeat by design (account_id is the key).
 COMPANY_PREFIXES_BY_COUNTRY = {
-    "FI": ["Tammi", "Koivu", "Haapa", "Kataja", "Leppä", "Mänty", "Paju", "Raita",
-           "Salo", "Virta", "Aalto", "Laakso", "Harjula", "Nieminen", "Rantanen"],
-    "SE": ["Norrvik", "Lundqvist", "Björkman", "Lindberg", "Stenberg", "Ekholm",
-           "Sjöberg", "Hallgren", "Forsell", "Bergvik", "Sundqvist", "Moberg"],
-    "NO": ["Fjordheim", "Bakke", "Solberg", "Hagen", "Strand", "Halvorsen",
-           "Berge", "Dahl", "Viken", "Ås", "Moen", "Lund"],
-    "DK": ["Østergaard", "Holm", "Kjær", "Bech", "Lund", "Møller",
-           "Poulsen", "Christoffersen", "Ibsen", "Grundtvig"],
-    "DE": ["Weiss", "Braun", "Krüger", "Hoffmann", "Schreiber", "Neumann",
-           "Bergmann", "Hartmann", "Baum", "Steinbach", "Richter", "Vogt"],
-    "NL": ["van der Berg", "Visser", "de Boer", "Smit", "Willems",
-           "Vermeer", "Hoekstra", "Dijkstra", "Hendriks", "Kuipers"],
-    "EE": ["Tamm", "Kask", "Mägi", "Leppik", "Sepp", "Tammik", "Kallas",
-           "Pärn", "Saar", "Rebane"],
+    "FI": ["Kaarnikko", "Lumikarpalo", "Tuohisalo", "Kaarnikko", "Lumikarpalo", "Tuohisalo", "Kaarnikko", "Lumikarpalo", "Tuohisalo", "Kaarnikko", "Lumikarpalo", "Tuohisalo", "Kaarnikko", "Lumikarpalo", "Tuohisalo"],
+    "SE": ["Fjällbris", "Vittmora", "Stensvala", "Granlöja", "Ekbrinken", "Ljungsvala", "Fjällbris", "Vittmora", "Stensvala", "Granlöja", "Ekbrinken", "Ljungsvala"],
+    "NO": ["Fonnhaug", "Myrbrekk", "Elvesnø", "Fonnhaug", "Myrbrekk", "Elvesnø", "Fonnhaug", "Myrbrekk", "Elvesnø", "Fonnhaug", "Myrbrekk", "Elvesnø"],
+    "DK": ["Klintvæld", "Marskhøj", "Fjordlyng", "Engbakkerup", "Strandkær", "Klintvæld", "Marskhøj", "Fjordlyng", "Engbakkerup", "Strandkær"],
+    "DE": ["Weidenhang", "Talbrunn", "Weidenhang", "Talbrunn", "Weidenhang", "Talbrunn", "Weidenhang", "Talbrunn", "Weidenhang", "Talbrunn", "Weidenhang", "Talbrunn"],
+    "NL": ["Veenhorst", "Duinwaard", "Kreekdal", "Lindewaal", "Zeggeveld", "Kwelderhof", "Veenhorst", "Duinwaard", "Kreekdal", "Lindewaal"],
+    "EE": ["Sammalpere", "Kadakmetsa", "Sammalranna", "Sammalpere", "Kadakmetsa", "Sammalranna", "Sammalpere", "Kadakmetsa", "Sammalranna", "Sammalpere"],
 }
+
+# The headline account of the case keeps its name (graded 'near, keep' in the legal check). Applied
+# after the name draw, so no random draw changes.
+HEADLINE_NAME_OVERRIDES = {"ACC0013": "Bergvik Systems AB"}
 
 COMPANY_SUFFIXES_BY_COUNTRY = {
     "FI": ["Oy", "Oy Ab", "Oyj"],

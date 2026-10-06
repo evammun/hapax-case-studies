@@ -45,7 +45,7 @@
         "sender": "customer",
         "email_id": "EML-012",
         "subject": "Invoice question - cement mixer trailer",
-        "body": "Hello,\n\nWe received the invoice for the cement mixer trailer rental and wanted to check a couple of things. Could you send us a detailed breakdown?\n\nBest regards,\nNapapiirin Infra Oy"
+        "body": "Hello,\n\nWe received the invoice for the cement mixer trailer rental and wanted to check a couple of things. Could you send us a detailed breakdown?\n\nBest regards,\nRoutakallion Infra Oy"
       },
       {
         "message_index": 2,
@@ -65,7 +65,7 @@
         "sender": "customer",
         "email_id": "EML-118",
         "subject": "Re: Invoice question - cement mixer trailer",
-        "body": "We're finished with the 20kVA generator. Can we arrange the return? Happy to bring it to the Rovaniemi depot or you can collect from site, whichever suits.\n\nNapapiirin Infra Oy"
+        "body": "We're finished with the 20kVA generator. Can we arrange the return? Happy to bring it to the Rovaniemi depot or you can collect from site, whichever suits.\n\nRoutakallion Infra Oy"
       }
     ]
   },
@@ -101,7 +101,7 @@
         "sender": "customer",
         "email_id": "EML-070",
         "subject": "Date change on plate compactor booking",
-        "body": "Hi,\n\nWe need to change the dates on our plate compactor booking. Site schedule got pushed back so we won't need it when originally planned. Can you move it?\n\nRegards,\nPohjolan Maanrakennus Oy"
+        "body": "Hi,\n\nWe need to change the dates on our plate compactor booking. Site schedule got pushed back so we won't need it when originally planned. Can you move it?\n\nRegards,\nKurujärven Maanrakennus Oy"
       },
       {
         "message_index": 2,
@@ -114,7 +114,7 @@
         "sender": "customer",
         "email_id": "EML-078",
         "subject": "Re: Date change on plate compactor booking",
-        "body": "The plate compactor is not working properly. Can you send someone to look at it or swap it out?\n\nPohjolan Maanrakennus Oy"
+        "body": "The plate compactor is not working properly. Can you send someone to look at it or swap it out?\n\nKurujärven Maanrakennus Oy"
       }
     ]
   }

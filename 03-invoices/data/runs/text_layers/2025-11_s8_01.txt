@@ -1,7 +1,7 @@
 Lasku 2025-0046
 Työkalu-Tiira Oy Laskun päivä 12.11.2025
 Eräpäivä 12.12.2025
-Teollisuuskatu 19, 15170 Lahti · Y-tunnus 2277889-2 Viitenumero 88090472
+Teollisuuskatu 19, 15170 Lahti · Y-tunnus 9811231-7 Viitenumero 88090472
 Tilausnumero PO-2025-130
 OSTAJA
 Pyökkipaja Oy
@@ -29,6 +29,6 @@ TK-0005 Työkäsineet, pari 26 kpl 25,5 3,86 100,36
 Veroton yhteensä 1 015,14 €
 ALV 25,5 % 258,86 €
 Maksettava 1 274,00 €
-Y-tunnus 2277889-2 -- ALV-tunnus FI22778892
+Y-tunnus 9811231-7 -- ALV-tunnus FI98112317
 Maksuehto: 30 pv netto -- Viitenumero: 88090472
 Pankkiyhteys: FI5822791800130472 BIC: NDEAFIHH
