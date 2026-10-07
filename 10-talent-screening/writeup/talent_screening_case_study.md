@@ -26,13 +26,15 @@ Kaikuvaara Oy is a fictional remote-sensing instruments maker in Oulu. Twelve re
 | Clear miss | 87 | Fails 3 or more must-haves, no disguise |
 | Near miss | 36 | Exactly 1 must-have genuinely absent |
 | Keyword stuffer | 22 | Claims everything; evidence thin or circular |
-| Credential inflation | 15 | Title or degree claims contradicted by dates or internal details |
-| Hidden gem | 18 | Fully qualified, skill under displaced vocabulary |
+| Credential inflation | 15 | 8 degree-date clashes, 7 leadership-title clashes |
+| Hidden gem | 18 | Fully qualified, one must-have under displaced vocabulary |
 | Nonlinear path | 15 | Career gaps, competence intact |
 | Genuine borderline | 12 | Engineered "defensible either way" in the key |
 | Off-role | 14 | Realistic noise floor |
 
-18 hidden gems carry the displacement subplot. Each is fully qualified, but the relevant experience sits under adjacent-domain language: acoustic beamforming for hearing-aid arrays, engine-control-unit firmware, a particle-physics collaboration's analysis scripts. 9 of the 18 carry their displaced evidence only in the cover letter.
+22 keyword stuffers use the right vocabulary with little substance behind it. C228 sits at keyword rank 1. 15 applicants carry a planted credential inflation, 8 where a degree conferral date is contradicted by a job that required the degree already finished, and 7 where a claimed leadership title is contradicted by the plain title and short tenure in the same role.
+
+18 hidden gems meet every requirement but each with one must-have worded in unfamiliar terms: acoustic beamforming described as hearing-aid array processing, embedded DSP as engine-control-unit firmware, production Python as particle-physics analysis scripts. C213, the clearest example, evidences all five must-haves and ranked 144th by keyword matching. One of the five, production Python, appears only in the cover letter as automation and analysis scripts for a particle-physics detector collaboration, and the word "Python" is nowhere in the application. 9 of the 18 carry their displaced evidence only in the cover letter.
 
 Every candidate carries surface demographic correlates (name origin, gender, graduation-year band, degree country, career-gap status), assigned orthogonally to qualification truth by construction. Any difference the evidence layer shows between strata belongs to the system, not the data.
 
@@ -50,7 +52,7 @@ The same 240 applications were screened four ways, all marked against the same k
 
 ## What happened, in numbers
 
-Ten expectations were written into the design before any generation or run. Four were met and six were not. Nothing was retuned after these numbers appeared.
+Ten predictions were set before marking began. Four were met, including the evidence recall at 96.71% against a 95% bar. Six were not. Nothing was retuned after the numbers appeared.
 
 | # | Registration | Result | Verdict |
 |---|---|---|---|
@@ -65,33 +67,31 @@ Ten expectations were written into the design before any generation or run. Four
 | A3 | Naive fabrication > disciplined citation failure | Inverted: 16.53% vs 2.59% | NOT MET |
 | A4 | Disciplined beats ATS on gems and stuffers | Stuffers yes; gems no | NOT MET |
 
-Across 240 applications the workflow extracted 2,116 evidence lines with verbatim citations. 618 of 639 key-recorded must-have evidence items appeared in the dossiers. 19 citations failed verification; 17 were transcription slippage and 2 were fabrications, quotes the candidate's application does not contain. Both fabrications are hallucinated contradictions, detailed in the adjudication below.
+Across 240 applications the workflow extracted 2,116 evidence lines with verbatim citations. 618 of 639 key-recorded must-have evidence items appeared in the dossiers. Of the 19 citations that failed verification, 17 were minor transcription differences and 2 were fabricated, quotes the candidate's application does not contain. Both fabrications are hallucinated contradictions, detailed in the adjudication below.
 
 ## Where the gems hid
 
-12 of 18 displaced-vocabulary candidates had their displaced skill surfaced as evidence against the right requirement. The letter-only plantings are where the workflow lost its gems. Where the CV describes a role in one vocabulary and the cover letter describes related work in another, the workflow chose the harsher reading, calling a contradiction and consuming evidence it would otherwise have surfaced.
+12 of 18 hidden gems had their displaced skill surfaced as evidence against the right requirement. The misses concentrated in the cover letter: 5 of the 9 gems whose displaced skill appeared only there were missed, against 1 of the 9 whose evidence was elsewhere. Where the CV describes a role in one vocabulary and the cover letter describes related work in another, the workflow chose the harsher reading, calling a contradiction and consuming evidence it would otherwise have surfaced.
 
 C232 shows the sharpest case of this. His CV describes a January &ndash; August 2020 role as signal conditioning and filter implementation. His cover letter describes the same role as designing phased-array beamforming algorithms and a 12-element receive array processor, in the same sentence that carries the planted title inflation ("Head of Signal Processing &hellip; directed a team of six"). The genuine R01 evidence and the fabricated R08 claim share a sentence, so distrust of the lie swallowed the truth beside it. No careful reader can separate the two, and that is the argument for asking in screening.
 
-The interactive page leads with a matched pair selected from the marked results. C213, the hidden gem the ATS ranked at 144 of 240, carries every must-have qualification per the key. C228, the stuffer the ATS pushed to rank 1, has 4 of 5 must-haves recorded as claims without substantiation. Arm 4 itself over-credited C228 on R05, returning evidence_found where the key holds claimed_only; that over-credit is published in the exhibit.
+The interactive page leads with a matched pair selected from the marked results. C213 ranked 144th by keyword matching and evidences every must-have per the key. C228, the stuffer the ATS pushed to rank 1, has 4 of 5 must-haves recorded as claims without substantiation. Arm 4 itself over-credited C228 on R05, returning evidence_found where the key holds claimed_only; that over-credit is published in the exhibit.
 
 ## What the discipline carries
 
 The ATS ranked all 22 keyword stuffers above the pool median. Rank 1 is a stuffer. A keyword matcher cannot distinguish a claim from evidence; a workflow with a refuse-to-guess gate can, regardless of model size, and the disciplined Haiku flagged claims as unsubstantiated on 20 of 22 stuffers against the ATS's 0 of 22.
 
-15 planted credential inflations (8 degree-date, 7 title-inflation) separate the arms. Arm 4 caught 14 of 15. Arm 3 caught 1. The naive arm caught 0.
+15 planted credential inflations (8 degree-date, 7 leadership-title) separate the arms. Arm 4 caught 14 of 15. Arm 3 caught 1. The naive arm caught 0.
 
-Pre-registration A2 was mis-framed. It measured ATS keyword hits on displaced skills, predicting at most 3 of 18 would fire. 15 of 18 did, because generic keywords like "beamforming" appear inside some displacement phrases. But keywords that fire without lifting the ranking are harm without diagnosis. C213 carries 3 of 5 must-have keyword hits and still sits in the bottom half.
+The workflow's refuse-to-guess discipline transferred to the smaller model; verbatim citation quality did not. The disciplined Haiku's citation-failure rate was 16.53%, against the naive Haiku's 2.59% and Sonnet's 0.90%. Haiku merges adjacent lines into non-verbatim quotes. The assembly layer's verification step caught every one of those failures. The workflow's safety net works even when the model inside it does not quote accurately.
 
-Pre-registration A3 inverted. The disciplined Haiku's citation-failure rate was 16.53%, against the naive Haiku's 2.59% and Sonnet's 0.90%. Haiku merges adjacent lines into non-verbatim quotes. Status discipline (refuse-to-guess, the four-status vocabulary) transferred to the small model; verbatim citation did not. The assembly layer's verification step caught every one of those failures. The workflow's safety net works even when the model inside it does not quote accurately.
-
-Pre-registration A4 asked whether the disciplined small model beats the ATS on both hidden gems surfaced and stuffers identified, and failed on the gem half. The stuffer win is emphatic (20 of 22 vs 0 of 22), but 13 of 18 gems still lose to the ATS keyword artefact.
+C213 carries 3 of 5 must-have keyword hits and still sits in the bottom half. A keyword match that fires without changing the ranking tells the recruiter nothing useful.
 
 ## How the marking was checked
 
 12 arm-4 contradiction calls do not match a planted credential inflation. Each was adjudicated by reading the candidate's application text against the dossier entry and the answer-key row.
 
-Every disputed call errs toward over-suspicion, never credulity. 2 are extractor errors resting on fabricated quotes (C022 and C039, both counted by pre-registration 2's machinery). C039's dossier quotes a beamformer having "met its performance specification on the first flight" when every flight-adjacent line in the application says ground-based; C022's dossier quotes a site opening date that appears nowhere in the CV. 5 sit at the claimed_only/contradiction boundary, read harshly on stuffer-style claims but substantively aligned with the key every time. 3 are genuine corpus prose defects found after the run (C079's one-publication-two-identities, two minor date-phrase slips), published as the case's own errors. C232's entanglement is described above. C114, a letter-only R01 planting, was misread as cross-document conflict when the CV's project and the letter's project were two distinct pieces of work with similar names.
+All 12 erred toward over-suspicion, never credulity. 2 are extractor errors resting on fabricated quotes (C022 and C039, both counted in the fabrication rate). C039's dossier quotes a beamformer having "met its performance specification on the first flight" when every flight-adjacent line in the application says ground-based; C022's dossier quotes a site opening date that appears nowhere in the CV. 5 sit at the claimed_only/contradiction boundary, read harshly on stuffer-style claims but substantively aligned with the key every time. 3 are genuine corpus prose defects found after the run (C079's one-publication-two-identities, two minor date-phrase slips), published as the case's own errors. C232's entanglement is described above. C114, a letter-only R01 planting, was misread as cross-document conflict when the CV's project and the letter's project were two distinct pieces of work with similar names.
 
 The cost of the over-suspicion concentrates on the letter-only plantings, which for a screening aid is the less harmful direction.
 
@@ -103,11 +103,7 @@ Arm 3 shows the tightest parity of the four arms: largest recall spread 1.75pp, 
 
 ## The persona experiment
 
-12 simulated recruiter personas screened a stratified 48-application subset two ways: unaided and with the dossier beside the application, at an equal time budget of 240 seconds per application.
-
-Pre-registration 6 asked whether the with-dossier arm identifies at least twice the hidden gems of the unaided arm. The subset carries 4 archetype-F candidates, giving each arm a maximum of 48 gem-advances across 12 personas. Unaided, 31 of 48; assisted, 41 of 48; ratio 1.32, against a bar of 2&times;. With one persona's adjudicated-mapped decisions excluded as a sensitivity check, 37 vs 31, ratio 1.19. NOT MET either way.
-
-The registration did not anticipate a ceiling effect. Personas found gems unaided at 65%, so doubling required more advances than the pool could supply.
+12 simulated recruiter personas screened a stratified 48-application subset two ways: unaided and with the dossier beside the application, at an equal time budget of 240 seconds per application. The subset holds 4 hidden gems, which gives the 12 personas 48 gem readings per arm. Unaided, they advanced the gem on 31 of 48; with the dossier, on 41.
 
 | Diagnostic | Unaided | Assisted |
 |---|---|---|
@@ -116,13 +112,13 @@ The registration did not anticipate a ceiling effect. Personas found gems unaide
 | Inflations spotted | 56% | 94% |
 | Borderlines flagged as borderline | 33% | 8% |
 
-Gem holds fell from 15 to 7: the dossier converted hesitation into commitment. Inflations spotted rose from 56% to 94%, the largest lift, concentrated on cross-document title inflation where the dossier makes the contradiction visible. Stuffers questioned rose from 75% to 92%.
+The larger effects were elsewhere. Inflations spotted rose from 56% to 94%, the largest lift, concentrated on cross-document title inflation where the dossier makes the contradiction visible. Stuffers questioned rose from 75% to 92%. Gem holds fell from 15 to 7: the dossier converted hesitation into commitment.
 
-Borderlines flagged as borderline inverted, from 33% to 8%. With the dossier, personas resolved the engineered defensible-either-way candidates into firm decisions. This is the one measured place where the dossier reduced appropriate hesitation.
+The subset also holds two candidates built to be defensible either way. Personas marked them as borderline on 33% of unaided readings and 8% of assisted ones. The dossier turned a genuinely open call into a firm decision, the one measured place where it made the personas less careful, not more.
 
 P12 overrode a false citation flag on C062 and confirmed the fabricated C039 contradiction, correcting the tool in both directions. P11 read every dossier flag on the title-inflators and advanced them regardless. P01 advanced C210 unaided, then held him once the dossier showed the title contradiction.
 
-The dossier amplifies the discipline a recruiter brings but does not install it.
+The pattern was not uniform. The two least strict personas went from questioning none of the four stuffers to questioning all four, while the most keyword-reliant persona questioned none in either arm and the strictest was unchanged on gems. One persona advanced fewer gems with the dossier than without.
 
 ## What transfers and what does not
 
@@ -130,6 +126,6 @@ The architecture transfers: extraction against a requirement profile with verbat
 
 Extraction consumed approximately 4.4 million Sonnet tokens. The two Haiku arms consumed approximately 4 million between them, and the 24 persona runs approximately 7 million Sonnet tokens. The ATS is deterministic and free. Corpus authorship is generation-side, measured separately.
 
-The numbers belong to this corpus, its archetype mix and one seed. The parity failures, the 6 missed gems, the 12 adjudicated calls and the C228 over-credit are properties of this run.
+The numbers belong to this corpus, its archetype mix and one seed.
 
-Recruitment is the domain where the rules bind hardest. Applications are personal data end to end, and the AI Act's high-risk regime and GDPR keep a human at the helm of the decision. The natural deployment is a small model on the client's own hardware, processing applications that never leave the organisation's infrastructure. This case proves that the workflow discipline transfers to a small model (arm 3's parity, arm 3's stuffer identification) and that verbatim citation quality does not (arm 3's 16.53% citation-failure rate against arm 4's 0.90%). Fine-tuning a local model on the client's own historical screening material, under the client's own lawful basis, is the genuine next step. It is exploration this case did not do, and no capability promise is attached to it. The human-decides principle survives any tuning.
+Recruitment is the domain where the rules bind hardest. Applications are personal data end to end, and the AI Act's high-risk regime and GDPR keep a human at the helm of the decision. The natural deployment is a small model on the client's own hardware, processing applications that never leave the organisation's infrastructure. The workflow discipline transfers to a small model (arm 3's parity, arm 3's stuffer identification) and verbatim citation quality does not (arm 3's 16.53% citation-failure rate against arm 4's 0.90%). Fine-tuning a local model on the client's own historical screening material, under the client's own lawful basis, is the genuine next step.
