@@ -25,7 +25,7 @@ We built a synthetic corpus around that shape, 198 PDF invoices across 2025, fro
 
 ## How it works
 
-An agent (a Claude Sonnet subagent, reading each PDF as an image) returns a structured record of header fields, line items and totals, against one shared schema. This is the expensive step, and the only one that can handle an invoice it has not seen before. It held up well. Dense identifiers (IBANs, reference numbers, OCR codes, VAT IDs in 5 languages) came back correct across all 81 agent-read documents, without a single digit wrong.
+An agent (a Claude Sonnet subagent, reading each PDF as an image) returns a structured record of header fields, line items and totals, against one shared schema. This is the expensive step, and the only one that can handle an invoice it has not seen before. It held up well. Dense identifiers (IBANs, reference numbers, OCR codes, VAT IDs in 4 languages) came back correct across all 81 agent-read documents, without a single digit wrong.
 
 An overseer watches what the agent produces, supplier by supplier. Once a supplier has sent 6 invoices in a consistent layout, it writes an ordinary deterministic parser for that layout, plain code against the PDF’s text layer with no model at run time. The new parser must first reproduce the agent’s own accepted output on every document seen so far before it goes live. A router sends each invoice to a deterministic parser where one exists, checks the schema, the arithmetic and the master data, and falls back to the agent, loudly, if anything does not fit. This is the mechanism our ERP case study, *The automation that retires itself*, demonstrated on 5 SAP report types; here the unit of learning is the supplier, the literal version of “supplier by supplier”.
 
